@@ -1,0 +1,11 @@
+services:
+  valentin:
+    build: .
+    container_name: ValentinMusic
+    restart: always
+    env_file:
+      - .env
+    volumes:
+      - ./cache:/app/cache
+      - ./downloads:/app/downloads
+    network_mode: host

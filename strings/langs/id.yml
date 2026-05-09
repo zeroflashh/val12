@@ -1,0 +1,848 @@
+name: 🇮🇩 Indonesian
+general_1: Balas pesan pengguna atau berikan nama pengguna/id_pengguna
+general_2: Kesalahan! Penggunaan Perintah yang Salah.
+general_3: 'Beberapa **pengecualian terjadi** saat memproses kueri Anda.
+
+
+  Jenis Pengecualian:- {0}'
+general_4: 'Anda adalah admin anonim di grup obrolan ini!
+
+  Kembali ke Akun Pengguna Dari Hak Admin.'
+general_5: Anda harus menjadi admin dengan mengelola hak obrolan suara untuk melakukan
+  tindakan ini.
+tg_1: 'Bot **kelebihan beban** dengan unduhan sekarang.
+
+
+  **Coba Setelah:** {0} (__waktu yang diharapkan__)'
+tg_2: Gagal mengunduh media dari telegram.
+tg_3: failed to download media from telegram, please try again...
+tg_4: » download already completed.
+tg_5: » download already completed or cancelled.
+tg_6: » download cancelled.
+tg_7: '» download cancelled by : {0}'
+tg_8: failed to stop the download.
+tg_9: failed to get the ongoing download task...
+call_1: Bot memerlukan Izin **Admin** untuk mengundang akun asisten ke saluran Anda.
+call_2: 'Asisten diblokir di grup atau saluran Anda, harap batalkan pemblokiran.
+
+
+  **Nama Pengguna Asisten:** @{0}
+
+  **ID Asisten:** {1}'
+call_3: 'Pengecualian Terjadi Saat Mengundang Akun Asisten ke chat Anda.
+
+
+  **Alasan**: {0}'
+call_4: Bot memerlukan **Undang Pengguna Melalui Tautan** Izin untuk mengundang akun
+  asisten ke grup obrolan Anda.
+call_5: Akun Asisten akan bergabung dalam 5 Detik.. Harap Tunggu!
+call_6: 'Akun Asisten[{0}] Berhasil Bergabung.
+
+
+  Mulai Musik Sekarang'
+call_7: '**Hak Admin yang Berbahaya Diberikan **
+
+
+  Harap hapus hak **BAN PENGGUNA** dari bot.'
+call_8: '**Hak Admin yang Berbahaya Diberikan **
+
+
+  Harap hapus hak **TAMBAHKAN ADMIN BARU** dari bot.'
+call_9: '**Gagal mengganti Aliran**
+
+  Silakan gunakan /skip untuk mengganti trek lagi.'
+call_10: Mengunduh Lagu Berikutnya dari Daftar Putar
+auth_1: Anda hanya dapat memiliki 20 Pengguna di Daftar Pengguna Resmi (AUL) grup
+  Anda
+auth_2: Ditambahkan ke Daftar Pengguna Resmi grup Anda.
+auth_3: Sudah ada di Daftar Pengguna Resmi.
+auth_4: Dihapus dari Daftar Pengguna Resmi Grup ini.
+auth_5: Pengguna yang ditargetkan bukanlah Pengguna yang Sah.
+auth_6: Mengambil Pengguna Resmi... Harap Tunggu
+auth_7: '**Daftar Pengguna Resmi[AUL]:**
+
+
+  '
+auth_8: ┗ Ditambahkan Oleh:-
+reload_1: '» you can only refresh admin cache once in 3 minutes.
+
+
+  please try after {0}.'
+reload_2: » admin cache refreshed successfully.
+reload_3: » failed to reload admin cache, make sure that the bot is admin in your
+  chat.
+reload_4: '» please wait...
+
+
+  rebooting {0} for your chat.'
+reload_5: 'successfully rebooted {0} for your chat.
+
+
+  start playing again...'
+admin_1: Musik sudah Dijeda.
+admin_2: 🎧 Obrolan Suara Dijeda oleh {}!
+admin_3: Musik sudah dilanjutkan.
+admin_4: 🎧 Obrolan Suara Dilanjutkan oleh {}!
+admin_5: Musik sudah dimatikan.
+admin_6: 🎧 Obrolan Suara Dibisukan oleh {}!
+admin_7: Musik sudah disuarakan.
+admin_8: 🎧 Obrolan Suara Disuarakan oleh {}!
+admin_9: 🎧 Obrolan Suara Diakhiri/Dihentikan oleh {}!
+admin_10: 🎧 Obrolan Suara Dilewati oleh {}!. Tidak Ada Lagi Musik di Antrean.
+admin_11: 'Error saat mengubah aliran ke **{0}**
+
+
+  Silakan gunakan /skip lagi.'
+admin_12: Tidak dapat melompat ke trek tertentu karena pemutaran loop diaktifkan.
+  Harap nonaktifkan pemutaran loop melalui `/loop disable` untuk menggunakan fitur
+  ini.
+admin_13: Silakan gunakan nomor numerik untuk trek tertentu, seperti 1, 2 atau 4 dll
+admin_14: Setidaknya diperlukan 2 trek dalam antrian untuk melompat ke nomor tertentu.
+  Periksa antrian menurut /antrian
+admin_15: Tidak cukup trek dalam antrian untuk nilai yang Anda berikan. Silakan pilih
+  angka antara 1 dan {0}
+admin_16: 'Gagal melompat ke trek tertentu.
+
+
+  Periksa antrean kiri menurut /antrian'
+admin_17: '{0}.. Mohon Tunggu'
+admin_18: 'Daftar Admin Tidak Ditemukan
+
+
+  Silakan muat ulang daftar admin melalui /reload'
+admin_19: 'Anda harus menjadi admin dengan hak mengelola obrolan suara untuk melakukan
+  ini.
+
+  Jika Anda sudah menjadi admin, muat ulang admincache melalui /reload '
+admin_20: Cache admin berhasil dimuat ulang.
+admin_21: Tidak ada di dalam antrian untuk diacak
+admin_22: 'Gagal mengacak.
+
+
+  Periksa antrian : /antrian'
+admin_23: '**Antrian Diacak oleh {0}**
+
+
+  Periksa antrean yang diacak : /queue'
+admin_24: '**Penggunaan:**
+
+  /loop [aktifkan/nonaktifkan] atau [Angka antara 1-10]
+
+
+  **Contoh:** /loop 5'
+admin_25: Loop diaktifkan oleh {0} sebanyak **{1}** kali. Bot sekarang akan mengulang
+  musik yang sedang diputar di obrolan suara sebanyak **{1}** kali
+admin_26: Silahkan gunakan angka antara 1-10 untuk loop play
+admin_27: Pemutaran Putaran telah dinonaktifkan
+admin_28: '**Penggunaan:**
+
+  /seek atau /seekback [Durasi dalam detik]'
+admin_29: Silakan gunakan detik durasi numerik seperti 10-20-30 detik untuk mencari
+admin_30: Maaf, tetapi Anda tidak dapat mencari aliran yang sedang diputar. Itu hanya
+  dapat dilewati atau dihentikan.
+admin_31: 'Bot tidak dapat mencari karena durasi yang diberikan tinggi. Anda perlu
+  mencari ke durasi yang lebih rendah dan ingat bahwa waktu tersisa 10 detik setelah
+  pencarian.
+
+
+  Saat ini dimainkan** {0}** menit keluar dari **{1}** menit'
+admin_32: Mohon Tunggu... Sedang mencari streaming yang sedang berlangsung.
+admin_33: Aliran Berhasil Dicari hingga {0} Menit
+admin_34: Gagal mencari aliran saat ini.
+admin_35: the voting has ended because the track has ended for which the voting was
+  provided.
+admin_36: failed to perform this action because for which track the voting was provided
+  is either ended or stopped.
+admin_37: successfully got <code>{0}</code> upvotes.
+admin_38: » added 1 upvote.
+admin_39: » removed 1 upvote.
+admin_40: upvoted.
+start_1: 'Terima kasih telah menerima saya di {0}.
+
+  {1} Saya Masih Berfungsi.
+
+
+  Untuk bantuan atau bantuan apa pun, periksa Group dan Channel Support kami.'
+start_2: 'Halo, Nama saya {0}.
+
+
+  Saya bot streaming telegram dengan beberapa fitur berguna. Platform pendukung seperti
+  Youtube, Spotify, Resso, AppleMusic , Soundcloud dll.
+
+
+  Jangan ragu untuk menambahkan saya kegroupmu.'
+start_3: 'Selamat datang di {0}
+
+
+  Saya tidak memerlukan **izin admin** untuk bekerja ( sampai diminta ).
+
+
+  Nama Pengguna Asisten:- @{1}
+
+  ID Asisten:- {2} '
+start_4: Pemilik {0}[{1}] baru saja bergabung dengan obrolan Anda.
+start_5: Anggota Pengguna Sudo {0}[{1}] baru saja bergabung dengan obrolan Anda.
+start_6: '❗️ **Diperlukan Supergroup** ️
+
+
+  Harap ubah **grup** Anda menjadi **grup super** lalu tambahkan saya kembali.
+
+
+  **Bagaimana cara membuat grup super?**
+
+  ✅ Jadikan riwayat obrolan grup Anda **terlihat** sekali.'
+help_1: 'Klik tombol di bawah untuk informasi lebih lanjut. Jika Anda menghadapi masalah
+  dalam perintah, Anda dapat menghubungi pemilik bot saya atau bertanya di Group dukungan.
+
+
+  Semua perintah dapat digunakan dengan: /'
+help_2: Hubungi saya di PM untuk bantuan.
+lang_1: '» please choose the language which you wanna set as this group''s default
+  language :'
+lang_2: language changed successfully.
+lang_3: failed to change language.
+lang_4: You're already on the same language.
+setting_1: '⚙️ **Setelan Bot Musik**
+
+
+  🖇**Group:** {0}
+
+  🔖**ID Group:** `{1}`
+
+
+  💡**Pilih tombol fungsi dari di bawah ini yang ingin Anda edit atau ubah.**'
+setting_2: '» direct : plays search queries directly.
+
+
+  » inline : returns inline buttons for choosing between video & audio.'
+setting_3: '⁉️ Apa Ini?
+
+
+  1) Langsung: Memutar kueri penelusuran secara langsung. Gunakan -v untuk memutar
+  video dalam mode langsung.
+
+
+  2) Sebaris: Mengembalikan Tombol Markup Sebaris untuk memilih antara video & audio.'
+setting_4: '⁉️ Apa Ini?
+
+
+  👥 Semua Orang: Siapa saja dapat menggunakan perintah admin (lewati, jeda, lanjutkan,
+  dll.) yang ada di grup ini.
+
+
+  🙍 Hanya Admin: Hanya admin dan pengguna yang berwenang yang dapat menggunakan perintah
+  admin .'
+setting_5: 'Tidak Ditemukan Pengguna Resmi
+
+
+  Anda dapat mengizinkan non-admin menggunakan perintah admin saya dengan /auth dan
+  menghapus dengan menggunakan /unauth'
+setting_6: '» everyone : anyone present in this group can play music here.
+
+
+  » admin only: only admins can play the music in this group.'
+setting_7: » please define channel id via /channelplay
+setting_8: when this mode is enabled, people without admin rights can use admin commands
+  after a certain amount of votes.
+setting_9: '⁉️ Apa Ini?
+
+
+  Saat diaktifkan, Bot akan menghapus pesannya setelah {0} untuk membuat obrolan Anda
+  bersih dan jelas.'
+setting_10: '⁉️ Apa Ini?
+
+
+  1) Grup: Memutar musik di grup tempat perintah diberikan .
+
+
+  2) Saluran: Memutar musik di saluran yang Anda inginkan. Atur id saluran melalui
+  /channelplay'
+setting_11: '⁉️ Apa Ini?
+
+
+  1) Semua Orang: Siapa saja yang hadir di grup ini dapat memutar musik di sini.
+
+
+  2) Hanya Admin: Hanya admin yang dapat memutar musik di grup ini.'
+setting_12: ❌ Anda tidak memiliki id saluran yang ditentukan untuk mode saluran. Silakan
+  tentukan dengan /channelplay.
+set_cb_1: Mendapatkan Panel Kualitas Audio...
+set_cb_2: Mendapatkan Panel Kualitas Video...
+set_cb_3: Mendapatkan Panel Pengguna Auth...
+set_cb_4: Mendapatkan Panel Mode Putar...
+set_cb_5: Mendapatkan Panel Mode Bersih...
+gstats_1: Mendapatkan Statistik Global, Ini bisa memakan waktu...
+gstats_2: Statistik Tidak Ditemukan.
+gstats_3: Mendapatkan 10 Teratas Global {0} di bot, Ini bisa memakan waktu lama..
+gstats_4: "**Total Kueri di Bot:** {0}\n\n{1} telah memainkan **{2}** trek hingga\
+  \ sekarang dengan jumlah **{3}** kali.\n \n**Trek {4} Teratas:**\n"
+gstats_5: '**Top {0} Obrolan {1}:**
+
+
+  '
+playcb_1: » aww, this is not for you baby.
+playcb_2: '» getting next result,
+
+
+  please wait...'
+cplay_1: 'Anda dapat memutar musik di Channel dari obrolan ini[{0}] ke channel mana
+  pun atau Channdl tertaut obrolan Anda.
+
+
+  **Untuk saluran tertaut:**
+
+  `/{1} linked`
+
+
+  * *Untuk Channel lainnya:**
+
+  `/{1} [ID Channel]`'
+cplay_2: Obrolan ini tidak memiliki channel tertaut.
+cplay_3: 'Channel Ditetapkan ke {0}
+
+
+  __ID Channel__: {1}'
+cplay_4: 'Gagal mendapatkan channel.
+
+
+  Pastikan Anda telah menambahkan bot di channel Anda dan mempromosikannya sebagai
+  admin.
+
+  Edit atau Ubah channel melalui /channelplay'
+cplay_5: Hanya Channel yang didukung.
+cplay_6: 'Anda harus menjadi **Pemilik** channel[{0}] untuk menghubungkannya dengan
+  grup ini.
+
+  **Pemilik Channel:** @{1}
+
+
+  Atau Anda dapat menautkan grup Anda ke channel itu lalu coba sambungkan dengan `/channelplay
+  linked`'
+cplay_7: » channel play disabled.
+play_1: 🔄 Memproses permintaan anda... Harap Tunggu!
+play_2: '**🏷Mode Putar Channel**
+
+
+  🔄 Memproses Kueri... Harap Tunggu!
+
+  **Saluran Tertaut:** {0}'
+play_3: Gagal Memproses permintaan anda!
+play_4: '🖇 **Admin Only Play**
+
+  Hanya Admin dan Pengguna Auth yang dapat memutar musik di grup ini.
+
+
+  Ubah mode melalui /playmode dan jika Anda sudah menjadi admin, muat ulang admincache
+  melalui /admincache'
+play_5: 'Gagal memproses file audio.
+
+
+  Ukuran File Audio Harus Kurang dari 100 mb'
+play_6: '**Batas Durasi Terlampaui**
+
+
+  **Durasi yang Diizinkan: *{0} menit
+
+  **Durasi yang Diterima:** {1} jam'
+play_7: Maaf! Bot hanya mengizinkan panggilan video dalam jumlah terbatas karena masalah
+  kelebihan CPU. Banyak obrolan lain menggunakan panggilan video sekarang. Coba beralih
+  ke audio atau coba lagi nanti
+play_8: 'Bukan Ekstensi File Video yang Valid!
+
+
+  **Format yang Didukung:** {0}'
+play_9: Ukuran File Video Harus Kurang dari 1 GiB
+play_10: '**Fitur Daftar Putar YouTube**
+
+
+  Pilih Mode di mana Anda ingin memutar seluruh Daftar Putar Youtube'
+play_11: '📎Judul: **{0}
+
+
+  ⏳Durasi:** {1} Menit'
+play_12: '**Mode Putar Spotify**
+
+
+  Diminta Oleh:- {0}'
+play_13: '**Daftar Putar Apple**
+
+
+  Diminta Oleh:- {0}'
+play_14: '**Tidak dapat memverifikasi URL.**
+
+  Bot bertanya-tanya apakah url ini milik salah satu platform berikut: Youtube, AppleMusic,
+  Spotify, Resso, dan Soundcloud.
+
+
+  Anda dapat menggunakan /stream untuk M3u8 atau Remote Links .'
+play_15: '**Live Stream Terdeteksi**
+
+
+  Sistem telah mendeteksi tautan trek Anda sebagai streaming langsung. Ingin memutar
+  streaming langsung ?'
+play_16: Gagal mengambil detail trek. Coba mainkan yang lain.
+play_17: 'Tidak dapat memainkan jenis kueri spotify ini!
+
+
+  Saya hanya dapat memutar trek, album, artis, dan daftar putar spotify'
+play_18: '**Tidak Ditemukan Obrolan Suara Aktif**
+
+
+  Untuk menggunakan force play, harus ada obrolan suara aktif yang terjadi di grup
+  Anda. **Force Play** menghentikan trek yang sedang diputar di obrolan suara dan
+  mulai memutar menelusuri trek secara instan tanpa mengganggu/mengosongkan antrean.'
+play_19: 'Queued Playlist :'
+play_20: Queued Position-
+play_21: 'added {0} tracks to queue.
+
+
+  <b>check :</b> <a href={1}>click here</a>'
+play_22: 'select the mode in which you want to play the queries inside your group
+  : {0}'
+str_1: Harap Berikan Link M3u8 atau Link Indeks.
+str_2: '✅ Aliran Valid Terverifikasi
+
+
+  Harap tunggu memproses tautan..'
+str_3: Tidak dapat melakukan streaming streaming langsung youtube. Format Langsung
+  Tidak Ditemukan
+ping_1: Pong!!!!
+ping_2: '{0} berfungsi baik dengan ping `{1}` md.
+
+
+  Waktu aktif bot adalah {2} dan telah menggunakan total {3} penyimpanan server. Beban
+  CPU sekitar {4} dengan konsumsi {5} Ram. Klien Py-Tgcalls juga memiliki ping `{6}`
+  ms yang bagus.'
+queue_1: Mohon Tunggu..Mengambil Antrian..
+queue_2: Daftar Antrian kosong. Tidak ada trek yang ditemukan
+queue_3: <u>**Trek Antrian:</u>** [Lihat Trek Antrian Lainnya Dari Sini]({0})
+queue_4: '⏳ Ditambahkan ke Antrian di **#{0}
+
+
+  💡Judul:** {1}
+
+  ⏰**Durasi:** {2}
+
+  👤**Ditambahkan Oleh:** {3}'
+queue_5: Hanya satu track di dalam antrian, Silahkan tambahkan lagi untuk check list
+queue_6: '<b>🕚 duration:</b> unknown duration stream
+
+
+  click on button below to get whole queued list.'
+queue_7: '
+
+  click on button below to get whole queued list.'
+queue_8: "<b>{0} player</b>\n\n<b>streaming:</b> {1}\n\n\U0001F517 <b>stream type:</b>\
+  \ {2}\n <b>requested by:</b> {3}\n{4}"
+stream_1: "**⳾⋆｡˚☾⋆ ValentinMusic ꨄ Player °♬ ♪ ⋆⳾** \n\n\U0001F464**Dimainkan Oleh:**\
+  \ {0}\n\U0001F4DD**Info lebih lanjut: **[Ketuk aku]({1})"
+stream_2: "**⳾⋆｡˚☾⋆ ValentinMusic ꨄ Player °♬ ♪ ⋆⳾** \n\n\U0001F464**Dimainkan Oleh:**\
+  \ {0}"
+CLOSE_BUTTON: 🗑 Tutup
+BACK_BUTTON: ⬅ Kembali
+S_B_1: 🗒 Perintah
+S_B_2: 🔧 Pengaturan
+S_B_3: 💬 Mendukung
+S_B_4: 📨 Channel
+S_B_5: ✚ Tambahkan ke Group
+S_B_6: ⚡ Repository
+S_B_7: 🜲 Pemilik Bot
+S_B_8: 🔎 Menu Perintah.
+S_B_9: ↝ support ↜
+H_B_1: Perintah Putar
+H_B_2: Perintah Admin
+H_B_3: Perintah Bot
+H_B_4: Perintah Sudo
+P_B_1: 🎵 Putar Audio
+P_B_2: 🎥 Putar Video
+P_B_3: 🎙️ Mulai Streaming
+P_B_4: 💿 Putar Playlist
+SA_B_3: 🧛 10 Pengguna Teratas
+SA_B_4: 🏷 10 Top Disini
+SA_B_5: 💡 Keseluruhan
+SA_B_6: 👤 Stats Pengguna
+SA_B_7: 🔢 10 Stats Top Global
+SA_B_8: 🤖 Stats Bot
+force_sub_text: '» To use this bot, you must join our support channel first!
+
+
+  Click the button below to join and then try again.'
+song_1: Anda dapat mengunduh Musik atau Video dari YouTube hanya dalam obrolan pribadi.
+  Silakan mulai saya dalam obrolan pribadi.
+song_2: '**Penggunaan:**
+
+
+  /song [Nama Musik] atau [Tautan YouTube]'
+song_3: Live Link Detected. Saya tidak bisa mendownload video live youtube.
+song_4: '**🔗Title:**- {0}
+
+
+  Pilih jenis yang ingin Anda unduh.'
+song_5: Bukan Tautan Youtube yang valid
+song_6: "Mendapatkan Format.. \n\nMohon Tunggu.."
+song_7: Gagal mendapatkan format yang tersedia untuk video. Silakan coba trek lain.
+song_8: 'Pengunduhan Dimulai
+
+
+  Kecepatan pengunduhan mungkin lambat. Harap tunggu..'
+song_9: 'Gagal mendownload lagu dari Youtube-DL
+
+
+  **Alasan:** {0}'
+song_10: Gagal mengunggah telegram dari server.
+song_11: 'Pengunggahan Dimulai
+
+
+  Kecepatan pengunggahan mungkin lambat. Harap tunggu sebentar..'
+ST_B_1: 🔊 Kualitas Suara
+ST_B_2: 🎥 Kualitas Video
+ST_B_3: 🎩 Pengguna Auth
+ST_B_4: 📱 Dasboard
+ST_B_5: ▶️ Mode Putar
+ST_B_6: 🏳️‍🌈 Bahasa
+ST_B_7: 🔄 Mode Bersih
+ST_B_8: '{0} Audio Kualitas Rendah'
+ST_B_9: '{0} Audio Kualitas Sedang'
+ST_B_10: '{0} Audio Berkualitas Tinggi'
+ST_B_11: '{0} Video Kualitas Rendah'
+ST_B_12: '{0} Video Kualitas Sedang'
+ST_B_13: '{0} Video Kualitas Tinggi'
+ST_B_14: ✅ Diaktifkan
+SA_B_1: 📢 10 Obrolan Teratas
+SA_B_2: 🔢 10 Lagu Teratas
+ytdl_1: '<b>Usage:</b>
+
+
+  /song or /ytdl [Song Name] or [YouTube Link]'
+ytdl_2: '<b>⚠️ Playlist Requests Disabled</b>
+
+
+  To maintain optimal bot performance and prevent server overload, playlist downloads
+  are currently disabled. Please send a single track link instead.'
+ytdl_3: '<b>» Fetching details...</b>
+
+
+  Please wait...'
+ytdl_4: <b>❌ No results found.</b>
+ytdl_5: '<b>Track:</b> {0}
+
+  <b>Duration:</b> {1}
+
+
+  <b>Choose download format:</b>'
+ytdl_6: <b>📥 Downloading audio...</b>
+ytdl_7: <b>📊 Fetching available video qualities...</b>
+ytdl_8: '<b>Track:</b> {0}
+
+
+  <b>Select Quality:</b>'
+ytdl_9: <b>📥 Downloading {0} ({1})...</b>
+ytdl_10: '<b>❌ Failed to download {0}.</b>
+
+
+  <b>Error:</b> {1}'
+lyric_1: '<b>Usage:</b>
+
+
+  /lyrics [Song Name]'
+lyric_2: <b>🔍 Searching for lyrics...</b>
+lyric_3: <b>🔍 Trying to fetch lyrics from:</b> <code>{0}</code>
+lyric_4: <b>❌ No lyrics found for this song. Please try a more specific search.</b>
+QU_B_1: 💽 Daftar Antrian
+QU_B_2: Dimainkan {0} dari {1} Menit
+sudo_1: '{0} sudah menjadi pengguna sudo.'
+sudo_2: Ditambahkan *{0}** ke Pengguna Sudo.
+sudo_3: Bukan bagian dari Sudo Bot.
+sudo_4: Dihapus dari Pengguna Sudo Bot
+sudo_5: '👑<u> **Pemilik:**</u>
+
+  '
+sudo_6: '
+
+  👨‍🚀<u> **Pengguna Sudo:**</u>
+
+  '
+sudo_7: Tidak Ada Pengguna Sudo
+sudo_8: failed.
+block_1: '{0} sudah diblokir dari bot.'
+block_2: 'Menambahkan **{0}** ke Daftar Blokir bot. Pengguna tidak akan dapat menggunakan
+  bot sekarang dalam kondisi apa pun.
+
+
+  Periksa pengguna yang diblokir: /blockedusers'
+block_3: User sudah bebas dan tidak diblokir.
+block_4: Menghapus Pengguna dari daftar blokir. Pengguna akan dapat menggunakan bot
+  sekarang.
+block_5: Tidak Ada Pengguna yang Diblokir Ditemukan
+block_6: Mendapatkan Daftar Pengguna yang Diblokir.. Harap Tunggu
+block_7: '**Pengguna yang Diblokir:**
+
+
+  '
+black_1: '**Penggunaan:**
+
+  /blacklistchat [CHAT_ID]'
+black_2: Obrolan sudah masuk daftar hitam.
+black_3: Obrolan telah berhasil masuk daftar hitam
+black_4: '**Penggunaan:**
+
+  /whitelistchat [CHAT_ID]'
+black_5: Obrolan sudah masuk daftar putih.
+black_6: Obrolan telah berhasil masuk daftar putih
+black_7: '**Obrolan yang Masuk Daftar Hitam:**
+
+
+  '
+black_8: Tidak Ada Obrolan Daftar Hitam
+black_9: » something went wrong.
+maint_1: '**Penggunaan:**
+
+  /pemeliharaan [aktifkan|nonaktifkan]'
+maint_2: Diaktifkan untuk Pemeliharaan
+maint_3: Mode Pemeliharaan Dinonaktifkan
+maint_4: » maintenance mode is already enabled.
+maint_5: » maintenance mode is already disabled.
+log_1: '**Penggunaan:**
+
+  /logger [aktifkan|nonaktifkan]'
+log_2: Logging Diaktifkan
+log_3: Logging Dinonaktifkan
+broad_1: '**Broadcast {0} Obrolan dengan {1} Pin dari Bot.**'
+broad_2: Memulai Siaran Asisten...
+broad_3: '**Siaran Asisten:**
+
+
+  '
+broad_4: 'Asisten {0} Disiarkan di {1} obrolan
+
+  '
+broad_5: '**Penggunaan**:
+
+  /siarkan [PESAN] atau [Balas Pesan]'
+broad_6: Harap berikan beberapa teks untuk disiarkan.
+broad_7: '**Broadcast {0} Pengguna.**'
+broad_8: » please provide some text to broadcast.
+server_1: » failed to get logs.
+server_2: please make sure that your heroku api key and app name are configured correctly.
+server_3: checking for available updates...
+server_4: git command error.
+server_5: invalid git repsitory.
+server_6: » bot is up-to-date.
+server_7: » bot updated successfully ! now wait for few minutes until the bot restarts
+  and push changes !
+server_8: '{0} is restarting...
+
+
+  you can start playing again after 15-20 seconds.'
+server_9: something went wrong, please check logs.
+server_10: 'an exception occured at #updater due to : <code>{0}</code>'
+server_11: » running a speedtest...
+server_12: <b>⇆ running download speedtest...</b>
+server_13: <b>⇆ running upload speedtest...</b>
+server_14: <b>↻ sharing speedtest results...</b>
+server_15: '✯ <b>speedtest results</b> ✯
+
+
+  <u><b>client :</b></u>
+
+  <b>» isp :</b> {0}
+
+  <b>» country :</b> {1}
+
+
+  <u><b>server :</b></u>
+
+  <b>» name :</b> {2}
+
+  <b>» country :</b> {3}, {4}
+
+  <b>» sponsor :</b> {5}
+
+  <b>» latency :</b> {6}
+
+  <b>» ping :</b> {7}'
+gban_1: Lu mau gban diri sendiri? Tolol!
+gban_2: Haruskah saya memblokir diri saya sendiri? Lol
+gban_3: Anda ingin memblokir pengguna sudo?
+gban_4: '{0} sudah **gbanned** dari bot.'
+gban_5: '**Menginisialisasi Larangan Global pada {0}**
+
+
+  Waktu yang Diharapkan : {1}.'
+gban_6: '**Berhasil Dibanned**
+
+
+  Banned **{0}** dari **{1}** chat.'
+gban_7: '{0} belum **gbanned **belum dari bot.'
+gban_8: '**Membatalkan pemblokiran {0}**
+
+
+  Waktu yang Diharapkan : {1}.'
+gban_9: '**UnGbanned Berhasil**
+
+
+  Unbanned **{0}** di **{1}** chat.'
+gban_10: Tidak Ditemukan Pengguna yang Di-Gban.
+gban_11: Harap tunggu sebentar.. Mengambil daftar pengguna Gbanned
+gban_12: '🙂 <b>globally banned users :</b>
+
+
+  '
+AL_1: <b>📋 Administrators in {0}:</b>
+AL_2: '<b>Owner:</b>
+
+  <b>└</b> {0}{1}'
+AL_3: '
+
+  <b>Admins:</b>'
+AL_4: » No administrators found.
+HELP_1: "<b><u>PLAY COMMANDS \U0001F3B5</u></b>\n───────────────────────────────────────────────\n\
+  - - - - - - - - - - - - - - - - - - - - - - - - - - -\n<b>/play [Name/Link] -</b>\
+  \ Start streaming audio on voice chat.\n<b>/vplay [Name/Link] -</b> Start streaming\
+  \ video on voice chat.\n<b>/playforce -</b> Force play (stops current and starts\
+  \ new track).\n<b>/pause -</b> Pause the current music stream.\n<b>/resume -</b>\
+  \ Resume the paused music stream.\n<b>/skip -</b> Skip current track to the next\
+  \ in queue.\n<b>/stop or /end -</b> Stop music and clear the entire queue.\n<b>/mute\
+  \ : </b> Mute the ongoing stream for all.\n<b>/unmute : </b> Unmute the muted stream.\n\
+  <b>/queue -</b> Show upcoming tracks in the music queue.\n<b>/shuffle -</b> Randomly\
+  \ shuffle the music queue.\n<b>/volume [1-200] : </b> Adjust the bot's volume level.\n\
+  <b>/loop [enable/disable] -</b> Toggle loop for current track.\n<b>/seek [seconds]\
+  \ -</b> Move the stream forward or backward.\n<b>/seekback [Seconds] -</b> Seeks\
+  \ the stream backward.\n<b>/speed -</b> Change playback speed (e.g., 0.5x, 1.0x,\
+  \ 2.0x).\n\n\U0001F4A1  <b>Channel Play:</b> Use <b>c</b> as prefix for channel\
+  \ play (e.g. /cplay)\n ───────────────────────────────\n"
+HELP_2: "<b><u>ADMIN & AUTHORISED USER COMMANDS \U0001F6E0️</u></b>\n───────────────────────────────────────────────\n\
+  ───────────────────────────────\n\n  <b>\U0001F464 <u>Admin Commands</u></b>\n \
+  \ <b>/settings -</b> Opens the group settings panel.\n  <b>/language or /lang -</b>\
+  \ Change the bot's language for your group.\n  <b>/refresh -</b> Refreshes the admin\
+  \ list and cache.\n  <b>/adminlist -</b> Get the current admin list of the chat.\n\
+  \  <b>/ban_ghosts -</b> Cleanup deleted accounts.\n\n  <b>\U0001F464 <u>AUTHORISED\
+  \ COMMANDS</u></b>\n  <b>/auth [User] -</b> Adds a user to authorized list of the\
+  \ group.\n  <b>/unauth [User] -</b> Removes a user from authorized list.\n  <b>/authusers\
+  \ -</b> Shows the list of authorized users.\n\n  <i>-Auth users can use admin commands\
+  \ without being an admin.</i>\n\n  <b>\U0001F916 <u>BOT COMMANDS:</u></b>\n  <b>/sudolist\
+  \ -</b> List all sudo users.\n  <b>/addsudo [User] -</b> Add a user to sudo list.\n\
+  \  <b>/rmsudo [User] -</b> Remove a user from sudo list.\n\n  <b>\U0001F464 <u>GBAN\
+  \ FUNCTION:</u></b>\n  <b>/gban [Username or Reply to a user] -</b> Gban a user\
+  \ from bot's served chat and stop him from using your bot.\n  <b>/ungban [Username\
+  \ or Reply to a user] -</b> Remove a user from Bot's gbanned List and allow him\
+  \ for using your bot\n  <b>/gbannedusers -</b> Check Gbanned Users Lists\n\n  <b>⚠️<u>BLACKLIST\
+  \ CHAT FUNCTION:</u></b>\n  <b>/blacklistchat [CHAT_ID] -</b> Blacklist any chat\
+  \ from using Music Bot\n  <b>/whitelistchat [CHAT_ID] -</b> Whitelist any blacklisted\
+  \ chat from using Music Bot\n  <b>/blacklistedchat -</b> Check all blacklisted chats.\n\
+  \n  <b>\U0001F464 <u>BLOCKED FUNCTION:</u></b>\n  <b>/block [Username or Reply to\
+  \ a user] -</b> Prevents a user from using bot commands.\n  <b>/unblock [Username\
+  \ or Reply to a user] -</b> Remove a user from Bot's Blocked List.\n  <b>/blockedusers\
+  \ -</b> Check blocked Users Lists\n\n\n  <b>\U0001F310 <u>BROADCAST COMMANDS</u></b>\n\
+  \  <b>/broadcast [Message or Reply to a Message] -</b> Broadcast any message to\
+  \ Bot's Served Chats.\n\n  <u>options for broadcast:</u>\n  <b>-pin -</b> This will\
+  \ pin your message \n  <b>-pinloud -</b> This will pin your message with loud notification\n\
+  \  <b>-user -</b> This will broadcast your message to the users who have started\
+  \ your bot.\n  <b>-assistant -</b> This will broadcast your message from assistant\
+  \ account of your bot.\n  <b>-nobot -</b> This will force your bot to not broadcast\
+  \ message\n\n  <b>Example:</b> <code>/broadcast -user -assistant -pin Hello Testing</code>\n\
+  \  ───────────────────────────────\n"
+HELP_3: '<b><u>BOT COMMANDS 🤖</u></b>
+
+  ───────────────────────────────────────────────
+
+
+  <b>/carbon [Text] -</b> Create a carbon image.
+
+  <b>/karma -</b> Karma stats.
+
+  <b>/kang -</b> Add sticker to your pack.
+
+  <b>/tr [Lang] [Text] -</b> Translate text.
+
+  <b>/q or /quotly -</b> Create a sticker quote.
+
+  <b>/sticker_id -</b> Get sticker file ID.
+
+  <b>/invite -</b> Get group invite link.
+
+
+  <b>/lyrics [Song Name] -</b> Get song lyrics.
+
+  <b>/search [Query] -</b> Search on YouTube.
+
+  <b>/ytdl or /song [Name/Link] -</b> Download YouTube audio/video.
+
+
+  <b>/id -</b> Get your user id or group id.
+
+  <b>/info [User] -</b> Get detailed user information.
+
+  <b>/ping -</b> Check bot latency and stats.
+
+  <b>/eval [Code] -</b> Evaluate Python code (Owner Only).
+
+
+  <b>/genstr -</b> Generate String Session (Pyrogram/Telethon).
+
+
+  '
+HELP_4: '<b><u>GAMING COMMANDS 🕹️</u></b>
+
+  ───────────────────────────────────────────────
+
+
+  <b>/dice -</b> Roll a random dice.
+
+  <b>/dart -</b> Throw a dart.
+
+  <b>/basketball -</b> Shoot some hoops.
+
+  <b>/bowling -</b> Play bowling.
+
+  <b>/football -</b> Play football.
+
+  <b>/slot -</b> Try your luck at slots.
+
+  <b>/ship or /couple -</b> Pick the couple of the day in your group.
+
+
+  <i>list will grow as per demand...</i>
+
+
+  '
+HELP_5: '<b><u>SUDO COMMANDS 👮</u></b>
+
+
+  <b>/activevc -</b> List active voice and videochats with counts.
+
+  <b>/speedtest -</b> Test server speed.
+
+  <b>/stats or /gstats -</b> Check bot usage statistics.
+
+  <b>/logs -</b> Get bot logs for debugging.
+
+  <b>/autoend [enable|disable] -</b> Enable Auto stream end after 3 mins if no one
+  is listening.
+
+  <b>/logger [enable / disable] -</b> Bot logs the searched queries in logger group.
+
+  <b>/maintenance [enable/disable] -</b> Toggle maintenance mode.
+
+  <b>/update -</b> Pull latest updates from Git.
+
+  <b>/vars -</b> List all config variables.
+
+  <b>/reboot or /restart -</b> Restart the bot.
+
+
+  '
+
+# --- Missing keys from en.yml ---
+search_1: "<b>➻ searching...</b>\n\nplease wait for a moment."
+search_2: "<b>Search results for:</b> {0}"
+search_3: "<b>{0}.</b> <a href='{1}'>{2}</a>\n<b>Duration:</b> {3}\n<b>Channel:</b> {4}\n\n"
+search_4: "<b>Page:</b> {0}/2"
+search_5: "<b>Result expired.</b>"
+tr_1: "<b>➻ Processing Translation...</b>\nChosen language: <b>{0}</b>"
+tr_2: "<b>✅ Translated to {0}!</b>"
+tr_3: "{0}"
+reboot_1: "<b>⚙️ System Reboot Initiated...</b>\n\nPlease wait while the bot and assistant refresh their connection for this group."
+reboot_2: "<b>✅ System Reset Complete!</b>\n\n<b>Details:</b>\n- Assistant cache purged\n- Admin hierarchy refreshed\n- Previous streams terminated\n\nYour group is now ready for a fresh session."
+sudo_help_err: "<b>🔒 Sudo Restriction</b>\n\nAccess denied. This section is reserved for the bot's Sudo Users only. Please contact the owner if you believe this is an error."
+session_1: "<b>String Session Generator</b>\n\nCancelled: {0}\nVersion: {1}"

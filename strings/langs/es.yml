@@ -1,0 +1,951 @@
+name: 🇪🇸 Español
+general_1: » Responde al mensaje de un usuario o proporciona el nombre de usuario/id
+  del usuario.
+general_2: '» Algo salió mal al procesar tu consulta.
+
+  Excepción: <code>{0}</code>'
+general_3: Eres un administrador anónimo en este chat, vuelve a la cuenta de usuario
+  para usarme.
+general_4: '» No tienes permisos para gestionar chats de video.
+
+  Recarga la caché de administradores via /reload'
+general_5: » El bot no está transmitiendo en el chat de video.
+tg_1: '<u><b>{0} descargador</b></u>
+
+
+  <b>Tamaño del archivo:</b> {1}
+
+  <b>Completado:</b> {2}
+
+  <b>Porcentaje:</b> {3}%
+
+
+  <b>Velocidad:</b> {4}/s
+
+  <b>Tiempo restante:</b> {5}'
+tg_2: 'Descargado con éxito, procesando archivo...
+
+
+  <b>Tiempo transcurrido:</b> {0}'
+tg_3: Error al descargar medios de Telegram, por favor intenta de nuevo...
+tg_4: » La descarga ya está completada.
+tg_5: » La descarga ya está completada o cancelada.
+tg_6: » Descarga cancelada.
+tg_7: '» Descarga cancelada por: {0}'
+tg_8: Error al detener la descarga.
+tg_9: Error al obtener la tarea de descarga en curso...
+call_1: » El bot requiere permiso de <b>invitar usuarios por enlace</b> para invitar
+  al asistente a tu chat.
+call_2: '<u>El asistente {0} está baneado en tu grupo/canal.</u>
+
+
+  <b>ID:</b> <code>{1}</code>
+
+  <b>Nombre:</b> {2}
+
+  <b>Nombre de usuario:</b> @{3}
+
+
+  Por favor, desbanea al asistente e intenta de nuevo.'
+call_3: 'Error al invitar al asistente {0} a tu chat.
+
+
+  Razón: <code>{1}</code>'
+call_4: 'Por favor espera...
+
+
+  Invitando al asistente {0} a tu chat...'
+call_5: 'El asistente {0} se unió con éxito.
+
+
+  Intentando iniciar la transmisión...'
+call_6: » Error al cambiar la transmisión, por favor usa /skip para cambiar la pista
+  de nuevo.
+call_7: '» Descargando la siguiente pista de la cola.
+
+
+  Por favor espera...'
+call_8: '<b>No se encontró chat de video activo.</b>
+
+
+  Por favor inicia el chat de video en tu grupo/canal e intenta de nuevo.'
+call_9: '<b>El asistente ya está en el chat de video.</b>
+
+
+  Si el asistente no está en el chat de video, por favor envía <code>/reboot</code>
+  y reproduce de nuevo.'
+call_10: '<b>Error del servidor de Telegram</b>
+
+
+  Telegram está teniendo algunos problemas internos, por favor intenta reproducir
+  de nuevo o reinicia el chat de video de tu grupo.'
+auth_1: » Solo puedes tener 25 usuarios autorizados en tu grupo.
+auth_2: » Se añadió {0} a la lista de usuarios autorizados.
+auth_3: '{0} ya está en la lista de usuarios autorizados.'
+auth_4: » Se eliminó {0} de la lista de usuarios autorizados.
+auth_5: '{0} no está en la lista de usuarios autorizados.'
+auth_6: » Obteniendo lista de usuarios autorizados...
+auth_7: '» Lista de usuarios autorizados en {0}:
+
+
+  '
+auth_8: <b>↬ Añadido por:</b>
+reload_1: '» Solo puedes actualizar la caché de administradores una vez cada 3 minutos.
+
+
+  Por favor intenta después de {0}.'
+reload_2: » Caché de administradores actualizada con éxito.
+reload_3: » Error al recargar la caché de administradores, asegúrate de que el bot
+  sea administrador en tu chat.
+reload_4: '» Por favor espera...
+
+
+  Reiniciando {0} para tu chat.'
+reload_5: 'Reiniciado con éxito {0} para tu chat.
+
+
+  Empieza a reproducir de nuevo...'
+admin_1: » ¿Recuerdas que has reanudado la transmisión?
+admin_2: "▢ Transmisión pausada\n│ \n╰─ Por: {0}"
+admin_3: » ¿Recuerdas que has pausado la transmisión?
+admin_4: "▷ Transmisión reanudada\n│ \n╰─ Por: {0}"
+admin_5: "▢ Transmisión terminada/detenida\n│ \n╰─ Por: {0}"
+admin_6: "≫ Transmisión saltada\n│ \n╰─ Por: {0}\n\n<b>» No hay más pistas en cola\
+  \ en</b> {1}, <b>saliendo del chat de video.</b>"
+admin_7: Error al cambiar la transmisión a {0}.
+admin_8: » Por favor desactiva la reproducción en bucle via <code>/loop disable</code>
+  y luego intenta saltar de nuevo.
+admin_9: Por favor usa números específicos para saltar, como 1, 2, 4...
+admin_10: 'Se necesitan al menos 2 pistas en la cola para saltar a una específica.
+
+
+  Verifica la cola con: /queue'
+admin_11: '» No hay suficientes pistas en la cola para saltar a una específica.
+
+
+  Por favor salta entre 1 y {0}'
+admin_12: '» Error al saltar a una pista específica.
+
+
+  Verifica la cola restante con: /queue'
+admin_13: '» Por favor recarga la caché de administradores via: /reload'
+admin_14: '» No tienes permisos para gestionar chats de video.
+
+
+  Recarga la caché de administradores via: /reload'
+admin_15: '» Error al barajar.
+
+
+  <b>Verifica la cola con:</b> /queue'
+admin_16: '» Cola barajada por {0}.
+
+
+  <b>Verifica la cola barajada con:</b> /queue'
+admin_17: '<b>Ejemplo:
+
+
+  /loop <code>enable</code>/<code>disable</code>
+
+  /loop <code>10</code>/<code>9</code>/<code>8</code>/<code>7</code>'
+admin_18: '» Bucle habilitado para <code>{0}</code> veces por: {1}.'
+admin_19: '» Reproducción en bucle ha sido desactivada por: {0}.'
+admin_20: '<b>Ejemplo:
+
+
+  /seek or /seekback [duración en segundos]'
+admin_21: » Por favor usa dígitos numéricos para buscar en segundos.
+admin_22: » No se puede buscar en transmisiones en vivo.
+admin_23: '» Intenta buscar con una duración menor.
+
+
+  Solicitado <b>{0}</b> de <b>{1}</b> minutos.'
+admin_24: '<b>Buscando...</b>
+
+
+  Por favor espera...'
+admin_25: '» Transmisión buscada con éxito.
+
+
+  <b>Duración:</b> {0} minutos
+
+  <b>Por:</b> {1}'
+admin_26: Error al buscar.
+admin_27: » Actualmente solo se puede controlar la velocidad de la transmisión de
+  YouTube.
+admin_28: '<b><u>Panel de control de velocidad {0}</b></u>
+
+
+  Haz clic en los botones de abajo para cambiar la velocidad de la transmisión que
+  se está reproduciendo en el chat de video.'
+admin_29: » El bot ya está reproduciendo a velocidad normal.
+admin_30: '» Por favor espera...
+
+
+  Alguien más está intentando cambiar la velocidad de la transmisión.'
+admin_31: Cambiando velocidad...
+admin_32: '» Intentando cambiar la velocidad de la transmisión en curso...
+
+
+  <b>Solicitado por:</b> {0}'
+admin_33: » Error al cambiar la velocidad de la transmisión en curso.
+admin_34: '» Se cambió la velocidad de la transmisión en curso a {0}x
+
+
+  <b>Solicitado por:</b> {1}'
+admin_35: La votación terminó porque la pista para la que se proporcionó la votación
+  ha terminado.
+admin_36: Error al realizar esta acción porque la pista para la que se proporcionó
+  la votación ha terminado o se ha detenido.
+admin_37: Se obtuvieron con éxito <code>{0}</code> votos a favor.
+admin_38: » Se añadió 1 voto a favor.
+admin_39: » Se eliminó 1 voto a favor.
+admin_40: Votado a favor.
+start_1: '{0} está activo, cariño.
+
+
+  <b>✫ Tiempo de actividad:</b> {1}'
+start_2: '<b>Hola</b> {0},
+
+
+  ๏ ¡Esto es {1}!
+
+
+  ➻ Un bot de reproducción de música en Telegram rápido y potente con características
+  increíbles.
+
+
+  <b><u>Plataformas Soportadas:</b></u> YouTube, Spotify, Resso, Apple Music y SoundCloud.
+
+  ──────────────────
+
+  <b>๏ Haz clic en el botón de ayuda para obtener información sobre mis módulos y
+  comandos.</b>'
+start_3: 'Hola {0},
+
+  esto es {1}
+
+
+  Gracias por agregarme en {2}, {3} ahora puede reproducir canciones en este chat.'
+start_4: '🎄 <b>Se requiere supergrupo</b>
+
+
+  Por favor convierte tu <b>grupo</b> a <b>supergrupo</b> y luego agrégame de nuevo.
+
+
+  <b>¿Cómo hacer un supergrupo?
+
+  </b>- Haz que el historial de chat de tu grupo sea <b>visible</b> una vez.'
+start_5: '<b>↝ Chat en lista negra ↜</b>
+
+
+  Este chat está en lista negra en la base de datos de {0}.
+
+  Solicita a un <a href={1}>usuario sudo</a> que elimine tu chat de la lista negra
+  o visita <a href={2}>el chat de soporte.</a>'
+start_6: 'ℹ️ <b><u>Información de la Pista</u></b>
+
+  - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  🏷️ <b>Título:</b> {0}
+
+
+  ⏳ <b>Duración:</b> {1} minutos
+
+  👀 <b>Vistas:</b> <code>{2}</code>
+
+  📆 <b>Publicado el:</b> {3}
+
+  📎 <b>Canal:</b> <a href={4}>{5}</a>
+
+  ─────────────── · · · · · ✦
+
+  <b>◢◤ Desarrollado por @anaavaran</b>'
+help_1: 'Elige la categoría sobre la que quieres obtener ayuda.
+
+  Pregunta sobre tus dudas en <a href={0}>chat de soporte</a>
+
+
+  Todos los comandos pueden ser usados con: <code>/</code>'
+help_2: Haz clic en el botón de abajo para obtener mi menú de ayuda en tu chat privado.
+lang_1: '» Por favor elige el idioma que deseas establecer como idioma predeterminado
+  para este grupo:'
+lang_2: Idioma cambiado con éxito.
+lang_3: Error al cambiar el idioma.
+lang_4: Ya estás en el mismo idioma.
+setting_1: '<u><b>Panel de configuración de {0}</b></u>
+
+
+  <b>ID del chat:</b> <code>{1}</code>
+
+  <b>Título del chat:</b> {2}
+
+
+  Haz clic en los botones de abajo para cambiar la configuración.'
+setting_2: '» Directo: Reproduce consultas de búsqueda directamente.
+
+
+  » En línea: Devuelve botones en línea para elegir entre video y audio.'
+setting_3: '» Todos: Cualquiera puede usar comandos de administrador [saltar, pausar,
+  reanudar, etc.] presentes en este grupo.
+
+
+  » Solo administradores: Solo los administradores y usuarios autorizados pueden usar
+  comandos de administrador.'
+setting_4: » No se encontraron usuarios autorizados.
+setting_5: '» Grupo: Reproduce música en el grupo donde se da el comando.
+
+
+  » Canal: Reproduce música en el canal que desees. Establece el ID del canal via
+  /channelplay'
+setting_6: '» Todos: Cualquier persona presente en este grupo puede reproducir música
+  aquí.
+
+
+  » Solo administradores: Solo los administradores pueden reproducir la música en
+  este grupo.'
+setting_7: » Por favor define el ID del canal via /channelplay
+setting_8: Cuando este modo está habilitado, las personas sin derechos de administrador
+  pueden usar comandos de administrador después de cierta cantidad de votos.
+setting_9: 'Los votos actuales requeridos para usar comandos de administrador son:
+  {0}'
+setting_10: El modo de votación está desactivado.
+setting_11: El conteo más bajo de votos puede ser 2. No puedes establecerlo por debajo
+  de 2
+setting_12: El conteo más alto de votos puede ser 15. No puedes establecerlo por encima
+  de 15
+set_cb_1: Obteniendo panel de usuarios autorizados...
+set_cb_2: Obteniendo panel de modo de reproducción...
+set_cb_3: Configurando cambios...
+set_cb_4: » Obteniendo lista de usuarios autorizados...
+set_cb_5: » Volviendo...
+gstats_1: 'Obteniendo estadísticas e información de {0}...
+
+
+  Puede tomar un tiempo, por favor espera...'
+gstats_2: Haz clic en los botones de abajo para verificar las estadísticas de {0}.
+gstats_3: '<b><u>Estadísticas e información de {0}:</u></b>
+
+
+  <b>Asistentes:</b> <code>{1}</code>
+
+  <Bloqueados:</b> <code>{2}</code>
+
+  <b>Chats:</b> <code>{3}</code>
+
+  <b>Usuarios:</b> <code>{4}</code>
+
+  <b>Módulos:</b> <code>{5}</code>
+
+  <b>Sudoers:</b> <code>{6}</code>
+
+
+  <b>Salida automática del asistente:</b> {7}
+
+  <b>Límite de duración de reproducción:</b> {8} minutos'
+gstats_4: Este botón es solo para sudoers.
+gstats_5: '<b><u>Estadísticas e información de {0}:</u></b>
+
+
+  <b>Módulos:</b> <code>{1}</code>
+
+  <b>Plataforma:</b> <code>{2}</code>
+
+  <b>RAM:</b> <code>{3}</code>
+
+  <b>Núcleos físicos:</b> <code>{4}</code>
+
+  <b>Núcleos totales:</b> <code>{5}</code>
+
+  <b>Frecuencia de CPU:</b> <code>{6}</code>
+
+
+  <b>Python:</b> <code>{7}</code>
+
+  <b>Pyrogram:</b> <code>{8}</code>
+
+  <b>Py-TgCalls:</b> <code>{9}</code>
+
+
+  <b>Almacenamiento disponible:</b> <code>{10} GiB</code>
+
+  <b>Almacenamiento usado:</b> <code>{11} GiB</code>
+
+  <b>Almacenamiento restante:</b> <code>{12} GiB</code>
+
+
+  <b>Chats atendidos:</b> <code>{13}</code>
+
+  <b>Usuarios atendidos:</b> <code>{14}</code>
+
+  <b>Usuarios bloqueados:</b> <code>{15}</code>
+
+  <b>Usuarios sudo:</b> <code>{16}</code>
+
+
+  <b>Tamaño total de BD:</b> <code>{17} MB</code>
+
+  <b>Almacenamiento total de BD:</b> <code>{18} MB</code>
+
+  <b>Colecciones totales de BD:</b> <code>{19}</code>
+
+  <b>Claves totales de BD:</b> <code>{20}</code>'
+playcb_1: » Ups, esto no es para ti, cariño.
+playcb_2: '» Obteniendo el siguiente resultado,
+
+
+  Por favor espera...'
+cplay_1: '» Puedes reproducir música en canales desde {0} a cualquier canal o al canal
+  vinculado de tu chat.
+
+
+  <b>Para canal vinculado:</b>
+
+  <code>/channelplay linked</code>
+
+
+  <b>Para cualquier otro canal:</b>
+
+  <code>/channelplay [ID del canal]</code>'
+cplay_2: » Este chat no tiene ningún canal vinculado.
+cplay_3: '» Canal definido como {0}.
+
+  ID del canal: <code>{1}</code>'
+cplay_4: '» Error al obtener el canal.
+
+
+  Asegúrate de haber agregado el bot en tu canal y promocionado como administrador.'
+cplay_5: Solo los canales son soportados.
+cplay_6: '» Necesitas ser el <b>propietario</b> del canal {0} para conectarlo con
+  este grupo.
+
+  <b>Propietario del canal:</b> @{1}
+
+
+  Alternativamente puedes vincular tu grupo a ese canal y luego intentar conectar
+  con <code>/channelplay linked</code>'
+cplay_7: » Reproducción por canal desactivada.
+play_1: 🎵
+play_2: '<b>➻ Modo de reproducción por canal</b>
+
+
+  Procesando, por favor espera...
+
+
+  <b>Canal vinculado:</b> {0}'
+play_3: » Error al procesar la consulta.
+play_4: '<b>Solo administradores pueden reproducir</b>
+
+  Solo los administradores de este chat pueden reproducir
+
+
+  Cambia el modo de reproducción via /playmode'
+play_5: '» Error al procesar el archivo de audio.
+
+
+  El tamaño del archivo de audio es mayor que el límite definido.'
+play_6: » Las transmisiones de más de {0} no están permitidas para reproducirse en
+  {1}
+play_7: '» No es una extensión de archivo de video válida.
+
+
+  <b>Extensiones soportadas:</b> {0}'
+play_8: » El tamaño del archivo de video debe ser menor a 2 GiB.
+play_9: '<b><u>Función de lista de reproducción de YouTube</b></u>
+
+
+  Selecciona el modo en el que deseas reproducir toda la lista de reproducción de
+  YouTube.'
+play_10: '<b>Pista:</b> {0}
+
+  <b>Duración:</b> {1} minutos'
+play_11: '<u><b>Reproductor de Spotify {0}</b></u>
+
+
+  <b>Reproducido por:</b> {1}'
+play_12: '<u><b>Reproductor de Apple Music {0}</b></u>
+
+
+  <b>Reproducido por:</b> {1}'
+play_13: '» Transmisión en vivo detectada.
+
+
+  ¿Estás seguro de que deseas reproducir esta transmisión en vivo?'
+play_14: 'Error al obtener los detalles de la pista.
+
+
+  Intenta reproducir cualquiera otra.'
+play_15: '» Error al procesar la consulta.
+
+
+  Solo puedo reproducir pistas, álbumes, artistas y listas de reproducción de Spotify.'
+play_16: 'No hay chat de voz activo.
+
+
+  Para usar reproducción forzada, debe haber un chat de voz activo.'
+play_17: Por favor activa el chat de video, no puedo transmitir URLs.
+play_18: <b>Uso:</b> /play [nombre de canción/URL de YouTube/responde a un archivo
+  de audio/video]
+play_19: 'Lista de reproducción en cola:'
+play_20: Posición en cola-
+play_21: 'Añadidas {0} pistas a la cola.
+
+
+  <b>Verificar:</b> <a href={1}>haz clic aquí</a>'
+play_22: 'Selecciona el modo en el que deseas reproducir las consultas dentro de tu
+  grupo: {0}'
+str_1: Por favor proporciona enlaces m3u8 o índice.
+str_2: '➻ Transmisión válida verificada.
+
+
+  Procesando...'
+str_3: Error al transmitir transmisión en vivo de YouTube, no se encontró formato
+  en vivo.
+ping_1: '{0} está haciendo ping...'
+ping_2: '🏓 Pong: <code>{0}ms</code>
+
+
+  <b><u>Estadísticas del Sistema:</u></b>
+
+  ↬ Tiempo de actividad: {2}
+
+  ↬ RAM: {3}
+
+  ↬ CPU: {4}
+
+  ↬ Disco: {5}
+
+  ↬ Py-TgCalls: <code>{6}ms</code>'
+queue_1: '» Obteniendo cola...
+
+
+  Por favor espera...'
+queue_2: » Cola vacía.
+queue_3: <u>» Haz clic aquí para verificar la lista de pistas en cola:</u> <a href={0}>aquí</a>
+queue_4: ' <b>Añadido a la cola en #{0}
+
+
+  Pista:</b> {1}
+
+  <b>Duración:</b> {2} minutos
+
+  <b>Solicitado por:</b> {3}'
+queue_5: 'Solo hay una pista en cola en la lista de reproducción.
+
+
+  Añade más pistas para verificar la lista.'
+queue_6: '<b>🕚 Duración:</b> Transmisión de duración desconocida
+
+
+  Haz clic en el botón de abajo para obtener toda la lista en cola.'
+queue_7: '
+
+  Haz clic en el botón de abajo para obtener toda la lista en cola.'
+queue_8: "<b>Reproductor {0}</b>\n\n\U0001F384 <b>Transmitiendo:</b> {1}\n\n\U0001F517\
+  \ <b>Tipo de transmisión:</b> {2}\n <b>Solicitado por:</b> {3}\n{4}"
+stream_1: '♬ <b>Comenzando Transmisión...</b>
+
+
+  <b>⋆ Pista:</b> <a href={0}>{1}</a>
+
+  <b>⋆ Duración:</b> {2} minutos
+
+  <b>⋆ Reproducido por:</b> {3}'
+stream_2: '♬ <b>Comenzando Transmisión...</b>
+
+
+  <b>⋆ Tipo de transmisión:</b> Transmisión en vivo
+
+  <b>⋆ Reproducido por:</b> {0}'
+CLOSE_BUTTON: • Cerrar •
+BACK_BUTTON: ◁ Atrás
+S_B_1: ✚ Añádeme
+S_B_2: 💬 Soporte
+S_B_3: ✚ Añádeme a tu grupo
+S_B_4: ℹ️ Ayuda y Comandos
+S_B_5: 🜲 Propietario
+S_B_6: 📨 Canal
+S_B_7: Código fuente
+S_B_8: ⎋ YouTube
+S_B_9: ↝ Soporte ↜
+H_B_1: Comandos de Reproducción
+H_B_2: Comandos de Admin
+H_B_3: Comandos del Bot
+H_B_4: Comandos Sudo
+P_B_1: Audio
+P_B_2: Video
+P_B_3: Transmisión en vivo
+P_B_4: Normal
+SA_B_3: 🧛 Top 10 Usuarios
+SA_B_4: 🏷 Top 10 Aquí
+SA_B_5: 💡 Estadísticas Generales
+SA_B_6: 👤 Estadísticas de Usuario
+SA_B_7: 🔢 Top 10 Global
+SA_B_8: 🤖 Estadísticas del Bot
+force_sub_text: '» Para usar este bot, ¡debes unirte primero a nuestro canal de soporte!
+
+
+  Haz clic en el botón de abajo para unirte e intenta de nuevo.'
+song_1: » Solo puedes descargar música/video de YouTube en chat privado. Por favor
+  iníciame en chat privado.
+song_2: '**Uso:**
+
+
+  /song [Nombre de canción] o [Enlace de YouTube]'
+song_3: » Enlace en vivo detectado. No puedo descargar videos de YouTube en vivo.
+song_4: '**🔘 Título:**- {0}
+
+
+  Selecciona el tipo que deseas descargar.'
+song_5: » No es un enlace de YouTube válido.
+song_6: '» Obteniendo formatos...
+
+
+  Por favor espera...'
+song_7: » Error al obtener los formatos disponibles para video. Por favor intenta
+  otra pista.
+song_8: '» Descarga iniciada...
+
+
+  La velocidad de descarga puede ser lenta. Por favor espera...'
+song_9: '» Error al descargar la canción de YouTube-DL.
+
+
+  **Razón:** {0}'
+song_10: » Error al subir a Telegram desde los servidores.
+song_11: '» Subida iniciada...
+
+
+  La velocidad de subida puede ser lenta. Por favor espera...'
+ST_B_1: Usuarios autorizados
+ST_B_2: Modo de reproducción
+ST_B_3: 🏳️‍🌈 Idioma
+ST_B_4: Modo de votación
+ST_B_5: Activado
+ST_B_6: Desactivado
+ST_B_7: Usuarios autorizados ➜
+ST_B_8: Administradores
+ST_B_9: Todos
+ST_B_10: Modo de búsqueda ➜
+ST_B_11: Directo
+ST_B_12: En línea
+ST_B_13: Comandos de admin ➜
+ST_B_14: Tipo de reproducción ➜
+SA_B_1: Estadísticas generales
+SA_B_2: General
+ytdl_1: '<b>Uso:</b>
+
+
+  /song or /ytdl [Nombre de canción] o [Enlace de YouTube]'
+ytdl_2: '<b>⚠️ Solicitudes de listas de reproducción deshabilitadas</b>
+
+
+  Para mantener el rendimiento óptimo del bot y prevenir la sobrecarga del servidor,
+  las descargas de listas de reproducción están actualmente deshabilitadas. Por favor
+  envía un enlace de una sola pista en su lugar.'
+ytdl_3: '<b>» Obteniendo detalles...</b>
+
+
+  Por favor espera...'
+ytdl_4: <b>❌ No se encontraron resultados.</b>
+ytdl_5: '<b>Pista:</b> {0}
+
+  <b>Duración:</b> {1}
+
+
+  <b>Elige el formato de descarga:</b>'
+ytdl_6: <b>📥 Descargando audio...</b>
+ytdl_7: <b>📊 Obteniendo cualidades de video disponibles...</b>
+ytdl_8: '<b>Pista:</b> {0}
+
+
+  <b>Selecciona la calidad:</b>'
+ytdl_9: <b>📥 Descargando {0} ({1})...</b>
+ytdl_10: '<b>❌ Error al descargar {0}.</b>
+
+
+  <b>Error:</b> {1}'
+lyric_1: '<b>Uso:</b>
+
+
+  /lyrics [Nombre de canción]'
+lyric_2: <b>🔍 Buscando letras...</b>
+lyric_3: <b>🔍 Intentando obtener letras de:</b> <code>{0}</code>
+lyric_4: <b>❌ No se encontraron letras para esta canción. Por favor intenta una búsqueda
+  más específica.</b>
+AL_1: <b>📋 Administradores en {0}:</b>
+AL_2: '<b>Propietario:</b>
+
+  <b>└</b> {0}{1}'
+AL_3: '
+
+  <b>Administradores:</b>'
+AL_4: » No se encontraron administradores.
+QU_B_1: Cola
+QU_B_2: ' {0} —————————— {1}'
+sudo_1: » {0} ya está en la lista de usuarios sudo.
+sudo_2: » Añadido {0} a la lista de usuarios sudo.
+sudo_3: » {0} no está en la lista de usuarios sudo.
+sudo_4: » Eliminado {0} de la lista de usuarios sudo.
+sudo_5: '<u><b>🜲 Propietario:</b></u>
+
+  '
+sudo_6: '
+
+  <u><b>✳️ Usuarios sudo:</b></u>
+
+  '
+sudo_7: » No se encontraron usuarios sudo.
+sudo_8: Error.
+block_1: » {0} ya está bloqueado del bot.
+block_2: » Añadido {0} a la lista de usuarios bloqueados.
+block_3: » {0} no está en la lista de usuarios bloqueados.
+block_4: » Eliminado {0} de la lista de usuarios bloqueados.
+block_5: » No se encontraron usuarios bloqueados.
+block_6: » Obteniendo lista de usuarios bloqueados...
+block_7: '<b>😫 Usuarios bloqueados:</b>
+
+
+  '
+black_1: '<b>Ejemplo:</b>
+
+
+  /blacklistchat [ID del chat]'
+black_2: » Este chat ya está en lista negra.
+black_3: » Añadido con éxito a los chats en lista negra.
+black_4: '<b>Ejemplo:</b>
+
+
+  /whitelistchat [ID del chat]'
+black_5: » Este chat no está en lista negra.
+black_6: » Eliminado con éxito de los chats en lista negra.
+black_7: '» Lista de chats en lista negra:
+
+
+  '
+black_8: » No hay chats en lista negra en {0}.
+black_9: » Algo salió mal.
+maint_1: '<b>Ejemplo:</b>
+
+  /maintenance [activar | desactivar]'
+maint_2: » {0} modo de mantenimiento activado.
+maint_3: » {0} modo de mantenimiento desactivado.
+maint_4: » El modo de mantenimiento ya está activado.
+maint_5: » El modo de mantenimiento ya está desactivado.
+log_1: '<b>Ejemplo:</b>
+
+  /logger [activar | desactivar]'
+log_2: Registro activado.
+log_3: Registro desactivado.
+broad_1: » Comenzando transmisión...
+broad_2: '<b>Ejemplo:</b>
+
+
+  /broadcast [mensaje o responde a un mensaje]'
+broad_3: » Mensaje transmitido a {0} chats con {1} pins desde el bot.
+broad_4: » Mensaje transmitido a {0} usuarios.
+broad_5: » Comenzando transmisión del asistente...
+broad_6: '➻ Transmisión del asistente:
+
+
+  '
+broad_7: ↬ Asistente {0} transmitió en {1} chats.
+broad_8: » Por favor proporciona algún texto para transmitir.
+server_1: » Error al obtener los registros.
+server_2: Por favor asegúrate de que tu clave API de Heroku y nombre de la aplicación
+  estén configurados correctamente.
+server_3: Buscando actualizaciones disponibles...
+server_4: Error de comando git.
+server_5: Repositorio git no válido.
+server_6: » El bot está actualizado.
+server_7: » ¡Bot actualizado con éxito! Ahora espera unos minutos hasta que el bot
+  se reinicie y aplique los cambios.
+server_8: '{0} se está reiniciando...
+
+
+  Puedes comenzar a reproducir de nuevo después de 15-20 segundos.'
+server_9: Algo salió mal, por favor verifica los registros.
+server_10: 'Ocurrió una excepción en #actualizador debido a: <code>{0}</code>'
+server_11: » Ejecutando prueba de velocidad...
+server_12: <b>⇆ Ejecutando prueba de velocidad de descarga...</b>
+server_13: <b>⇆ Ejecutando prueba de velocidad de subida...</b>
+server_14: <b>↻ Compartiendo resultados de prueba de velocidad...</b>
+server_15: '✯ <b>Resultados de prueba de velocidad</b> ✯
+
+
+  <u><b>Cliente:</b></u>
+
+  <b>» ISP:</b> {0}
+
+  <b>» País:</b> {1}
+
+
+  <u><b>Servidor:</b></u>
+
+  <b>» Nombre:</b> {2}
+
+  <b>» País:</b> {3}, {4}
+
+  <b>» Patrocinador:</b> {5}
+
+  <b>» Latencia:</b> {6}
+
+  <b>» Ping:</b> {7}'
+gban_1: ¿Por qué quieres banearte a ti mismo?
+gban_2: ¿Por qué debería banearme a mí mismo?
+gban_3: No puedes banear a mis sudoers.
+gban_4: » {0} ya está globalmente baneado del bot.
+gban_5: '» Inicializando ban global en {0}.
+
+
+  <b>Tiempo esperado:</b> {1}'
+gban_6: '<b><u>Nuevo ban global en {0}:</u></b>
+
+
+  <b>Originado desde:</b> {1} [<code>{2}</code>]
+
+  <b>Usuario:</b> {3}
+
+  <b>ID del usuario:</b> {4}
+
+
+  <b>Baneado por:</b> {5}
+
+  <b>Chats:</b> <code>{6}</code>'
+gban_7: » {0} no está globalmente baneado del bot.
+gban_8: '» Levantando ban global de {0}.
+
+
+  <b>Tiempo esperado:</b> {1}'
+gban_9: '» Ban global levantado de {0}.
+
+
+  Desbaneado en {1} chats.'
+gban_10: » Nadie está globalmente baneado del bot.
+gban_11: » Obteniendo lista de usuarios globalmente baneados...
+gban_12: '🙂 <b>Usuarios globalmente baneados:</b>
+
+
+  '
+HELP_1: '<b><u>COMANDOS DE REPRODUCCIÓN 🎵</u></b> <b>/play [Nombre/Enlace] -</b> Comenzar
+  transmisión de audio en chat de voz. <b>/vplay [Nombre/Enlace] -</b> Comenzar transmisión
+  de video en chat de voz. <b>/playforce -</b> Reproducción forzada (detiene la actual
+  e inicia una nueva pista). <b>/pause -</b> Pausar la transmisión de música actual.
+  <b>/resume -</b> Reanudar la transmisión de música pausada. <b>/skip -</b> Saltar
+  la pista actual a la siguiente en cola. <b>/stop or /end -</b> Detener la música
+  y limpiar toda la cola. <b>/mute -</b> Silenciar la transmisión actual para todos.
+  <b>/unmute -</b> Quitar el silencio de la transmisión silenciada. <b>/queue -</b>
+  Mostrar las pistas upcoming en la cola de música. <b>/shuffle -</b> Barajar aleatoriamente
+  la cola de música. <b>/volume [1-200] -</b> Ajustar el nivel de volumen del bot.
+  <b>/loop [enable/disable] -</b> Alternar bucle para la pista actual. <b>/seek [segundos]
+  -</b> Mover la transmisión hacia adelante o atrás. <b>/seekback [Segundos] -</b>
+  Buscar la transmisión hacia atrás. <b>/speed -</b> Cambiar la velocidad de reproducción
+  (ej., 0.5x, 1.0x, 2.0x). 💡  <b>Reproducción por Canal:</b> Usa <b>c</b> como prefijo
+  para reproducción por canal (ej. /cplay)
+
+  ───────────────────────────────────────────────'
+HELP_2: '<b><u>COMANDOS DE ADMIN Y USUARIOS AUTORIZADOS 🛠️</u></b> <b>👤 <u>Comandos
+  de Admin</u></b> <b>/settings -</b> Abre el panel de configuración del grupo. <b>/language
+  or /lang -</b> Cambiar el idioma del bot para tu grupo. <b>/reload -</b> Actualiza
+  la lista de admins y la caché. <b>/adminlist -</b> Obtener la lista actual de admins
+  del chat. <b>/ban_ghosts -</b> Limpiar cuentas eliminadas.
+
+  ───────────────────────────────────────────────
+
+  <b>👤 <u>COMANDOS AUTORIZADOS</u></b> <b>/auth [Usuario] -</b> Añade un usuario a
+  la lista autorizada del grupo. <b>/unauth [Usuario] -</b> Elimina un usuario de
+  la lista autorizada. <b>/authusers -</b> Muestra la lista de usuarios autorizados.
+
+  <i>-Los usuarios autorizados pueden usar comandos de admin sin ser admin.</i>
+
+  <b>🤖 <u>COMANDOS DEL BOT:</u></b> <b>/sudolist -</b> Listar todos los usuarios sudo.
+  <b>/addsudo [Usuario] -</b> Añadir un usuario a la lista sudo. <b>/rmsudo [Usuario]
+  -</b> Eliminar un usuario de la lista sudo.
+
+  <b>👤 <u>FUNCIÓN DE BAN GLOBAL:</u></b> <b>/gban [Nombre de usuario o Responde a
+  un usuario] -</b> Banear globalmente a un usuario de los chats servidos del bot.
+  <b>/ungban [Nombre de usuario o Responde a un usuario] -</b> Eliminar un usuario
+  de la Lista de Baneados Globales y permitirle usar el bot. <b>/gbannedusers -</b>
+  Ver Lista de Usuarios Baneados Globalmente.
+
+  <b>⚠️<u>FUNCIÓN DE LISTA NEGRA DE CHATS:</u></b> <b>/blacklistchat [ID_DE_CHAT]
+  -</b> Poner cualquier chat en lista negra del Bot de Música. <b>/whitelistchat [ID_DE_CHAT]
+  -</b> Quitar cualquier chat en lista negra del Bot de Música. <b>/blacklistedchat
+  -</b> Ver todos los chats en lista negra.
+
+  <b>👤 <u>FUNCIÓN DE BLOQUEADOS:</u></b> <b>/block [Nombre de usuario o Responde a
+  un usuario] -</b> Previene que un usuario use los comandos del bot. <b>/unblock
+  [Nombre de usuario o Responde a un usuario] -</b> Eliminar un usuario de la Lista
+  de Bloqueados del Bot. <b>/blockedusers -</b> Ver Lista de Usuarios Bloqueados.
+
+  <b>🌐 <u>COMANDOS DE TRANSMISIÓN</u></b> <b>/broadcast [Mensaje o Responde a un Mensaje]
+  -</b> Transmitir cualquier mensaje a los Chats Servidos del Bot.
+
+  <u>Opciones para transmitir:</u> <b>-pin -</b> Esto fijará tu mensaje. <b>-pinloud
+  -</b> Esto fijará tu mensaje con notificación audible. <b>-user -</b> Esto transmitirá
+  tu mensaje a los usuarios que han iniciado tu bot. <b>-assistant -</b> Esto transmitirá
+  tu mensaje desde la cuenta asistente de tu bot. <b>-nobot -</b> Esto forzará a tu
+  bot a no transmitir mensaje.
+
+  <b>Ejemplo:</b> <code>/broadcast -user -assistant -pin Hola Prueba</code>'
+HELP_3: '<b><u>COMANDOS DEL BOT 🤖</u></b> <b>🤖<u> Comandos del Bot</u></b>
+
+  ───────────────────────────────────────────────
+
+  <b>/karma -</b> Estadísticas de karma. <b>/lyrics [Nombre de canción] -</b> Obtener
+  letras de canciones. <b>/ping -</b> Verificar latencia y estadísticas del bot. <b>/search
+  [Consulta] -</b> Buscar en YouTube. <b>/ytdl or /song [Nombre/Enlace] -</b> Descargar
+  audio/video de YouTube.
+
+
+
+  <b>🕹️<u>Comandos de Juegos</u></b>
+
+  <b>/dice -</b> Lanzar un dado aleatorio. <b>/dart -</b> Lanzar un dardo. <b>/basketball
+  -</b> Lanzar unos aros. <b>/bowling -</b> Jugar bolos. <b>/football -</b> Jugar
+  fútbol. <b>/slots -</b> Prueba tu suerte en las tragaperras. <b>/ship or /couple
+  -</b> Elegir la pareja del día en tu grupo.
+
+
+  <b>✨<u>Comandos Extra</u></b>
+
+  <b>/commit -</b> Generar Mensajes de Commit Divertidos. <b>/carbon [Texto] -</b>
+  Crear una imagen de carbono. <b>/kang -</b> Añadir sticker a tu paquete. <b>/q or
+  /quotly -</b> Crear una cita de sticker. <b>/random [Longitud] -</b> Generar Contraseñas
+  Complejas Aleatorias. <b>/runs -</b> No sé, pruébalo tú mismo. <b>/tr [Idioma] [Texto]
+  -</b> Traducir texto.
+
+  <b>/autocorrect [Responde a un msg] -</b> Autocorregir el texto en el msg respondido.
+  <b>/eval [Código] -</b> Evaluar Código Python (Solo Propietario). <b>/id -</b> Obtener
+  tu ID de usuario o ID de grupo. <b>/info [Usuario] -</b> Obtener información detallada
+  del usuario. <b>/invite -</b> Obtener enlace de invitación del grupo. <b>/sticker_id
+  -</b> Obtener ID del archivo del sticker. <b>/tts [texto] -</b> Convertir Texto
+  a Voz.
+
+  <b>/genstr -</b> Generar Sesión de String (Pyrogram/Telethon).
+
+  <i>La lista crecerá con el tiempo...</i>'
+HELP_4: '<b><u>COMANDOS SUDO 👮</u></b> <b>/activevc -</b> Listar chats de voz y video
+  activos. <b>/speedtest -</b> Probar velocidad del servidor. <b>/stats or /gstats
+  -</b> Ver estadísticas de uso del bot. <b>/logs -</b> Obtener registros del bot
+  para depuración. <b>/autoend [enable|disable] -</b> Habilitar fin automático de
+  transmisión después de 3 mins si nadie está escuchando. <b>/logger [enable / disable]
+  -</b> El bot registra las consultas buscadas en el grupo de registros. <b>/maintenance
+  [enable/disable] -</b> Alternar modo de mantenimiento. <b>/update -</b> Obtener
+  las últimas actualizaciones de Git. <b>/vars -</b> Listar todas las variables de
+  configuración. <b>/reboot or /restart -</b> Reiniciar el bot.
+
+  ───────────────────────────────────────────────'
+
+# --- Missing keys from en.yml ---
+search_1: "<b>➻ searching...</b>\n\nplease wait for a moment."
+search_2: "<b>Search results for:</b> {0}"
+search_3: "<b>{0}.</b> <a href='{1}'>{2}</a>\n<b>Duration:</b> {3}\n<b>Channel:</b> {4}\n\n"
+search_4: "<b>Page:</b> {0}/2"
+search_5: "<b>Result expired.</b>"
+tr_1: "<b>➻ Processing Translation...</b>\nChosen language: <b>{0}</b>"
+tr_2: "<b>✅ Translated to {0}!</b>"
+tr_3: "{0}"
+reboot_1: "<b>⚙️ System Reboot Initiated...</b>\n\nPlease wait while the bot and assistant refresh their connection for this group."
+reboot_2: "<b>✅ System Reset Complete!</b>\n\n<b>Details:</b>\n- Assistant cache purged\n- Admin hierarchy refreshed\n- Previous streams terminated\n\nYour group is now ready for a fresh session."
+sudo_help_err: "<b>🔒 Sudo Restriction</b>\n\nAccess denied. This section is reserved for the bot's Sudo Users only. Please contact the owner if you believe this is an error."
+session_1: "<b>String Session Generator</b>\n\nCancelled: {0}\nVersion: {1}"

@@ -1,0 +1,11 @@
+{
+  "name": "your-app-name",
+  "version": "1.0.0",
+  "description": "Your app description",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+ 
+  }
+}

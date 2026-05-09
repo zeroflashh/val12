@@ -1,0 +1,900 @@
+name: 🇮🇳 ગુજરાતી
+general_1: ' વપરાશકર્તાના સંદેશનો જવાબ આપો અથવા વપરાશકર્તાનામ/user_id આપો. '
+general_2: ભૂલ! આદેશનો ખોટો ઉપયોગ.
+general_3: 'તમારી ક્વેરી પર પ્રક્રિયા કરતી વખતે કેટલાક **અપવાદ આવ્યા**.
+
+
+  અપવાદ પ્રકાર:- {0}'
+general_4: 'તમે આ ચેટ જૂથમાં એક અનામી એડમિન છો!
+
+  વ્યવસ્થાપક અધિકારોમાંથી વપરાશકર્તા ખાતા પર પાછા ફરો.'
+general_5: આ ક્રિયા કરવા માટે તમારે વૉઇસ ચેટ અધિકારોનું સંચાલન કરવાની સાથે એડમિન બનવાની
+  જરૂર છે.
+tg_1: 'બોટ અત્યારે ડાઉનલોડ સાથે **ઓવરલોડ** છે.
+
+
+  **આ પછી પ્રયાસ કરો:** {0} (__અપેક્ષિત સમય__)'
+tg_2: ટેલિગ્રામમાંથી મીડિયા ડાઉનલોડ કરવામાં નિષ્ફળ.
+tg_3: failed to download media from telegram, please try again...
+tg_4: » download already completed.
+tg_5: » download already completed or cancelled.
+tg_6: » download cancelled.
+tg_7: '» download cancelled by : {0}'
+tg_8: failed to stop the download.
+tg_9: failed to get the ongoing download task...
+call_1: 'બોટને તમારી ચેનલ પર સહાયક એકાઉન્ટને આમંત્રિત કરવા માટે **એડમિન** પરવાનગીની
+  જરૂર છે.
+
+
+  : /playmode દ્વારા ચેનલ પ્લેમોડને અક્ષમ કરો'
+call_2: 'સહાયક તમારા જૂથ અથવા ચેનલમાં પ્રતિબંધિત છે, કૃપા કરીને પ્રતિબંધ દૂર કરો.
+
+
+  **સહાયક વપરાશકર્તા નામ:** @{0}
+
+  **સહાયક ID:** {1}'
+call_3: 'આસિસ્ટન્ટ એકાઉન્ટને તમારી ચેટમાં આમંત્રિત કરતી વખતે અપવાદ થયો.
+
+
+  **કારણ**: {0}'
+call_4: બોટને તમારા ચેટ જૂથમાં સહાયક એકાઉન્ટને આમંત્રિત કરવા માટે **લિંક દ્વારા વપરાશકર્તાઓને
+  આમંત્રિત કરો** પરવાનગીની જરૂર છે.
+call_5: આસિસ્ટન્ટ એકાઉન્ટ 5 સેકન્ડમાં જોડાઈ જશે..કૃપા કરીને રાહ જુઓ!
+call_6: 'સહાયક એકાઉન્ટ[{0}] સફળતાપૂર્વક જોડાયા.
+
+
+  હમણાં સંગીત શરૂ કરી રહ્યાં છીએ'
+call_7: '**હાનિકારક એડમિન અધિકાર આપેલ **
+
+
+  કૃપા કરીને બોટમાંથી **પ્રતિબંધિત વપરાશકર્તાઓ** અધિકારો દૂર કરો.'
+call_8: '**હાનિકારક એડમિન અધિકાર આપેલ છે **
+
+
+  કૃપા કરીને બોટમાંથી **નવા એડમિન ઉમેરો** અધિકારો દૂર કરો.'
+call_9: '**સ્ટ્રીમ સ્વિચ કરવામાં નિષ્ફળ**
+
+  ફરીથી ટ્રૅક બદલવા માટે કૃપા કરીને /સ્કિપનો ઉપયોગ કરો.'
+call_10: પ્લેલિસ્ટમાંથી નેક્સ્ટ ટ્રેક ડાઉનલોડ કરી રહ્યું છે
+auth_1: તમારા જૂથની અધિકૃત વપરાશકર્તાઓ સૂચિ (AUL) માં તમારી પાસે ફક્ત 20 વપરાશકર્તાઓ
+  હોઈ શકે છે
+auth_2: તમારા જૂથની અધિકૃત વપરાશકર્તાઓની સૂચિમાં ઉમેરાયેલ.
+auth_3: પહેલેથી જ અધિકૃત વપરાશકર્તાઓની સૂચિમાં છે.
+auth_4: આ જૂથની અધિકૃત વપરાશકર્તાઓની સૂચિમાંથી દૂર કરેલ છે.
+auth_5: લક્ષિત વપરાશકર્તા અધિકૃત વપરાશકર્તા નથી.
+auth_6: અધિકૃત વપરાશકર્તાઓને લાવી રહ્યું છે... કૃપા કરીને રાહ જુઓ
+auth_7: '**અધિકૃત વપરાશકર્તાઓની સૂચિ[AUL]:**
+
+
+  '
+auth_8: ┗ આના દ્વારા ઉમેરાયેલ:-
+reload_1: '» you can only refresh admin cache once in 3 minutes.
+
+
+  please try after {0}.'
+reload_2: » admin cache refreshed successfully.
+reload_3: » failed to reload admin cache, make sure that the bot is admin in your
+  chat.
+reload_4: '» please wait...
+
+
+  rebooting {0} for your chat.'
+reload_5: 'successfully rebooted {0} for your chat.
+
+
+  start playing again...'
+admin_1: સંગીત પહેલેથી જ થોભાવેલું છે.
+admin_2: 🎧 વૉઇસચેટ {} દ્વારા થોભાવવામાં આવી!
+admin_3: સંગીત પહેલેથી જ ફરી શરૂ થયેલ છે.
+admin_4: 🎧 વૉઇસચેટ {} દ્વારા ફરી ચાલુ!
+admin_5: સંગીત પહેલેથી જ મ્યૂટ છે.
+admin_6: 🎧 વૉઇસચેટ {} દ્વારા મ્યૂટ કરેલ છે!
+admin_7: સંગીત પહેલેથી જ અનમ્યૂટ છે.
+admin_8: 🎧 વૉઇસચેટ {} દ્વારા અનમ્યૂટ!
+admin_9: 🎧 વૉઇસચેટ સમાપ્ત/{} દ્વારા બંધ!
+admin_10: 🎧 વૉઇસચેટ {} દ્વારા છોડવામાં આવ્યું!. કતારમાં વધુ સંગીત નથી.
+admin_11: 'સ્ટ્રીમને **{0}**માં બદલતી વખતે ભૂલ
+
+
+  કૃપા કરીને ફરીથી /સ્કિપનો ઉપયોગ કરો.'
+admin_12: સક્રિય કરેલ લૂપ પ્લેને કારણે ચોક્કસ ટ્રેક પર જવા માટે અસમર્થ. કૃપા કરીને
+  આ સુવિધાનો ઉપયોગ કરવા માટે `/loop disable` દ્વારા લૂપ પ્લેને અક્ષમ કરો.
+admin_13: મહેરબાની કરીને ચોક્કસ ટ્રેક માટે આંકડાકીય સંખ્યાઓનો ઉપયોગ કરો, જેમ કે 1,
+  2 અથવા 4 વગેરે
+admin_14: ચોક્કસ નંબર પર જવા માટે કતારમાં ઓછામાં ઓછા 2 ટ્રેકની જરૂર છે. /queue દ્વારા
+  કતાર તપાસો
+admin_15: તમારા દ્વારા આપવામાં આવેલ મૂલ્ય માટે કતારમાં પૂરતા ટ્રેક નથી. કૃપા કરીને
+  1 અને {0} વચ્ચેની સંખ્યાઓ પસંદ કરો
+admin_16: 'વિશિષ્ટ ટ્રેક પર જવા માટે નિષ્ફળ.
+
+
+  /કતાર દ્વારા ડાબી કતાર તપાસો'
+admin_17: '{0}.. કૃપા કરીને રાહ જુઓ'
+admin_18: 'એડમિન સૂચિ મળી નથી
+
+
+  કૃપા કરીને /reload દ્વારા એડમિનલિસ્ટને ફરીથી લોડ કરો'
+admin_19: 'આ કરવા માટે તમારે મેનેજ વૉઇસ ચેટ અધિકારો સાથે એડમિન બનવાની જરૂર છે.
+
+  જો તમે પહેલેથી જ એડમિન છો, તો /reload દ્વારા એડમિનકેશને ફરીથી લોડ કરો '
+admin_20: એડમિન કેશ સફળતાપૂર્વક ફરીથી લોડ થયો.
+admin_21: શફલ કરવા માટે કતારની અંદર કંઈ નથી
+admin_22: 'શફલ કરવામાં નિષ્ફળ.
+
+
+  કતાર તપાસો : /queue'
+admin_23: '**કતાર {0}** દ્વારા શફલ કરી છે
+
+
+  શફલ્ડ કતાર તપાસો : /કતાર'
+admin_24: '**ઉપયોગ:**
+
+  /લૂપ [સક્ષમ/અક્ષમ કરો] અથવા [1-10 વચ્ચેની સંખ્યા]
+
+
+  **ઉદાહરણ:** /લૂપ 5'
+admin_25: '{0} દ્વારા **{1}** વખત માટે લૂપ સક્ષમ કરેલ છે. બોટ હવે **{1}** વખત માટે
+  વૉઇસ ચેટ પર વર્તમાન વગાડતા સંગીતનું પુનરાવર્તન કરશે'
+admin_26: કૃપા કરીને લૂપ પ્લે માટે 1-10 વચ્ચેની સંખ્યાઓનો ઉપયોગ કરો
+admin_27: લૂપ પ્લે અક્ષમ કરવામાં આવ્યું છે
+admin_28: '<b><u>{0} speed control panel</b></u>
+
+
+  click on the buttons below to change the speed of currently playing stream on videochat.'
+admin_29: » bot is already playing on normal speed.
+admin_30: '» please wait...
+
+
+  someone else is trying to change the speed of the stream.'
+admin_31: changing speed...
+admin_32: '» trying to change the speed of the ongoing stream...
+
+
+  <b>requested by :</b> {0}'
+admin_33: » failed to change the speed of the ongoing stream.
+admin_34: '» changed the speed of the ongoing stream to {0}x
+
+
+  <b>requested by :</b> {1}'
+admin_35: the voting has ended because the track has ended for which the voting was
+  provided.
+admin_36: failed to perform this action because for which track the voting was provided
+  is either ended or stopped.
+admin_37: successfully got <code>{0}</code> upvotes.
+admin_38: » added 1 upvote.
+admin_39: » removed 1 upvote.
+admin_40: upvoted.
+start_1: 'મને {0} માં રાખવા બદલ આભાર.
+
+  {1} જીવંત છે.
+
+
+  કોઈપણ સહાય અથવા મદદ માટે, અમારું સમર્થન જૂથ અને ચેનલ તપાસો.'
+start_2: 'હેલો, મારું નામ {0} છે.
+
+
+  હું કેટલીક ઉપયોગી સુવિધાઓ સાથેનો ટેલિગ્રામ સ્ટ્રીમિંગ બોટ છું. YouTube, Spotify,
+  Resso, AppleMusic , Soundcloud વગેરે જેવા સપોર્ટિંગ પ્લેટફોર્મ્સ.
+
+
+  મને ઉમેરવા માટે નિઃસંકોચ  તમારા જૂથો.'
+start_3: 'સ્વાગત છે {0}
+
+
+  મને કામ કરવા માટે કોઈ **એડમિન પરવાનગી**ની જરૂર નથી ( જ્યાં સુધી પૂછવામાં ન આવે ત્યાં
+  સુધી).
+
+
+  સહાયકનું વપરાશકર્તા નામ:- @{1}
+
+  સહાયક ID:- {2}  '
+start_4: '{0}ના માલિક[{1}] હમણાં જ તમારી ચેટમાં જોડાયા છે.'
+start_5: '{0}ના સુડો વપરાશકર્તા[{1}]નો સભ્ય હમણાં જ તમારી ચેટમાં જોડાયો છે.'
+start_6: '❗️ **સુપરગ્રુપની જરૂર છે** ❗️
+
+
+  કૃપા કરીને તમારા **જૂથ**ને **સુપરગ્રુપ**માં કન્વર્ટ કરો અને પછી મને પાછો ઉમેરો.
+
+
+  **સુપરગ્રુપ કેવી રીતે બનાવશો?**
+
+  ✅  તમારા જૂથના ચેટ ઇતિહાસને એકવાર **દૃશ્યમાન** બનાવો.'
+help_1: 'વધુ માહિતી માટે નીચેના બટનો પર ક્લિક કરો. જો તમને આદેશમાં કોઈ સમસ્યા આવી
+  રહી હોય તો તમે મારા બોટ માલિકનો સંપર્ક કરી શકો છો અથવા સપોર્ટ ચેટમાં પૂછી શકો છો.
+
+
+  તમામ આદેશોનો ઉપયોગ આની સાથે કરી શકાય છે: /'
+help_2: મદદ માટે PM માં મારો સંપર્ક કરો.
+lang_1: '» please choose the language which you wanna set as this group''s default
+  language :'
+lang_2: language changed successfully.
+lang_3: failed to change language.
+lang_4: You're already on the same language.
+setting_1: '⚙️ **મ્યુઝિક બોટ સેટિંગ્સ**
+
+
+  🖇**ગ્રુપ:** {0}
+
+  🔖**ગ્રુપ આઈડી:** `{1}`
+
+
+  💡**ફંક્શન પસંદ કરો  નીચેના બટનો કે જેમાંથી તમે ફેરફાર અથવા ફેરફાર કરવા માંગો છો.**'
+setting_2: '» direct : plays search queries directly.
+
+
+  » inline : returns inline buttons for choosing between video & audio.'
+setting_3: '⁉️ આ શું છે?
+
+
+  1) ડાયરેક્ટ: સીધા શોધ ક્વેરી ચલાવે છે. ડાયરેક્ટ મોડમાં વિડિયો ચલાવવા માટે -v નો
+  ઉપયોગ કરો.
+
+
+  2) ઇનલાઇન: વિડિયો અને ઑડિયો વચ્ચે પસંદગી કરવા માટે ઇનલાઇન માર્કઅપ બટનો પરત કરે છે.'
+setting_4: '⁉️ આ શું છે?
+
+
+  👥 દરેક વ્યક્તિ: કોઈપણ વ્યક્તિ આ જૂથમાં હાજર એડમિન આદેશો (સ્કિપ, પોઝ, રિઝ્યૂમ વગેરે)
+  નો ઉપયોગ કરી શકે છે.
+
+
+  🙍 માત્ર એડમિન: માત્ર એડમિન અને અધિકૃત વપરાશકર્તાઓ જ એડમિન આદેશોનો ઉપયોગ કરી શકે
+  છે  '
+setting_5: 'કોઈ અધિકૃત વપરાશકર્તાઓ મળ્યા નથી
+
+
+  તમે કોઈપણ બિન-એડમિનને /auth દ્વારા મારા એડમિન આદેશોનો ઉપયોગ કરવાની અને /unauth નો
+  ઉપયોગ કરીને કાઢી નાખવાની મંજૂરી આપી શકો છો'
+setting_6: '» everyone : anyone present in this group can play music here.
+
+
+  » admin only: only admins can play the music in this group.'
+setting_7: » please define channel id via /channelplay
+setting_8: when this mode is enabled, people without admin rights can use admin commands
+  after a certain amount of votes.
+setting_9: '⁉️ આ શું છે?
+
+
+  જ્યારે સક્રિય થાય છે, ત્યારે બૉટ તમારી ચેટને સ્વચ્છ અને સ્પષ્ટ બનાવવા માટે {0} પછી
+  તેનો સંદેશ કાઢી નાખશે.'
+setting_10: '⁉️ આ શું છે?
+
+
+  1) જૂથ: જ્યાં આદેશ આપવામાં આવે છે તે જૂથમાં સંગીત વગાડે છે.
+
+
+  2) ચેનલ: તમને જોઈતી ચેનલમાં સંગીત વગાડે છે. /channelplay દ્વારા ચેનલ id સેટ કરો'
+setting_11: '⁉️ આ શું છે?
+
+
+  1) દરેક વ્યક્તિ: આ જૂથમાં હાજર કોઈપણ અહીં સંગીત વગાડી શકે છે.
+
+
+  2) ફક્ત એડમિન: ફક્ત એડમિન જ આ જૂથમાં સંગીત વગાડી શકે છે.'
+setting_12: ❌ તમારી પાસે ચેનલ મોડ માટે કોઈ ચેનલ id વ્યાખ્યાયિત નથી. કૃપા કરીને /channelplay
+  સાથે વ્યાખ્યાયિત કરો.
+set_cb_1: ઓડિયો ગુણવત્તા પેનલ મેળવી રહ્યું છે...
+set_cb_2: વિડિઓ ગુણવત્તા પેનલ મેળવી રહ્યું છે...
+set_cb_3: અધિકૃત વપરાશકર્તાઓ પેનલ મેળવવી...
+set_cb_4: પ્લે મોડ પેનલ મેળવી રહ્યું છે...
+set_cb_5: ક્લીન મોડ પેનલ મેળવી રહ્યું છે...
+gstats_1: વૈશ્વિક આંકડા મેળવવામાં, આમાં થોડો સમય લાગી શકે છે...
+gstats_2: કોઈ વૈશ્વિક આંકડા મળ્યા નથી.
+gstats_3: "**બોટ પર કુલ ક્વેરીઝ:** {0}\n\n{1} એ અત્યાર સુધી **{3}** વખત **{2}** ટ્રૅક\
+  \ રમ્યા છે.\n  \n**ટોચના {4} ટ્રૅક્સ:**\n"
+gstats_4: this button is only for sudoers.
+gstats_5: '<b><u>{0} stats and information:</u></b>
+
+
+  <b>modules:</b> <code>{1}</code>
+
+  <b>platform:</b> <code>{2}</code>
+
+  <b>ram:</b> <code>{3}</code>
+
+  <b>physical cores:</b> <code>{4}</code>
+
+  <b>total cores:</b> <code>{5}</code>
+
+  <b>cpu frequency:</b> <code>{6}</code>
+
+
+  <b>python:</b> <code>{7}</code>
+
+  <b>pyrogram:</b> <code>{8}</code>
+
+  <b>py-tgcalls:</b> <code>{9}</code>
+
+
+  <b>storage available:</b> <code>{10} gib</code>
+
+  <b>storage used:</b> <code>{11} gib</code>
+
+  <b>storage left:</b> <code>{12} gib</code>
+
+
+  <b>served chats:</b> <code>{13}</code>
+
+  <b>served users:</b> <code>{14}</code>
+
+  <b>blocked users:</b> <code>{15}</code>
+
+  <b>sudo users:</b> <code>{16}</code>
+
+
+  <b>total db size:</b> <code>{17} mb</code>
+
+  <b>total db storage:</b> <code>{18} mb</code>
+
+  <b>total db collections:</b> <code>{19}</code>
+
+  <b>total db keys:</b> <code>{20}</code>'
+playcb_1: આ તમારા માટે નથી! તમારું પોતાનું ગીત શોધો.
+playcb_2: આગલું પરિણામ મેળવવું
+cplay_1: "તમે આ ચેટ[{0}] થી કોઈપણ ચેનલ અથવા તમારી ચેટની લિંક કરેલ ચેનલમાં સંગીત વગાડી\
+  \ શકો છો.\n\n**લિંક કરેલ ચેનલ માટે:**\n`/{1} લિંક કરેલ`\n  n**અન્ય કોઈપણ ચેનલ માટે:**\n\
+  `/{1} [ચેનલ ID]`"
+cplay_2: આ ચેટમાં કોઈ લિંક કરેલ ચેનલ નથી.
+cplay_3: 'ચેનલ વ્યાખ્યાયિત {0}
+
+
+  __ચેનલ ID__: {1}'
+cplay_4: 'ચેનલ મેળવવામાં નિષ્ફળ.
+
+
+  ખાતરી કરો કે તમે તમારી ચેનલમાં બોટ ઉમેર્યો છે અને તેને એડમિન તરીકે પ્રમોટ કર્યો
+  છે.
+
+  /channelplay દ્વારા ચેનલ બદલો અથવા /playmode દ્વારા ચેનલ પ્લે મોડને અક્ષમ કરો'
+cplay_5: માત્ર ચેનલો જ સમર્થિત છે.
+cplay_6: 'ચેનલને આ જૂથ સાથે જોડવા માટે તમારે તેના **માલિક[{0}] બનવાની જરૂર છે.
+
+  **ચેનલના માલિક:** @{1}
+
+
+  વૈકલ્પિક રીતે તમે તમારા જૂથને લિંક કરી શકો છો  તે ચેનલ સાથે અને પછી `/ચેનલપ્લે લિંક્ડ`
+  સાથે કનેક્ટ કરવાનો પ્રયાસ કરો'
+cplay_7: » channel play disabled.
+play_1: 🔄 પ્રક્રિયા ક્વેરી... કૃપા કરીને રાહ જુઓ!
+play_2: '**🏷ચેનલ પ્લે મોડ**
+
+
+  🔄 પ્રક્રિયા ક્વેરી... કૃપા કરીને રાહ જુઓ!
+
+  **લિંક કરેલ ચેનલ:** {0}'
+play_3: ક્વેરી પર પ્રક્રિયા કરવામાં નિષ્ફળ!
+play_4: '🖇 **એડમિન્સ ઓન્લી પ્લે**
+
+  ફક્ત એડમિન્સ અને ઓથ યુઝર્સ આ ગ્રુપમાં મ્યુઝિક વગાડી શકે છે.
+
+
+  /playmode દ્વારા મોડ બદલો અને જો તમે પહેલેથી જ એડમિન છો, તો /reload દ્વારા એડમિનકેશને
+  ફરીથી લોડ કરો'
+play_5: 'ઑડિઓ ફાઇલ પર પ્રક્રિયા કરવામાં નિષ્ફળ.
+
+
+  ઑડિયો ફાઇલનું કદ 100 mb કરતાં ઓછું હોવું જોઈએ'
+play_6: '**અવધિ મર્યાદા ઓળંગાઈ ગઈ**
+
+
+  **મંજૂર અવધિ: **{0} મિનિટ(ઓ)
+
+  **પ્રાપ્ત અવધિ:** {1} કલાક'
+play_7: માફ કરશો! CPU ઓવરલોડ સમસ્યાઓને કારણે બૉટ માત્ર મર્યાદિત સંખ્યામાં વિડિયો કૉલ્સની
+  મંજૂરી આપે છે. અન્ય ઘણી ચેટ્સ અત્યારે વિડિયો કૉલનો ઉપયોગ કરી રહી છે. ઑડિયો પર સ્વિચ
+  કરવાનો પ્રયાસ કરો અથવા પછીથી ફરી પ્રયાસ કરો
+play_8: 'માન્ય વિડિઓ ફાઇલ એક્સ્ટેંશન નથી!
+
+
+  **સપોર્ટેડ ફોર્મેટ્સ:** {0}'
+play_9: વિડિયો ફાઇલનું કદ 1 GiB કરતા ઓછું હોવું જોઈએ
+play_10: '**યુટ્યુબ પ્લેલિસ્ટ સુવિધા**
+
+
+  તમે આખી યુટ્યુબ પ્લેલિસ્ટ ચલાવવા માંગો છો તે મોડ પસંદ કરો'
+play_11: '📎શીર્ષક: **{0}
+
+
+  ⏳ અવધિ:** {1} મિનિટ'
+play_12: '**Spotify Play Mode**
+
+
+  આના દ્વારા વિનંતી કરાયેલ:- {0}'
+play_13: '**Apple પ્લેલિસ્ટ**
+
+
+  આના દ્વારા વિનંતી કરાયેલ:- {0}'
+play_14: '**URL ચકાસવામાં અસમર્થ.**
+
+  જો આ url નીચેના કોઈપણ પ્લેટફોર્મનું હોય તો આશ્ચર્ય થાય છે: Youtube, AppleMusic,
+  Spotify, Resso અને Soundcloud.
+
+
+  તમે M3u8 અથવા રિમોટ લિંક્સ માટે /સ્ટ્રીમનો ઉપયોગ કરી શકો છો  '
+play_15: '**લાઇવ સ્ટ્રીમ શોધાયું**
+
+
+  સિસ્ટમને તમારી ટ્રૅક લિંક લાઇવ સ્ટ્રીમ તરીકે મળી છે. લાઇવ સ્ટ્રીમ ચલાવવા માંગો છો?'
+play_16: ટ્રેકની વિગતો મેળવવામાં નિષ્ફળ. કોઈપણ અન્ય રમવાનો પ્રયાસ કરો.
+play_17: 'આ પ્રકારની સ્પોટાઇફ ક્વેરી ચલાવવામાં અસમર્થ!
+
+
+  હું માત્ર સ્પોટાઇફ ટ્રેક્સ, આલ્બમ્સ, કલાકારો અને પ્લેલિસ્ટ્સ જ પ્લે કરી શકું છું'
+play_18: <b>usage :</b> /play [song name/youtube url/reply to a audio/video file]
+play_19: 'Queued Playlist :'
+play_20: Queued Position-
+play_21: 'added {0} tracks to queue.
+
+
+  <b>check :</b> <a href={1}>click here</a>'
+play_22: 'select the mode in which you want to play the queries inside your group
+  : {0}'
+str_1: કૃપા કરીને M3u8 લિંક્સ અથવા ઇન્ડેક્સ લિંક્સ પ્રદાન કરો.
+str_2: '✅ માન્ય સ્ટ્રીમ ચકાસાયેલ
+
+
+  કૃપા કરીને પ્રોસેસિંગ લિંકની રાહ જુઓ..'
+str_3: YouTube લાઇવ સ્ટ્રીમ્સને સ્ટ્રીમ કરવામાં અસમર્થ. કોઈ લાઇવ ફોર્મેટ મળ્યું નથી
+ping_1: પૉંગ!!!!
+ping_2: '🏓 Pong : <code>{0}ms</code>
+
+
+  <b><u>ㄖ System Stats:</u></b>
+
+  ↬ uptime: {2}
+
+  ↬ ram: {3}
+
+  ↬ cpu: {4}
+
+  ↬ disk: {5}
+
+  ↬ py-tgcalls: <code>{6}ms</code>'
+queue_1: કૃપા કરીને રાહ જુઓ..કતાર મેળવી રહ્યાં છીએ..
+queue_2: કતારની અંદર કોઈ ટ્રેક નથી.
+queue_3: <u>**કતારબદ્ધ ટ્રૅક્સ:</u>** [અહીંથી વધુ કતારબદ્ધ ટ્રૅક્સ તપાસો]({0})
+queue_4: '⏳ **#{0} પર કતારમાં ઉમેર્યું
+
+
+  💡શીર્ષક:** {1}
+
+  **⏱ અવધિ:** {2}
+
+  👤**આના દ્વારા ઉમેરાયેલ:** {3  }'
+queue_5: 'there''s only one queued track in playlist.
+
+
+  add more tracks to check list.'
+queue_6: '<b>🕚 duration:</b> unknown duration stream
+
+
+  click on button below to get whole queued list.'
+queue_7: '
+
+  click on button below to get whole queued list.'
+queue_8: "<b>{0} player</b>\n\n<b>streaming:</b> {1}\n\n\U0001F517 <b>stream type:</b>\
+  \ {2}\n <b>requested by:</b> {3}\n{4}"
+stream_1: '📡 **સ્ટ્રીમિંગ શરૂ કર્યું** 💡
+
+
+  👤**આના દ્વારા વિનંતી કરાયેલ:** {0}
+
+  🔦**માહિતી: **[અહીં]({1})'
+stream_2: '📡 **URL દ્વારા સ્ટ્રીમિંગ શરૂ કર્યું ** 💡
+
+
+  👤**આના દ્વારા વિનંતી કરવામાં આવી:** {0}'
+CLOSE_BUTTON: 🗑 બંધ
+BACK_BUTTON: ⬅ પાછળ
+S_B_1: 🗒 આદેશો
+S_B_2: 🔧 સેટિંગ્સ
+S_B_3: 📨 આધાર
+S_B_4: 📨 ચેનલ
+S_B_5: ✚ મને તમારા ગ્રુપમાં ઉમેરો
+S_B_6: 💡 ગિટ રેપો
+S_B_7: 👤 બોટ માલિક
+S_B_8: 🔎 કેવી રીતે વાપરવું? આદેશો મેનુ.
+S_B_9: ↝ support ↜
+H_B_1: પ્લે કમાન્ડ્સ
+H_B_2: એડમિન કમાન્ડ્સ
+H_B_3: બોટ કમાન્ડ્સ
+H_B_4: સુડો કમાન્ડ્સ
+P_B_1: 🎵 ઑડિયો ચલાવો
+P_B_2: 🎥 વિડિઓ ચલાવો
+P_B_3: 🏮 લાઇવ સ્ટ્રીમ શરૂ કરો
+P_B_4: 🎵 પ્લેલિસ્ટ ચલાવો
+SA_B_3: 🧛 ટોચના 10 વપરાશકર્તાઓ
+SA_B_4: 🏷 ટોચના 10 અહીં
+SA_B_5: 💡 એકંદર આંકડા
+SA_B_6: 👤 વપરાશકર્તાના આંકડા
+SA_B_7: 🔢 વૈશ્વિક ટોચના 10 આંકડા
+SA_B_8: 🤖 બોટ આંકડા
+force_sub_text: '» To use this bot, you must join our support channel first!
+
+
+  Click the button below to join and then try again.'
+song_1: તમે YouTube પરથી સંગીત અથવા વિડિયો ફક્ત ખાનગી ચેટમાં ડાઉનલોડ કરી શકો છો. કૃપા
+  કરીને મને ખાનગી ચેટમાં પ્રારંભ કરો.
+song_2: '**ઉપયોગ:**
+
+
+  /ગીત [સંગીતનું નામ] અથવા [યુટ્યુબ લિંક]'
+song_3: લાઇવ લિંક મળી. હું લાઇવ યુટ્યુબ વીડિયો ડાઉનલોડ કરી શકતો નથી.
+song_4: '**🔗શીર્ષક:**- {0}
+
+
+  તમે ડાઉનલોડ કરવા માંગો છો તે પ્રકાર પસંદ કરો.'
+song_5: માન્ય યુટ્યુબ લિંક નથી
+song_6: "ફોર્મેટ્સ મેળવી રહ્યાં છીએ.. \n\nકૃપા કરીને રાહ જુઓ.."
+song_7: વિડિઓ માટે ઉપલબ્ધ ફોર્મેટ મેળવવામાં નિષ્ફળ. કૃપા કરીને કોઈપણ અન્ય ટ્રૅકનો
+  પ્રયાસ કરો.
+song_8: 'ડાઉનલોડ શરૂ થયું
+
+
+  ડાઉનલોડ કરવાની ઝડપ ધીમી હોઈ શકે છે. કૃપા કરીને પકડી રાખો..'
+song_9: 'Youtube-DL પરથી ગીત ડાઉનલોડ કરવામાં નિષ્ફળ
+
+
+  **કારણ:** {0}'
+song_10: સર્વરમાંથી ટેલિગ્રામ પર અપલોડ કરવામાં નિષ્ફળ.
+song_11: 'અપલોડ કરવાનું શરૂ થયું
+
+
+  અપલોડ કરવાની ઝડપ ધીમી હોઈ શકે છે. કૃપા કરીને પકડી રાખો..'
+ST_B_1: 🔊 ઓડ ગુણવત્તા
+ST_B_2: 🎥 વિડિઓ ગુણવત્તા
+ST_B_3: 🎩 ઓથ વપરાશકર્તાઓ
+ST_B_4: 📱 ડેશબોર્ડ
+ST_B_5: ▶️ પ્લે મોડ
+ST_B_6: 🏳️‍🌈 ભાષા
+ST_B_7: 🔄 ક્લીન મોડ
+ST_B_8: '{0} ઓછી ગુણવત્તાનો ઑડિયો'
+ST_B_9: '{0} મધ્યમ ગુણવત્તાનો ઓડિયો'
+ST_B_10: '{0} ઉચ્ચ ગુણવત્તાનો ઓડિયો'
+ST_B_11: '{0} ઓછી ગુણવત્તાનો વિડિયો'
+ST_B_12: '{0} મધ્યમ ગુણવત્તાની વિડિઓ'
+ST_B_13: '{0} ઉચ્ચ ગુણવત્તાની વિડિઓ'
+ST_B_14: ✅ સક્ષમ
+SA_B_1: 📢 ટોપ 10 ચેટ
+SA_B_2: 🔢 ટોચના 10 ટ્રેક
+ytdl_1: '<b>Usage:</b>
+
+
+  /song or /ytdl [Song Name] or [YouTube Link]'
+ytdl_2: '<b>⚠️ Playlist Requests Disabled</b>
+
+
+  To maintain optimal bot performance and prevent server overload, playlist downloads
+  are currently disabled. Please send a single track link instead.'
+ytdl_3: '<b>» Fetching details...</b>
+
+
+  Please wait...'
+ytdl_4: <b>❌ No results found.</b>
+ytdl_5: '<b>Track:</b> {0}
+
+  <b>Duration:</b> {1}
+
+
+  <b>Choose download format:</b>'
+ytdl_6: <b>📥 Downloading audio...</b>
+ytdl_7: <b>📊 Fetching available video qualities...</b>
+ytdl_8: '<b>Track:</b> {0}
+
+
+  <b>Select Quality:</b>'
+ytdl_9: <b>📥 Downloading {0} ({1})...</b>
+ytdl_10: '<b>❌ Failed to download {0}.</b>
+
+
+  <b>Error:</b> {1}'
+lyric_1: '<b>Usage:</b>
+
+
+  /lyrics [Song Name]'
+lyric_2: <b>🔍 Searching for lyrics...</b>
+lyric_3: <b>🔍 Trying to fetch lyrics from:</b> <code>{0}</code>
+lyric_4: <b>❌ No lyrics found for this song. Please try a more specific search.</b>
+QU_B_1: queue
+QU_B_2: ' {0} —————————— {1}'
+sudo_1: » {0} is already in sudo users list.
+sudo_2: » added {0} to sudo users list.
+sudo_3: » {0} is not in sudo users list.
+sudo_4: » removed {0} from sudo users list.
+sudo_5: '<u><b>🜲 Owner :</b></u>
+
+  '
+sudo_6: '
+
+  <u><b>✳️ sudo users:</b></u>
+
+  '
+sudo_7: » no sudo users found.
+sudo_8: failed.
+block_1: » {0} is already blocked from the bot.
+block_2: » added {0} to blocked users list.
+block_3: » {0} is not in blocked users list.
+block_4: » removed {0} from blocked users list.
+block_5: » no blocked users found.
+block_6: » getting blocked users list...
+block_7: '<b>😫 blocked users :</b>
+
+
+  '
+black_1: '<b>example :</b>
+
+
+  /blacklistchat [chat id]'
+black_2: » this chat is already blacklisted.
+black_3: » successfully added to blacklisted chats.
+black_4: '<b>example :</b>
+
+
+  /whitelistchat [chat id]'
+black_5: » this chat is not blacklisted.
+black_6: » successfully removed from blacklisted chats.
+black_7: '» list of blacklisted chats :
+
+
+  '
+black_8: » no blacklisted chats on {0}.
+black_9: » something went wrong.
+maint_1: '<b>example :</b>
+
+  /maintenance [enable | disable]'
+maint_2: » {0} maintenance mode enabled.
+maint_3: » {0} maintenance mode disabled.
+maint_4: » maintenance mode is already enabled.
+maint_5: » maintenance mode is already disabled.
+log_1: '<b>example :</b>
+
+  /logger [enable | disable]'
+log_2: enabled logging.
+log_3: disabled logging.
+broad_1: » started broadcasting...
+broad_2: '<b>example :</b>
+
+
+  /broadcast [message or reply to a message]'
+broad_3: » broadcasted message to {0} chats with {1} pins from the bot.
+broad_4: » broadcasted message to {0} users.
+broad_5: » starting assistant broadcast...
+broad_6: '➻ assistant broadcast :
+
+
+  '
+broad_7: ↬ assistant {0} broadcasted in {1} chats.
+broad_8: » please provide some text to broadcast.
+server_1: » failed to get logs.
+server_2: please make sure that your heroku api key and app name are configured correctly.
+server_3: checking for available updates...
+server_4: git command error.
+server_5: invalid git repsitory.
+server_6: » bot is up-to-date.
+server_7: » bot updated successfully ! now wait for few minutes until the bot restarts
+  and push changes !
+server_8: '{0} is restarting...
+
+
+  you can start playing again after 15-20 seconds.'
+server_9: something went wrong, please check logs.
+server_10: 'an exception occured at #updater due to : <code>{0}</code>'
+server_11: » running a speedtest...
+server_12: <b>⇆ running download speedtest...</b>
+server_13: <b>⇆ running upload speedtest...</b>
+server_14: <b>↻ sharing speedtest results...</b>
+server_15: '✯ <b>speedtest results</b> ✯
+
+
+  <u><b>client :</b></u>
+
+  <b>» isp :</b> {0}
+
+  <b>» country :</b> {1}
+
+
+  <u><b>server :</b></u>
+
+  <b>» name :</b> {2}
+
+  <b>» country :</b> {3}, {4}
+
+  <b>» sponsor :</b> {5}
+
+  <b>» latency :</b> {6}
+
+  <b>» ping :</b> {7}'
+gban_1: » why did you wanna gban yourself baby ?
+gban_2: » why should i gban myself ?
+gban_3: » you can't gban my sudoers.
+gban_4: » {0} is already globally banned from the bot.
+gban_5: '» initializing global ban on {0}.
+
+
+  <b>time expected :</b> {1}'
+gban_6: '<b><u>new global ban on {0} :</u></b>
+
+
+  <b>originated from :</b> {1} [<code>{2}</code>]
+
+  <b>user :</b> {3}
+
+  <b>user id :</b> {4}
+
+
+  <b>banned by :</b> {5}
+
+  <b>chats :</b> <code>{6}</code>'
+gban_7: » {0} is not gbanned from the bot.
+gban_8: '» lifting global ban from {0}.
+
+
+  <b>expected time :</b> {1}'
+gban_9: '» lifted global ban from {0}.
+
+
+  unbanned in {1} chats.'
+gban_10: » no one is globally banned from the bot.
+gban_11: » fetching gbanned users list...
+gban_12: '🙂 <b>globally banned users :</b>
+
+
+  '
+AL_1: <b>📋 Administrators in {0}:</b>
+AL_2: '<b>Owner:</b>
+
+  <b>└</b> {0}{1}'
+AL_3: '
+
+  <b>Admins:</b>'
+AL_4: » No administrators found.
+HELP_1: "<b><u>PLAY COMMANDS \U0001F3B5</u></b>\n───────────────────────────────────────────────\n\
+  - - - - - - - - - - - - - - - - - - - - - - - - - - -\n<b>/play [Name/Link] -</b>\
+  \ Start streaming audio on voice chat.\n<b>/vplay [Name/Link] -</b> Start streaming\
+  \ video on voice chat.\n<b>/playforce -</b> Force play (stops current and starts\
+  \ new track).\n<b>/pause -</b> Pause the current music stream.\n<b>/resume -</b>\
+  \ Resume the paused music stream.\n<b>/skip -</b> Skip current track to the next\
+  \ in queue.\n<b>/stop or /end -</b> Stop music and clear the entire queue.\n<b>/mute\
+  \ : </b> Mute the ongoing stream for all.\n<b>/unmute : </b> Unmute the muted stream.\n\
+  <b>/queue -</b> Show upcoming tracks in the music queue.\n<b>/shuffle -</b> Randomly\
+  \ shuffle the music queue.\n<b>/volume [1-200] : </b> Adjust the bot's volume level.\n\
+  <b>/loop [enable/disable] -</b> Toggle loop for current track.\n<b>/seek [seconds]\
+  \ -</b> Move the stream forward or backward.\n<b>/seekback [Seconds] -</b> Seeks\
+  \ the stream backward.\n<b>/speed -</b> Change playback speed (e.g., 0.5x, 1.0x,\
+  \ 2.0x).\n\n\U0001F4A1  <b>Channel Play:</b> Use <b>c</b> as prefix for channel\
+  \ play (e.g. /cplay)\n ───────────────────────────────\n"
+HELP_2: "<b><u>ADMIN & AUTHORISED USER COMMANDS \U0001F6E0️</u></b>\n───────────────────────────────────────────────\n\
+  ───────────────────────────────\n\n  <b>\U0001F464 <u>Admin Commands</u></b>\n \
+  \ <b>/settings -</b> Opens the group settings panel.\n  <b>/language or /lang -</b>\
+  \ Change the bot's language for your group.\n  <b>/refresh -</b> Refreshes the admin\
+  \ list and cache.\n  <b>/adminlist -</b> Get the current admin list of the chat.\n\
+  \  <b>/ban_ghosts -</b> Cleanup deleted accounts.\n\n  <b>\U0001F464 <u>AUTHORISED\
+  \ COMMANDS</u></b>\n  <b>/auth [User] -</b> Adds a user to authorized list of the\
+  \ group.\n  <b>/unauth [User] -</b> Removes a user from authorized list.\n  <b>/authusers\
+  \ -</b> Shows the list of authorized users.\n\n  <i>-Auth users can use admin commands\
+  \ without being an admin.</i>\n\n  <b>\U0001F916 <u>BOT COMMANDS:</u></b>\n  <b>/sudolist\
+  \ -</b> List all sudo users.\n  <b>/addsudo [User] -</b> Add a user to sudo list.\n\
+  \  <b>/rmsudo [User] -</b> Remove a user from sudo list.\n\n  <b>\U0001F464 <u>GBAN\
+  \ FUNCTION:</u></b>\n  <b>/gban [Username or Reply to a user] -</b> Gban a user\
+  \ from bot's served chat and stop him from using your bot.\n  <b>/ungban [Username\
+  \ or Reply to a user] -</b> Remove a user from Bot's gbanned List and allow him\
+  \ for using your bot\n  <b>/gbannedusers -</b> Check Gbanned Users Lists\n\n  <b>⚠️<u>BLACKLIST\
+  \ CHAT FUNCTION:</u></b>\n  <b>/blacklistchat [CHAT_ID] -</b> Blacklist any chat\
+  \ from using Music Bot\n  <b>/whitelistchat [CHAT_ID] -</b> Whitelist any blacklisted\
+  \ chat from using Music Bot\n  <b>/blacklistedchat -</b> Check all blacklisted chats.\n\
+  \n  <b>\U0001F464 <u>BLOCKED FUNCTION:</u></b>\n  <b>/block [Username or Reply to\
+  \ a user] -</b> Prevents a user from using bot commands.\n  <b>/unblock [Username\
+  \ or Reply to a user] -</b> Remove a user from Bot's Blocked List.\n  <b>/blockedusers\
+  \ -</b> Check blocked Users Lists\n\n\n  <b>\U0001F310 <u>BROADCAST COMMANDS</u></b>\n\
+  \  <b>/broadcast [Message or Reply to a Message] -</b> Broadcast any message to\
+  \ Bot's Served Chats.\n\n  <u>options for broadcast:</u>\n  <b>-pin -</b> This will\
+  \ pin your message \n  <b>-pinloud -</b> This will pin your message with loud notification\n\
+  \  <b>-user -</b> This will broadcast your message to the users who have started\
+  \ your bot.\n  <b>-assistant -</b> This will broadcast your message from assistant\
+  \ account of your bot.\n  <b>-nobot -</b> This will force your bot to not broadcast\
+  \ message\n\n  <b>Example:</b> <code>/broadcast -user -assistant -pin Hello Testing</code>\n\
+  \  ───────────────────────────────\n"
+HELP_3: '<b><u>BOT COMMANDS 🤖</u></b>
+
+  ───────────────────────────────────────────────
+
+
+  <b>/carbon [Text] -</b> Create a carbon image.
+
+  <b>/karma -</b> Karma stats.
+
+  <b>/kang -</b> Add sticker to your pack.
+
+  <b>/tr [Lang] [Text] -</b> Translate text.
+
+  <b>/q or /quotly -</b> Create a sticker quote.
+
+  <b>/sticker_id -</b> Get sticker file ID.
+
+  <b>/invite -</b> Get group invite link.
+
+
+  <b>/lyrics [Song Name] -</b> Get song lyrics.
+
+  <b>/search [Query] -</b> Search on YouTube.
+
+  <b>/ytdl or /song [Name/Link] -</b> Download YouTube audio/video.
+
+
+  <b>/id -</b> Get your user id or group id.
+
+  <b>/info [User] -</b> Get detailed user information.
+
+  <b>/ping -</b> Check bot latency and stats.
+
+  <b>/eval [Code] -</b> Evaluate Python code (Owner Only).
+
+
+  <b>/genstr -</b> Generate String Session (Pyrogram/Telethon).
+
+
+  '
+HELP_4: '<b><u>GAMING COMMANDS 🕹️</u></b>
+
+  ───────────────────────────────────────────────
+
+
+  <b>/dice -</b> Roll a random dice.
+
+  <b>/dart -</b> Throw a dart.
+
+  <b>/basketball -</b> Shoot some hoops.
+
+  <b>/bowling -</b> Play bowling.
+
+  <b>/football -</b> Play football.
+
+  <b>/slot -</b> Try your luck at slots.
+
+  <b>/ship or /couple -</b> Pick the couple of the day in your group.
+
+
+  <i>list will grow as per demand...</i>
+
+
+  '
+HELP_5: '<b><u>SUDO COMMANDS 👮</u></b>
+
+
+  <b>/activevc -</b> List active voice and videochats with counts.
+
+  <b>/speedtest -</b> Test server speed.
+
+  <b>/stats or /gstats -</b> Check bot usage statistics.
+
+  <b>/logs -</b> Get bot logs for debugging.
+
+  <b>/autoend [enable|disable] -</b> Enable Auto stream end after 3 mins if no one
+  is listening.
+
+  <b>/logger [enable / disable] -</b> Bot logs the searched queries in logger group.
+
+  <b>/maintenance [enable/disable] -</b> Toggle maintenance mode.
+
+  <b>/update -</b> Pull latest updates from Git.
+
+  <b>/vars -</b> List all config variables.
+
+  <b>/reboot or /restart -</b> Restart the bot.
+
+
+  '
+
+# --- Missing keys from en.yml ---
+search_1: "<b>➻ searching...</b>\n\nplease wait for a moment."
+search_2: "<b>Search results for:</b> {0}"
+search_3: "<b>{0}.</b> <a href='{1}'>{2}</a>\n<b>Duration:</b> {3}\n<b>Channel:</b> {4}\n\n"
+search_4: "<b>Page:</b> {0}/2"
+search_5: "<b>Result expired.</b>"
+tr_1: "<b>➻ Processing Translation...</b>\nChosen language: <b>{0}</b>"
+tr_2: "<b>✅ Translated to {0}!</b>"
+tr_3: "{0}"
+reboot_1: "<b>⚙️ System Reboot Initiated...</b>\n\nPlease wait while the bot and assistant refresh their connection for this group."
+reboot_2: "<b>✅ System Reset Complete!</b>\n\n<b>Details:</b>\n- Assistant cache purged\n- Admin hierarchy refreshed\n- Previous streams terminated\n\nYour group is now ready for a fresh session."
+sudo_help_err: "<b>🔒 Sudo Restriction</b>\n\nAccess denied. This section is reserved for the bot's Sudo Users only. Please contact the owner if you believe this is an error."
+session_1: "<b>String Session Generator</b>\n\nCancelled: {0}\nVersion: {1}"

@@ -1,0 +1,463 @@
+name : 🇺🇸 English
+
+
+general_1 : "» reply to a user's message or give username/user id."
+general_2 : "» something went wrong while processing your query.\n\nexception : <code>{0}</code>"
+general_3 : "you're an anonymous admin in this chat, revert back to user account for using me."
+general_4 : "» you don't have permissions to manage video chats.\n\nreload admin cache via /reload"
+general_5 : "» bot isn't streaming on videochat."
+
+tg_1 : "<u><b>{0} downloader</b></u>\n\n<b>file size :</b> {1}\n<b>completed :</b> {2}\n<b>percentage :</b> {3}%\n\n<b>speed :</b> {4}/s\n<b>eta :</b> {5}"
+tg_2 : "successfully downloaded, processing file...\n\n<b>time elapsed :</b> {0}"
+tg_3 : "failed to download media from telegram, please try again..."
+tg_4 : "» download already completed."
+tg_5 : "» download already completed or cancelled."
+tg_6 : "» download cancelled."
+tg_7 : "» download cancelled by : {0}"
+tg_8 : "failed to stop the download."
+tg_9 : "failed to get the ongoing download task..."
+
+call_1 : "» bot requires <b>invite users via link</b> permission to invite assistant to your chat."
+call_2 : "<u>{0} assistant is banned in your group/channel.</u>\n\n<b>id :</b> <code>{1}</code>\n<b>name :</b> {2}\n<b>username :</b> @{3}\n\nplease unban the assistant and try again."
+call_3 : "failed to invite {0} assistant to your chat.\n\nreason : <code>{1}</code>"
+call_4 : "please wait...\n\ninviting {0} assistant to your chat..."
+call_5 : "{0} assistant joined successfully.\n\ntrying to start stream..."
+call_6 : "» failed to switch stream, please use /skip to change the track again."
+call_7 : "» downloading next track from queue.\n\nplease hold on..."
+call_8 : "<b>No active videochat found.</b>\n\nPlease start videochat in your group/channel and try again."
+call_9 : "<b>Assistant already in videochat.</b>\n\nif assistant is not in videochat, please send <code>/reboot</code> and play again."
+call_10 : "<b>Telegram server error</b>\n\ntelegram is having some internal problems, please try playing again or restart the videochat of your group."
+
+auth_1 : "» you can only have 25 authorized users in your group."
+auth_2 : "» added {0} to authorized users list."
+auth_3 : "{0} is already in authorized users list."
+auth_4 : "» removed {0} from authorized users list."
+auth_5 : "{0} is not in authorized users list."
+auth_6 : "» fetching authorized users list..."
+auth_7 : "» list of authorized users in {0} :\n\n"
+auth_8 : "<b>↬ added by :</b>"
+
+reload_1 : "» you can only refresh admin cache once in 3 minutes.\n\nplease try after {0}."
+reload_2 : "» admin cache refreshed successfully."
+reload_3 : "» failed to reload admin cache, make sure that the bot is admin in your chat."
+reload_4 : "» please wait...\n\nrebooting {0} for your chat."
+reload_5 : "successfully rebooted {0} for your chat.\n\nstart playing again..."
+
+admin_1 : "» did you remember that you've resumed the stream ?"
+admin_2 : "▢ stream paused\n│ \n╰─ by: {0} "
+admin_3 : "» did you remember that you've paused the stream ?"
+admin_4 : "▷ stream resumed\n│ \n╰─ by: {0} "
+admin_5 : "▢ stream ended/stopped\n│ \n╰─by: {0} "
+admin_6 : "≫ stream skipped\n│ \n╰─ by: {0} \n\n<b>» no more queued tracks in</b> {1}, <b>leaving videochat.</b>"
+admin_7 : "error while changing stream to {0}."
+admin_8 : "» please disable loop play via <code>/loop disable</code> and then try to skip again."
+admin_9 : "please use specific numbers for skip, like 1, 2, 4..."
+admin_10 : "atleast 2 tracks needed in queue for specific skip.\n\ncheck the queue by : /queue"
+admin_11 : "» not enough tracks in queue for specific skip.\n\nplease skip between 1 and {0}"
+admin_12 : "» failed to skip to specific track.\n\ncheck left queue by : /queue"
+admin_13 : "» please reload admin cache via : /reload"
+admin_14 : "» you don't have permissions to manage video chats.\n\nreload admin cache via : /reload"
+admin_15 : "» failed to shuffle.\n\n<b>check queue by :</b> /queue"
+admin_16 : "» queue shuffled by {0}.\n\n<b>check shuffled queue by :</b> /queue"
+admin_17 : "<b>example :</b>\n\n/loop <code>enable</code>/<code>disable</code>\n/loop <code>10</code>/<code>9</code>/<code>8</code>/<code>7</code>"
+admin_18 : "» loop enabled for <code>{0}</code> times by : {1}."
+admin_19 : "» loop play has been disabled by : {0}."
+admin_20 : "<b>example :</b>\n\n/seek or /seekback [duration in seconds]"
+admin_21 : "» please use numeric digits for seeking in seconds."
+admin_22 : "» live streams can't be seeked."
+admin_23 : "» try seeking with a lower duration.\n\nrequested <b>{0}</b> out of <b>{1}</b> minutes."
+admin_24 : "<b>seeking...</b>\n\nplease hold on..."
+admin_25 : "» stream successfully seeked.\n\n<b>duration :</b> {0} minutes\n<b>by :</b> {1}"
+admin_26 : "failed to seek."
+admin_27 : "» only youtube stream's speed can be controlled currently."
+admin_28 : "<b><u>{0} speed control panel</b></u>\n\nclick on the buttons below to change the speed of currently playing stream on videochat."
+admin_29 : "» bot is already playing on normal speed."
+admin_30 : "» please wait...\n\nsomeone else is trying to change the speed of the stream."
+admin_31 : "changing speed..."
+admin_32 : "» trying to change the speed of the ongoing stream...\n\n<b>requested by :</b> {0}"
+admin_33 : "» failed to change the speed of the ongoing stream."
+admin_34 : "» changed the speed of the ongoing stream to {0}x\n\n<b>requested by :</b> {1}"
+admin_35 : "the voting has ended because the track has ended for which the voting was provided."
+admin_36 : "failed to perform this action because for which track the voting was provided is either ended or stopped."
+admin_37 : "successfully got <code>{0}</code> upvotes."
+admin_38 : "» added 1 upvote."
+admin_39 : "» removed 1 upvote."
+admin_40 : "upvoted."
+
+start_1 : "{0} is alive baby.\n\n<b>✫ uptime :</b> {1}"
+start_2 : "<b>hey</b> {0}, \n\n๏ this is {1} !\n\n➻ a fast & powerful telegram music player bot with some awesome features.\n\n<b><u>Supported Platforms :</b></u> youtube, spotify, resso, apple music and soundcloud.\n──────────────────\n<b>๏ click on the help button to get information about my modules and commands.</b>"
+start_3 : "hey {0},\nthis is {1}\n\nthanks for adding me in {2}, {3} can now play songs in this chat."
+start_4 : "🎄 <b>supergroup needed</b> \n\nplease convert your <b>group</b> to <b>supergroup</b> and then add me again.\n\n<b>how to make supergroup ?</b>\n- make your group's chat history <b>visible</b> once."
+start_5 : "<b>↝ blacklisted chat ↜</b>\n\nthis chat is blacklisted on {0} database.\nrequest a <a href={1}>sudo user</a> to unblacklist your chat or visit <a href={2}>support chat.</a>"
+start_6 : "ℹ️ <b><u>Track Information</u></b> \n- - - - - - - - - - - - - - - - - - - - - - - - - - -\n🏷️ <b>title :</b> {0}\n\n⏳ <b>duration :</b> {1} minutes\n👀 <b>views :</b> <code>{2}</code>\n📆 <b>published on :</b> {3}\n📎 <b>channel :</b> <a href={4}>{5}</a>\n─────────────── ·﻿ ﻿ ﻿· ﻿ ·﻿ ﻿ ﻿· ﻿✦\n<b>◢◤ powered by @anaavaran</b>"
+
+help_1 : "choose the category for which you wanna get help.\nask your doubts at <a href={0}>support chat</a>\n\nall commands can be used with : <code>/</code>"
+help_2 : "click on the button below to get my help menu in your pm."
+
+lang_1 : "» please choose the language which you wanna set as this group's default language :"
+lang_2 : "language changed successfully."
+lang_3 : "failed to change language."
+lang_4 : "You're already on the same language."
+
+setting_1 : "<u><b>{0} settings panel</b></u>\n\n<b>chat id :</b> <code>{1}</code>\n<b>chat title :</b> {2}\n\nclick on the buttons below for changing settings."
+setting_2 : "» direct : plays search queries directly.\n\n» inline : returns inline buttons for choosing between video & audio."
+setting_3 : "» everyone : anyone can use admin commands [skip, pause, resume etc.] present in this group.\n\n» admin only : only admins and authorized users can use admin commands."
+setting_4 : "» no authorized users found."
+setting_5 : "» group : plays music in the group where the command is given.\n\n» channel : plays music in the channel you want. set channel id via /channelplay"
+setting_6 : "» everyone : anyone present in this group can play music here.\n\n» admin only: only admins can play the music in this group."
+setting_7 : "» please define channel id via /channelplay"
+setting_8 : "when this mode is enabled, people without admin rights can use admin commands after a certain amount of votes."
+setting_9 : "current upvotes required for using admin commands are : {0}"
+setting_10 : "voting mode is disabled."
+setting_11 : "lowest upvotes count can be 2. you can't set below 2"
+setting_12 : "highest upvotes count can be 15. you can't set above 15"
+
+set_cb_1 : "getting auth users panel..."
+set_cb_2 : "getting play mode panel..."
+set_cb_3 : "setting up changes..."
+set_cb_4 : "» fetching authorized users list..."
+set_cb_5 : "» getting back..."
+
+gstats_1 : "getting {0} stats and information...\n\nit may take a while, please hold on..."
+gstats_2 : "click on the buttons below to check the stats of {0}."
+gstats_3 : "<b><u>{0} stats and information:</u></b>\n\n<b>assistants:</b> <code>{1}</code>\n<b>blocked:</b> <code>{2}</code>\n<b>chats:</b> <code>{3}</code>\n<b>users:</b> <code>{4}</code>\n<b>modules:</b> <code>{5}</code>\n<b>sudoers:</b> <code>{6}</code>\n\n<b>auto leaving assistant:</b> {7}\n<b>play duration limit:</b> {8} minutes"
+gstats_4 : "this button is only for sudoers."
+gstats_5 : "<b><u>{0} stats and information:</u></b>\n\n<b>modules:</b> <code>{1}</code>\n<b>platform:</b> <code>{2}</code>\n<b>ram:</b> <code>{3}</code>\n<b>physical cores:</b> <code>{4}</code>\n<b>total cores:</b> <code>{5}</code>\n<b>cpu frequency:</b> <code>{6}</code>\n\n<b>python:</b> <code>{7}</code>\n<b>pyrogram:</b> <code>{8}</code>\n<b>py-tgcalls:</b> <code>{9}</code>\n\n<b>storage available:</b> <code>{10} gib</code>\n<b>storage used:</b> <code>{11} gib</code>\n<b>storage left:</b> <code>{12} gib</code>\n\n<b>served chats:</b> <code>{13}</code>\n<b>served users:</b> <code>{14}</code>\n<b>blocked users:</b> <code>{15}</code>\n<b>sudo users:</b> <code>{16}</code>\n\n<b>total db size:</b> <code>{17} mb</code>\n<b>total db storage:</b> <code>{18} mb</code>\n<b>total db collections:</b> <code>{19}</code>\n<b>total db keys:</b> <code>{20}</code>"
+
+playcb_1 : "» aww, this is not for you baby."
+playcb_2 : "» getting next result,\n\nplease wait..."
+
+cplay_1 : "» you can play music in channels from {0} to any channel or your chat's linked channel.\n\n<b>for linked channel:</b>\n<code>/channelplay linked</code>\n\n<b>for any other channel:</b>\n<code>/channelplay [channel id]</code>"
+cplay_2 : "» this chat don't have any linked channel."
+cplay_3 : "» channel defined to {0}.\nchannel id: <code>{1}</code>"
+cplay_4 : "» failed to get channel.\n\nmake sure you've added the bot in your channel and promoted as admin."
+cplay_5 : "only channels are supported."
+cplay_6 : "» you need to be the <b>owner</b> of the channel {0} to connect it with this group.\n<b>channel's owner:</b> @{1}\n\nalternatively you can link your group to that channel and then try connnecting with <code>/channelplay linked</code>"
+cplay_7 : "» channel play disabled."
+
+play_1 : "🎵"
+play_2 : "<b>➻ processing...</b>\n\nplease wait...\n\n<b>chat :</b> {0}"
+search_1 : "<b>➻ searching...</b>\n\nplease wait for a moment."
+search_2 : "<b>Search results for:</b> {0}"
+search_3 : "<b>{0}.</b> <a href='{1}'>{2}</a>\n<b>Duration:</b> {3}\n<b>Channel:</b> {4}\n\n"
+search_4 : "<b>Page:</b> {0}/2"
+search_5 : "<b>Result expired.</b>"
+tr_1 : "<b>➻ Processing Translation...</b>\nChosen language: <b>{0}</b>"
+tr_2 : "<b>✅ Translated to {0}!</b>"
+tr_3 : "{0}"
+AL_1 : "<b>📋 List of administrators in {0}:</b>"
+AL_2 : "<b>👤 Owner:</b>\n{0}{1}"
+AL_3 : "<b>👥 Administrators:</b>"
+AL_4 : "<b>❌ No administrators found.</b>"
+reboot_1 : "<b>⚙️ System Reboot Initiated...</b>\n\nPlease wait while the bot and assistant refresh their connection for this group."
+reboot_2 : "<b>✅ System Reset Complete!</b>\n\n<b>Details:</b>\n- Assistant cache purged\n- Admin hierarchy refreshed\n- Previous streams terminated\n\nYour group is now ready for a fresh session."
+sudo_help_err : "<b>🔒 Sudo Restriction</b>\n\nAccess denied. This section is reserved for the bot's Sudo Users only. Please contact the owner if you believe this is an error."
+session_1 : "<b>String Session Generator</b>\n\nCancelled: {0}\nVersion: {1}"
+
+play_3 : "» failed to process query."
+play_4 : "<b>admins only play</b>\nonly admins of this chat are allowed to play\n\nchange play mode via /playmode"
+play_5 : "» failed to process audio file.\n\naudio file size is larger than the defined limit."
+play_6 : "» stream's longer than {0} aren't allowed to play on {1}"
+play_7 : "» not a valid video file extension.\n\n<b>supported extensions :</b> {0}"
+play_8 : "» video file size should be less than 2gib."
+play_9 : "<b><u>youtube playlist feature</b></u>\n\nselect the mode in which you want to play whole youtube playlist."
+play_10 : "<b>Track:</b> {0}\n<b>duration:</b> {1} minutes"
+play_11 : "<u><b>{0} spotify player</b></u>\n\n<b>played by:</b> {1}"
+play_12 : "<u><b>{0} apple player</b></u>\n\n<b>played by:</b> {1}"
+play_13 : "» live stream detected.\n\nare you sure that you wanna play this live stream ?"
+play_14 : "failed to fetch track details.\n\ntry playing any other."
+play_15 : "» failed to process query.\n\ni can only play spotify tracks, albums, artists and playlists."
+play_16 : "no active voice chat.\n\nto use force play, there must be an active voicechat."
+play_17 : "please turn on videochat, i'm unable to stream urls."
+play_18 : "<b>usage :</b> /play [song name/youtube url/reply to a audio/video file]"
+play_19 : "Queued Playlist :"
+play_20 : "Queued Position-"
+play_21 : "added {0} tracks to queue.\n\n<b>check :</b> <a href={1}>click here</a>"
+play_22 : "select the mode in which you want to play the queries inside your group : {0}"
+
+str_1 : "please provide m3u8 or index links."
+str_2 : "➻ valid stream verified.\n\nprocessing..."
+str_3 : "failed to stream youtube live stream, no live format found."
+
+ping_1 : "{0} is pinging..."
+ping_2 : "🏓 Pong : <code>{0}ms</code>\n\n<b><u>ㄖ System Stats:</u></b>\n↬ uptime: {2}\n↬ ram: {3}\n↬ cpu: {4}\n↬ disk: {5}\n↬ py-tgcalls: <code>{6}ms</code>"
+
+queue_1 : "» fetching queue...\n\nplease wait..."
+queue_2 : "» queue empty."
+queue_3 : "<u>» click here to check the list of the queued tracks:</u> <a href={0}>here</a>"
+queue_4 : " <b>Added To Queue At #{0}\n\nTrack:</b> {1}\n<b>Duration :</b> {2} minutes\n<b>requested by:</b> {3}"
+queue_5 : "there's only one queued track in playlist.\n\nadd more tracks to check list."
+queue_6 : "<b>🕚 duration:</b> unknown duration stream\n\nclick on button below to get whole queued list."
+queue_7 : "\nclick on button below to get whole queued list."
+queue_8 : "<b>{0} player</b>\n\n🎄 <b>streaming:</b> {1}\n\n🔗 <b>stream type:</b> {2}\n <b>requested by:</b> {3}\n{4}"
+
+stream_1 : "♬ <b>Started Streaming... </b>\n\n<b>⋆ Track:</b> <a href={0}>{1}</a>\n<b>⋆ Duration:</b> {2} minutes\n<b>⋆ Played by:</b> {3}"
+stream_2 : "♬ <b>Started Streaming... </b>\n\n<b>⋆ Stream type:</b> live stream\n<b>⋆ Played by:</b> {0}"
+
+
+CLOSE_BUTTON  : "• close •"
+BACK_BUTTON : "◁ back"
+
+S_B_1 : "✚ Add me"
+S_B_2 : "💬 Support"
+S_B_3 : "✚ Add me to your group"
+S_B_4 : "ℹ️ Help & Commands"
+S_B_5 : "🜲 owner"
+S_B_6 : "📨 Channel"
+S_B_7 : "Source code"
+S_B_8 : "⎋ youtube"
+S_B_9 : "↝ support ↜"
+
+H_B_1: Play Commands
+H_B_2: Admin Commands
+H_B_3: Bot Commands
+H_B_4: Sudo Commands
+
+P_B_1 : "audio"
+P_B_2 : "video"
+P_B_3 : "live stream"
+P_B_4 : "normal"
+
+SA_B_3 : "🧛 Top 10 Users"
+SA_B_4 : "🏷 Top 10 Here"
+SA_B_5 : "💡 Overall Stats"
+SA_B_6 : "👤 User Stats"
+SA_B_7 : "🔢 Global Top 10 Stats"
+SA_B_8 : "🤖 Bot Stats"
+
+# Force Subscription
+force_sub_text : "» To use this bot, you must join our support channel first!\n\nClick the button below to join and then try again."
+
+# Song Download
+song_1 : "» You can only download music/video from YouTube in private chat. Please start me in private chat."
+song_2 : "**Usage:**\n\n/song [Song Name] or [YouTube Link]"
+song_3 : "» Live link detected. I can't download live YouTube videos."
+song_4 : "**🔘 Title:**- {0}\n\nSelect the type you want to download."
+song_5 : "» Not a valid YouTube link."
+song_6 : "» Fetching formats...\n\nPlease wait..."
+song_7 : "» Failed to fetch available formats for video. Please try another track."
+song_8 : "» Download started...\n\nDownload speed might be slow. Please wait..."
+song_9 : "» Failed to download song from YouTube-DL.\n\n**Reason:** {0}"
+song_10 : "» Failed to upload to Telegram from servers."
+song_11 : "» Upload started...\n\nUpload speed might be slow. Please wait..."
+
+ST_B_1 : "Auth users"
+ST_B_2 : "Play mode"
+ST_B_3 : "🏳️‍🌈 Language"
+ST_B_4 : "Voting mode"
+ST_B_5 : "on"
+ST_B_6 : "off"
+ST_B_7 : "Auth users ➜"
+ST_B_8 : "admins"
+ST_B_9 : "everyone"
+ST_B_10 : "Search mode ➜"
+ST_B_11 : "direct"
+ST_B_12 : "inline"
+ST_B_13 : "Admin cmds ➜"
+ST_B_14 : "Play type ➜"
+
+SA_B_1 : "overall stats"
+SA_B_2 : "general"
+SA_B_3 : "overall"
+
+QU_B_1 : "queue"
+QU_B_2 : " {0} —————————— {1}"
+
+sudo_1 : "» {0} is already in sudo users list."
+sudo_2 : "» added {0} to sudo users list." 
+sudo_3 : "» {0} is not in sudo users list."
+sudo_4 : "» removed {0} from sudo users list."
+sudo_5 : "<u><b>🜲 owner :</b></u>\n"
+sudo_6 : "\n<u><b>✳️ sudo users:</b></u>\n"
+sudo_7 : "» no sudo users found."
+sudo_8 : "failed."
+
+block_1 : "» {0} is already blocked from the bot."
+block_2 : "» added {0} to blocked users list."
+block_3 : "» {0} is not in blocked users list."
+block_4 : "» removed {0} from blocked users list."
+block_5 : "» no blocked users found."
+block_6 : "» getting blocked users list..."
+block_7 : "<b>😫 blocked users :</b>\n\n"
+
+black_1 : "<b>example :</b>\n\n/blacklistchat [chat id]"
+black_2 : "» this chat is already blacklisted."
+black_3 : "» successfully added to blacklisted chats."
+black_4 : "<b>example :</b>\n\n/whitelistchat [chat id]"
+black_5 : "» this chat is not blacklisted."
+black_6 : "» successfully removed from blacklisted chats."
+black_7 : "» list of blacklisted chats :\n\n"
+black_8 : "» no blacklisted chats on {0}."
+black_9 : "» something went wrong."
+
+maint_1 : "<b>example :</b>\n/maintenance [enable | disable]"
+maint_2 : "» {0} maintenance mode enabled."
+maint_3 : "» {0} maintenance mode disabled."
+maint_4 : "» maintenance mode is already enabled."
+maint_5 : "» maintenance mode is already disabled."
+
+log_1 : "<b>example :</b>\n/logger [enable | disable]"
+log_2 : "enabled logging."
+log_3 : "disabled logging."
+
+broad_1 : "» started broadcasting..."
+broad_2 : "<b>example :</b>\n\n/broadcast [message or reply to a message]"
+broad_3 : "» broadcasted message to {0} chats with {1} pins from the bot."
+broad_4 : "» broadcasted message to {0} users."
+broad_5 : "» starting assistant broadcast..."
+broad_6 : "➻ assistant broadcast :\n\n"
+broad_7 : "↬ assistant {0} broadcasted in {1} chats."
+broad_8 : "» please provide some text to broadcast."
+
+server_1 : "» failed to get logs."
+server_2 : "please make sure that your heroku api key and app name are configured correctly."
+server_3 : "checking for available updates..."
+server_4 : "git command error."
+server_5 : "invalid git repsitory."
+server_6 : "» bot is up-to-date."
+server_7 : "» bot updated successfully ! now wait for few minutes until the bot restarts and push changes !"
+server_8 : "{0} is restarting...\n\nyou can start playing again after 15-20 seconds."
+server_9 : "something went wrong, please check logs."
+server_10 : "an exception occured at #updater due to : <code>{0}</code>"
+server_11 : "» running a speedtest..."
+server_12 : "<b>⇆ running download speedtest...</b>"
+server_13 : "<b>⇆ running upload speedtest...</b>"
+server_14 : "<b>↻ sharing speedtest results...</b>"
+server_15 : "✯ <b>speedtest results</b> ✯\n\n<u><b>client :</b></u>\n<b>» isp :</b> {0}\n<b>» country :</b> {1}\n\n<u><b>server :</b></u>\n<b>» name :</b> {2}\n<b>» country :</b> {3}, {4}\n<b>» sponsor :</b> {5}\n<b>» latency :</b> {6}\n<b>» ping :</b> {7}"
+
+gban_1 : "» why did you wanna gban yourself baby ?"
+gban_2 : "» why should i gban myself ?"
+gban_3 : "» you can't gban my sudoers."
+gban_4 : "» {0} is already globally banned from the bot."
+gban_5 : "» initializing global ban on {0}.\n\n<b>time expected :</b> {1}"
+gban_6 : "<b><u>new global ban on {0} :</u></b>\n\n<b>originated from :</b> {1} [<code>{2}</code>]\n<b>user :</b> {3}\n<b>user id :</b> {4}\n\n<b>banned by :</b> {5}\n<b>chats :</b> <code>{6}</code>"
+gban_7 : "» {0} is not gbanned from the bot."
+gban_8 : "» lifting global ban from {0}.\n\n<b>expected time :</b> {1}"
+gban_9 : "» lifted global ban from {0}.\n\nunbanned in {1} chats."
+gban_10 : "» no one is globally banned from the bot."
+gban_11 : "» fetching gbanned users list..."
+gban_12 : "🙂 <b>globally banned users :</b>\n\n"
+
+HELP_1: |
+  <b><u>Music PLAY COMMANDS 🎵</u></b>
+  ───────────────────────────────
+
+  <b>/play [Name/Link] -</b> Start streaming audio on voice chat.
+  <b>/vplay [Name/Link] -</b> Start streaming video on voice chat
+  <b>/playforce -</b> Force play (stops current and starts new track)
+  <b>/pause -</b> Pause the current music stream
+  <b>/resume -</b> Resume the paused music stream
+  <b>/skip -</b> Skip current track to the next in queue
+  <b>/stop or /end -</b> Stop music and clear the entire queue
+  <b>/queue -</b> Show upcoming tracks in the music queue
+  <b>/shuffle -</b> Randomly shuffle the music queue
+  <b>/volume [1-200] -</b> Adjust the bots volume level
+  <b>/loop [enable/disable] -</b> Toggle loop for current track
+  <b>/stream [link] -</b> Stream audio/video from a direct link
+  <i>- supported formats for streaming : m3u8 and index links.</i>
+  <b>/seek [seconds] -</b> Move the stream forward or backward
+  <b>/seekback [Seconds] -</b> Seeks the stream backward
+  <b>/speed -</b> Change playback speed (e.g., 0.5x, 1.0x, 2.0x)
+
+  <b>💡Channel Play:</b> Use c as prefix (e.g. /cplay)
+  ───────────────────────────────
+
+HELP_2: |
+  <b><u>ADMIN AND AUTHORISED USER COMMANDS 🛠️</u></b>
+  ───────────────────────────────
+
+  <b>👤 <u>Admin Commands</u></b>
+  <b>/settings -</b> Opens the group settings panel
+  <b>/lang -</b> Change the bot's language for your group
+  <b>/reload -</b> Refreshes the adminlist and cache
+  <b>/adminlist -</b> Get the current admin list of the chat
+  <b>/ban_ghosts -</b> Cleanup deleted accounts
+
+  <b>👤 <u>Authorised Commands</u></b>
+  <b>/auth [User] -</b> Adds a user to authorized list of the group
+  <b>/unauth [User] -</b> Removes a user from authorized list.
+  <b>/authusers -</b> Shows the list of authorized users
+  <i>-Auth users can use admin commands without being an admin.</i>
+
+  <b>🤖 <u>Bot Commands:</u></b>
+  <b>/sudolist -</b> List all sudo users
+  <b>/addsudo [User] -</b> Add a user to sudo list
+  <b>/rmsudo [User] -</b> Remove a user from sudo list
+
+  <b>🌏 <u>Global Ban Function:</u></b>
+  <b>/gban [Username or Reply to a user] -</b> Gban a user from bot's served chat and stop him from using your bot
+  <b>/ungban [Username or Reply to a user] -</b> Remove a user from Bot's gbanned List and allow him for using your bot
+  <b>/gbannedusers -</b> Check Gbanned Users Lists
+
+  <b>⚠️ <u>Blacklist Chat Function:</u></b>
+  <b>/blacklistchat [CHAT_ID] -</b> Blacklist any chat from using Music Bot
+  <b>/whitelistchat [CHAT_ID] -</b> Whitelist any blacklistedchat from using Music Bot
+  <b>/blacklistedchats -</b> Check all blacklisted chats
+
+  <b>🚫 <u>Blocked Function:</u></b>
+  <b>/block [Username or Reply to a user] -</b> Prevents a user from using bot commands
+  <b>/unblock [Username or Reply to a user] -</b> Remove a user from Bot's Blocked List.
+  <b>/blockedusers -</b> Check blocked Users Lists
+
+  <b>🌐 <u>Broadcast Commands</u></b>
+  <b>/broadcast [Message or Reply to a Message] -</b> Broadcast any message to Bot's Served Chats
+
+  <u>Options for broadcast:</u>
+  <b>-pin -</b> This will pin your message
+  <b>-pinloud -</b> This will pin your message with loud notification
+  <b>-user -</b> This will broadcast your message to the users who have started your bot
+  <b>-assistant -</b> This will broadcast your message from assistant account of your bot
+  <b>-nobot -</b> This will force your bot to not broadcast message
+  <b>Example:</b> <code>/broadcast -user -assistant -pin Hello Testing</code>
+  ───────────────────────────────
+
+HELP_3: |
+  <b><u>BOT COMMANDS 🤖</u></b>
+  ───────────────────────────────
+
+  <b>🤖 <u>Bot Commands</u></b>
+  <b>/karma -</b> Karma stats
+  <b>/lyrics [Song Name] -</b> Get song lyrics
+  <b>/ping -</b> Check bot latency and stats
+  <b>/search [Query] -</b> Search on YouTube
+  <b>/song or ytdl [Name/Link] -</b> Download YouTube audio/video
+
+  <b>🕹️ <u>Gamming Commands</u></b>
+  <b>/dice -</b> Roll a random dice
+  <b>/dart -</b> Throw a dart
+  <b>/basketball -</b> Shoot some hoops
+  <b>/bowling -</b> Play bowling
+  <b>/football -</b> Play football
+  <b>/slots -</b> Try your luck at slots
+  <b>/ship or /couple -</b> Pick the couple of the day in your group
+
+  <b>✨ <u>Extra Commands</u></b>
+  <b>/commit -</b> Generate Funny Commit Messages
+  <b>/carbon [text] -</b> Create a carbon image
+  <b>/q or /quotly -</b> Create a sticker quote
+  <b>/random [lenght] -</b> Generate Random Complex Passwords
+  <b>/runs -</b> idk test yourself
+  <b>/tr [lang] [Text] -</b> Translate text
+  <b>/id -</b> Get your user id or group id
+  <b>/info [user] -</b> Get detailed user information
+  <b>/invite -</b> Get group invite link.
+  <b>/sticker_id -</b> Get sticker file ID
+  <b>/tts [text] -</b> Convert Text to Speech
+  <b>/genstr -</b> Generate String Session (Pyrogram/Telethon)
+  <b>/reload -</b> Refresh admin list and cache
+
+  <i>list will grow by time...</i>
+  ───────────────────────────────
+
+HELP_4: |
+  <b><u>SUDO COMMANDS 👮</u></b>
+  ───────────────────────────────
+
+  <b>/activevc -</b> List active voice and videochats
+  <b>/speedtest -</b> Test server speed
+  <b>/stats -</b> Check bot usage statistics
+  <b>/logs -</b> Get bot logs for debugging
+  <b>/autoend [enable|disable] -</b> Enable Auto stream end after 3 mins if no one is listening
+  <b>/logger [enable / disable] -</b> Bot logs the searched queries in logger group
+  <b>/maintenance [enable/disable] -</b> Toggle maintenance mode
+  ───────────────────────────────

@@ -1,0 +1,816 @@
+name: 🇮🇳 भोजपूरी
+general_1: » ᴄʜᴀᴛ ᴍᴇɪɴ ᴋɪsɪ ᴋᴇ ᴘᴀɪɢᴀᴍ ᴋᴇ ʀᴇᴘʟʏ ᴋʀᴀ ʏᴀ ᴜsᴇʀ ɪᴅ ᴅᴇᴡᴀ.
+general_2: '» Tohaar sawal par kaam na ho ii.
+
+
+  ᴇxᴄᴇᴘᴛɪᴏɴ : <code>{0}</code>'
+general_3: Tu anonymous admin ba. Pahile aapan user account mein wapas aawa.
+general_4: » Tohaar wo adhikaar na ba jani. Pahile adhikaar le aa.
+general_5: » Bot abhi video chat mein kuch na chalawat.
+tg_1: '<u><b>{0} ᴅᴏᴡɴʟᴏᴀᴅᴇʀ</b></u>
+
+
+  <b>ғɪʟᴇ sɪᴢᴇ :</b> {1}
+
+  <b>ᴄᴏᴍᴘʟᴇᴛᴇᴅ :</b> {2}
+
+  <b>ᴘᴇʀᴄᴇɴᴛᴀɢᴇ :</b> {3}%
+
+
+  <b>sᴘᴇᴇᴅ :</b> {4}/s
+
+  <b>ᴇᴛᴀ :</b> {5}'
+tg_2: 'Download pura ho gaail. Processing hot ba...
+
+
+  <b>Waqt laga :</b> {0}'
+tg_3: Telegram se download na ho ii, phir se koshish kra...
+tg_4: » Download pahile hi pura ho gaail ba.
+tg_5: » Download pahile hi pura ya radd ho gaail ba.
+tg_6: » Download radd ho gaail.
+tg_7: '» Download radd kara gaail : {0}'
+tg_8: Download roke mein dikkat bhai.
+tg_9: Chalat download task na milal...
+call_1: Â» Bot ke <b>link se user bulaave</b> ke adhikar chahii.
+call_2: '<u>{0} asistent tohaar chat mein ban ba.</u>
+
+
+  <b>ɪᴅ :</b> <code>{1}</code>
+
+  <b>ɴᴀᴍᴇ :</b> {2}
+
+  <b>ᴜsᴇʀɴᴀᴍᴇ :</b> @{3}
+
+
+  Pahile unban kra phir koshish kra.'
+call_3: 'Asistent {0} ke bulaave mein dikkat bhai.
+
+
+  <b>Kaaran :</b> <code>{1}</code>'
+call_4: 'Jara chala...
+
+
+  {0} asistent ke tohaar chat mein bulawat bani...'
+call_5: '{0} asistent safaltapurvak join kihin.
+
+
+  Stream suru karat bani...'
+call_6: » Stream badle mein dikkat bhai, agila gaana के lii /skip chalawa.
+call_7: '» Queue se agila gaana download hot ba.
+
+
+  Jara ruka...'
+call_8: '<b>Koi activ video chat na milal.</b>
+
+
+  Pahile suru kra aur <b>phir koshish kra</b>.'
+call_9: '<b>Asistent pahile se video chat mein ba.</b>
+
+
+  Nahi dikhat ba ta <code>/reboot</code> chalawa.'
+call_10: '<b>Telegram sarvar galati</b>
+
+
+  Telegram mein andaruni dikkat ba. Phir se koshish kra ya video chat phir suru kra.'
+auth_1: » Tu sirf 25 adhikrut user joda sakat ba.
+auth_2: » {0} के adhikrut user list mein joda gaail.
+auth_3: '{0} pahile se adhikrut user list mein ba.'
+auth_4: » {0} के adhikrut user list se hatawa gaail.
+auth_5: '{0} adhikrut user list mein naahi ba.'
+auth_6: » Adhikrut user list le aawat bani...
+auth_7: '» {0} mein adhikrut user के list :
+
+
+  '
+auth_8: <b>↬ Kisne joda :</b>
+reload_1: '» Tu har 3 minute mein ek baar hi reload kar sakta ba.
+
+
+  {0} baad koshish kra.'
+reload_2: âœ« Admin cache safaltapurvak taza ho gaail!
+reload_3: » Admin cache reload na ho ii. Dekha ki bot admin ba ki na.
+reload_4: 'Â» Jara ruka...
+
+
+  {0} के phir suru karat bani.'
+reload_5: '{0} safaltapurvak phir suru ho gaail.
+
+
+  Phir se gaana bajawa...'
+admin_1: » Yaad aawa ki tu stream phir suru kihi?
+admin_2: "▢ <b>Stream roka</b>\n│ \n╰─ ʙʏ: {0} "
+admin_3: » Yaad aawa ki tu stream rokihi?
+admin_4: "▷ <b>Stream phir suru</b>\n│ \n╰─ ʙʏ: {0} "
+admin_5: "▢ <b>Stream band</b>\n│ \n╰─ʙʏ: {0} "
+admin_6: "≫ <b>Stream skip kara</b>\n│ \n╰─ ʙʏ: {0} \n\n<b>» Queue mein kuch na ba</b>\
+  \ {1}, <b>video chat chhodtat bani.</b>"
+admin_7: Stream {0} par badle mein galati.
+admin_8: » Pahile loop band kra <code>/loop disable</code> phir skip kra.
+admin_9: Skip के lii sahi ginti dewa, jaise 1, 2, 3...
+admin_10: 'Specific skip के lii kam se kam 2 track queue mein chahii.
+
+
+  Queue dekha : /queue'
+admin_11: '» Queue mein utna track na ba.
+
+
+  1 aur {0} के bich mein skip kra.'
+admin_12: '» Specific track skip na ho ii.
+
+
+  Queue dekha : /queue'
+admin_13: '» Admin cache taza kra : /refresh'
+admin_14: '» Tohaar wo adhikaar na ba jani. Pahile adhikaar le aa : /refresh'
+admin_15: '» Shuffle na ho ii.
+
+
+  Queue dekha : /queue'
+admin_16: '» Queue shuffle kara gaail {0} dwara.
+
+
+  Check kra : /queue'
+admin_17: '<b>Misal :</b>
+
+
+  /loop <code>enable</code>/<code>disable</code>
+
+  /loop <code>10</code>/<code>9</code>'
+admin_18: '» Loop chalu bhai <code>{0}</code> baar के lii : {1}.'
+admin_19: '» Loop band kara gaail : {0}.'
+admin_20: '<b>Misal :</b>
+
+
+  /seek ya /seekback [second mein]'
+admin_21: » Seek के lii sirf ginti istemaal kra.
+admin_22: » Live stream aage-pichhe na chalii.
+admin_23: '» Tnik kam time chuna.
+
+
+  Manga gaail <b>{0}</b> lekin ba sirf <b>{1}</b> mint.'
+admin_24: '<b>Seek karat bani...</b>
+
+
+  Jara ruka...'
+admin_25: '» Stream safaltapurvak badal gaail.
+
+
+  <b>Duraati :</b> {0} mint
+
+  <b>By :</b> {1}'
+admin_26: Seek na ho ii.
+admin_27: » Sirf YouTube stream के speed badal sakat ba.
+admin_28: '<b><u>{0} sᴘᴇᴇᴅ ᴄᴏɴᴛʀᴏʟ ᴘᴀɴᴇʟ</b></u>
+
+
+  Niche के batam dab के stream के speed badla.'
+admin_29: » Bot pahile se normal speed par ba.
+admin_30: '» Jara ruka...
+
+
+  Koi aur speed badle के koshish karat ba.'
+admin_31: Speed badlat bani...
+admin_32: '» Ongoing stream के speed badle के koshish karat bani...
+
+
+  <b>Maanga ba :</b> {0}'
+admin_33: » Speed badle mein dikkat bhai.
+admin_34: '» Stream के speed badal के {0}x ho gaail
+
+
+  <b>Maanga ba :</b> {1}'
+admin_35: Track khatam ho gaail, voting band.
+admin_36: Track khatam ya band ba, voting na chalii.
+admin_37: <code>{0}</code> upvote mil gaail.
+admin_38: » 1 upvote joda gaail.
+admin_39: » 1 upvote hatawa gaail.
+admin_40: Upvote milal.
+start_1: '{0} chalu ba babu.
+
+
+  <b>✫ kitna se chalat ba :</b> {1}'
+start_2: "<b>He</b> {0}, \n\n๏ Ii ha {1} !\n\n➻ Ii ha Telegram के jordar music bajaawe\
+  \ wala bot.\n\n<b><u>Sᴜᴘᴘᴏʀᴛᴇᴅ Pʟᴀᴛғᴏʀᴍs :</b></u> ʏᴏᴜᴛᴜʙᴇ, sᴘᴏᴛɪғʏ, ʀᴇssᴏ, ᴀᴘᴘʟᴇ\
+  \ ᴍᴜsɪᴄ ᴀɴᴅ sᴏᴜɴᴅᴄʟᴏᴜᴅ.\n──────────────────\n<b>๏ Madad के lii Help daba.</b>"
+start_3: 'He {0},
+
+  Ii ha {1}
+
+
+  {2} mein jode के lii dhanyawad. {3} ab isme gaana baja sakat ba.'
+start_4: "\U0001F384 <b>sᴜᴘᴇʀɢʀᴏᴜᴘ ɴᴇᴇᴅᴇᴅ</b> \n\nIi chat के <b>supergroup</b> banawa\
+  \ phir humke joda.\n\n<b>Kaise bani ?</b>\n- Chat history <b>visible</b> kra."
+start_5: '<b>↝ ʙʟᴀᴄᴋʟɪsᴛᴇᴅ ᴄʜᴀᴛ ↜</b>
+
+
+  Ii chat blacklist mein ba {0} database mein.
+
+  <a href={1}>Sudo user</a> se hatave के lii kaha ya <a href={2}>support chat</a>
+  mein aawa.'
+start_6: "ℹ️ <b><u>Tʀᴀᴄᴋ Iɴғᴏʀᴍᴀᴛɪᴏɴ</u></b> \n- - - - - - - - - - - - - - - - - -\
+  \ - - - - - - - - -\n\U0001F3F7️ <b>ᴛɪᴛʟᴇ :</b> {0}\n\n⏳ <b>ᴅᴜʀᴀᴛɪᴏɴ :</b> {1} ᴍɪɴᴜᴛᴇs\n\
+  \U0001F440 <b>ᴠɪᴇᴡs :</b> <code>{2}</code>\n\U0001F4C6 <b>ᴩᴜʙʟɪsʜᴇᴅ ᴏɴ :</b> {3}\n\
+  \U0001F4CE <b>ᴄʜᴀɴɴᴇʟ :</b> <a href={4}>{5}</a>\n─────────────── ·\uFEFF \uFEFF\
+  \ \uFEFF· \uFEFF ·\uFEFF \uFEFF \uFEFF· \uFEFF✦\n<b>◢◤ ᴩᴏᴡᴇʀᴇᴅ ʙʏ @anaavaran</b>"
+help_1: 'Kaun madad chahi chuna.
+
+  Kuch puchhe के ba ta <a href={0}>support chat</a> aawa.
+
+
+  Sab hukum / se chalii.'
+help_2: Madad के lii niche के batam daba aur PM mein aawa.
+lang_1: '» Chat के lii bhaasha chuna :'
+lang_2: Bhaasha safaltapurvak badal gaail.
+lang_3: Bhaasha badle mein galati bhai.
+lang_4: Pahile se ihe bhaasha set ba.
+setting_1: '<u><b>{0} seting panel</b></u>
+
+
+  <b>ᴄʜᴀᴛ ɪᴅ :</b> <code>{1}</code>
+
+  <b>ᴄʜᴀᴛ ᴛɪᴛʟᴇ :</b> {2}
+
+
+  Niche के batam se seting badla.'
+setting_2: '» Direct : Direct bajawa.
+
+
+  » Inline : Button se chuna.'
+setting_3: '» Everyone : Sab log admin command istemaal kar sakat ba.
+
+
+  » Admin Only : Sirf admin aur adhikrut user chalii.'
+setting_4: » Koi adhikrut user na milal.
+setting_5: '» Group : Ihe group mein bajawa.
+
+
+  » Channel : Linked channel mein bajawa.'
+setting_6: '» Everyone : Sab log gaana baja sakat ba.
+
+
+  » Admin Only: Sirf admin gaana baja sakat ba.'
+setting_7: » Channel ID set kra /channelplay se.
+setting_8: Voting mode mein bina admin vi admin command chalawa sakat ba upvote se.
+setting_9: 'Abhi upvote chahii : {0}'
+setting_10: Voting mode band ba.
+setting_11: Kam se kam 2 upvote chahii.
+setting_12: Jaada se jaada 15 upvote chalii.
+set_cb_1: Adhikrut user panel le aawat bani...
+set_cb_2: Play mode panel le aawat bani...
+set_cb_3: Seting badlat bani...
+set_cb_4: » Adhikrut user list le aawat bani...
+set_cb_5: » Pichhe jaat bani...
+gstats_1: '{0} stats le aawat bani...
+
+
+  Jara ruka...'
+gstats_2: '{0} के stats dekhe के lii batam daba.'
+gstats_3: '<b><u>{0} stats aur jaankari:</u></b>
+
+
+  <b>Asistent:</b> <code>{1}</code>
+
+  <b>Blocked:</b> <code>{2}</code>
+
+  <b>Chats:</b> <code>{3}</code>
+
+  <b>Users:</b> <code>{4}</code>
+
+  <b>Modules:</b> <code>{5}</code>
+
+  <b>Sudoers:</b> <code>{6}</code>
+
+
+  <b>Auto leaving:</b> {7}
+
+  <b>Play limit:</b> {8} mint'
+gstats_4: Ii batam sirf sudoer के lii ba.
+gstats_5: '<b><u>{0} stats aur jaankari:</u></b>
+
+
+  <b>ᴍᴏᴅᴜʟᴇs:</b> <code>{1}</code>
+
+  <b>ᴘʟᴀᴛғᴏʀᴍ:</b> <code>{2}</code>
+
+  <b>ʀᴀᴍ:</b> <code>{3}</code>
+
+  <b>ᴘʜʏsɪᴄᴀʟ ᴄᴏʀᴇs:</b> <code>{4}</code>
+
+  <b>ᴛᴏᴛᴀʟ ᴄᴏʀᴇs:</b> <code>{5}</code>
+
+  <b>ᴄᴘᴜ ғʀᴇǫᴜᴇɴᴄʏ:</b> <code>{6}</code>
+
+
+  <b>ᴘʏᴛʜᴏɴ:</b> <code>{7}</code>
+
+  <b>ᴘʏʀᴏɢʀᴀᴍ:</b> <code>{8}</code>
+
+  <b>ᴘʏ-ᴛɢᴄᴀʟʟs:</b> <code>{9}</code>
+
+
+  <b>Storage:</b> <code>{10} GiB</code> | <code>{11} GiB</code> | <code>{12} GiB</code>
+
+
+  <b>Chats:</b> <code>{13}</code>
+
+  <b>Users:</b> <code>{14}</code>
+
+  <b>Blocked:</b> <code>{15}</code>
+
+  <b>Sudo:</b> <code>{16}</code>'
+playcb_1: » Ii tohaar lii naahi ba babu.
+playcb_2: '» Agila natija le aawat bani...
+
+
+  Jara ruka...'
+cplay_1: '» Tu channels mein vi gaana baja sakat ba.
+
+
+  /channelplay linked
+
+  /channelplay [channel_id]'
+cplay_2: » Ii chat mein koi linked channel na ba.
+cplay_3: '» Channel set bhai : {0}
+
+  ID: <code>{1}</code>'
+cplay_4: » Channel na milal. Dekha ki bot admin ba ki na.
+cplay_5: Sirf channel chalii.
+cplay_6: '» Tu owner hoke chahii channel {0} के.
+
+  Owner: @{1}'
+cplay_7: » Channel play band bhai.
+play_1: 🎵
+play_2: '<b>➻ Channel Play Mode</b>
+
+
+  Kaam hot ba...
+
+
+  <b>Linked channel :</b> {0}'
+play_3: » Query processing failed.
+play_4: '<b>Sirf admin gaana</b>
+
+  Sirf admin gaana baja sakat ba.
+
+
+  Badla /playmode se.'
+play_5: » Audio file bahut bada ba.
+play_6: » {0} se bada stream na chalii {1} par.
+play_7: '» Sahi video file naahi ba.
+
+
+  <b>Support :</b> {0}'
+play_8: » Video 2GB se kam chahii.
+play_9: '<b><u>YouTube Playlist Feature</b></u>
+
+
+  Chuna kaise bajave के ba.'
+play_10: '<b>Track:</b> {0}
+
+  <b>Duration:</b> {1} mint'
+play_11: '<u><b>{0} spotify player</b></u>
+
+
+  <b>By:</b> {1}'
+play_12: '<u><b>{0} apple player</b></u>
+
+
+  <b>By:</b> {1}'
+play_13: » Live stream detect bhai. Bajave के ba?
+play_14: Details na milal. Dusar try kra.
+play_15: » Spotify track/album/playlist hi chalii.
+play_16: Video chat na chalu ba.
+play_17: Video chat suru kra, URL na chalat.
+play_18: <b>Usage :</b> /play [naam/link/reply]
+play_19: 'Queued Playlist :'
+play_20: Queued Position-
+play_21: 'Addeed {0} tracks to queue.
+
+
+  <b>Check :</b> <a href={1}>click here</a>'
+play_22: 'Select play mode for group : {0}'
+str_1: M3U8 ya Index link dewa.
+str_2: '➻ Stream verified.
+
+
+  Processing...'
+str_3: YouTube live stream failed.
+ping_1: '{0} ping karat bani...'
+ping_2: '🏓 Pong : <code>{0}ms</code>
+
+
+  <b><u>ㄖ Sʏsᴛᴇᴍ Sᴛᴀᴛs:</u></b>
+
+  ↬ Uptime: {2}
+
+  ↬ RAM: {3}
+
+  ↬ CPU: {4}
+
+  ↬ Disk: {5}
+
+  ↬ PyTgCalls: <code>{6}ms</code>'
+queue_1: '» Queue le aawat bani...
+
+
+  Jara ruka...'
+queue_2: » Queue khaali ba.
+queue_3: <u>» Queue list dekhe के lii :</u> <a href={0}>here</a>
+queue_4: ' <b>Added to Queue at #{0}
+
+
+  Track:</b> {1}
+
+  <b>Duration :</b> {2} mint
+
+  <b>By:</b> {3}'
+queue_5: Queue mein sirf ek gaana ba.
+queue_6: '<b>🕚 Duration:</b> Unknown
+
+
+  Niche के batam daba queue dekhe के lii.'
+queue_7: '
+
+  Niche के batam daba queue dekhe के lii.'
+queue_8: "<b>{0} Player</b>\n\n\U0001F384 <b>Streaming:</b> {1}\n\n\U0001F517 <b>Type:</b>\
+  \ {2}\n <b>By:</b> {3}\n{4}"
+stream_1: '♬ <b>Stream suru ho gaail... </b>
+
+
+  <b>⋆ Track:</b> <a href={0}>{1}</a>
+
+  <b>⋆ Duration:</b> {2} mint
+
+  <b>⋆ By:</b> {3}'
+stream_2: '♬ <b>Stream suru ho gaail... </b>
+
+
+  <b>⋆ Type:</b> Live stream
+
+  <b>⋆ By:</b> {0}'
+CLOSE_BUTTON: • Band •
+BACK_BUTTON: ◁ Pichhe
+S_B_1: ✚ Humke joda
+S_B_2: 💬 Support
+S_B_3: ✚ Group mein joda
+S_B_4: ℹ️ Help & Commands
+S_B_5: 🜲 Owner
+S_B_6: 📨 Channel
+S_B_7: Source Code
+S_B_8: ⎋ YouTube
+S_B_9: ↝ Support ↜
+H_B_1: प्ले कमांड्स
+H_B_2: एडमिन कमांड्स
+H_B_3: बॉट कमांड्स
+H_B_4: सूडो कमांड्स
+P_B_1: Audio
+P_B_2: Video
+P_B_3: Live stream
+P_B_4: Normal
+SA_B_3: Overall
+SA_B_4: 🏷 Top 10 Here
+SA_B_5: 💡 Overall Stats
+SA_B_6: 👤 User Stats
+SA_B_7: 🔢 Global Top 10 Stats
+SA_B_8: 🤖 Bot Stats
+force_sub_text: » Ii bot istemaal के lii pahile hamaar support channel join kara!
+  Niche के batam dab aur phir koshish kra.
+song_1: » Song download sirf PM mein chalii. Humke PM mein suru kra.
+song_2: '**Upyog:**
+
+
+  /song [Gaana के naam] ya [Link]'
+song_3: » Live link na chalii.
+song_4: '**🔘 Taitel:**- {0}
+
+
+  Select kra kaise download kare के ba.'
+song_5: » Sahi YouTube link naahi ba.
+song_6: '» Formats le aawat bani...
+
+
+  Jara ruka...'
+song_7: » Formats na milal. Dusar try kra.
+song_8: » MP3 download hot ba...
+song_9: '» Download failed.
+
+
+  **Reason:** {0}'
+song_10: » Upload failed.
+song_11: » MP3 upload hot ba...
+ST_B_1: Auth users
+ST_B_2: Play mode
+ST_B_3: 🏳️‍🌈 Bhaasha
+ST_B_4: Voting mode
+ST_B_5: 'On'
+ST_B_6: 'Off'
+ST_B_7: Auth users ➜
+ST_B_8: Admins
+ST_B_9: Everyone
+ST_B_10: Search mode ➜
+ST_B_11: Direct
+ST_B_12: Inline
+ST_B_13: Admin cmds ➜
+ST_B_14: Play type ➜
+SA_B_1: Overall Stats
+SA_B_2: General
+ytdl_1: '<b>Usage:</b>
+
+
+  /song or /ytdl [Song Name] or [YouTube Link]'
+ytdl_2: '<b>⚠️ Playlist Requests Disabled</b>
+
+
+  To maintain optimal bot performance and prevent server overload, playlist downloads
+  are currently disabled. Please send a single track link instead.'
+ytdl_3: '<b>» Fetching details...</b>
+
+
+  Please wait...'
+ytdl_4: <b>❌ No results found.</b>
+ytdl_5: '<b>Track:</b> {0}
+
+  <b>Duration:</b> {1}
+
+
+  <b>Choose download format:</b>'
+ytdl_6: <b>📥 Downloading audio...</b>
+ytdl_7: <b>📊 Fetching available video qualities...</b>
+ytdl_8: '<b>Track:</b> {0}
+
+
+  <b>Select Quality:</b>'
+ytdl_9: <b>📥 Downloading {0} ({1})...</b>
+ytdl_10: '<b>❌ Failed to download {0}.</b>
+
+
+  <b>Error:</b> {1}'
+lyric_1: '<b>Usage:</b>
+
+
+  /lyrics [Song Name]'
+lyric_2: <b>🔍 Searching for lyrics...</b>
+lyric_3: <b>🔍 Trying to fetch lyrics from:</b> <code>{0}</code>
+lyric_4: <b>❌ No lyrics found for this song. Please try a more specific search.</b>
+QU_B_1: Queue
+QU_B_2: ' {0} —————————— {1}'
+sudo_1: » {0} pahile se sudo list mein ba.
+sudo_2: » {0} के sudo list mein joda gaail.
+sudo_3: » {0} sudo list mein naahi ba.
+sudo_4: » {0} के sudo list se hatawa gaail.
+sudo_5: '<u><b>🜲 Owner :</b></u>
+
+  '
+sudo_6: '
+
+  <u><b>✳️ Sudo Users:</b></u>
+
+  '
+sudo_7: » Koi sudo user na milal.
+sudo_8: Failed.
+block_1: » {0} pahile se block ba.
+block_2: » {0} के block list mein joda gaail.
+block_3: » {0} block list mein naahi ba.
+block_4: » {0} के block list se hatawa gaail.
+block_5: » Koi block user na milal.
+block_6: » Blocked user list le aawat bani...
+block_7: '<b>Block Users :</b>
+
+
+  '
+black_1: '<b>Misal :</b>
+
+
+  /blacklistchat [chat_id]'
+black_2: » Ii chat pahile se blacklist mein ba.
+black_3: » Blacklist mein joda gaail.
+black_4: '<b>Misal :</b>
+
+
+  /whitelistchat [chat_id]'
+black_5: » Ii chat blacklist mein naahi ba.
+black_6: » Blacklist se hatawa gaail.
+black_7: '» Blacklist chats :
+
+
+  '
+black_8: » Koi blacklist chat naahi ba.
+black_9: » Something went wrong.
+maint_1: '<b>Misal :</b>
+
+  /maintenance [enable | disable]'
+maint_2: » {0} Maintenance mode chalu bhai.
+maint_3: » {0} Maintenance mode band bhai.
+maint_4: » Maintenance mode pahile se chalu ba.
+maint_5: » Maintenance mode pahile se band ba.
+log_1: '<b>Misal :</b>
+
+  /logger [enable | disable]'
+log_2: Logging chalu bhai.
+log_3: Logging band bhai.
+broad_1: » Broadcast suru bhai...
+broad_2: '<b>Misal :</b>
+
+
+  /broadcast [paigam]'
+broad_3: » {0} chats aur {1} pins के saath broadcast bhai.
+broad_4: » {0} users के broadcast bhai.
+broad_5: » Assistant broadcast suru bhai...
+broad_6: '➻ Assistant broadcast :
+
+
+  '
+broad_7: ↬ Assistant {0} broadcast kihin {1} chats mein.
+broad_8: » Kuch likha broadcast के lii.
+server_1: » Logs na milal.
+server_2: Heroku API key check kra.
+server_3: Update check karat bani...
+server_4: Git command error.
+server_5: Invalid git repo.
+server_6: » Bot up-to-date ba.
+server_7: » Bot update ho gaail! Jara ruka restart howe de.
+server_8: '{0} restart hot ba...
+
+
+  15-20 second baad try kra.'
+server_9: Something went wrong, check logs.
+server_10: 'Exception : <code>{0}</code>'
+server_11: » Speedtest karat bani...
+server_12: <b>⇆ Download speedtest...</b>
+server_13: <b>⇆ Upload speedtest...</b>
+server_14: <b>↻ Sharing results...</b>
+server_15: '✯ <b>Speedtest results</b> ✯
+
+
+  <u><b>Client :</b></u>
+
+  <b>» ISP :</b> {0}
+
+  <b>» Country :</b> {1}
+
+
+  <u><b>Server :</b></u>
+
+  <b>» Name :</b> {2}
+
+  <b>» Country :</b> {3}, {4}
+
+  <b>» Sponsor :</b> {5}
+
+  <b>» Latency :</b> {6}
+
+  <b>» Ping :</b> {7}'
+gban_1: » why did you wanna gban yourself baby ?
+gban_2: » why should i gban myself ?
+gban_3: » you can't gban my sudoers.
+gban_4: » {0} is already globally banned from the bot.
+gban_5: '» initializing global ban on {0}.
+
+
+  <b>time expected :</b> {1}'
+gban_6: '<b><u>new global ban on {0} :</u></b>
+
+
+  <b>originated from :</b> {1} [<code>{2}</code>]
+
+  <b>user :</b> {3}
+
+  <b>user id :</b> {4}
+
+
+  <b>banned by :</b> {5}
+
+  <b>chats :</b> <code>{6}</code>'
+gban_7: » {0} is not gbanned from the bot.
+gban_8: '» lifting global ban from {0}.
+
+
+  <b>expected time :</b> {1}'
+gban_9: '» lifted global ban from {0}.
+
+
+  unbanned in {1} chats.'
+gban_10: » no one is globally banned from the bot.
+gban_11: » fetching gbanned users list...
+gban_12: '🙂 <b>globally banned users :</b>
+
+
+  '
+AL_1: <b>📋 Administrators in {0}:</b>
+AL_2: '<b>Owner:</b>
+
+  <b>└</b> {0}{1}'
+AL_3: '
+
+  <b>Admins:</b>'
+AL_4: » No administrators found.
+HELP_1: '<b><u>संगीत 🎵</u></b>
+
+  ───────────────────────────────────────────────
+
+
+  /play भा /vplay : ऑडियो भा वीडियो स्ट्रीम शुरू करीं।
+
+  /playforce : चलत गाना के रोक के नया गाना शुरू करीं।
+
+  /pause : गाना रोकीं।
+
+  /resume : रुकल गाना के फेर से शुरू करीं।
+
+  /skip : अगिला गाना बजाईं।
+
+  /stop : गाना बंद करीं अउर कतार साफ करीं।
+
+  /queue : कतार देखीं।
+
+  /shuffle : कतार के शफल करीं।
+
+  /loop : लूप मोड चालू/बंद करीं।
+
+  /seek : गाना के आगे/पीछे करीं।
+
+  /speed : गाना के रफ़्तार बदलीं।
+
+
+  चैनल खातिर कमांड के शुरू में <b>c</b> जोड़ीं।
+
+  '
+HELP_2: '<b><u>प्रमाणीकरण 👤</u></b>
+
+  ───────────────────────────────────────────────
+
+
+  /auth [यूजर] : यूजर के प्रमाणित लिस्ट में जोड़ीं।
+
+  /unauth [यूजर] : प्रमाणित लिस्ट से हटाईं।
+
+  /authusers : प्रमाणित यूजर लोगन के लिस्ट देखीं।
+
+  '
+HELP_3: '<b><u>प्रसारण 📢</u></b>
+
+  ───────────────────────────────────────────────
+
+
+  /broadcast [संडेस] : सब ग्रुप में संदेस भेजीं [सिर्फ सूडो]।
+
+  <u>मोड्स:</u>
+
+  <b>-pin</b> : संदेस पिन करीं।
+
+  <b>-user</b> : यूजर लोगन के भेजीं।
+
+  <b>-assistant</b> : सहायक खाता से भेजीं।
+
+  '
+HELP_4: '<b><u>एडमिन औजार 🛠️</u></b>
+
+  ───────────────────────────────────────────────
+
+
+  /settings : बॉट सेटिंग्स देखीं।
+
+  /language : भाषा सेटिंग्स बदलीं।
+
+  /refresh : एडमिन कैश रिफ्रेश करीं।
+
+  /admincache : एडमिन कैश रिफ्रेश करीं।
+
+  '
+HELP_5: '<b><u>औजार 🧰</u></b>
+
+
+  /song [नाम] : यूट्यूब से गाना डाउनलोड करीं।
+
+  /lyrics [नाम] : गाना के बोल पाईं।
+
+  /search [नाम] : यूट्यूब पर खोजीं।
+
+  /video [नाम] : वीडियो खोजीं।
+
+  /info [यूजर] : यूजर के जानकारी पाईं।
+
+  /id : आपन भा चैट के आईडी पाईं।
+
+  /carbon : लिखल शब्द के फोटो में बदलीं।
+
+  /tr [भाषा] : अनुवाद करीं।
+
+  /q : संदेस के स्टिकर कोट बनाईं।
+
+  /genstr : स्ट्रिंग सेशन जनरेट करीं (Pyrogram/Telethon)।
+
+  '
+
+# --- Missing keys from en.yml ---
+search_1: "<b>➻ searching...</b>\n\nplease wait for a moment."
+search_2: "<b>Search results for:</b> {0}"
+search_3: "<b>{0}.</b> <a href='{1}'>{2}</a>\n<b>Duration:</b> {3}\n<b>Channel:</b> {4}\n\n"
+search_4: "<b>Page:</b> {0}/2"
+search_5: "<b>Result expired.</b>"
+tr_1: "<b>➻ Processing Translation...</b>\nChosen language: <b>{0}</b>"
+tr_2: "<b>✅ Translated to {0}!</b>"
+tr_3: "{0}"
+reboot_1: "<b>⚙️ System Reboot Initiated...</b>\n\nPlease wait while the bot and assistant refresh their connection for this group."
+reboot_2: "<b>✅ System Reset Complete!</b>\n\n<b>Details:</b>\n- Assistant cache purged\n- Admin hierarchy refreshed\n- Previous streams terminated\n\nYour group is now ready for a fresh session."
+sudo_help_err: "<b>🔒 Sudo Restriction</b>\n\nAccess denied. This section is reserved for the bot's Sudo Users only. Please contact the owner if you believe this is an error."
+session_1: "<b>String Session Generator</b>\n\nCancelled: {0}\nVersion: {1}"
