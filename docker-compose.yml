@@ -2,10 +2,20 @@ services:
   valentin:
     build: .
     container_name: ValentinMusic
-    restart: always
+    restart: unless-stopped
     env_file:
       - .env
     volumes:
       - ./cache:/app/cache
       - ./downloads:/app/downloads
     network_mode: host
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 512M
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
