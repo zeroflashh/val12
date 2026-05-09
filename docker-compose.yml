@@ -3,8 +3,8 @@ services:
     build: .
     container_name: ValentinMusic
     restart: unless-stopped
-    env_file:
-      - .env
+    # env_file:
+    #   - .env
     volumes:
       - ./cache:/app/cache
       - ./downloads:/app/downloads
