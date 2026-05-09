@@ -3,7 +3,7 @@ FROM python:3.13-slim
 WORKDIR /app
 
 RUN apt-get update -y \
-    && apt-get install -y --no-install-recommends ffmpeg curl unzip gcc python3-dev \
+    && apt-get install -y --no-install-recommends ffmpeg curl unzip gcc python3-dev git \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* \
     && curl -fsSL https://deno.land/install.sh | sh
