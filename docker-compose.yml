@@ -3,8 +3,14 @@ services:
     build: .
     container_name: ValentinMusic
     restart: unless-stopped
-    # env_file:
-    #   - .env
+    environment:
+      - API_ID=7949855
+      - API_HASH=ea4403a7f9496b9b39fdb6401f32c46b
+      - BOT_TOKEN=6173918825:AAGolIOWtxnA5rOedDjEQ7R719kRFyMtua0
+      - MONGO_DB_URI=mongodb+srv://zero:zero@zero.y5pa4sd.mongodb.net/?appName=zero
+      - LOGGER_ID=-1001615517255
+      - OWNER_ID=5329521369
+      - STRING_SESSION=BAB5Th8AApHgn0XeTdZlt5EOJT4MBDBTIpQZwxI_wsvnAFlkIkmWIkB23WFQlE20-I5vqvciNatmrEyLN5O2RWIpm3kHH7OZUyUDntiDgTcMkj2vcqw49LanxLFM1a4ybVopKgBe6W3FqHzkhOqfQv1iXmvuDAmmMoAy4i7GN4MRISQAzvYb7kUIrLEgdVRl-mJ_4kDcBKscfuGl46VGvvIhD7CCob5wVZQFGrxRBrjVbJtUhVmIfOnzWZXo8UNAZIkq9YGiDJi7SF-C5KMftFUtOYteiUPKMaLZNJLqI5g-Q1g962hoxHf1FqPZhoOOMIYeMSvKGfPM2dd8XWN8306Y1euXOAAAAAFtSVWxAA
     volumes:
       - ./cache:/app/cache
       - ./downloads:/app/downloads
