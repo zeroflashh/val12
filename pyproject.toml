@@ -14,7 +14,7 @@ dependencies = [
     "gTTS",
     "hachoir",
     "httpx",
-    "kurigram>=2.2.0",
+    "pyrofork",
     "motor",
     "pillow",
     "psutil",
