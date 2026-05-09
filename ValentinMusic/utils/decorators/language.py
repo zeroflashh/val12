@@ -7,9 +7,9 @@ from ValentinMusic.utils.database import get_lang, is_maintenance
 
 
 def language(mystic):
-    async def wrapper(_, message, **kwargs):
+    async def wrapper(client, message, **kwargs):
         if await is_maintenance() is True:
-            if message.from_user.id not in SUDOERS.user_ids:
+            if message.from_user and message.from_user.id not in SUDOERS:
                 return await message.reply_text(
                     text=f"{app.mention} ɪs ᴜɴᴅᴇʀ ᴍᴀɪɴᴛᴇɴᴀɴᴄᴇ, ᴠɪsɪᴛ <a href={SUPPORT_CHAT}>sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ</a> ғᴏʀ ᴋɴᴏᴡɪɴɢ ᴛʜᴇ ʀᴇᴀsᴏɴ.",
                     disable_web_page_preview=True,
@@ -21,39 +21,39 @@ def language(mystic):
 
         try:
             language = await get_lang(message.chat.id)
-            _ = get_string(language)
+            strings = get_string(language)
         except:
-            _ = get_string("en")
-        return await mystic(_, message, _)
+            strings = get_string("en")
+        return await mystic(client, message, strings)
 
     return wrapper
 
 
 def languageCB(mystic):
-    async def wrapper(_, CallbackQuery, **kwargs):
+    async def wrapper(client, CallbackQuery, **kwargs):
         if await is_maintenance() is True:
-            if CallbackQuery.from_user.id not in SUDOERS.user_ids:
+            if CallbackQuery.from_user and CallbackQuery.from_user.id not in SUDOERS:
                  return await CallbackQuery.answer(
                     f"{app.mention} ɪs ᴜɴᴅᴇʀ ᴍᴀɪɴᴛᴇɴᴀɴᴄᴇ, ᴠɪsɪᴛ sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ ғᴏʀ ᴋɴᴏᴡɪɴɢ ᴛʜᴇ ʀᴇᴀsᴏɴ.",
                     show_alert=True,
                 )
         try:
             language = await get_lang(CallbackQuery.message.chat.id)
-            _ = get_string(language)
+            strings = get_string(language)
         except:
-            _ = get_string("en")
-        return await mystic(_, CallbackQuery, _)
+            strings = get_string("en")
+        return await mystic(client, CallbackQuery, strings)
 
     return wrapper
 
 
 def LanguageStart(mystic):
-    async def wrapper(_, message, **kwargs):
+    async def wrapper(client, message, **kwargs):
         try:
             language = await get_lang(message.chat.id)
-            _ = get_string(language)
+            strings = get_string(language)
         except:
-            _ = get_string("en")
-        return await mystic(_, message, _)
+            strings = get_string("en")
+        return await mystic(client, message, strings)
 
     return wrapper
