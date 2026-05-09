@@ -1,121 +1,53 @@
-<p align="center">
-  <img src="https://telegra.ph/file/32ebdec3530b5d00ff215.jpg" width="200" height="200" style="border-radius: 50%;">
-</p>
+# Valentin Music Bot
 
-<h1 align="center">
-  <b>✧ VALENTIN MUSIC BOT ✧</b>
-</h1>
+Valentin is a fast and powerful Telegram Music Bot based on Pyrogram and Py-TgCalls.
 
-<p align="center">
-  <a href="https://github.com/zeroflashh/val12">
-    <img src="https://img.shields.io/github/v/release/zeroflashh/val12?color=FF3E3E&style=for-the-badge" alt="Release">
-  </a>
-  <a href="https://t.me/Anaavaran">
-    <img src="https://img.shields.io/badge/Support-Channel-blue?style=for-the-badge&logo=telegram" alt="Support Channel">
-  </a>
-</p>
+## 🚀 Deployment
 
-<p align="center">
-  <b>ValentinMusic</b> is a premium, ultra-fast Telegram Music Bot designed for high-fidelity audio and video streaming. 
-  Built on <b>Pyrogram</b> and <b>Py-TgCalls</b>, it offers a seamless experience with extensive platform support.
-</p>
+### VPS/Docker
 
----
-
-## 🚀 Deployment (Docker/VPS)
-
-ValentinMusic is optimized for containerized environments. Follow these steps for a perfect deployment.
-
-### 📦 Prerequisites
-- Docker & Docker Compose installed.
-- A `mongoDB` URI and Telegram `API_ID/HASH`.
-
-### 🛠️ Step-by-Step Setup
-
-1. **Clone the Project:**
-   ```bash
-   git clone https://github.com/zeroflashh/val12
-   cd val12
-   ```
-
-2. **Configure Environment:**
-   Create a `.env` file and add your credentials:
-   ```env
-   API_ID=123456
-   API_HASH=abcdef123456...
-   BOT_TOKEN=12345:ABCDE...
-   MONGO_DB_URI=mongodb+srv://...
-   OWNER_ID=5329521369
-   STRING_SESSION=BAGxz8MAe...
-   ```
-
-3. **Start the Bot (Run in Background):**
+1. **Install Docker & Docker Compose** (if not already installed).
+2. **Configure Environment Variables:**
+   Create a `.env` file with your API credentials (API_ID, API_HASH, BOT_TOKEN, MONGO_DB_URI, STRING_SESSION, etc.).
+3. **Start the Bot:**
    ```bash
    docker compose up -d --build
    ```
-
-4. **Monitor Logs:**
-   ```bash
-   docker compose logs -f
-   ```
-
-5. **Stop the Bot:**
+4. **Stop the Bot:**
    ```bash
    docker compose down
    ```
 
-6. **Restart the Bot:**
-   ```bash
-   docker compose restart
-   ```
+### String Session Generation
 
----
-
-## 🔑 Session Generation
-
-You can generate your **Pyrogram v2** or **Telethon** session string directly via Docker without installing anything locally:
+You can generate your string session directly via Docker:
 
 ```bash
 docker compose run --rm valentin uv run python3 -m ValentinMusic.plugins.tools.genstr
 ```
+Alternatively, if you have python installed locally:
+```bash
+uv run python3 -m ValentinMusic.plugins.tools.genstr
+```
+
+## 🎵 Commands
+
+### Play Commands
+- **/play [Name/Link]** - Start streaming audio on voice chat.
+- **/vplay [Name/Link]** - Start streaming video on voice chat.
+- **/playforce** - Force play (stops current and starts new track).
+- **/pause** - Pause the current music stream.
+- **/resume** - Resume the paused music stream.
+- **/skip** - Skip current track to the next in queue.
+- **/stop** or **/end** - Stop music and clear the entire queue.
+- **/queue** - Show upcoming tracks in the music queue.
+- **/shuffle** - Randomly shuffle the music queue.
+- **/volume [1-200]** - Adjust the bot's volume level.
+- **/loop [enable/disable]** - Toggle loop for current track.
+- **/stream [link]** - Stream audio/video from a direct link (m3u8/index).
+- **/seek [seconds]** - Move the stream forward.
+- **/seekback [seconds]** - Move the stream backward.
+- **/speed** - Change playback speed (0.5x to 2.0x).
 
 ---
-
-## 🎵 Complete Play Module Commands
-
-| Command | Action |
-| :--- | :--- |
-| `/play [Query/Link]` | Start streaming audio in the voice chat |
-| `/vplay [Query/Link]` | Start streaming video in the voice chat |
-| `/playforce` | Stops current playback and starts new track instantly |
-| `/pause` | Pauses the current music/video stream |
-| `/resume` | Resumes the paused stream |
-| `/skip` | Skips to the next track in the queue |
-| `/stop` | Stops the stream and clears the entire queue |
-| `/end` | Alternative for /stop |
-| `/queue` | Displays the list of upcoming tracks |
-| `/shuffle` | Randomizes the current music queue |
-| `/volume [1-200]` | Dynamically adjusts the bot's volume level |
-| `/loop [enable/disable]` | Toggles repeat mode for the current track |
-| `/seek [seconds]` | Jumps forward in the stream |
-| `/seekback [seconds]` | Jumps backward in the stream |
-| `/speed` | Opens the playback speed control panel (0.5x - 2.0x) |
-| `/stream [URL]` | Streams direct links (m3u8, index, etc.) |
-| `/cplay` | Play music in a linked channel |
-
----
-
-## 🛠️ Administrative & Sudo Tools
-
-- **Group Settings:** `/settings` - Configure your group's bot behavior.
-- **Language:** `/lang` - Switch between 8+ supported languages.
-- **Maintenance:** `/maintenance [enable/disable]` - Restricted access mode.
-- **Global Ban:** `/gban` - Protect your chats from malicious users.
-- **Statistics:** `/stats` - View bot performance and usage data.
-
----
-
-<p align="center">
-  <b>Powered by <a href="https://t.me/Anaavaran">Anaavaran</a></b><br>
-  <i>Bringing Premium Music to your Telegram Communities.</i>
-</p>
+**Powered by @Anaavaran**
