@@ -3,7 +3,7 @@
 <h2>ValentinMusic</h2>
 
 <b>Telegram Group Calls Streaming Bot</b><br>
-Supports YouTube, Spotify, Resso, Apple Music, SoundCloud and M3U8 links.
+Supports YouTube and M3U8 links.
 
 <a href="https://github.com/zeroflashh/val12/stargazers">
     <img src="https://img.shields.io/github/stars/zeroflashh/val12?color=blueviolet&logo=github&logoColor=black&style=for-the-badge" alt="Stars"/>
@@ -175,7 +175,7 @@ This project is licensed under the <b>MIT License</b> — see <a href="https://g
 
 <h2>👀 Acknowledgements</h2>
 
-- Inspired by other open-source Telegram music bots (Yukki, AnonXMusic and others).
+- Inspired by other open-source Telegram music bots (Yukki, ValentinMusic and others).
 - Thanks to all the <a href="https://github.com/zeroflashh/val12/graphs/contributors">contributors</a>.
 
 <hr>

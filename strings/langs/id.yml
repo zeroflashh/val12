@@ -167,7 +167,7 @@ start_2: 'Halo, Nama saya {0}.
 
 
   Saya bot streaming telegram dengan beberapa fitur berguna. Platform pendukung seperti
-  Youtube, Spotify, Resso, AppleMusic , Soundcloud dll.
+  Youtube dan M3U8 links
 
 
   Jangan ragu untuk menambahkan saya kegroupmu.'
@@ -370,8 +370,7 @@ play_13: '**Daftar Putar Apple**
   Diminta Oleh:- {0}'
 play_14: '**Tidak dapat memverifikasi URL.**
 
-  Bot bertanya-tanya apakah url ini milik salah satu platform berikut: Youtube, AppleMusic,
-  Spotify, Resso, dan Soundcloud.
+  Bot bertanya-tanya apakah url ini milik salah satu platform berikut: Youtube dan M3U8 links.
 
 
   Anda dapat menggunakan /stream untuk M3u8 atau Remote Links .'

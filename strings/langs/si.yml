@@ -171,7 +171,7 @@ start_2: 'Hello, My name is {0}.
 
 
   I''m a telegram streaming bot with some useful features. Supporting platforms like
-  Youtube, Spotify, Resso, AppleMusic , Soundcloud etc.
+  Youtube and M3U8 links.
 
 
   Feel free to add me to your groups.'
@@ -372,8 +372,7 @@ play_13: '**Apple Playlists**
   ඉල්ලන ලද්දේ:- {0}'
 play_14: '**URL එක සත්‍යාපනය කළ නොහැක.**
 
-  මෙම url එක පහත සඳහන් ඕනෑම වේදිකාවකට අයත් වේද යන්න පුදුමයට කරුණකි: Youtube, AppleMusic,
-  Spotify, Resso සහ Soundcloud.
+  මෙම url එක පහත සඳහන් ඕනෑම වේදිකාවකට අයත් වේද යන්න පුදුමයට කරුණකි: Youtube සහ M3U8 links.
 
 
   ඔබට M3u8 හෝ දුරස්ථ සබැඳි සඳහා /stream භාවිතා කළ හැක.'
