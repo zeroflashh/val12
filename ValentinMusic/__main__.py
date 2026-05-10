@@ -2,6 +2,7 @@ import asyncio
 import importlib
 
 from pyrogram import idle
+from pyrogram.errors import FloodWait
 from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
@@ -33,7 +34,24 @@ async def init():
             BANNED_USERS.add(user_id)
     except:
         pass
-    await app.start()
+
+    # Handle FloodWait from Telegram bot auth
+    max_flood_retries = 3
+    flood_wait_done = False
+    for attempt in range(max_flood_retries):
+        try:
+            await app.start()
+            flood_wait_done = True
+            break
+        except FloodWait as e:
+            wait_seconds = e.seconds
+            LOGGER(__name__).warning(f"FloodWait {wait_seconds}s on bot auth (attempt {attempt+1}/{max_flood_retries}). Waiting...")
+            await asyncio.sleep(wait_seconds + 10)
+
+    if not flood_wait_done:
+        LOGGER(__name__).error("Max flood wait retries exceeded. Exiting.")
+        exit()
+
     for all_module in ALL_MODULES:
         importlib.import_module("ValentinMusic.plugins" + all_module)
     LOGGER("ValentinMusic.plugins").info("Successfully Imported Modules...")
