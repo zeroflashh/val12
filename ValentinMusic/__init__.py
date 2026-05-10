@@ -1,4 +1,5 @@
-import pyrofork.listen
+# pyrofork is a Pyrogram fork with pyromod listener patches built-in.
+# No separate pyromod import needed.
 from ValentinMusic.core.bot import Anony
 from ValentinMusic.core.dir import dirr
 from ValentinMusic.core.git import git
