@@ -16,8 +16,7 @@ ENV PATH="/root/.local/bin:${PATH}"
 
 COPY pyproject.toml uv.lock ./
 
-# Try uv sync first, fall back to pip if uv fails
-RUN uv sync --frozen 2>/dev/null || pip install --no-cache-dir -r <(uv pip compile pyproject.toml) 2>/dev/null || pip install --no-cache-dir -e .
+RUN uv sync --frozen || pip install -e .
 
 COPY . .
 
