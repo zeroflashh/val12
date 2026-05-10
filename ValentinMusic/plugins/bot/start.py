@@ -42,7 +42,7 @@ async def start_pm(client, message: Message, _):
             if await is_on_off(2):
                 return await app.send_message(
                     chat_id=config.LOGGER_ID,
-                    text=f"{message.from_user.mention} ᴊᴜsᴛ sᴛᴀʀᴛᴇᴅ ᴛʜᴇ ʙᴏᴛ ᴛᴏ ᴄʜᴇᴄᴋ <b>sᴜᴅᴏʟɪsᴛ</b>.\n\n<b>ᴜsᴇʀ ɪᴅ:</b> <code>{message.from_user.id}</code>\n<b>ᴜsᴇʀɴᴀᴍᴇ:</b> @{message.from_user.username}",
+                    text=f"{message.from_user.mention} Just Started the Bot to check <b>Sudolist</b>.\n\n<b>user id:</b> <code>{message.from_user.id}</code>\n<b>Username:</b> @{message.from_user.username}",
                 )
             return
         if name[0:3] == "inf":
@@ -80,7 +80,7 @@ async def start_pm(client, message: Message, _):
             if await is_on_off(2):
                 return await app.send_message(
                     chat_id=config.LOGGER_ID,
-                    text=f"{message.from_user.mention} ᴊᴜsᴛ sᴛᴀʀᴛᴇᴅ ᴛʜᴇ ʙᴏᴛ ᴛᴏ ᴄʜᴇᴄᴋ <b>ᴛʀᴀᴄᴋ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ℹ️</b>.\n\n<b>ᴜsᴇʀ ɪᴅ:</b> <code>{message.from_user.id}</code>\n<b>ᴜsᴇʀɴᴀᴍᴇ:</b> @{message.from_user.username}",
+                    text=f"{message.from_user.mention} Just Started the Bot to check <b>Track Information ℹ️</b>.\n\n<b>user id:</b> <code>{message.from_user.id}</code>\n<b>Username:</b> @{message.from_user.username}",
                 )
     else:
         out = private_panel(_)
@@ -92,7 +92,7 @@ async def start_pm(client, message: Message, _):
         if await is_on_off(2):
             return await app.send_message(
                 chat_id=config.LOGGER_ID,
-                text=f"<b>➻ valentiɴ ᴜsᴇʀ ʟᴏɢ</b>\n\n╭{message.from_user.mention} ᴊᴜsᴛ sᴛᴀʀᴛᴇᴅ ᴛʜᴇ ʙᴏᴛ.\n<b>╰─ ɪᴅ:</b> <code>{message.from_user.id}</code>\n<b>⎋ ᴜsᴇʀɴᴀᴍᴇ:</b> @{message.from_user.username}",
+                text=f"<b>➻ valentin user log</b>\n\n╭{message.from_user.mention} Just started the bot.\n<b>╰─ ID:</b> <code>{message.from_user.id}</code>\n<b>⎋ Username:</b> @{message.from_user.username}",
             )
 
 

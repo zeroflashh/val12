@@ -1,0 +1,523 @@
+name: 🇯🇵 日本語
+
+
+general_1: "» ユーザーのメッセージに返信するか、ユーザー名/ユーザー ID を伝えます。"
+general_2: "» クエリの処理中に問題が発生しました。\n\n例外: <code>{0}</code>"
+general_3: "あなたはこのチャットの匿名管理者です。私を使用するにはユーザー アカウントに戻ってください。"
+general_4: "» ビデオチャットを管理する権限がありません。\n\n/reload 経由で管理キャッシュをリロードする"
+general_5: "» ボットはビデオチャットでストリーミングしていません。"
+
+tg_1: "<u><b>{0} ダウンローダー</b></u>\n\n<b>ファイル サイズ :</b> {1}\n<b>完了 :</b> {2}\n<b>パーセンテージ:</b>
+  {3}%\n\n<b>速度 :</b> {4}/秒\n<b>イータ:</b> {5}"
+tg_2: "正常にダウンロードされました。ファイルを処理しています...\n\n<b>経過時間:</b> {0}"
+tg_3: "Telegram からメディアをダウンロードできませんでした。もう一度お試しください..."
+tg_4: "» ダウンロードはすでに完了しています。"
+tg_5: "» ダウンロードはすでに完了したかキャンセルされました。"
+tg_6: "» ダウンロードがキャンセルされました。"
+tg_7: "» ダウンロードがキャンセルされました: {0}"
+tg_8: "ダウンロードの停止に失敗しました。"
+tg_9: "進行中のダウンロード タスクを取得できませんでした..."
+
+call_1: "» ボットでアシスタントをチャットに招待するには、<b>リンク経由でユーザーを招待</b>する権限が必要です。"
+call_2: "<u>{0} 人のアシスタントがグループ/チャンネルで禁止されています。</u>\n\n<b>id :</b> <コード>{1}</code>\n\
+  <b>名前 :</b> {2}\n<b>ユーザー名 :</b> @{3}\n\nアシスタントの禁止を解除して、もう一度お試しください。"
+call_3: "{0} アシスタントをチャットに招待できませんでした。\n\n理由: <コード>{1}</コード>"
+call_4: "お待ちください...\n\n{0} アシスタントをチャットに招待しています..."
+call_5: "{0} アシスタントが正常に参加しました。\n\nストリームを開始しようとしています..."
+call_6: "» ストリームの切り替えに失敗しました。/skip を使用してトラックを再度変更してください。"
+call_7: "» キューから次のトラックをダウンロードしています。\n\nお待ちください..."
+call_8: "<b>アクティブなビデオチャットが見つかりません。</b>\n\nグループ/チャンネルでビデオチャットを開始して、もう一度お試しください。"
+call_9: "<b>アシスタントはすでにビデオチャット中です。</b>\n\nアシスタントがビデオチャットに参加していない場合は、<code>/reboot</code>
+  を送信して、もう一度再生してください。"
+call_10: "<b>テレグラム サーバー エラー</b>\n\ntelegram に内部問題が発生しています。もう一度再生するか、グループのビデオチャットを再開してください。"
+
+auth_1: "» グループ内に許可されたユーザーは 25 人のみです。"
+auth_2: "» 許可されたユーザーのリストに {0} を追加しました。"
+auth_3: "{0} はすでに承認済みユーザーのリストに含まれています。"
+auth_4: "» 許可されたユーザーのリストから {0} を削除しました。"
+auth_5: "{0} は許可されたユーザーのリストにありません。"
+auth_6: "» 許可されたユーザーのリストを取得しています..."
+auth_7: "» {0} の許可されたユーザーのリスト:"
+auth_8: "<b>↬ 追加者:</b>"
+
+reload_1: "» 管理キャッシュは 3 分に 1 回のみ更新できます。\n\n{0} の後で試してください。"
+reload_2: "» 管理キャッシュが正常に更新されました。"
+reload_3: "» 管理者キャッシュのリロードに失敗しました。ボットがチャット内で管理者であることを確認してください。"
+reload_4: "» please wait...\n\nrebooting {0} for your chat."
+reload_5: "successfully rebooted {0} for your chat.\n\nstart playing again..."
+
+admin_1: "» ストリームを再開したことを覚えていますか?"
+admin_2: "▢ ストリームが一時停止されました: {0}"
+admin_3: "» ストリームを一時停止したことを覚えていますか?"
+admin_4: "▷ ストリームが再開されました: {0}"
+admin_5: "▢ stream ended/stopped by: {0} "
+admin_6: "≫ ストリームがスキップされました: {0} \n\n<b>» {1} のキューにトラックがなくなり、<b>ビデオチャットが終了します。</b>"
+admin_7: "ストリームを {0} に変更中にエラーが発生しました。"
+admin_8: "» <code>/loop disable</code> でループ再生を無効にしてから、もう一度スキップしてください。"
+admin_9: "please use specific numbers for skip, like 1, 2, 4..."
+admin_10: "atleast 2 tracks needed in queue for specific skip.\n\ncheck the queue
+  by : /queue"
+admin_11: "» not enough tracks in queue for specific skip.\n\nplease skip between
+  1 and {0}"
+admin_12: "» failed to skip to specific track.\n\ncheck left queue by : /queue"
+admin_13: "» please reload admin cache via : /reload"
+admin_14: "» you don't have permissions to manage video chats.\n\nreload admin cache
+  via : /reload"
+admin_15: "» シャッフルに失敗しました。\n\n<b>キューをチェック:</b> /queue"
+admin_16: "» キューは {0} によってシャッフルされました。\n\n<b>シャッフルされたキューを次の方法で確認します:</b> /queue"
+admin_17: "<b>例:</b>\n\n/loop <code>有効</code>/<code>無効</code>\n/loop <code>10</code>/<code>9</code>/<code>8</code>/<code>7</code>"
+admin_18: "» ループが <code>{0}</code> 回有効になりました: {1}。"
+admin_19: "» loop play has been disabled by : {0}."
+admin_20: "<b>example :</b>\n\n/seek or /seekback [duration in seconds]"
+admin_21: "» シークには秒単位の数字を使用してください。"
+admin_22: "» ライブ ストリームをシークできません。"
+admin_23: "» より短い期間でシークを試してください。\n\n<b>{1}</b> 分のうち <b>{0}</b> をリクエストしました。"
+admin_24: "<b>探しています...</b>\n\nお待ちください..."
+admin_25: "» stream successfully seeked.\n\n<b>duration :</b> {0} minutes\n<b>by :</b>
+  {1}"
+admin_26: "求めるのに失敗した。"
+admin_27: "» only youtube stream's speed can be controlled currently."
+admin_28: "<b><u>{0} speed control panel</b></u>\n\nclick on the buttons below to
+  change the speed of currently playing stream on videochat."
+admin_29: "» bot is already playing on normal speed."
+admin_30: "» please wait...\n\nsomeone else is trying to change the speed of the stream."
+admin_31: "速度を変える..."
+admin_32: "» 進行中のストリームの速度を変更しようとしています...\n\n<b>リクエスト者:</b> {0}"
+admin_33: "» 進行中のストリームの速度を変更できませんでした。"
+admin_34: "» changed the speed of the ongoing stream to {0}x\n\n<b>requested by :</b>
+  {1}"
+admin_35: "the voting has ended because the track has ended for which the voting was
+  provided."
+admin_36: "投票が提供されたトラックが終了または停止されているため、このアクションを実行できませんでした。"
+admin_37: "<code>{0}</code> 件の賛成票を正常に取得しました。"
+admin_38: "» 賛成票が 1 件追加されました。"
+admin_39: "» 1 件の賛成票を削除しました。"
+admin_40: "賛成票を投じた。"
+
+start_1: "{0} は生きています、ベイビー。\n\n<b>✫ 稼働時間 :</b> {1}"
+start_2: "<b>hey</b> {0}, \n\n๏ this is {1} !\n\n➻ a fast & powerful telegram music
+  player bot with some awesome features.\n\n<b><u>Supported Platforms :</b></u> youtube
+  and M3U8 links.\n──────────────────\n<b>๏ click on the help button to get information
+  about my modules and commands.</b>"
+start_3: "hey {0},\nthis is {1}\n\nthanks for adding me in {2}, {3} can now play songs
+  in this chat."
+start_4: "🎄 <b>supergroup needed</b> \n\nplease convert your <b>group</b> to <b>supergroup</b>
+  and then add me again.\n\n<b>how to make supergroup ?</b>\n- make your group's chat
+  history <b>visible</b> once."
+start_5: "<b>↝ ブラックリストに登録されたチャット ↜</b>\n\nこのチャットは {0} データベースのブラックリストに登録されています。\n<a
+  href={1}>sudo ユーザー</a>にチャットのブラックリストを解除するようリクエストするか、<a href={2}>サポート チャット</a>にアクセスしてください。"
+start_6: "ℹ️ <b><u>トラック情報</u></b> \n- - - - - - - - - - - - - - - - - - - - - - -
+  - - -\n🏷️ <b>タイトル :</b> {0}\n\n⏳ <b>所要時間 :</b> {1} 分\n👀 <b>ビュー:</b> <コード>{2}</code>\n\
+  📆<b>公開日:</b> {3}\n📎 <b>チャンネル :</b> <a href={4}>{5}</a>\n───────── · ・ ・ ・ ✦\n<b>◢◤
+  @anaavaran による提供</b>"
+
+help_1: "ヘルプが必要なカテゴリを選択してください。\n疑問がある場合は、<a href={0}>サポート チャット</a>で質問してください。\n\nすべてのコマンドは
+  <code>/</code> とともに使用できます。"
+help_2: "click on the button below to get my help menu in your pm."
+
+lang_1: "» このグループのデフォルト言語として設定したい言語を選択してください:"
+lang_2: "言語が正常に変更されました。"
+lang_3: "言語の変更に失敗しました。"
+lang_4: "You're already on the same language."
+
+setting_1: "<u><b>{0} settings panel</b></u>\n\n<b>chat id :</b> <code>{1}</code>\n\
+  <b>chat title :</b> {2}\n\nclick on the buttons below for changing settings."
+setting_2: "» direct : 検索クエリを直接再生します。\n\n» inline : ビデオとオーディオを選択するためのインライン ボタンを返します。"
+setting_3: "» everyone : anyone can use admin commands [skip, pause, resume etc.]
+  present in this group.\n\n» admin only : only admins and authorized users can use
+  admin commands."
+setting_4: "» no authorized users found."
+setting_5: "» group : plays music in the group where the command is given.\n\n» channel
+  : plays music in the channel you want. set channel id via /channelplay"
+setting_6: "» everyone : anyone present in this group can play music here.\n\n» admin
+  only: only admins can play the music in this group."
+setting_7: "» please define channel id via /channelplay"
+setting_8: "このモードが有効な場合、管理者権限を持たないユーザーでも、一定数の投票後に管理者コマンドを使用できます。"
+setting_9: "管理コマンドを使用するために必要な現在の賛成票は次のとおりです: {0}"
+setting_10: "投票モードは無効になっています。"
+setting_11: "最低の賛成票数は 2 です。2 未満に設定することはできません"
+setting_12: "highest upvotes count can be 15. you can't set above 15"
+
+set_cb_1: "認証ユーザーパネルを取得しています..."
+set_cb_2: "getting play mode panel..."
+set_cb_3: "変更を設定しています..."
+set_cb_4: "» 許可されたユーザーのリストを取得しています..."
+set_cb_5: "» getting back..."
+
+gstats_1: "{0} の統計と情報を取得しています...\n\nしばらく時間がかかるかもしれません、しばらくお待ちください..."
+gstats_2: "click on the buttons below to check the stats of {0}."
+gstats_3: "<b><u>{0} stats and information:</u></b>\n\n<b>total assistants:</b> <code>{1}</code>\n\
+  <b>total blocked:</b> <code>{2}</code>\n<b>total chats (serving/served) :</b> <code>{3}</code>\n\
+  <b>total users (serving/served) :</b> <code>{4}</code>\n<b>total modules loaded
+  :</b> <code>{5}</code>\n<b>total sudoers:</b> <code>{6}</code>\n<b>telegram audio
+  file limit:</b> <code>{8}</code>\n<b>telegram video file limit:</b> <code>{9}</code>\n\
+  <b>youtube play duration limit:</b> <code>{7}</code>\n<b>youtube playlist fetch
+  limit:</b> <code>{10} videos</code>\n<b>auto leaving assistant:</b> {11}\n<b>Maintenance:</b>
+  {13}\n<b>Logging:</b> {12}"
+gstats_4: "このボタンは sudoers 専用です。"
+gstats_5: "<b><u>{0} stats and information:</u></b>\n\n<b>modules:</b> <code>{1}</code>\n\
+  <b>platform:</b> <code>{2}</code>\n<b>ram:</b> <code>{3}</code>\n<b>physical cores:</b>
+  <code>{4}</code>\n<b>total cores:</b> <code>{5}</code>\n<b>cpu frequency:</b> <code>{6}</code>\n\
+  \n<b>python:</b> <code>{7}</code>\n<b>pyrogram:</b> <code>{8}</code>\n<b>py-tgcalls:</b>
+  <code>{9}</code>\n\n<b>storage available:</b> <code>{10} gib</code>\n<b>storage
+  used:</b> <code>{11} gib</code>\n<b>storage left:</b> <code>{12} gib</code>\n\n\
+  <b>served chats:</b> <code>{13}</code>\n<b>served users:</b> <code>{14}</code>\n\
+  <b>blocked users:</b> <code>{15}</code>\n<b>sudo users:</b> <code>{16}</code>\n\n\
+  <b>total db size:</b> <code>{17} mb</code>\n<b>total db storage:</b> <code>{18}
+  mb</code>\n<b>total db collections:</b> <code>{19}</code>\n<b>total db keys:</b>
+  <code>{20}</code>"
+
+playcb_1: "» aww, this is not for you baby."
+playcb_2: "» 次の結果を得るには、\n\nお待ちください..."
+
+cplay_1: "» you can play music in channels from {0} to any channel or your chat's
+  linked channel.\n\n<b>for linked channel:</b>\n<code>/channelplay linked</code>\n\
+  \n<b>for any other channel:</b>\n<code>/channelplay [channel id]</code>"
+cplay_2: "» this chat don't have any linked channel."
+cplay_3: "» channel defined to {0}.\nchannel id: <code>{1}</code>"
+cplay_4: "» チャンネルを取得できませんでした。\n\nボットをチャンネルに追加し、管理者として昇格していることを確認してください。"
+cplay_5: "チャネルのみがサポートされます。"
+cplay_6: "» このグループに接続するには、チャンネル {0} の<b>所有者</b>である必要があります。\n<b>チャンネルの所有者:</b> @{1}\n\
+  \nあるいは、グループをそのチャンネルにリンクし、<code>/channelplay linked</code> で接続を試みることもできます。"
+cplay_7: "» チャンネル再生が無効になっています。"
+
+play_1:
+play_2: "<b>➻ 処理中...</b>\n\nお待ちください...\n\n<b>チャット :</b> {0}"
+search_1: "<b>➻ searching...</b>\n\nplease wait for a moment."
+search_2: "<b>Search results for:</b> {0}"
+search_3: "<b>{0}.</b> <a href='{1}'>{2}</a>\n<b>期間:</b> {3}\n<b>チャンネル:</b> {4}"
+search_4: "<b>Page:</b> {0}/2"
+search_5: "<b>Result expired.</b>"
+tr_1: "<b>➻ Processing Translation...</b>\nChosen language: <b>{0}</b>"
+tr_2: "<b>✅ Translated to {0}!</b>"
+tr_3: "{0}"
+AL_1: "<b>📋 List of administrators in {0}:</b>"
+AL_2: "<b>👤 Owner:</b>\n{0}{1}"
+AL_3: "<b>👥 Administrators:</b>"
+AL_4: "<b>❌ No administrators found.</b>"
+reboot_1: "<b>⚙️ System Reboot Initiated...</b>\n\nPlease wait while the bot and assistant
+  refresh their connection for this group."
+reboot_2: "<b>✅ システムのリセットが完了しました!</b>\n\n<b>詳細:</b>\n- アシスタントのキャッシュがパージされました\n- 管理階層が更新されました\n\
+  - 以前のストリームは終了しました\n\nこれで、グループは新しいセッションの準備が整いました。"
+sudo_help_err: "<b>🔒 Sudo Restriction</b>\n\nAccess denied. This section is reserved
+  for the bot's Sudo Users only. Please contact the owner if you believe this is an
+  error."
+session_1: "<b>文字列セッション ジェネレーター</b>\n\nキャンセルされました: {0}\nバージョン: {1}"
+
+play_3: "» failed to process query."
+play_4: "<b>admins only play</b>\nonly admins of this chat are allowed to play\n\n\
+  change play mode via /playmode"
+play_5: "» 音声ファイルの処理に失敗しました。\n\nオーディオ ファイルのサイズが定義された制限を超えています。"
+play_6: "» {0} より長いストリームは {1} で再生できません"
+play_7: "» not a valid video file extension.\n\n<b>supported extensions :</b> {0}"
+play_8: "» video file size should be less than 2gib."
+play_9: "<b><u>youtube playlist feature</b></u>\n\nselect the mode in which you want
+  to play whole youtube playlist."
+play_10: "<b>トラック:</b> {0}\n<b>所要時間:</b> {1} 分"
+play_11: "<u><b>{0} spotify player</b></u>\n\n<b>played by:</b> {1}"
+play_12: "<u><b>{0} apple player</b></u>\n\n<b>played by:</b> {1}"
+play_13: "» ライブ ストリームが検出されました。\n\nこのライブ ストリームを再生してもよろしいですか?"
+play_14: "failed to fetch track details.\n\ntry playing any other."
+play_15: "» failed to process query.\n\ni can only play spotify tracks, albums, artists
+  and playlists."
+play_16: "アクティブなボイスチャットはありません。\n\n強制プレイを使用するには、アクティブなボイスチャットが必要です。"
+play_17: "please turn on videochat, i'm unable to stream urls."
+play_18: "<b>usage :</b> /play [song name/youtube url/reply to a audio/video file]"
+play_19: "キューに入れられたプレイリスト:"
+play_20: "Queued Position-"
+play_21: "added {0} tracks to queue.\n\n<b>check :</b> <a href={1}>click here</a>"
+play_22: "グループ内でクエリを再生するモードを選択します: {0}"
+
+str_1: "please provide m3u8 or index links."
+str_2: "➻ 有効なストリームが確認されました。\n\n処理..."
+str_3: "YouTube ライブ ストリームのストリーミングに失敗しました。ライブ形式が見つかりませんでした。"
+
+ping_1: "{0} が鳴っています..."
+ping_2: "🏓 ポン: <code>{0}ms</code>\n\n<b><u>ㄖ システム統計:</u></b>\n↬ 稼働時間: {2}\n↬ ラム: {3}\n\
+  ↬ CPU: {4}\n↬ ディスク: {5}\n↬ py-tgcalls: <code>{6}ms</code>"
+
+queue_1: "» fetching queue...\n\nplease wait..."
+queue_2: "» キューが空です。"
+queue_3: "<u>» click here to check the list of the queued tracks:</u> <a href={0}>here</a>"
+queue_4: " <b>Added To Queue At #{0}\n\nTrack:</b> {1}\n<b>Duration :</b> {2} minutes\n\
+  <b>requested by:</b> {3}"
+queue_5: "プレイリストにはキューに入れられたトラックが 1 つだけあります。\n\nチェックリストにさらにトラックを追加します。"
+queue_6: "<b>🕚 期間:</b> 期間不明のストリーム\n\nキューリスト全体を取得するには、下のボタンをクリックしてください。"
+queue_7: "キューリスト全体を取得するには、下のボタンをクリックしてください。"
+queue_8: "<b>{0} player</b>\n\n🎄 <b>streaming:</b> {1}\n\n🔗 <b>stream type:</b> {2}\n\
+  \ <b>requested by:</b> {3}\n{4}"
+
+stream_1: "♬ <b>ストリーミングを開始しました... </b>\n\n<b>⋆ トラック:</b> <a href={0}>{1}</a>\n<b>⋆
+  所要時間:</b> {2} 分\n<b>⋆ プレイ者:</b> {3}"
+stream_2: "♬ <b>Started Streaming... </b>\n\n<b>⋆ Stream type:</b> live stream\n<b>⋆
+  Played by:</b> {0}"
+
+
+CLOSE_BUTTON: "• close •"
+BACK_BUTTON: "◁戻る"
+
+S_B_1: "✚ 私を追加してください"
+S_B_2: "💬サポート"
+S_B_3: "✚ Add me to your group"
+S_B_4: "ℹ️ ヘルプとコマンド"
+S_B_5: "🜲 maintainer"
+S_B_6: "📨 Channel"
+S_B_7: "ソースコード"
+S_B_8: "⎋ ユーチューブ"
+S_B_9: "↝サポート↜"
+
+H_B_1: Play Commands
+H_B_2: Admin Commands
+H_B_3: ボットコマンド
+H_B_4: Sudo コマンド
+
+P_B_1: "オーディオ"
+P_B_2: "video"
+P_B_3: "live stream"
+P_B_4: "normal"
+
+SA_B_3: "🧛 トップ 10 ユーザー"
+SA_B_4: "🏷 トップ10はこちら"
+SA_B_5: "💡 全体的な統計"
+SA_B_6: "👤 User Stats"
+SA_B_7: "🔢 グローバルトップ10の統計"
+SA_B_8: "🤖 Bot Stats"
+
+# Force Subscription
+force_sub_text: "» このボットを使用するには、まずサポート チャンネルに参加する必要があります。\n\n下のボタンをクリックして参加し、もう一度お試しください。"
+
+# Song Download
+song_1: "» You can only download music/video from YouTube in private chat. Please
+  start me in private chat."
+song_2: "**使用方法:**\n\n/song [曲名] または [YouTube リンク]"
+song_3: "» ライブリンクが検出されました。 YouTube のライブ動画をダウンロードできません。"
+song_4: "**🔘 タイトル:**- {0}\n\nダウンロードしたい種類を選択します。"
+song_5: "» 有効な YouTube リンクではありません。"
+song_6: "» Fetching formats...\n\nPlease wait..."
+song_7: "» Failed to fetch available formats for video. Please try another track."
+song_8: "» Download started...\n\nDownload speed might be slow. Please wait..."
+song_9: "» YouTube-DL からの曲のダウンロードに失敗しました。\n\n**理由:** {0}"
+song_10: "» Failed to upload to Telegram from servers."
+song_11: "» Upload started...\n\nUpload speed might be slow. Please wait..."
+
+ST_B_1: "認証ユーザー"
+ST_B_2: "Play mode"
+ST_B_3: "🏳️‍🌈 言語"
+ST_B_4: "Voting mode"
+ST_B_5: "on"
+ST_B_6: "off"
+ST_B_7: "認証ユーザー ➜"
+ST_B_8: "admins"
+ST_B_9: "みんな"
+ST_B_10: "検索モード ➜"
+ST_B_11: "直接"
+ST_B_12: "inline"
+ST_B_13: "管理者コマンド ➜"
+ST_B_14: "プレイタイプ ➜"
+
+SA_B_1: "全体的な統計"
+SA_B_2: "一般的な"
+QU_B_1: "queue"
+QU_B_2: "{0} ————————— {1}"
+
+sudo_1: "» {0} is already in sudo users list."
+sudo_2: "» {0} を sudo ユーザーリストに追加しました。"
+sudo_3: "» {0} は sudo ユーザー リストにありません。"
+sudo_4: "» removed {0} from sudo users list."
+sudo_5: "<u><b>🜲 maintainer :</b></u>\n"
+sudo_6: "\n<u><b>✳️ sudo users:</b></u>\n"
+sudo_7: "» no sudo users found."
+sudo_8: "failed."
+
+block_1: "» {0} はすでにボットからブロックされています。"
+block_2: "» added {0} to blocked users list."
+block_3: "» {0} is not in blocked users list."
+block_4: "» removed {0} from blocked users list."
+block_5: "» no blocked users found."
+block_6: "» ブロックされたユーザーのリストを取得しています..."
+block_7: "<b>😫 ブロックされたユーザー:</b>"
+
+black_1: "<b>例:</b>\n\n/blacklistchat [チャット ID]"
+black_2: "» このチャットはすでにブラックリストに登録されています。"
+black_3: "» successfully added to blacklisted chats."
+black_4: "<b>例:</b>\n\n/whitelistchat [チャット ID]"
+black_5: "» このチャットはブラックリストに登録されていません。"
+black_6: "» ブラックリストに登録されたチャットから正常に削除されました。"
+black_7: "» list of blacklisted chats :\n\n"
+black_8: "» {0} にはブラックリストに登録されたチャットはありません。"
+black_9: "» 何か問題が発生しました。"
+
+maint_1: "<b>例:</b>\n/maintenance [有効にする |無効にする]"
+maint_2: "» {0} メンテナンス モードが有効になりました。"
+maint_3: "» {0} maintenance mode disabled."
+maint_4: "» maintenance mode is already enabled."
+maint_5: "» maintenance mode is already disabled."
+
+log_1: "<b>example :</b>\n/logger [enable | disable]"
+log_2: "enabled logging."
+log_3: "ロギングを無効にしました。"
+
+broad_1: "» started broadcasting..."
+broad_2: "<b>example :</b>\n\n/broadcast [message or reply to a message]"
+broad_3: "» ボットから {1} ピンを持つ {0} チャットにメッセージをブロードキャストしました。"
+broad_4: "» メッセージを {0} ユーザーにブロードキャストしました。"
+broad_5: "» アシスタント ブロードキャストを開始しています..."
+broad_6: "➻ assistant broadcast :\n\n"
+broad_7: "↬ アシスタント {0} が {1} チャットでブロードキャストしました。"
+broad_8: "» please provide some text to broadcast."
+
+server_1: "» ログの取得に失敗しました。"
+server_2: "Heroku API キーとアプリ名が正しく設定されていることを確認してください。"
+server_3: "利用可能なアップデートを確認しています..."
+server_4: "gitコマンドエラー。"
+server_5: "invalid git repsitory."
+server_6: "» ボットは最新です。"
+server_7: "» ボットは正常に更新されました。ボットが再起動して変更をプッシュするまで数分間待ちます。"
+server_8: "{0} を再起動しています...\n\n15 ～ 20 秒後に再びプレイを開始できます。"
+server_9: "何か問題が発生しました。ログを確認してください。"
+server_10: "次の理由により #updater で例外が発生しました: <code>{0}</code>"
+server_11: "» スピードテストを実行中..."
+server_12: "<b>⇆ ダウンロード速度テストを実行中...</b>"
+server_13: "<b>⇆ アップロード速度テストを実行中...</b>"
+server_14: "<b>↻ スピードテスト結果を共有...</b>"
+server_15: "✯ <b>スピードテストの結果</b> ✯\n\n<u><b>クライアント:</b></u>\n<b>» isp :</b> {0}\n<b>»
+  国 :</b> {1}\n\n<u><b>サーバー:</b></u>\n<b>» 名前 :</b> {2}\n<b>» 国 :</b> {3}、{4}\n<b>»
+  スポンサー :</b> {5}\n<b>» レイテンシ :</b> {6}\n<b>» ping :</b> {7}"
+
+gban_1: "» なぜあなたは自分自身を禁止したいのですか？"
+gban_2: "» なぜ自分自身を禁止しなければならないのですか？"
+gban_3: "» 私の sudoers を禁止することはできません。"
+gban_4: "» {0} はすでに世界的にボットから禁止されています。"
+gban_5: "» {0} の世界的な禁止を開始しています。\n\n<b>予想時間 :</b> {1}"
+gban_6: "<b><u>{0} に対する新たな世界的禁止:</u></b>\n\n<b>発信元:</b> {1} [<code>{2}</code>]\n<b>ユーザー
+  :</b> {3}\n<b>ユーザー ID :</b> {4}\n\n<b>禁止者:</b> {5}\n<b>チャット :</b> <code>{6}</code>"
+gban_7: "» {0} はボットから禁止されていません。"
+gban_8: "» {0} からの世界的な禁止を解除します。\n\n<b>予想時間 :</b> {1}"
+gban_9: "» {0} からの世界的な禁止を解除しました。\n\n{1} チャットの禁止が解除されました。"
+gban_10: "» ボットへのアクセスを世界的に禁止される人はいません。"
+gban_11: "» 禁止されたユーザーのリストを取得しています..."
+gban_12: "🙂 <b>世界的に禁止されたユーザー:</b>"
+
+HELP_1: |-
+  <b><u>音楽再生コマンド 🎵</u></b>
+  ─────────────
+
+  <b>/play [名前/リンク] -</b> ボイスチャットでオーディオのストリーミングを開始します。
+  <b>/vplay [名前/リンク] -</b> ボイスチャットでビデオのストリーミングを開始します
+  <b>/playforce -</b> 強制再生 (現在のトラックを停止し、新しいトラックを開始します)
+  <b>/pause -</b> 現在の音楽ストリームを一時停止します
+  <b>/resume -</b> 一時停止した音楽ストリームを再開します
+  <b>/skip -</b> 現在のトラックをキュー内の次のトラックにスキップします
+  <b>/stop または /end -</b> 音楽を停止し、キュー全体をクリアします
+  <b>/queue -</b> 音楽キュー内の今後のトラックを表示します
+  <b>/shuffle -</b> 音楽キューをランダムにシャッフルします
+  <b>/volume [1-200] -</b> ボットの音量レベルを調整します。
+  <b>/loop [有効/無効] -</b> 現在のトラックのループを切り替えます
+  <b>/stream [link] -</b> 直接リンクからオーディオ/ビデオをストリーミングします。
+  <i>- ストリーミングでサポートされている形式: m3u8 およびインデックス リンク。</i>
+  <b>/seek [秒] -</b> ストリームを前後に移動します
+  <b>/seekback [秒] -</b> ストリームを逆方向にシークします
+  <b>/speed -</b> 再生速度を変更します (例: 0.5x、1.0x、2.0x)
+
+  <b>💡チャンネル再生:</b> プレフィックスとして c を使用します (例: /cplay)
+  ─────────────
+
+HELP_2: |-
+  <b><u>管理者および許可されたユーザーのコマンド 🛠️</u></b>
+  ─────────────
+
+  <b>👤 <u>管理者コマンド</u></b>
+  <b>/settings -</b> グループ設定パネルを開きます
+  <b>/lang -</b> グループのボットの言語を変更します
+  <b>/reload -</b> 管理者リストとキャッシュを更新します。
+  <b>/adminlist -</b> チャットの現在の管理者リストを取得します。
+  <b>/ban_ghosts -</b> 削除されたアカウントをクリーンアップする
+
+  <b>👤 <u>承認されたコマンド</u></b>
+  <b>/auth [ユーザー] -</b> グループの承認済みリストにユーザーを追加します。
+  <b>/unauth [ユーザー] -</b> 承認済みリストからユーザーを削除します。
+  <b>/authusers -</b> 許可されたユーザーのリストを表示します。
+  <i>- 認証ユーザーは管理者でなくても管理コマンドを使用できます。</i>
+
+  <b>🤖 <u>ボット コマンド:</u></b>
+  <b>/sudolist -</b> すべての sudo ユーザーをリストします。
+  <b>/addsudo [ユーザー] -</b> sudo リストにユーザーを追加します。
+  <b>/rmsudo [ユーザー] -</b> sudo リストからユーザーを削除します
+
+  <b>🌏 <u>グローバル禁止機能:</u></b>
+  <b>/gban [ユーザー名またはユーザーへの返信] -</b> ボットが提供するチャットからユーザーを禁止し、ボットの使用を停止します。
+  <b>/ungban [ユーザー名またはユーザーへの返信] -</b> ボットの禁止リストからユーザーを削除し、ボットの使用を許可します。
+  <b>/gbannedusers -</b> 禁止ユーザー リストを確認する
+
+  <b>⚠️ <u>ブラックリスト チャット機能:</u></b>
+  <b>/blacklistchat [CHAT_ID] -</b> Music Bot を使用したチャットをブラックリストに登録します
+  <b>/whitelistchat [CHAT_ID] -</b> ブラックリストに登録されているチャットをミュージック ボットの使用からホワイトリストに登録します
+  <b>/blacklistedchats -</b> ブラックリストに登録されたチャットをすべてチェックします
+
+  <b>🚫 <u>ブロックされた機能:</u></b>
+  <b>/block [ユーザー名またはユーザーへの返信] -</b> ユーザーがボット コマンドを使用できないようにします。
+  <b>/unblock [ユーザー名またはユーザーへの返信] -</b> ボットのブロックリストからユーザーを削除します。
+  <b>/blockedusers -</b> ブロックされたユーザーのリストを確認します
+
+  <b>🌐 <u>ブロードキャスト コマンド</u></b>
+  <b>/broadcast [メッセージまたはメッセージへの返信] -</b> ボットのサービス付きチャットにメッセージをブロードキャストします。
+
+  <u>ブロードキャストのオプション:</u>
+  <b>-pin -</b> メッセージを固定します。
+  <b>-pinloud -</b> 大音量の通知とともにメッセージを固定します
+  <b>-user -</b> ボットを開始したユーザーにメッセージをブロードキャストします。
+  <b>-assistant -</b> ボットのアシスタント アカウントからメッセージをブロードキャストします。
+  <b>-nobot -</b> これにより、ボットがメッセージをブロードキャストしなくなります。
+  <b>例:</b> <code>/broadcast -user -assistant -pin Hello テスト</code>
+  ─────────────
+
+HELP_3: |-
+  <b><u>ボット コマンド 🤖</u></b>
+  ─────────────
+
+  <b>🤖 <u>ボット コマンド</u></b>
+  <b>/karma -</b> カルマ統計
+  <b>/lyrics [曲名] -</b> 曲の歌詞を取得します
+  <b>/ping -</b> ボットの遅延と統計を確認します
+  <b>/search [クエリ] -</b> YouTube で検索
+  <b>/song または /ytdl [名前/リンク] -</b> YouTube オーディオ/ビデオをダウンロードします
+
+  <b>🕹️ <u>ゲーム コマンド</u></b>
+  <b>/dice -</b> ランダムなサイコロを振る
+  <b>/dart -</b> ダーツを投げます
+  <b>/バスケットボール -</b> フープをいくつかシュートしましょう
+  <b>/ボウリング -</b> ボウリングをする
+  <b>/フットボール -</b> フットボールをする
+  <b>/slots -</b> スロットで運試ししてみましょう
+  <b>/ship または /couple -</b> グループ内のその日のカップルを選択してください
+
+  <b>✨ <u>追加コマンド</u></b>
+  <b>/commit -</b> 面白いコミット メッセージを生成します
+  <b>/carbon [text] -</b> カーボン イメージを作成します
+  <b>/q または /quotly -</b> ステッカーの引用を作成します
+  <b>/random [length] -</b> ランダムな複雑なパスワードを生成します
+  <b>/runs -</b> 自分で IDK テストを行います
+  <b>/tr [lang] [テキスト] -</b> テキストを翻訳します
+  <b>/id -</b> ユーザー ID またはグループ ID を取得します
+  <b>/info [ユーザー] -</b> 詳細なユーザー情報を取得します
+  <b>/invite -</b> グループ招待リンクを取得します。
+  <b>/sticker_id -</b> ステッカー ファイル ID を取得します
+  <b>/tts [テキスト] -</b> テキストを音声に変換
+  <b>/genstr -</b> 文字列セッションを生成 (Pyrogram/Telethon)
+  <b>/reload -</b> 管理者リストとキャッシュを更新します
+
+  <i>リストは時間の経過とともに増加します...</i>
+  ─────────────
+
+HELP_4: |-
+  <b><u>SUDO コマンド 👮</u></b>
+  ─────────────
+
+  <b>/activevc -</b> アクティブな音声チャットとビデオチャットをリストします。
+  <b>/speedtest -</b> サーバーの速度をテストします
+  <b>/stats -</b> ボットの使用統計を確認します
+  <b>/logs -</b> デバッグ用のボット ログを取得します
+  <b>/autoend [enable|disable] -</b> 誰も聞いていない場合、3 分後に自動ストリーム終了を有効にします
+  <b>/logger [有効 / 無効] -</b> ボットは検索されたクエリをロガー グループに記録します。
+  <b>/maintenance [有効/無効] -</b> メンテナンス モードを切り替えます
+  ─────────────

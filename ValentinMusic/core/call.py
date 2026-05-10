@@ -195,6 +195,32 @@ class Call(PyTgCalls):
         image: Union[bool, str] = None,
     ):
         assistant = await group_assistant(self, chat_id)
+
+        # Verify file exists and handle extension mismatch
+        import os
+        if not link.startswith("http"):
+            abs_link = os.path.abspath(link)
+            found_path = None
+            for ext in ['.mp4', '.webm', '.m4a', '.mkv', '.mp3']:
+                test_path = abs_link
+                for remove_ext in ['.mp4', '.m4a', '.webm', '.mkv', '.mp3']:
+                    test_path = test_path.replace(remove_ext, ext)
+                if os.path.exists(test_path):
+                    found_path = test_path
+                    break
+            if not found_path:
+                dir_path = os.path.dirname(abs_link)
+                base_name = os.path.splitext(os.path.basename(abs_link))[0]
+                for f in os.listdir(dir_path) if os.path.exists(dir_path) else []:
+                    if f.startswith(base_name):
+                        found_path = os.path.join(dir_path, f)
+                        break
+            if found_path:
+                link = found_path
+                print(f"[DEBUG] skip_stream file found: {link}")
+            else:
+                print(f"[DEBUG] skip_stream file not found: {abs_link}")
+
         if video:
             stream = MediaStream(
                 media_path=link,
@@ -207,10 +233,15 @@ class Call(PyTgCalls):
             stream = MediaStream(
                 media_path=link, 
                 audio_parameters=AudioQuality.HIGH,
+                video_parameters=VideoQuality.HD_720p,
                 audio_flags=MediaStream.Flags.REQUIRED,
                 video_flags=MediaStream.Flags.IGNORE,
             )
         from pytgcalls.types import GroupCallConfig
+        try:
+            await assistant.leave_call(chat_id)
+        except:
+            pass
         await assistant.play(
             chat_id=chat_id,
             stream=stream,
@@ -269,9 +300,32 @@ class Call(PyTgCalls):
 
         # Verify file exists before attempting to play
         import os
-        if not link.startswith("http") and not os.path.exists(link):
-            print(f"[DEBUG] File not found: {link}")
-            raise AssistantErr(f"File not found: {link}")
+        if not link.startswith("http"):
+            # Check if file exists with any extension (yt-dlp may save as webm instead of mp4)
+            abs_link = os.path.abspath(link)
+            # Check multiple possible extensions
+            found_path = None
+            for ext in ['.mp4', '.webm', '.m4a', '.mkv', '.mp3']:
+                test_path = abs_link
+                for remove_ext in ['.mp4', '.m4a', '.webm', '.mkv', '.mp3']:
+                    test_path = test_path.replace(remove_ext, ext)
+                if os.path.exists(test_path):
+                    found_path = test_path
+                    break
+            if not found_path:
+                # Also try to find any file starting with the base name
+                dir_path = os.path.dirname(abs_link)
+                base_name = os.path.splitext(os.path.basename(abs_link))[0]
+                for f in os.listdir(dir_path) if os.path.exists(dir_path) else []:
+                    if f.startswith(base_name):
+                        found_path = os.path.join(dir_path, f)
+                        break
+            if found_path:
+                link = found_path
+                print(f"[DEBUG] File found: {link}")
+            else:
+                print(f"[DEBUG] File not found: {abs_link}")
+                raise AssistantErr(f"File not found: {abs_link}")
 
         if video:
             stream = MediaStream(
@@ -285,6 +339,7 @@ class Call(PyTgCalls):
             stream = MediaStream(
                 media_path=link,
                 audio_parameters=AudioQuality.HIGH,
+                video_parameters=VideoQuality.HD_720p,
                 audio_flags=MediaStream.Flags.REQUIRED,
                 video_flags=MediaStream.Flags.IGNORE,
             )
@@ -292,12 +347,10 @@ class Call(PyTgCalls):
             from pytgcalls.types import GroupCallConfig
             print(f"[DEBUG] Attempting assistant.play for chat {chat_id} with file {link}")
 
-            # First ensure assistant is in the call
             try:
-                await assistant.join_call(chat_id)
-                print(f"[DEBUG] Assistant joined call for chat {chat_id}")
-            except Exception as join_error:
-                print(f"[DEBUG] Assistant already in call or join error: {join_error}")
+                await assistant.leave_call(chat_id)
+            except Exception:
+                pass
 
             # Now play the stream
             await assistant.play(
@@ -371,8 +424,12 @@ class Call(PyTgCalls):
                 if video:
                     stream = MediaStream(media_path=link, audio_parameters=AudioQuality.HIGH, video_parameters=VideoQuality.HD_720p, audio_flags=MediaStream.Flags.REQUIRED, video_flags=MediaStream.Flags.AUTO_DETECT)
                 else:
-                    stream = MediaStream(media_path=link, audio_parameters=AudioQuality.HIGH, audio_flags=MediaStream.Flags.REQUIRED, video_flags=MediaStream.Flags.IGNORE)
+                    stream = MediaStream(media_path=link, audio_parameters=AudioQuality.HIGH, video_parameters=VideoQuality.HD_720p, audio_flags=MediaStream.Flags.REQUIRED, video_flags=MediaStream.Flags.IGNORE)
                 try:
+                    try:
+                        await client.leave_call(chat_id)
+                    except Exception:
+                        pass
                     await client.play(chat_id, stream)
                 except Exception:
                     return await app.send_message(
@@ -410,8 +467,12 @@ class Call(PyTgCalls):
                 if video:
                     stream = MediaStream(media_path=file_path, audio_parameters=AudioQuality.HIGH, video_parameters=VideoQuality.HD_720p, audio_flags=MediaStream.Flags.REQUIRED, video_flags=MediaStream.Flags.AUTO_DETECT)
                 else:
-                    stream = MediaStream(media_path=file_path, audio_parameters=AudioQuality.HIGH, audio_flags=MediaStream.Flags.REQUIRED, video_flags=MediaStream.Flags.IGNORE)
+                    stream = MediaStream(media_path=file_path, audio_parameters=AudioQuality.HIGH, video_parameters=VideoQuality.HD_720p, audio_flags=MediaStream.Flags.REQUIRED, video_flags=MediaStream.Flags.IGNORE)
                 try:
+                    try:
+                        await client.leave_call(chat_id)
+                    except Exception:
+                        pass
                     await client.play(chat_id, stream)
                 except:
                     return await app.send_message(
@@ -438,9 +499,13 @@ class Call(PyTgCalls):
                 stream = (
                     MediaStream(media_path=videoid, audio_parameters=AudioQuality.HIGH, video_parameters=VideoQuality.HD_720p, audio_flags=MediaStream.Flags.REQUIRED, video_flags=MediaStream.Flags.AUTO_DETECT)
                     if str(streamtype) == "video"
-                    else MediaStream(media_path=videoid, audio_parameters=AudioQuality.HIGH, audio_flags=MediaStream.Flags.REQUIRED, video_flags=MediaStream.Flags.IGNORE)
+                    else MediaStream(media_path=videoid, audio_parameters=AudioQuality.HIGH, video_parameters=VideoQuality.HD_720p, audio_flags=MediaStream.Flags.REQUIRED, video_flags=MediaStream.Flags.IGNORE)
                 )
                 try:
+                    try:
+                        await client.leave_call(chat_id)
+                    except Exception:
+                        pass
                     await client.play(chat_id, stream)
                 except:
                     return await app.send_message(
@@ -460,8 +525,12 @@ class Call(PyTgCalls):
                 if video:
                     stream = MediaStream(media_path=queued, audio_parameters=AudioQuality.HIGH, video_parameters=VideoQuality.HD_720p, audio_flags=MediaStream.Flags.REQUIRED, video_flags=MediaStream.Flags.AUTO_DETECT)
                 else:
-                    stream = MediaStream(media_path=queued, audio_parameters=AudioQuality.HIGH, audio_flags=MediaStream.Flags.REQUIRED, video_flags=MediaStream.Flags.IGNORE)
+                    stream = MediaStream(media_path=queued, audio_parameters=AudioQuality.HIGH, video_parameters=VideoQuality.HD_720p, audio_flags=MediaStream.Flags.REQUIRED, video_flags=MediaStream.Flags.IGNORE)
                 try:
+                    try:
+                        await client.leave_call(chat_id)
+                    except Exception:
+                        pass
                     await client.play(chat_id, stream)
                 except:
                     return await app.send_message(

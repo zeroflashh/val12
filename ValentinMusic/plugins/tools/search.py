@@ -98,7 +98,7 @@ async def search_play_callback(client, CallbackQuery):
         language = await get_lang(chat_id)
         _ = get_string(language)
         
-        await CallbackQuery.answer(_["search_3"].split("\n")[0], show_alert=True) # Just the first line for toast
+        await CallbackQuery.answer("▶️ Playing...", show_alert=True)
         
         from ValentinMusic.plugins.play.play import play_commnd
         

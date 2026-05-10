@@ -1,865 +1,565 @@
-name: 🇱🇰 Sinhala
-general_1: පරිශීලක පණිවිඩයකට පිළිතුරු දෙන්න හෝ /user_id පරිශීලක නාමය  දෙන්න.
-general_2: දෝෂයක්! විධානයේ වැරදි භාවිතයක් සිදුවිය
-general_3: 'ඔබගේ විමසුම සකසන අතරතුර **වැරද්දක් විය.
-
-
-  වැරදි වර්ගය:- {0}'
-general_4: 'ඔබ මෙම කණ්ඩායම සමූහයේ නිර්නාමික පරිපාලකයෙකි!
-
-  පරිපාලක අයිතිවාසිකම් වෙතින් පරිශීලක ගිණුම වෙත ආපසු යන්න.'
-general_5: මෙම ක්‍රියාව සිදු කිරීමට ඔබ හඬ කණ්ඩායම කළමනා කිරීමේ හිමිකම් සහිත පරිපාලක
-  විය යුතුය.
-tg_1: 'Bot දැන් බාගැනීම් සමඟ **ඕවර්ලෝඩ්**.
-
-
-  ** පසුව උත්සාහ කරන්න:** {0} (__අපේක්ෂිත කාලය__)'
-tg_2: ටෙලිග්‍රැම් වලින් මාධ්‍ය බාගැනීම අසාර්ථක විය.
-tg_3: failed to download media from telegram, please try again...
-tg_4: » download already completed.
-tg_5: » download already completed or cancelled.
-tg_6: » download cancelled.
-tg_7: '» download cancelled by : {0}'
-tg_8: failed to stop the download.
-tg_9: failed to get the ongoing download task...
-call_1: 'Bot හට ඔබගේ නාලිකාවට සහකාර ගිණුමට ආරාධනා කිරීමට **පරිපාලක** අවසරය අවශ්‍යයි.
-
-
-  : /playmode හරහා නාලිකා සංගිත ප්‍රකාරය අබල කරන්න'
-call_2: 'සහකරු ඔබේ සමූහයේ හෝ නාලිකාවේ තහනම් කර ඇත, කරුණාකර තහනම් නොකරන්න.
-
-
-  **සහායක පරිශීලක නාමය:** @{0}
-
-  **සහායක හැඳුනුම්පත:** {1}'
-call_3: 'ඔබගේ කණ්ඩායම වෙත සහකාර ගිණුමට ආරාධනා කිරීමේදී වැරදි සිදු විය.
-
-
-  **හේතුව**: {0}'
-call_4: Bot හට **Link හරහා පරිශීලකයින්ට ආරාධනා කරන්න** ඔබගේ කණ්ඩායම කණ්ඩායමට සහකාර
-  ගිණුමට ආරාධනා කිරීමට අවසරය අවශ්‍ය වේ.
-call_5: සහකාර ගිණුම තත්පර 5 කින් සම්බන්ධ වනු ඇත..කරුණාකර රැඳී සිටින්න!
-call_6: 'සහකාර ගිණුම[{0}] සාර්ථකව සම්බන්ධ විය.
-
-
-  සංගීතය දැන් ආරම්භ කරමින්'
-call_7: '**හානිකර පරිපාලක අයිතිය ලබා දී ඇත **
-
-
-  කරුණාකර බොට් ගෙන් **BAN USERS** අයිතීන් ඉවත් කරන්න.'
-call_8: '**හානිකර පරිපාලක අයිතිය ලබා දී ඇත **
-
-
-  කරුණාකර බොට් ගෙන් **ADD NEW ADMINS** අයිතීන් ඉවත් කරන්න.'
-call_9: '**සංගිතය්‍ මාරු කිරීමට අසමත් විය**
-
-  කරුණාකර නැවත සංගිතය වෙනස් කිරීමට /skip භාවිතා කරන්න.'
-call_10: සංගිත ලැයිස්තුවෙන් මීළඟ ඛණ්ඩය බාගැනීම
-auth_1: ඔබට ඔබේ සමූහයේ බලයලත් පරිශීලක ලැයිස්තුවේ (AUL) සිටිය හැක්කේ පරිශීලකයින් 20ක්
-  පමණි.
-auth_2: ඔබගේ සමූහයේ බලයලත් පරිශීලක ලැයිස්තුවට එකතු කරන ලදී.
-auth_3: දැනටමත් බලයලත් පරිශීලක ලැයිස්තුවේ ඇත.
-auth_4: මෙම සමූහයේ බලයලත් පරිශීලක ලැයිස්තුවෙන් ඉවත් කරන ලදී.
-auth_5: බලයලත් පරිශීලකයෙක් නොවේ.
-auth_6: බලයලත් පරිශීලකයින් ලබා ගනිමින්... කරුණාකර රැඳී සිටින්න
-auth_7: '**බලයලත් පරිශීලක ලැයිස්තුව[AUL]:**
-
-
-  '
-auth_8: ┗ එකතු කරන ලද්දේ:-
-reload_1: '» you can only refresh admin cache once in 3 minutes.
-
-
-  please try after {0}.'
-reload_2: » admin cache refreshed successfully.
-reload_3: » failed to reload admin cache, make sure that the bot is admin in your
-  chat.
-reload_4: '» please wait...
-
-
-  rebooting {0} for your chat.'
-reload_5: 'successfully rebooted {0} for your chat.
-
-
-  start playing again...'
-admin_1: සංගීතය දැනටමත් විරාම කර ඇත.
-admin_2: 🎧 සංගීතය විරාම කරන කරන ලද්දේ {}!
-admin_3: සංගීතය දැනටමත් නැවත ආරම්භ කර ඇත.
-admin_4: 🎧 සංගීතය නැවත ආරම්භ කළේ {}!
-admin_5: සංගීතය දැනටමත් නිහඬ කර ඇත.
-admin_6: 🎧සංගීතය විසින් නිහඬ කිරීම ඉවත් කරන ලදී {}!
-admin_7: සංගීතය දැනටමත් නිහඬ කර ඇත.
-admin_8: 🎧 සංගීතය නිහඬ කිරීම ඉවත් කරන ලදී {}!
-admin_9: 🎧 සංගීතය අවසන්/නවත්වා ඇත {}!
-admin_10: 🎧සංගීතය මඟ හැරුණි {}!. පෝලිමේ තවත් සංගීතයක් නැත.
-admin_11: 'ප්‍රවාහය වෙනස් කිරීමේදී දෝෂයකි**{0}**
-
-
-  කරුණාකර නැවත භාවිතා කරන්න /skip.'
-admin_12: සබල කර ඇති ලූප් වාදනය නිසා නිශ්චිත සංගිත පථයකට යාමට නොහැකි විය. මෙම විශේෂාංගය
-  භාවිතා කිරීමට කරුණාකර `/loop disable` හරහා ලූප් වාදනය අබල කරන්න.
-admin_13: කරුණාකර 1, 2 හෝ 4 වැනි නිශ්චිත සංගිත පථ සඳහා සංඛ්‍යාත්මක අංක භාවිත කරන්න
-admin_14: නිශ්චිත අංකයකට යාමට පෝලිමේ අවම වශයෙන් පීලි 2ක් අවශ්‍ය වේ. /queue පරීක්ෂා
-  කරන්න
-admin_15: 'ඔබ ලබා දුන් අගය සඳහා ප්‍රමාණවත් පීලි පෝලිමේ නොමැත. කරුණාකර 1 සහ {0} අතර
-  අංක තෝරන්න '
-admin_16: 'නිශ්චිත සංගිත පථය වෙත යාමට අසමත් විය.
-
-
-  වමේ පෝලිම පරීක්ෂා කරන්න /queue'
-admin_17: '{0}.. කරුණාකර රැඳී සිටින්න'
-admin_18: 'පරිපාලක ලැයිස්තුව හමු නොවීය
-
-
-  කරුණාකර පරිපාලක ලැයිස්තුව නැවත පූරණය කරන්න /admincache හෝ /reload'
-admin_19: "මෙය සිදු කිරීම සඳහා ඔබ හඬ කණ්ඩායම හිමිකම් කළමනාකරණය සමඟ පරිපාලක විය යුතුය.\n\
-  \ ඔබ දැනටමත් පරිපාලක නම්, පරිපාලක හැඹිලිය හරහා නැවත පූරණය කරන්න /admincache "
-admin_20: පරිපාලක හැඹිලිය සාර්ථකව නැවත පූරණය කරන ලදී.
-admin_21: කලවම් කිරීමට පෝලිමේ ඇතුළත කිසිවක් නැත
-admin_22: 'කලවම් කිරීමට අපොහොසත් විය.
-
-
-  පෝලිම පරීක්ෂා කරන්න:/queue'
-admin_23: '**{0} විසින් පෝලිම කලවම් කරන ලදී **
-
-
-  මාරු කළ පෝලිම පරීක්ෂා කරන්න:/queue'
-admin_24: '**භාවිතය:**
-
-  /loop [සක්‍රීය/අබල කරන්න] හෝ [1-10 අතර අංකය]
-
-
-  **උදාහරණය:** /loop 5'
-admin_25: ලූපය සබල කර ඇත {0} සදහා**{1}** වාර. Bot දැන් හඬ කණ්ඩායම මත දැනට වාදනය වන
-  සංගීතය නැවත නැවතත් කරනු ඇත **{1}** වාර
-admin_26: ලූප් වාදනය සඳහා කරුණාකර 1-10 අතර අංක භාවිතා කරන්න
-admin_27: Loop Play අබල කර ඇත
-admin_28: '<b><u>{0} speed control panel</b></u>
-
-
-  click on the buttons below to change the speed of currently playing stream on videochat.'
-admin_29: » bot is already playing on normal speed.
-admin_30: '» please wait...
-
-
-  someone else is trying to change the speed of the stream.'
-admin_31: changing speed...
-admin_32: '» trying to change the speed of the ongoing stream...
-
-
-  <b>requested by :</b> {0}'
-admin_33: » failed to change the speed of the ongoing stream.
-admin_34: '» changed the speed of the ongoing stream to {0}x
-
-
-  <b>requested by :</b> {1}'
-admin_35: the voting has ended because the track has ended for which the voting was
-  provided.
-admin_36: failed to perform this action because for which track the voting was provided
-  is either ended or stopped.
-admin_37: successfully got <code>{0}</code> upvotes.
-admin_38: » added 1 upvote.
-admin_39: » removed 1 upvote.
-admin_40: upvoted.
-start_1: 'Thanks for having me in {0}.
-
-  {1} is alive.
-
-
-  For any assistance or help, checkout our support group and channel.'
-start_2: 'Hello, My name is {0}.
-
-
-  I''m a telegram streaming bot with some useful features. Supporting platforms like
-  Youtube and M3U8 links.
-
-
-  Feel free to add me to your groups.'
-start_3: 'Welcome To {0}
-
-
-  I don''t need any **admin permission** to work ( until asked for ).
-
-
-  Assistant Username:- @{1}
-
-  Assistant ID:- {2}'
-start_4: '{0}''s Owner[{1}] has just joined your chat.'
-start_5: A member of {0}'s Sudo User[{1}] has just joined your chat.
-start_6: '❗️ **Supergroup Needed** ❗️
-
-
-  Please convert your **group** to **supergroup** and then add me back.
-
-
-  **How to make supergroup?**
-
-  ✅ Make your group''s chat history **visible** once.'
-help_1: 'වැඩි විස්තර සඳහා පහත බොත්තම් ක්ලික් කරන්න.
-
-
-  සියලු විධානයන් සමඟ භාවිතා කළ හැක: /'
-help_2: උදව් සඳහා PM වලින් මාව සම්බන්ධ කරගන්න.
-lang_1: '» please choose the language which you wanna set as this group''s default
-  language :'
-lang_2: language changed successfully.
-lang_3: failed to change language.
-lang_4: You're already on the same language.
-setting_1: '⚙️ **Music Bot Settings**
-
-
-  🖇**Group:** {0}
-
-  🔖**Group ID:** `{1}`
-
-
-  💡**Choose the function buttons from below which you want to edit or change.**'
-setting_2: '» direct : plays search queries directly.
-
-
-  » inline : returns inline buttons for choosing between video & audio.'
-setting_3: '⁉️ What is This?
-
-
-  1) Direct: Plays search queries directly. Use -v to play videos in direct mode.
-
-
-  2) Inline: Returns Inline Markup Buttons for choosing between video & audio.'
-setting_4: '⁉️ What is This?
-
-
-  👥 Everyone: Anyone can use admin commands(skip, pause, resume etc) present in this
-  group.
-
-
-  🙍 Admin Only: Only admins and authorized users can use admin commands.'
-setting_5: 'No Authorized Users Found
-
-
-  You can allow any non-admin to use my admin commands by /auth and delete by using
-  /unauth'
-setting_6: '» everyone : anyone present in this group can play music here.
-
-
-  » admin only: only admins can play the music in this group.'
-setting_7: » please define channel id via /channelplay
-setting_8: when this mode is enabled, people without admin rights can use admin commands
-  after a certain amount of votes.
-setting_9: '⁉️ What is This?
-
-
-  When activated, Bot will delete its message after {0} to make your chat clean and
-  clear.'
-setting_10: '⁉️ What is This?
-
-
-  1) Group: Plays music in the group where the command is given .
-
-
-  2) Channel: Plays music in the channel you want. Set channel id via /channelplay'
-setting_11: '⁉️ What is This?
-
-
-  1) Everyone: Anyone present in this group can play music here.
-
-
-  2) Admin Only: Only admins can play the music in this group.'
-setting_12: ❌ You've no channel id defined for channel mode. Please define with /channelplay.
-set_cb_1: ශ්‍රව්‍ය තත්ත්ව පැනලය ලබා ගනිමින්...
-set_cb_2: වීඩියෝ තත්ත්ව පැනලය ලබා ගනිමින්...
-set_cb_3: සත්‍යාපන පරිශීලක පැනලය ලබා ගනිමින්...
-set_cb_4: Play මාදිලි පැනලය ලබා ගනිමින්...
-set_cb_5: පිරිසිදු මාදිලි පැනලය ලබා ගනිමින්...
-gstats_1: Getting Global Stats, This could take some time...
-gstats_2: No Stats Found.
-gstats_3: Getting Global Top 10 {0} on the bot, This could take some time..
-gstats_4: '**Total Queries on Bot:** {0}
-
-
-  {1} has played **{2}** tracks till now with a whopping count of **{3}** times.
-
-
-  **Top {4} Tracks:**
-
-  '
-gstats_5: '**Top {0} Chats of {1}:**
-
-
-  '
-playcb_1: මෙය ඔබ සඳහා නොවේ! ඔබේම ගීතය සොයන්න.
-playcb_2: ඊළඟ ප්‍රතිඵලය ලබා ගනිමින්
-cplay_1: 'ඔබට මෙම කතාබස්[{0}] සිට ඕනෑම නාලිකාවකට හෝ ඔබේ කතාබස් සම්බන්ධිත නාලිකාවකට
-  නාලිකාවල සංගීතය වාදනය කළ හැක.
-
-
-  **සම්බන්ධිත නාලිකාව සඳහා:**
-
-  `/{1} සබැඳි`
-
-
-  ** වෙනත් ඕනෑම නාලිකාවක් සඳහා:**
-
-  `/{1} [Channel ID]`'
-cplay_2: මෙම කතාබහට සම්බන්ධිත නාලිකාවක් නොමැත.
-cplay_3: 'නාලිකාව {0}
-
-
-  __Channel ID__: {1} වෙත අර්ථ දක්වා ඇත'
-cplay_4: 'නාලිකාව ලබා ගැනීමට අපොහොසත් විය.
-
-
-  ඔබ ඔබේ නාලිකාවට බොට් එක් කර එය පරිපාලක ලෙස උසස් කර ඇති බව සහතික කර ගන්න.
-
-  /channelplay හරහා නාලිකාව වෙනස් කරන්න හෝ /playmode හරහා නාලිකා ධාවන ප්‍රකාරය අබල
-  කරන්න'
-cplay_5: නාලිකා පමණක් සහය දක්වයි.
-cplay_6: 'මෙම කණ්ඩායම සමඟ සම්බන්ධ වීමට ඔබ නාලිකාවේ [{0}] **හිමිකරු** විය යුතුය.
-
-  **නාලිකාවේ හිමිකරු:** @{1}
-
-
-  විකල්පයක් ලෙස ඔබට ඔබේ කණ්ඩායම එම නාලිකාවට සම්බන්ධ කළ හැකිය ඉන්පසු `/channelplay
-  linked` සමඟ සම්බන්ධ වීමට උත්සාහ කරන්න.'
-cplay_7: » channel play disabled.
-play_1: 🔄 විමසුම සකසමින්... කරුණාකර රැඳී සිටින්න!
-play_2: '**🏷නාලිකා ප්ලේ මාදිලිය**
-
-  🔄 විමසුම සකසමින්... කරුණාකර රැඳී සිටින්න!
-
-
-  **සම්බන්ධිත නාලිකාව:** {0}'
-play_3: විමසුම සැකසීමට අසමත් විය!
-play_4: '🖇 **පරිපාලකයින්ට පමණක් වාදනය කරන්න**
-
-  මෙම සමූහයේ සංගීතය වාදනය කළ හැක්කේ පරිපාලකයින්ට සහ සත්‍යාපන පරිශීලකයින්ට පමණි.
-
-
-  /playmode හරහා මාදිලිය වෙනස් කරන්න සහ ඔබ දැනටමත් පරිපාලක නම්, /admincache හරහා admincache
-  නැවත පූරණය කරන්න'
-play_5: 'ශ්‍රව්‍ය ගොනුව සැකසීමට අසමත් විය.
-
-
-  ශ්‍රව්‍ය ගොනු ප්‍රමාණය 100 mb ට වඩා අඩු විය යුතුය'
-play_6: '**කාල සීමාව ඉක්මවන ලදී**
-
-
-  **අවසර ලත් කාල සීමාව: **{0}මිනිත්තු(ය)
-
-  **ලැබුණු කාල සීමාව:** {1}මිනි(ය)'
-play_7: සමාවන්න! CPU අධි බර ගැටළු හේතුවෙන් Bot ඉඩ දෙන්නේ සීමිත වීඩියෝ ඇමතුම් ගණනකට
-  පමණි. වෙනත් බොහෝ කතාබස් දැන් වීඩියෝ ඇමතුම් භාවිතා කරයි. ශ්‍රව්‍ය වෙත මාරු වීමට උත්සාහ
-  කරන්න හෝ පසුව නැවත උත්සාහ කරන්න
-play_8: 'වලංගු වීඩියෝ ගොනු දිගුවක් නොවේ!
-
-
-  **සහාය දක්වන ආකෘති:** {0}'
-play_9: වීඩියෝ ගොනු ප්‍රමාණය 1 GiB ට වඩා අඩු විය යුතුය
-play_10: '**Youtube Playlist විශේෂාංගය**
-
-
-  ඔබට සම්පූර්ණ Youtube Playlist වාදනය කිරීමට අවශ්‍ය මාදිලිය තෝරන්න'
-play_11: '📎ශීර්ෂය: **{0}
-
-
-  ⏳කාල සීමාව:** {1} Mins'
-play_12: '**Spotify Playlists**
-
-
-  ඉල්ලන ලද්දේ:- {0}'
-play_13: '**Apple Playlists**
-
-
-  ඉල්ලන ලද්දේ:- {0}'
-play_14: '**URL එක සත්‍යාපනය කළ නොහැක.**
-
-  මෙම url එක පහත සඳහන් ඕනෑම වේදිකාවකට අයත් වේද යන්න පුදුමයට කරුණකි: Youtube සහ M3U8 links.
-
-
-  ඔබට M3u8 හෝ දුරස්ථ සබැඳි සඳහා /stream භාවිතා කළ හැක.'
-play_15: '**සජීවී ප්‍රවාහය අනාවරණය කර ඇත**
-
-  පද්ධති මඟින් ඔබේ ධාවන සබැඳිය සජීවී ප්‍රවාහයක් ලෙස හඳුනාගෙන ඇත. සජීවී ප්‍රවාහය ක්‍රීඩා
-  කිරීමට අවශ්‍යද?'
-play_16: ඛණ්ඩ විස්තර ලබා ගැනීමට අසමත් විය. වෙනත් ඕනෑම සෙල්ලම් කිරීමට උත්සාහ කරන්න.
-play_17: 'Unable to play this type of spotify query!
-
-
-  I can only play spotify tracks, albums, artists and playlists'
-play_18: '**No Active Voice Chat Found**
-
-
-  To use force play, there must be an active voice chat going on in your group. **Force
-  Play** stops the playing track on voice chat and starts playing the searched track
-  instantly without disturbing/clearing queue.'
-play_19: 'Queued Playlist :'
-play_20: Queued Position-
-play_21: 'added {0} tracks to queue.
-
-
-  <b>check :</b> <a href={1}>click here</a>'
-play_22: 'select the mode in which you want to play the queries inside your group
-  : {0}'
-str_1: කරුණාකර M3u8 සබැඳි හෝ දර්ශක සබැඳි සපයන්න.
-str_2: '✅ වලංගු ප්‍රවාහය සත්‍යාපනය කර ඇත
-
-
-  කරුණාකර සබැඳිය සැකසීමට රැඳී සිටින්න..'
-str_3: youtube සජීවී ප්‍රවාහ ප්‍රවාහ කිරීමට නොහැක. සජීවී ආකෘතියක් හමු නොවිණි
-ping_1: පොං!!!!
-ping_2: '🏓 Pong : <code>{0}ms</code>
-
-
-  <b><u>ㄖ System Stats:</u></b>
-
-  ↬ uptime: {2}
-
-  ↬ ram: {3}
-
-  ↬ cpu: {4}
-
-  ↬ disk: {5}
-
-  ↬ py-tgcalls: <code>{6}ms</code>'
-queue_1: කරුණාකර රැඳී සිටින්න.. පෝලිම ලබා ගනිමින්..
-queue_2: පෝලිමේ ඇතුළත පීලි නැත.
-queue_3: <u>**පෝලිම් පීලි:</u>**  [මෙතැනින් තවත් පෝලිම් සහිත පීලි පරීක්ෂා කරන්න]({0})
-queue_4: '⏳ පෝලිමට එකතු කරන ලදී **#{0}
-
-
-  💡ශීර්ෂය:** {1}
-
-  **⏱කාල සීමාව:** {2}
-
-  👤**එකතු කරන ලද්දේ:** {3}'
-queue_5: 'there''s only one queued track in playlist.
-
-
-  add more tracks to check list.'
-queue_6: '<b>🕚 duration:</b> unknown duration stream
-
-
-  click on button below to get whole queued list.'
-queue_7: '
-
-  click on button below to get whole queued list.'
-queue_8: "<b>{0} player</b>\n\n<b>streaming:</b> {1}\n\n\U0001F517 <b>stream type:</b>\
-  \ {2}\n <b>requested by:</b> {3}\n{4}"
-stream_1: '📡 **සංගිතය ආරම්භ විය** 💡
-
-
-  👤**ඉල්ලන ලද්දේ:** {0}
-
-  🔦**විස්තර: **[Here]({1})'
-stream_2: '📡 **සංගිතය ආරම්භ විය URL හරහා ** 💡
-
-
-  👤**ඉල්ලන ලද්දේ:** {0}'
-CLOSE_BUTTON: 🗑 වසන්න
-BACK_BUTTON: ⬅ ආපසු
-S_B_1: 🗒 විධාන
-S_B_2: 🔧 සැකසුම්
-S_B_3: 📨 සහාය
-S_B_4: 📨 නාලිකාව
-S_B_5: ✚ මාව ඔයාගේ සමුහයට එකට එකතු කරන්න
-S_B_6: 💡 ගිට් රිපොව
-S_B_7: 👤 බොට් හිමිකරු
-S_B_8: '🔎විධාන මෙනුව '
-S_B_9: ↝ support ↜
-H_B_1: වාදන විධාන
+name: 🇱🇰 සිංහල
+
+
+general_1: "»පරිශීලකයෙකුගේ පණිවිඩයකට පිළිතුරු දෙන්න හෝ පරිශීලක නාමය/පරිශීලක හැඳුනුම්පත
+  දෙන්න."
+general_2: "» ඔබගේ විමසුම සකසන අතරතුර යම් දෙයක් වැරදී ඇත.\n\nව්යතිරේකය : <code>{0}</code>"
+general_3: "ඔබ මෙම කතාබහේ නිර්නාමික පරිපාලකයෙකි, මා භාවිතා කිරීම සඳහා පරිශීලක ගිණුම
+  වෙත ආපසු යන්න."
+general_4: "» ඔබට වීඩියෝ කතාබස් කළමනාකරණය කිරීමට අවසර නැත.\n\n/reload හරහා පරිපාලක
+  හැඹිලිය නැවත පූරණය කරන්න"
+general_5: "»බොට් වීඩියෝ චැට් මත ප්‍රවාහය නොවේ."
+
+tg_1: "<u><b>{0} බාගැනීම් කරන්නා</b></u>\n\n<b>ගොනු ප්‍රමාණය :</b> {1}\n<b>සම්පූර්ණයි
+  :</b> {2}\n<b>ප්‍රතිශතය :</b> {3}%\n\n<b>වේගය :</b> {4}/s\n<b>eta :</b> {5}"
+tg_2: "සාර්ථකව බාගත කර ඇත, ගොනුව සකසමින්...\n\n<b>ගිය කාලය :</b> {0}"
+tg_3: "විදුලි පණිවුඩයෙන් මාධ්‍ය බාගැනීමට අපොහොසත් විය, කරුණාකර නැවත උත්සාහ කරන්න..."
+tg_4: "» බාගත කිරීම දැනටමත් අවසන් කර ඇත."
+tg_5: "» බාගත කිරීම දැනටමත් සම්පූර්ණ කර හෝ අවලංගු කර ඇත."
+tg_6: "»බාගැනීම අවලංගුයි."
+tg_7: "» බාගත කිරීම අවලංගු කළේ : {0}"
+tg_8: "බාගැනීම නැවැත්වීමට අපොහොසත් විය."
+tg_9: "දැනට පවතින බාගැනීම් කාර්යය ලබා ගැනීමට අපොහොසත් විය..."
+
+call_1: "» bot හට ඔබගේ කතාබස් වෙත සහකරුට ආරාධනා කිරීමට <b>සබැඳිය හරහා පරිශීලකයින්ට
+  ආරාධනා කරන්න</b> අවසරය අවශ්‍ය වේ."
+call_2: "<u>ඔබේ කණ්ඩායම/නාලිකාව තුළ {0} සහකාර තහනම් කර ඇත.</u>\n\n<b>id :</b> <code>{1}</code>\n\
+  <b>නම :</b> {2}\n<b>පරිශීලක නාමය :</b> @{3}\n\nකරුණාකර සහායක තහනම ඉවත් කර නැවත උත්සාහ
+  කරන්න."
+call_3: "ඔබගේ කතාබස් වෙත {0} සහායකයාට ආරාධනා කිරීමට අපොහොසත් විය.\n\nහේතුව : <code>{1}</code>"
+call_4: "කරුණාකර ඉන්න...\n\nඔබගේ කතාබස් වෙත {0} සහායකයාට ආරාධනා කරමින්..."
+call_5: "{0} සහායක සාර්ථකව සම්බන්ධ විය.\n\nප්‍රවාහය ආරම්භ කිරීමට උත්සාහ කරමින්..."
+call_6: "»ප්‍රවාහය මාරු කිරීමට අපොහොසත් විය, කරුණාකර නැවත ධාවන පථය වෙනස් කිරීමට /skip
+  භාවිතා කරන්න."
+call_7: "» පෝලිමේ සිට ඊළඟ ධාවන පථය බාගත කිරීම.\n\nකරුණාකර ඉන්න..."
+call_8: "<b>ක්‍රියාකාරී වීඩියෝ කතාබහක් හමු නොවීය.</b>\n\nකරුණාකර ඔබේ කණ්ඩායම/නාලිකාව
+  තුළ වීඩියෝ කතාබස් ආරම්භ කර නැවත උත්සාහ කරන්න."
+call_9: "<b>සහායක දැනටමත් වීඩියෝ කතාබස් වල සිටී.</b>\n\nසහායක වීඩියෝ චැට් හි නොමැති
+  නම්, කරුණාකර <code>/reboot</code> යවා නැවත වාදනය කරන්න."
+call_10: "<b>ටෙලිග්‍රාම් සේවාදායක දෝෂය</b>\n\nටෙලිග්‍රාම් අභ්‍යන්තර ගැටලු කිහිපයක්
+  තිබේ, කරුණාකර නැවත වාදනය කිරීමට උත්සාහ කරන්න නැතහොත් ඔබේ කණ්ඩායමේ වීඩියෝ කතාබස්
+  නැවත ආරම්භ කරන්න."
+
+auth_1: "»ඔබගේ කණ්ඩායම තුළ ඔබට සිටිය හැක්කේ බලයලත් පරිශීලකයින් 25 දෙනෙකු පමණි."
+auth_2: "» බලයලත් පරිශීලක ලැයිස්තුවට {0} එක් කරන ලදී."
+auth_3: "{0} දැනටමත් බලයලත් පරිශීලක ලැයිස්තුවේ ඇත."
+auth_4: "» බලයලත් පරිශීලක ලැයිස්තුවෙන් {0} ඉවත් කරන ලදී."
+auth_5: "{0} බලයලත් පරිශීලක ලැයිස්තුවේ නැත."
+auth_6: "» බලයලත් පරිශීලක ලැයිස්තුව ලබා ගනිමින්..."
+auth_7: "» {0} හි බලයලත් පරිශීලකයින්ගේ ලැයිස්තුව :"
+auth_8: "<b>↬ එකතු කළේ :</b>"
+
+reload_1: "» ඔබට පරිපාලක හැඹිලිය නැවුම් කළ හැක්කේ විනාඩි 3කට වරක් පමණි.\n\nකරුණාකර
+  {0} ට පසුව උත්සාහ කරන්න."
+reload_2: "»පරිපාලක හැඹිලිය සාර්ථකව නැවුම් කරන ලදී."
+reload_3: "»පරිපාලක හැඹිලිය නැවත පූරණය කිරීමට අපොහොසත් විය, බොට් ඔබේ කතාබස් තුළ පරිපාලක
+  බව සහතික කර ගන්න."
+reload_4: "» කරුණාකර රැඳී සිටින්න...\n\nඔබගේ කතාබස් සඳහා {0} නැවත ආරම්භ කිරීම."
+reload_5: "ඔබගේ කතාබස් සඳහා {0} සාර්ථකව නැවත ආරම්භ කරන ලදී.\n\nආයෙත් සෙල්ලම් කරන්න
+  පටන් ගන්න..."
+
+admin_1: "» ඔබ ප්‍රවාහය නැවත ආරම්භ කළ බව ඔබට මතකද?"
+admin_2: "▢ ප්‍රවාහය විරාම කළේ: {0}"
+admin_3: "» ඔබ ප්‍රවාහය විරාම කළ බව ඔබට මතකද?"
+admin_4: "▷ ප්‍රවාහය නැවත ආරම්භ කළේ: {0}"
+admin_5: "▢ ප්‍රවාහය අවසන්/නැවතුනේ: {0}"
+admin_6: "≫ ප්‍රවාහය මඟ හැරියේ: {0} \n\n<b>» තවත් පෝලිම් සහිත ඛණ්ඩයක්</b> {1} තුළ
+  නැත, <b>වීඩියෝ චැට් හැර යාම.</b>"
+admin_7: "ප්‍රවාහය {0} වෙත වෙනස් කිරීමේදී දෝෂයකි."
+admin_8: "» කරුණාකර <code>/loop disable</code> හරහා ලූප් වාදනය අක්‍රීය කර නැවත මඟ
+  හැරීමට උත්සාහ කරන්න."
+admin_9: "කරුණාකර මඟ හැරීම සඳහා 1, 2, 4 වැනි නිශ්චිත අංක භාවිතා කරන්න..."
+admin_10: "නිශ්චිත මඟ හැරීම සඳහා පෝලිමේ අවම වශයෙන් ධාවන පථ 2ක් අවශ්‍ය වේ.\n\n: / පෝලිම
+  මගින් පෝලිම පරීක්ෂා කරන්න"
+admin_11: "»නිශ්චිත මඟ හැරීම සඳහා පෝලිමේ ප්‍රමාණවත් පීලි නොමැත.\n\nකරුණාකර 1 සහ {0}
+  අතර මඟ හරින්න"
+admin_12: "»නිශ්චිත ධාවන පථය වෙත යාමට අසමත් විය.\n\nවම් පෝලිම : / පෝලිම මගින් පරීක්ෂා
+  කරන්න"
+admin_13: "» කරුණාකර පරිපාලක හැඹිලිය හරහා : /reload කරන්න"
+admin_14: "» ඔබට වීඩියෝ කතාබස් කළමනාකරණය කිරීමට අවසර නැත.\n\n: /reload හරහා පරිපාලක
+  හැඹිලිය නැවත පූරණය කරන්න"
+admin_15: "» කලවම් කිරීමට අසමත් විය.\n\n<b>පෝලිම :</b> /පෝලිමෙන් පරීක්ෂා කරන්න"
+admin_16: "» පෝලිම {0} විසින් කලවම් කරන ලදී.\n\n<b>මාරු කළ පෝලිම :</b> /පෝලිමෙන් පරීක්ෂා
+  කරන්න"
+admin_17: "<b>උදාහරණය :</b>\n\n/loop <code>සබල කරන්න</code>/<code>අක්රිය කරන්න</code>\n\
+  /loop <code>10</code>/<code>9</code>/<code>8</code>/<code>7</code>"
+admin_18: "»ලූපය <code>{0}</code> වාර සඳහා සක්‍රීය කර ඇත්තේ : {1}."
+admin_19: "»ලූප් වාදනය අක්‍රිය කර ඇත්තේ : {0}."
+admin_20: "<b>උදාහරණය :</b>\n\n/සොයන්න හෝ /බැලීම [තත්පර තුළ කාලසීමාව]"
+admin_21: "» කරුණාකර තත්පර කිහිපයකින් සෙවීම සඳහා සංඛ්‍යාත්මක ඉලක්කම් භාවිතා කරන්න."
+admin_22: "» සජීවී ප්‍රවාහ සෙවිය නොහැක."
+admin_23: "» අඩු කාලසීමාවක් සමඟ සෙවීමට උත්සාහ කරන්න.\n\nවිනාඩි <b>{1}</b> න් <b>{0}</b>
+  ඉල්ලුවා."
+admin_24: "<b>සොයමින්...</b>\n\nකරුණාකර ඉන්න..."
+admin_25: "»ප්‍රවාහය සාර්ථකව සොයන ලදී.\n\n<b>කාලසීමාව :</b> විනාඩි {0}\n<b>විසින්
+  :</b> {1}"
+admin_26: "සෙවීමට අසමත් විය."
+admin_27: "»දැනට පාලනය කළ හැක්කේ youtube ප්‍රවාහයේ වේගය පමණි."
+admin_28: "<b><u>{0} වේග පාලන පැනලය</b></u>\n\nවීඩියෝ චැට් හි දැනට වාදනය වන ප්‍රවාහයේ
+  වේගය වෙනස් කිරීමට පහත බොත්තම් මත ක්ලික් කරන්න."
+admin_29: "»බොට් දැනටමත් සාමාන්‍ය වේගයකින් වාදනය වේ."
+admin_30: "» කරුණාකර රැඳී සිටින්න...\n\nවෙනත් කෙනෙක් ප්‍රවාහයේ වේගය වෙනස් කිරීමට උත්සාහ
+  කරයි."
+admin_31: "වෙනස්වන වේගය..."
+admin_32: "» පවතින ප්‍රවාහයේ වේගය වෙනස් කිරීමට උත්සාහ කරමින්...\n\n<b>ඉල්ලුවේ :</b>
+  {0}"
+admin_33: "» පවතින ප්‍රවාහයේ වේගය වෙනස් කිරීමට අසමත් විය."
+admin_34: "» පවතින ප්‍රවාහයේ වේගය {0}x වෙත වෙනස් කරන ලදී\n\n<b>ඉල්ලුවේ :</b> {1}"
+admin_35: "ඡන්දය ලබා දුන් ධාවන පථය අවසන් වූ නිසා ඡන්දය අවසන් වී ඇත."
+admin_36: "මෙම ක්‍රියාව සිදු කිරීමට අපොහොසත් විය මන්ද යත් ඡන්දය ලබා දීම අවසන් හෝ නතර
+  කර ඇති බැවිනි."
+admin_37: "සාර්ථකව <code>{0}</code> upvots ලබා ගත්තා."
+admin_38: "» පක්ෂව ඡන්ද 1ක් එක් කරන ලදී."
+admin_39: "» පක්ෂව ඡන්ද 1ක් ඉවත් කරන ලදී."
+admin_40: "පක්ෂව ඡන්දය දුන්නා."
+
+start_1: "{0} ජීවතුන් අතර බබා.\n\n<b>✫ අතිකාල :</b> {1}"
+start_2: "<b>හේයි</b> {0}, \n\nමෙය {1} !\n\n➻ විශිෂ්ට විශේෂාංග කිහිපයක් සහිත වේගවත්
+  සහ බලවත් ටෙලිග්‍රාම් මියුසික් ප්ලේයර් බොට් එකක්.\n\n<b><u>සහාය දක්වන වේදිකා :</b></u>
+  youtube සහ M3U8 සබැඳි.\n──────────────────\n<b>මගේ මොඩියුල සහ විධාන පිළිබඳ තොරතුරු
+  ලබා ගැනීමට උදවු බොත්තම ක්ලික් කරන්න.</b>"
+start_3: "හේයි {0},\nමෙය {1}\n\nමාව {2} තුළට එකතු කළාට ස්තුතියි, {3} හට දැන් මෙම කතාබස්
+  තුළ ගීත වාදනය කළ හැක."
+start_4: "🎄 <b>සුපිරි සමූහයක් අවශ්‍යයි</b> \n\nකරුණාකර ඔබගේ <b>සමූහය</b> <b>සුපිරි
+  සමූහය</b> බවට පරිවර්තනය කර නැවත මා එක් කරන්න.\n\n<b>සුපිරි කණ්ඩායමක් සාදා ගන්නේ
+  කෙසේද ?</b>\n- ඔබේ කණ්ඩායමේ කතාබස් ඉතිහාසය <b>දෘශ්‍ය</b> වරක් කරන්න."
+start_5: "<b>↝ අසාදු ලේඛනගත කතාබස් ↜</b>\n\nමෙම කතාබස් {0} දත්ත ගබඩාවේ අසාදු ලේඛනගත
+  කර ඇත.\nඔබගේ කතාබස් අවහිර කිරීම ඉවත් කිරීමට <a href={1}>sudo පරිශීලකයෙකුගෙන්</a>
+  ඉල්ලා සිටින්න හෝ <a href={2}>සහාය කතාබස්</a> වෙත පිවිසෙන්න."
+start_6: "ℹ️ <b><u>තොරතුරු නිරීක්ෂණය කරන්න</u></b> \n- - - - - - - - - - - - - - -
+  - - - - - -\n🏷️ <b>මාතෘකාව :</b> {0}\n\n⏳ <b>කාලසීමාව :</b> විනාඩි {1}\n👀 <b>දර්ශන
+  :</b> <code>{2}</code>\n📆 <b>ප්‍රකාශිත :</b> {3}\n📎 <b>නාලිකාව :</b> <a href={4}>{5}</a>\n\
+  ────────────── · · · · · · · ✦\n<b>◢◤ බලගන්වන්නේ @anaavaran</b> විසිනි"
+
+help_1: "ඔබට උදව් ලබා ගැනීමට අවශ්‍ය ප්‍රවර්ගය තෝරන්න.\n<a href={0}>සහාය කතාබස්</a>
+  හිදී ඔබේ සැකයන් අසන්න\n\nසියලුම විධාන : <code>/</code> සමඟ භාවිතා කළ හැක"
+help_2: "මගේ උදව් මෙනුව ඔබගේ pm වෙත ලබා ගැනීමට පහත බොත්තම ක්ලික් කරන්න."
+
+lang_1: "» කරුණාකර ඔබට මෙම සමූහයේ පෙරනිමි භාෂාව ලෙස සැකසීමට අවශ්‍ය භාෂාව තෝරන්න:"
+lang_2: "භාෂාව සාර්ථකව වෙනස් විය."
+lang_3: "භාෂාව වෙනස් කිරීමට අසමත් විය."
+lang_4: "ඔබ දැනටමත් එකම භාෂාවෙන් සිටී."
+
+setting_1: "<u><b>{0}සැකසීම් පැනලය</b></u>\n\n<b>chat id :</b> <code>{1}</code>\n\
+  <b>කතාබස් මාතෘකාව :</b> {2}\n\nසැකසුම් වෙනස් කිරීම සඳහා පහත බොත්තම් මත ක්ලික් කරන්න."
+setting_2: "» සෘජු : සෙවුම් විමසුම් සෘජුවම වාදනය කරයි.\n\n» පේළිගත: වීඩියෝ සහ ශ්‍රව්‍ය
+  අතර තේරීම සඳහා පේළිගත බොත්තම් ලබා දෙයි."
+setting_3: "» හැමෝම : ඕනෑම කෙනෙකුට මෙම සමූහයේ ඇති පරිපාලක විධාන [skip, pause, resume
+  etc.] භාවිතා කළ හැක.\n\n»පරිපාලක පමණක් : පරිපාලක විධාන භාවිතා කළ හැක්කේ පරිපාලකයින්ට
+  සහ බලයලත් පරිශීලකයින්ට පමණි."
+setting_4: "» බලයලත් පරිශීලකයන් හමු නොවීය."
+setting_5: "» කණ්ඩායම : විධානය ලබා දී ඇති කණ්ඩායමේ සංගීතය වාදනය කරයි.\n\n» නාලිකාව
+  : ඔබට අවශ්‍ය නාලිකාවේ සංගීතය වාදනය කරයි. /channelplay හරහා නාලිකා හැඳුනුම්පත සකසන්න"
+setting_6: "»සියල්ලන් : මෙම කණ්ඩායමේ සිටින ඕනෑම අයෙකුට මෙහි සංගීතය වාදනය කළ හැක.\n\
+  \n»පරිපාලකයින්ට පමණි: මෙම සමූහයේ සංගීතය වාදනය කළ හැක්කේ පරිපාලකයින්ට පමණි."
+setting_7: "» කරුණාකර /channelplay හරහා නාලිකා හැඳුනුම්පත නිර්වචනය කරන්න"
+setting_8: "මෙම මාදිලිය සක්‍රීය කර ඇති විට, පරිපාලක අයිතිවාසිකම් නොමැති පුද්ගලයින්ට
+  යම් ඡන්ද ප්‍රමාණයකින් පසුව පරිපාලක විධාන භාවිතා කළ හැක."
+setting_9: "පරිපාලක විධාන භාවිතා කිරීම සඳහා අවශ්‍ය වත්මන් අභිප්‍රාය වන්නේ: {0}"
+setting_10: "ඡන්ද ප්‍රකාරය අබල කර ඇත."
+setting_11: "අඩුම ඡන්ද සංඛ්‍යාව 2 විය හැක. ඔබට 2 ට අඩුවෙන් සැකසිය නොහැක"
+setting_12: "ඉහළම ඡන්ද සංඛ්‍යාව 15 විය හැක. ඔබට 15 ට වඩා වැඩි කළ නොහැක"
+
+set_cb_1: "auth පරිශීලක පැනලය ලබා ගැනීම..."
+set_cb_2: "ක්‍රීඩා මාදිලි පැනලය ලබා ගනිමින්..."
+set_cb_3: "වෙනස්කම් පිහිටුවීම..."
+set_cb_4: "» බලයලත් පරිශීලක ලැයිස්තුව ලබා ගනිමින්..."
+set_cb_5: "»ආපසු එනවා..."
+
+gstats_1: "සංඛ්‍යාලේඛන සහ තොරතුරු {0}ක් ලබා ගනිමින්...\n\nඑය ටිකක් ගත විය හැක, කරුණාකර
+  රැඳී සිටින්න..."
+gstats_2: "{0} හි සංඛ්‍යාලේඛන පරීක්ෂා කිරීමට පහත බොත්තම් මත ක්ලික් කරන්න."
+gstats_3: "<b><u>{0} සංඛ්‍යාලේඛන සහ තොරතුරු:</u></b>\n\n<b>සම්පූර්ණ සහායකයින්:</b>
+  <code>{1}</code>\n<b>මුළු අවහිර කර ඇත:</b> <code>{2}</code>\n<b>මුළු කතාබස් (සේවා/සේවා)
+  :</b> <code>{3}</code>\n<b>සම්පූර්ණ පරිශීලකයන් (සේවා/සේවා) :</b> <code>{4}</code>\n\
+  <b>පූරණය කරන ලද මුළු මොඩියුල :</b> <code>{5}</code>\n<b>මුළු sudoers:</b> <code>{6}</code>\n\
+  <b>ටෙලිග්‍රාම් ශ්‍රව්‍ය ගොනු සීමාව:</b> <code>{8}</code>\n<b>ටෙලිග්‍රෑම් වීඩියෝ
+  ගොනු සීමාව:</b> <code>{9}</code>\n<b>youtube play කාල සීමාව:</b> <code>{7}</code>\n\
+  <b>youtube ධාවන ලැයිස්තුව ලබා ගැනීමේ සීමාව:</b> <code>{10} වීඩියෝ</code>\n<b>ස්වයංක්‍රීය
+  පිටවීමේ සහකාර:</b> {11}\n<b>නඩත්තු:</b> {13}\n<b>ලොග් වීම:</b> {12}"
+gstats_4: "මෙම බොත්තම sudoers සඳහා පමණි."
+gstats_5: "<b><u>{0} සංඛ්‍යාලේඛන සහ තොරතුරු:</u></b>\n\n<b>මොඩියුල:</b> <code>{1}</code>\n\
+  <b>වේදිකාව:</b> <code>{2}</code>\n<b>ram:</b> <code>{3}</code>\n<b>භෞතික හර:</b>
+  <code>{4}</code>\n<b>මුළු හරය:</b> <code>{5}</code>\n<b>cpu සංඛ්‍යාතය:</b> <code>{6}</code>\n\
+  \n<b>python:</b> <code>{7}</code>\n<b>pyrogram:</b> <code>{8}</code>\n<b>py-tgcalls:</b>
+  <code>{9}</code>\n\n<b>ගබඩා තිබේ:</b> <code>{10} gib</code>\n<b>භාවිතා කරන ලද ගබඩාව:</b>
+  <code>{11} gib</code>\n<b>වමේ ගබඩාව:</b> <code>{12} gib</code>\n\n<b>සේවය කළ කතාබස්:</b>
+  <code>{13}</code>\n<b>සේවය කරන ලද පරිශීලකයින්:</b> <code>{14}</code>\n<b>අවහිර කළ
+  පරිශීලකයින්:</b> <code>{15}</code>\n<b>sudo භාවිතා කරන්නන්:</b> <code>{16}</code>\n\
+  \n<b>මුළු db ප්‍රමාණය:</b> <code>{17} mb</code>\n<b>මුළු db ගබඩාව:</b> <code>{18}
+  mb</code>\n<b>මුළු db එකතුව:</b> <code>{19}</code>\n<b>මුළු db යතුරු:</b> <code>{20}</code>"
+
+playcb_1: "» ආව්, මේක ඔයාට නෙවෙයි බබා."
+playcb_2: "» මීළඟ ප්‍රතිඵලය ලබා ගැනීම,\n\nකරුණාකර ඉන්න..."
+
+cplay_1: "» ඔබට {0} සිට ඕනෑම නාලිකාවකට හෝ ඔබේ කතාබස් සම්බන්ධිත නාලිකාවකට නාලිකාවල
+  සංගීතය වාදනය කළ හැක.\n\n<b>සම්බන්ධිත නාලිකාව සඳහා:</b>\n<code>/channelplay සබැඳිය</code>\n\
+  \n<b>වෙනත් ඕනෑම නාලිකාවක් සඳහා:</b>\n<code>/channelplay [channel id]</code>"
+cplay_2: "»මෙම කතාබහට සම්බන්ධිත නාලිකාවක් නොමැත."
+cplay_3: "» නාලිකාව {0} වෙත අර්ථ දක්වා ඇත.\nනාලිකා id: <code>{1}</code>"
+cplay_4: "» නාලිකාව ලබා ගැනීමට අසමත් විය.\n\nඔබ ඔබේ නාලිකාවේ බොට් එක එකතු කර පරිපාලක
+  ලෙස උසස් කර ඇති බවට වග බලා ගන්න."
+cplay_5: "නාලිකා පමණක් සහය දක්වයි."
+cplay_6: "» {0} නාලිකාව මෙම කණ්ඩායම සමඟ සම්බන්ධ කිරීමට ඔබ එහි <b>හිමිකරු</b> විය යුතුය.\n\
+  <b>නාලිකාවේ හිමිකරු:</b> @{1}\n\nවිකල්පයක් ලෙස ඔබට එම නාලිකාවට ඔබේ කණ්ඩායම සම්බන්ධ
+  කළ හැකි අතර පසුව <code>/channelplay linked</code> සමඟ සම්බන්ධ වීමට උත්සාහ කරන්න"
+cplay_7: "» නාලිකා වාදනය අබල කර ඇත."
+
+play_1:
+play_2: "<b>➻ සැකසෙමින්...</b>\n\nකරුණාකර ඉන්න...\n\n<b>කතාබහ :</b> {0}"
+search_1: "<b>➻ සොයමින්...</b>\n\nකරුණාකර මොහොතක් ඉන්න."
+search_2: "<b>සෙවුම් ප්‍රතිඵල:</b> {0}"
+search_3: "<b>{0}.</b> <a href='{1}'>{2}</a>\n<b>කාලසීමාව:</b> {3}\n<b>නාලිකාව:</b>
+  {4}"
+search_4: "<b>පිටුව:</b> {0}/2"
+search_5: "<b>ප්‍රතිඵලය කල් ඉකුත් විය.</b>"
+tr_1: "<b>➻ පරිවර්තනය සකසමින්...</b>\nතෝරාගත් භාෂාව: <b>{0}</b>"
+tr_2: "<b>✅ {0} වෙත පරිවර්තනය කර ඇත!</b>"
+tr_3: "{0}"
+AL_1: "<b>📋 {0} හි පරිපාලකයින්ගේ ලැයිස්තුව:</b>"
+AL_2: "<b>👤 හිමිකරු:</b>\n{0}{1}"
+AL_3: "<b>👥 පරිපාලකයින්:</b>"
+AL_4: "<b>❌ පරිපාලකයින් හමු නොවීය.</b>"
+reboot_1: "<b>⚙️ පද්ධතිය නැවත ආරම්භ කිරීම ආරම්භ කරන ලදී...</b>\n\nබොට් සහ සහායක මෙම
+  කණ්ඩායම සඳහා ඔවුන්ගේ සම්බන්ධතාවය නැවුම් කරන තෙක් කරුණාකර රැඳී සිටින්න."
+reboot_2: "<b>✅ පද්ධති යළි පිහිටුවීම සම්පූර්ණයි!</b>\n\n<b>විස්තර:</b>\n- සහකාර හැඹිලිය
+  පිරිසිදු කරන ලදී\n- පරිපාලක ධුරාවලිය නැවුම් කර ඇත\n- පෙර ප්‍රවාහයන් අවසන් විය\n\n\
+  ඔබේ කණ්ඩායම දැන් නැවුම් සැසියක් සඳහා සූදානම්."
+sudo_help_err: "<b>🔒 සුඩෝ සීමා කිරීම</b>\n\nප්‍රවේශය ප්‍රතික්ෂේප විය. මෙම කොටස bot
+  ගේ Sudo පරිශීලකයින් සඳහා පමණක් වෙන් කර ඇත. මෙය දෝෂයක් බව ඔබ විශ්වාස කරන්නේ නම් කරුණාකර
+  හිමිකරු අමතන්න."
+session_1: "<b>String Session Generator</b>\n\nඅවලංගු කරන ලදී: {0}\nඅනුවාදය: {1}"
+
+play_3: "» විමසුම සැකසීමට අසමත් විය."
+play_4: "<b>පරිපාලකයින් පමණක් ක්‍රීඩා කරයි</b>\nමෙම කතාබස් පරිපාලකයින්ට පමණක් ක්‍රීඩා
+  කිරීමට අවසර ඇත\n\n/playmode හරහා ක්‍රීඩා මාදිලිය වෙනස් කරන්න"
+play_5: "» ශ්‍රව්‍ය ගොනුව සැකසීමට අසමත් විය.\n\nශ්‍රව්‍ය ගොනු ප්‍රමාණය අර්ථ දක්වා
+  ඇති සීමාවට වඩා විශාලය."
+play_6: "» ප්‍රවාහය {0}ට වඩා දිගු {1} හි වාදනය කිරීමට ඉඩ නොදේ"
+play_7: "» වලංගු වීඩියෝ ගොනු දිගුවක් නොවේ.\n\n<b>සහාය දක්වන දිගු :</b> {0}"
+play_8: "» වීඩියෝ ගොනු ප්‍රමාණය 2gib ට වඩා අඩු විය යුතුය."
+play_9: "<b><u>youtube ධාවන ලැයිස්තු විශේෂාංගය</b></u>\n\nඔබට සම්පූර්ණ යූ ටියුබ් ධාවන
+  ලැයිස්තුව වාදනය කිරීමට අවශ්‍ය මාදිලිය තෝරන්න."
+play_10: "<b>ට්‍රැක්:</b> {0}\n<b>කාලසීමාව:</b> විනාඩි {1}"
+play_11: "<u><b>{0} spotify player</b></u>\n\n<b>ක්‍රීඩා කළේ:</b> {1}"
+play_12: "<u><b>{0} apple player</b></u>\n\n<b>ක්‍රීඩා කළේ:</b> {1}"
+play_13: "» සජීවී ප්‍රවාහය අනාවරණය විය.\n\nඔබට මෙම සජීවී ප්‍රවාහය වාදනය කිරීමට අවශ්‍ය
+  බව ඔබට විශ්වාසද?"
+play_14: "ධාවන විස්තර ලබා ගැනීමට අපොහොසත් විය.\n\nවෙනත් ඕනෑම සෙල්ලම් කිරීමට උත්සාහ
+  කරන්න."
+play_15: "» විමසුම සැකසීමට අසමත් විය.\n\nමට වාදනය කළ හැක්කේ ස්පොට්ෆයි ට්‍රැක්ස්, ඇල්බම,
+  කලාකරුවන් සහ ධාවන ලැයිස්තු පමණි."
+play_16: "සක්‍රිය හඬ කතාබස් නැත.\n\nබල වාදනය භාවිතා කිරීමට, සක්‍රිය හඬ සංවාදයක් තිබිය
+  යුතුය."
+play_17: "කරුණාකර වීඩියෝ චැට් ක්‍රියාත්මක කරන්න, මට url ප්‍රවාහ කිරීමට නොහැක."
+play_18: "<b>භාවිතය :</b> /play [ගීතයේ නම/youtube url/ශ්‍රව්‍ය/වීඩියෝ ගොනුවකට පිළිතුරු]"
+play_19: "පෝලිම් සහිත ධාවන ලැයිස්තුව:"
+play_20: "පෝලිම් ස්ථානය -"
+play_21: "පෝලිමට පීලි {0}ක් එක් කරන ලදී.\n\n<b>පරීක්ෂා කරන්න :</b> <a href={1}>මෙහි
+  ක්ලික් කරන්න</a>"
+play_22: "ඔබට ඔබේ කණ්ඩායම තුළ විමසුම් වාදනය කිරීමට අවශ්‍ය මාදිලිය තෝරන්න : {0}"
+
+str_1: "කරුණාකර m3u8 හෝ දර්ශක සබැඳි සපයන්න."
+str_2: "➻ වලංගු ප්‍රවාහය සත්‍යාපනය කර ඇත.\n\nසැකසීම..."
+str_3: "YouTube සජීවී ප්‍රවාහය ප්‍රවාහය කිරීමට අපොහොසත් විය, සජීවී ආකෘතියක් හමු නොවීය."
+
+ping_1: "{0} pinging..."
+ping_2: "🏓 පොං : <code>{0}ms</code>\n\n<b><u>ㄖ පද්ධති සංඛ්‍යාලේඛන:</u></b>\n↬ අතිකාල:
+  {2}\n↬ බැටළුවා: {3}\n↬ cpu: {4}\n↬ තැටිය: {5}\n↬ py-tgcalls: <code>{6}ms</code>"
+
+queue_1: "» පෝලිම ලබා ගනිමින්...\n\nකරුණාකර ඉන්න..."
+queue_2: "» පෝලිම හිස්."
+queue_3: "<u>» පෝලිම්ගත පීලි ලැයිස්තුව පරීක්ෂා කිරීමට මෙතන ක්ලික් කරන්න:</u> <a href={0}>මෙහි</a>"
+queue_4: "<b>#{0} හි පෝලිමට එක් කරන ලදී\n\nධාවන පථය:</b> {1}\n<b>කාලසීමාව :</b> විනාඩි
+  {2}\n<b>ඉල්ලුවේ:</b> {3}"
+queue_5: "ධාවන ලැයිස්තුවේ ඇත්තේ පෝලිම් සහිත ධාවන පථයක් පමණි.\n\nපිරික්සුම් ලැයිස්තුවට
+  තවත් ධාවන පථ එක් කරන්න."
+queue_6: "<b>🕚 කාලය:</b> නොදන්නා කාල ප්‍රවාහය\n\nසම්පූර්ණ පෝලිම් ලැයිස්තුව ලබා ගැනීමට
+  පහත බොත්තම ක්ලික් කරන්න."
+queue_7: "සම්පූර්ණ පෝලිම් ලැයිස්තුව ලබා ගැනීමට පහත බොත්තම ක්ලික් කරන්න."
+queue_8: "<b>ක්රීඩකයා {0}</b>\n\n🎄 <b>ප්‍රවාහය:</b> {1}\n\n🔗 <b>ප්‍රවාහ වර්ගය:</b>
+  {2}\n <b>ඉල්ලුවේ:</b> {3}\n{4}"
+
+stream_1: "♬ <b>ප්‍රවාහය ආරම්භ විය... </b>\n\n<b>⋆ ඛණ්ඩය:</b> <a href={0}>{1}</a>\n\
+  <b>⋆ කාලය:</b> විනාඩි {2}\n<b>⋆ වාදනය කළේ:</b> {3}"
+stream_2: "♬ <b>ප්‍රවාහය ආරම්භ විය... </b>\n\n<b>⋆ ප්‍රවාහ වර්ගය:</b> සජීවී ප්‍රවාහය\n\
+  <b>⋆ වාදනය කළේ:</b> {0}"
+
+
+CLOSE_BUTTON: "• වසන්න •"
+BACK_BUTTON: "◁ ආපසු"
+
+S_B_1: "✚ මාව එකතු කරන්න"
+S_B_2: "💬 සහය"
+S_B_3: "✚ මාව ඔබේ කණ්ඩායමට එකතු කරගන්න"
+S_B_4: "ℹ️ උදව් සහ විධාන"
+S_B_5: "🜲 නඩත්තු කරන්නා"
+S_B_6: "📨 නාලිකාව"
+S_B_7: "මූලාශ්ර කේතය"
+S_B_8: "⎋ youtube"
+S_B_9: "↝ සහාය ↜"
+
+H_B_1: Play Commands
 H_B_2: පරිපාලක විධාන
 H_B_3: බොට් විධාන
-H_B_4: සූඩෝ විධාන
-P_B_1: 🎵 ශ්‍රව්‍ය වාදනය කරන්න
-P_B_2: 🎥 වීඩියෝ වාදනය කරන්න
-P_B_3: 🏮 සජීවී ප්‍රවාහය ආරම්භ කරන්න
-P_B_4: 🎵 සංගිත ලැයිස්තුව වාදනය කරන්න
-SA_B_3: 🧛 Top 10 Users
-SA_B_4: 🏷 Top 10 Here
-SA_B_5: 💡 Overall Stats
-SA_B_6: 👤 User Stats
-SA_B_7: 🔢 Global Top 10 Stats
-SA_B_8: 🤖 Bot Stats
-force_sub_text: '» To use this bot, you must join our support channel first!
-
-
-  Click the button below to join and then try again.'
-song_1: ඔබට යූ ටියුබ් වෙතින් සංගීතය හෝ වීඩියෝ බාගත කළ හැක්කේ පුද්ගලික කතාබස් වලදී
-  පමණි. කරුණාකර මාව පුද්ගලික කතාබස් වලින් ආරම්භ කරන්න.
-song_2: '**භාවිතය:**
-
-
-  /song [සංගීත නාමය] හෝ [Youtube Link]'
-song_3: සජීවී සබැඳිය අනාවරණය විය. මට සජීවී යූ ටියුබ් වීඩියෝ බාගත කළ නොහැක.
-song_4: '**🔗ශීර්ෂය:**- {0}
-
-
-  ඔබට බාගත කිරීමට අවශ්‍ය වර්ගය තෝරන්න.'
-song_5: වලංගු Youtube සබැඳියක් නොවේ
-song_6: "ආකෘති ලබා ගනිමින්.. \n\nකරුණාකර රැඳී සිටින්න.."
-song_7: වීඩියෝව සඳහා පවතින ආකෘති ලබා ගැනීමට අසමත් විය. කරුණාකර වෙනත් ඕනෑම ධාවන පථයක්
-  උත්සාහ කරන්න.
-song_8: 'බාගත කිරීම ආරම්භ විය
-
-
-  බාගත කිරීමේ වේගය මන්දගාමී විය හැක. කරුණාකර ඉන්න..'
-song_9: 'Youtube-DL වෙතින් ගීතය බාගත කිරීම අසාර්ථක විය
-
-
-  **හේතුව:** {0}'
-song_10: සේවාදායක වෙතින් ටෙලිග්‍රැම් උඩුගත කිරීම අසාර්ථක විය.
-song_11: 'උඩුගත කිරීම ආරම්භ කර ඇත
-
-
-  උඩුගත කිරීමේ වේගය මන්දගාමී විය හැක. කරුණාකර ඉන්න..'
-ST_B_1: 🔊 Aud ගුණාත්මකභාවය
-ST_B_2: 🎥 Vid ගුණාත්මකභාවය
-ST_B_3: 🎩 Aut පරිශීලකයන්
-ST_B_4: 📱උපකරණ පුවරුව
-ST_B_5: ▶️ Play Mode
-ST_B_6: 🏳️‍🌈 භාෂාව
-ST_B_7: 🔄 පිරිසිදු මාදිලිය
-ST_B_8: '{0} අඩු ගුණාත්මක ශ්රව්ය උපකරණ'
-ST_B_9: '{0} මධ්‍යම ගුණාත්මක ශ්‍රව්‍ය'
-ST_B_10: '{0} උසස් තත්ත්වයේ ශ්රව්ය උපකරණ'
-ST_B_11: '{0} අඩු ගුණාත්මක වීඩියෝවක්'
-ST_B_12: '{0} මධ්‍යම ගුණාත්මක වීඩියෝව'
-ST_B_13: '{0} උසස් තත්ත්වයේ වීඩියෝ'
-ST_B_14: ✅ සබල කර ඇත
-SA_B_1: 📢 Top 10 Chat
-SA_B_2: 🔢 Top 10 Tracks
-ytdl_1: '<b>Usage:</b>
-
-
-  /song or /ytdl [Song Name] or [YouTube Link]'
-ytdl_2: '<b>⚠️ Playlist Requests Disabled</b>
-
-
-  To maintain optimal bot performance and prevent server overload, playlist downloads
-  are currently disabled. Please send a single track link instead.'
-ytdl_3: '<b>» Fetching details...</b>
-
-
-  Please wait...'
-ytdl_4: <b>❌ No results found.</b>
-ytdl_5: '<b>Track:</b> {0}
-
-  <b>Duration:</b> {1}
-
-
-  <b>Choose download format:</b>'
-ytdl_6: <b>📥 Downloading audio...</b>
-ytdl_7: <b>📊 Fetching available video qualities...</b>
-ytdl_8: '<b>Track:</b> {0}
-
-
-  <b>Select Quality:</b>'
-ytdl_9: <b>📥 Downloading {0} ({1})...</b>
-ytdl_10: '<b>❌ Failed to download {0}.</b>
-
-
-  <b>Error:</b> {1}'
-lyric_1: '<b>Usage:</b>
-
-
-  /lyrics [Song Name]'
-lyric_2: <b>🔍 Searching for lyrics...</b>
-lyric_3: <b>🔍 Trying to fetch lyrics from:</b> <code>{0}</code>
-lyric_4: <b>❌ No lyrics found for this song. Please try a more specific search.</b>
-QU_B_1: queue
-QU_B_2: ' {0} —————————— {1}'
-sudo_1: '{0} is already a sudo user.'
-sudo_2: Added **{0}** to Sudo Users.
-sudo_3: Not a part of Bot's Sudo.
-sudo_4: Removed from Bot's Sudo User
-sudo_5: '⭐️<u> **Owners:**</u>
-
-  '
-sudo_6: '
-
-  ⭐️<u> **Sudo Users:**</u>
-
-  '
-sudo_7: No Sudo Users
-sudo_8: failed.
-block_1: '{0} දැනටමත් බොට් එකෙන් අවහිර කර ඇත.'
-block_2: 'බොට් වල වාරණ ලැයිස්තුවට **{0}** එකතු කරන ලදී. පරිශීලකයාට දැන් කිසිදු කොන්දේසියක්
-  යටතේ bot භාවිත කිරීමට නොහැකි වනු ඇත.
-
-
-  අවහිර කළ පරිශීලකයින් පරීක්ෂා කරන්න: /blockedusers'
-block_3: පරිශීලකයා දැනටමත් නොමිලේ සහ අවහිර කර නැත.
-block_4: අවහිර ලැයිස්තුවෙන් පරිශීලක ඉවත් කරන ලදී. පරිශීලකයාට දැන් බොට් භාවිතා කිරීමට
-  හැකි වනු ඇත.
-block_5: අවහිර කළ පරිශීලකයන් හමු නොවීය
-block_6: අවහිර කළ පරිශීලක ලැයිස්තුව ලබා ගැනීම.. කරුණාකර රැඳී සිටින්න
-block_7: '**අවහිර කළ පරිශීලකයින්:**
-
-
-  '
-black_1: '**භාවිතය:**
-
-  /blacklistchat [CHAT_ID]'
-black_2: කතාබස් දැනටමත් Blacklisted කර ඇත.
-black_3: කතාබස් සාර්ථකව Blacklisted කර ඇත
-black_4: '**භාවිතය:**
-
-  /whitelistchat [CHAT_ID]'
-black_5: කතාබස් දැනටමත් සුදු ලැයිස්තුගත කර ඇත.
-black_6: කතාබස් සාර්ථකව සුදු ලැයිස්තුගත කර ඇත
-black_7: '**Blacklisted කතාබස්:**
-
-
-  '
-black_8: Blacklisted කතාබස් නැත
-black_9: » something went wrong.
-maint_1: '**භාවිතය:**
-
-  /maintenance [enable|disable]'
-maint_2: නඩත්තු මාදිලිය ස්ක්‍රීය කර ඇත
-maint_3: නඩත්තු මාදිලිය අක්‍රීය කර ඇත
-maint_4: » maintenance mode is already enabled.
-maint_5: » maintenance mode is already disabled.
-log_1: '**භාවිතය:**
-
-  /logger [enable|disable]'
-log_2: Logging සක්‍රීය කරන ලදි
-log_3: Logging අක්‍රීය කරන ලදි
-broad_1: '**Bot වෙතින් පින් {1}ක් සමඟ {0} කතාබස් තුළ විකාශනය කළ පණිවිඩය.**'
-broad_2: Assistent Broadcast ආරම්භ කරන ලදී...
-broad_3: '**Assistant Broadcast:**
-
-
-  '
-broad_4: 'Assistant {0} Broadcasted in {1} chats
-
-  '
-broad_5: '**Usage**:
-
-  /broadcast [MESSAGE] or [Reply to a Message]'
-broad_6: Please provide some text to broadcast.
-broad_7: '**Broadcasted Message to {0} Users.**'
-broad_8: » please provide some text to broadcast.
-server_1: » failed to get logs.
-server_2: please make sure that your heroku api key and app name are configured correctly.
-server_3: checking for available updates...
-server_4: git command error.
-server_5: invalid git repsitory.
-server_6: » bot is up-to-date.
-server_7: » bot updated successfully ! now wait for few minutes until the bot restarts
-  and push changes !
-server_8: '{0} is restarting...
-
-
-  you can start playing again after 15-20 seconds.'
-server_9: something went wrong, please check logs.
-server_10: 'an exception occured at #updater due to : <code>{0}</code>'
-server_11: » running a speedtest...
-server_12: <b>⇆ running download speedtest...</b>
-server_13: <b>⇆ running upload speedtest...</b>
-server_14: <b>↻ sharing speedtest results...</b>
-server_15: '✯ <b>speedtest results</b> ✯
-
-
-  <u><b>client :</b></u>
-
-  <b>» isp :</b> {0}
-
-  <b>» country :</b> {1}
-
-
-  <u><b>server :</b></u>
-
-  <b>» name :</b> {2}
-
-  <b>» country :</b> {3}, {4}
-
-  <b>» sponsor :</b> {5}
-
-  <b>» latency :</b> {6}
-
-  <b>» ping :</b> {7}'
-gban_1: You want to gban yourself? How Fool!
-gban_2: Should i block myself? Lol
-gban_3: You want to block a sudo user?
-gban_4: '{0} is already **gbanned** from the bot.'
-gban_5: '**Initializing Gobal Ban on {0}**
-
-
-  Expected Time : {1}.'
-gban_6: '**Gbanned Successfully**
-
-
-  Banned **{0}** from **{1}** chats.'
-gban_7: '{0} is not **gbanned **yet from the bot.'
-gban_8: '**Ungbanning {0}**
-
-
-  Expected Time : {1}.'
-gban_9: '**UnGbanned Successfully**
-
-
-  Unbanned **{0}** in **{1}** chats.'
-gban_10: No Gbanned Users Found.
-gban_11: Please wait a while.. Fetching Gbanned users list
-gban_12: '🙂 <b>globally banned users :</b>
-
-
-  '
-AL_1: <b>📋 Administrators in {0}:</b>
-AL_2: '<b>Owner:</b>
-
-  <b>└</b> {0}{1}'
-AL_3: '
-
-  <b>Admins:</b>'
-AL_4: » No administrators found.
-HELP_1: "<b><u>PLAY COMMANDS \U0001F3B5</u></b>\n───────────────────────────────────────────────\n\
-  - - - - - - - - - - - - - - - - - - - - - - - - - - -\n<b>/play [Name/Link] -</b>\
-  \ Start streaming audio on voice chat.\n<b>/vplay [Name/Link] -</b> Start streaming\
-  \ video on voice chat.\n<b>/playforce -</b> Force play (stops current and starts\
-  \ new track).\n<b>/pause -</b> Pause the current music stream.\n<b>/resume -</b>\
-  \ Resume the paused music stream.\n<b>/skip -</b> Skip current track to the next\
-  \ in queue.\n<b>/stop or /end -</b> Stop music and clear the entire queue.\n<b>/mute\
-  \ : </b> Mute the ongoing stream for all.\n<b>/unmute : </b> Unmute the muted stream.\n\
-  <b>/queue -</b> Show upcoming tracks in the music queue.\n<b>/shuffle -</b> Randomly\
-  \ shuffle the music queue.\n<b>/volume [1-200] : </b> Adjust the bot's volume level.\n\
-  <b>/loop [enable/disable] -</b> Toggle loop for current track.\n<b>/seek [seconds]\
-  \ -</b> Move the stream forward or backward.\n<b>/seekback [Seconds] -</b> Seeks\
-  \ the stream backward.\n<b>/speed -</b> Change playback speed (e.g., 0.5x, 1.0x,\
-  \ 2.0x).\n\n\U0001F4A1  <b>Channel Play:</b> Use <b>c</b> as prefix for channel\
-  \ play (e.g. /cplay)\n ───────────────────────────────\n"
-HELP_2: "<b><u>ADMIN & AUTHORISED USER COMMANDS \U0001F6E0️</u></b>\n───────────────────────────────────────────────\n\
-  ───────────────────────────────\n\n  <b>\U0001F464 <u>Admin Commands</u></b>\n \
-  \ <b>/settings -</b> Opens the group settings panel.\n  <b>/language or /lang -</b>\
-  \ Change the bot's language for your group.\n  <b>/refresh -</b> Refreshes the admin\
-  \ list and cache.\n  <b>/adminlist -</b> Get the current admin list of the chat.\n\
-  \  <b>/ban_ghosts -</b> Cleanup deleted accounts.\n\n  <b>\U0001F464 <u>AUTHORISED\
-  \ COMMANDS</u></b>\n  <b>/auth [User] -</b> Adds a user to authorized list of the\
-  \ group.\n  <b>/unauth [User] -</b> Removes a user from authorized list.\n  <b>/authusers\
-  \ -</b> Shows the list of authorized users.\n\n  <i>-Auth users can use admin commands\
-  \ without being an admin.</i>\n\n  <b>\U0001F916 <u>BOT COMMANDS:</u></b>\n  <b>/sudolist\
-  \ -</b> List all sudo users.\n  <b>/addsudo [User] -</b> Add a user to sudo list.\n\
-  \  <b>/rmsudo [User] -</b> Remove a user from sudo list.\n\n  <b>\U0001F464 <u>GBAN\
-  \ FUNCTION:</u></b>\n  <b>/gban [Username or Reply to a user] -</b> Gban a user\
-  \ from bot's served chat and stop him from using your bot.\n  <b>/ungban [Username\
-  \ or Reply to a user] -</b> Remove a user from Bot's gbanned List and allow him\
-  \ for using your bot\n  <b>/gbannedusers -</b> Check Gbanned Users Lists\n\n  <b>⚠️<u>BLACKLIST\
-  \ CHAT FUNCTION:</u></b>\n  <b>/blacklistchat [CHAT_ID] -</b> Blacklist any chat\
-  \ from using Music Bot\n  <b>/whitelistchat [CHAT_ID] -</b> Whitelist any blacklisted\
-  \ chat from using Music Bot\n  <b>/blacklistedchat -</b> Check all blacklisted chats.\n\
-  \n  <b>\U0001F464 <u>BLOCKED FUNCTION:</u></b>\n  <b>/block [Username or Reply to\
-  \ a user] -</b> Prevents a user from using bot commands.\n  <b>/unblock [Username\
-  \ or Reply to a user] -</b> Remove a user from Bot's Blocked List.\n  <b>/blockedusers\
-  \ -</b> Check blocked Users Lists\n\n\n  <b>\U0001F310 <u>BROADCAST COMMANDS</u></b>\n\
-  \  <b>/broadcast [Message or Reply to a Message] -</b> Broadcast any message to\
-  \ Bot's Served Chats.\n\n  <u>options for broadcast:</u>\n  <b>-pin -</b> This will\
-  \ pin your message \n  <b>-pinloud -</b> This will pin your message with loud notification\n\
-  \  <b>-user -</b> This will broadcast your message to the users who have started\
-  \ your bot.\n  <b>-assistant -</b> This will broadcast your message from assistant\
-  \ account of your bot.\n  <b>-nobot -</b> This will force your bot to not broadcast\
-  \ message\n\n  <b>Example:</b> <code>/broadcast -user -assistant -pin Hello Testing</code>\n\
-  \  ───────────────────────────────\n"
-HELP_3: '<b><u>BOT COMMANDS 🤖</u></b>
-
-  ───────────────────────────────────────────────
-
-
-  <b>/carbon [Text] -</b> Create a carbon image.
-
-  <b>/karma -</b> Karma stats.
-
-  <b>/kang -</b> Add sticker to your pack.
-
-  <b>/tr [Lang] [Text] -</b> Translate text.
-
-  <b>/q or /quotly -</b> Create a sticker quote.
-
-  <b>/sticker_id -</b> Get sticker file ID.
-
-  <b>/invite -</b> Get group invite link.
-
-
-  <b>/lyrics [Song Name] -</b> Get song lyrics.
-
-  <b>/search [Query] -</b> Search on YouTube.
-
-  <b>/ytdl or /song [Name/Link] -</b> Download YouTube audio/video.
-
-
-  <b>/id -</b> Get your user id or group id.
-
-  <b>/info [User] -</b> Get detailed user information.
-
-  <b>/ping -</b> Check bot latency and stats.
-
-  <b>/eval [Code] -</b> Evaluate Python code (Owner Only).
-
-
-  <b>/genstr -</b> Generate String Session (Pyrogram/Telethon).
-
-
-  '
-HELP_4: '<b><u>GAMING COMMANDS 🕹️</u></b>
-
-  ───────────────────────────────────────────────
-
-
-  <b>/dice -</b> Roll a random dice.
-
-  <b>/dart -</b> Throw a dart.
-
-  <b>/basketball -</b> Shoot some hoops.
-
-  <b>/bowling -</b> Play bowling.
-
-  <b>/football -</b> Play football.
-
-  <b>/slot -</b> Try your luck at slots.
-
-  <b>/ship or /couple -</b> Pick the couple of the day in your group.
-
-
-  <i>list will grow as per demand...</i>
-
-
-  '
-HELP_5: '<b><u>SUDO COMMANDS 👮</u></b>
-
-
-  <b>/activevc -</b> List active voice and videochats with counts.
-
-  <b>/speedtest -</b> Test server speed.
-
-  <b>/stats or /gstats -</b> Check bot usage statistics.
-
-  <b>/logs -</b> Get bot logs for debugging.
-
-  <b>/autoend [enable|disable] -</b> Enable Auto stream end after 3 mins if no one
-  is listening.
-
-  <b>/logger [enable / disable] -</b> Bot logs the searched queries in logger group.
-
-  <b>/maintenance [enable/disable] -</b> Toggle maintenance mode.
-
-  <b>/update -</b> Pull latest updates from Git.
-
-  <b>/vars -</b> List all config variables.
-
-  <b>/reboot or /restart -</b> Restart the bot.
-
-
-  '
-
-# --- Missing keys from en.yml ---
-search_1: "<b>➻ searching...</b>\n\nplease wait for a moment."
-search_2: "<b>Search results for:</b> {0}"
-search_3: "<b>{0}.</b> <a href='{1}'>{2}</a>\n<b>Duration:</b> {3}\n<b>Channel:</b> {4}\n\n"
-search_4: "<b>Page:</b> {0}/2"
-search_5: "<b>Result expired.</b>"
-tr_1: "<b>➻ Processing Translation...</b>\nChosen language: <b>{0}</b>"
-tr_2: "<b>✅ Translated to {0}!</b>"
-tr_3: "{0}"
-reboot_1: "<b>⚙️ System Reboot Initiated...</b>\n\nPlease wait while the bot and assistant refresh their connection for this group."
-reboot_2: "<b>✅ System Reset Complete!</b>\n\n<b>Details:</b>\n- Assistant cache purged\n- Admin hierarchy refreshed\n- Previous streams terminated\n\nYour group is now ready for a fresh session."
-sudo_help_err: "<b>🔒 Sudo Restriction</b>\n\nAccess denied. This section is reserved for the bot's Sudo Users only. Please contact the owner if you believe this is an error."
-session_1: "<b>String Session Generator</b>\n\nCancelled: {0}\nVersion: {1}"
+H_B_4: සුඩෝ විධාන
+
+P_B_1: "ශ්රව්ය"
+P_B_2: "වීඩියෝ"
+P_B_3: "සජීවී ප්රවාහය"
+P_B_4: "සාමාන්ය"
+
+SA_B_3: "🧛 ඉහළම පරිශීලකයින් 10"
+SA_B_4: "🏷 හොඳම 10 මෙන්න"
+SA_B_5: "💡 සමස්ත සංඛ්‍යාලේඛන"
+SA_B_6: "👤 පරිශීලක සංඛ්‍යාලේඛන"
+SA_B_7: "🔢 ගෝලීය ඉහළම සංඛ්‍යාලේඛන 10"
+SA_B_8: "🤖 බොට් සංඛ්‍යාලේඛන"
+
+# Force Subscription
+force_sub_text: "»මෙම bot භාවිතා කිරීමට, ඔබ ප්‍රථමයෙන් අපගේ සහාය නාලිකාවට සම්බන්ධ
+  විය යුතුය!\n\nසම්බන්ධ වීමට පහත බොත්තම ක්ලික් කර නැවත උත්සාහ කරන්න."
+
+# Song Download
+song_1: "» ඔබට YouTube වෙතින් සංගීතය/වීඩියෝ බාගත කළ හැක්කේ පුද්ගලික කතාබස් තුළ පමණි.
+  කරුණාකර මාව පුද්ගලික කතාබස් වලින් ආරම්භ කරන්න."
+song_2: "**භාවිතය:**\n\n/ගීතය [ගීතයේ නම] හෝ [YouTube සබැඳිය]"
+song_3: "» සජීවී සබැඳිය අනාවරණය විය. මට සජීවී YouTube වීඩියෝ බාගත කළ නොහැක."
+song_4: "**🔘 මාතෘකාව:**- {0}\n\nඔබට බාගත කිරීමට අවශ්‍ය වර්ගය තෝරන්න."
+song_5: "» වලංගු YouTube සබැඳියක් නොවේ."
+song_6: "» ආකෘති ලබා ගනිමින්...\n\nකරුණාකර රැඳී සිටින්න..."
+song_7: "»වීඩියෝව සඳහා පවතින ආකෘති ලබා ගැනීමට අසමත් විය. කරුණාකර වෙනත් ධාවන පථයක්
+  උත්සාහ කරන්න."
+song_8: "» බාගත කිරීම ආරම්භ විය...\n\nබාගත කිරීමේ වේගය මන්දගාමී විය හැක. කරුණාකර රැඳී
+  සිටින්න..."
+song_9: "» YouTube-DL වෙතින් ගීතය බාගත කිරීම අසාර්ථක විය.\n\n**හේතුව:** {0}"
+song_10: "»සේවාදායකයන්ගෙන් Telegram වෙත උඩුගත කිරීමට අසමත් විය."
+song_11: "» උඩුගත කිරීම ආරම්භ විය...\n\nඋඩුගත කිරීමේ වේගය මන්දගාමී විය හැක. කරුණාකර
+  රැඳී සිටින්න..."
+
+ST_B_1: "Aut පරිශීලකයන්"
+ST_B_2: "Play මාදිලිය"
+ST_B_3: "🏳️🌈 භාෂාව"
+ST_B_4: "ඡන්ද මාදිලිය"
+ST_B_5: "මත"
+ST_B_6: "අක්රිය"
+ST_B_7: "Aut පරිශීලකයන් ➜"
+ST_B_8: "පරිපාලකයින්"
+ST_B_9: "හැමෝම"
+ST_B_10: "සෙවුම් මාදිලිය ➜"
+ST_B_11: "සෘජු"
+ST_B_12: "පෙළට"
+ST_B_13: "පරිපාලක cmds ➜"
+ST_B_14: "සෙල්ලම් වර්ගය ➜"
+
+SA_B_1: "සමස්ත සංඛ්යාලේඛන"
+SA_B_2: "සාමාන්ය"
+QU_B_1: "පෝලිම"
+QU_B_2: "{0} —————————— {1}"
+
+sudo_1: "» {0} දැනටමත් sudo පරිශීලක ලැයිස්තුවේ ඇත."
+sudo_2: "» sudo පරිශීලක ලැයිස්තුවට {0} එක් කරන ලදී."
+sudo_3: "» {0} sudo පරිශීලක ලැයිස්තුවේ නැත."
+sudo_4: "» sudo පරිශීලක ලැයිස්තුවෙන් {0} ඉවත් කරන ලදී."
+sudo_5: "<u><b>🜲 නඩත්තු කරන්නා :</b></u>"
+sudo_6: "<u><b>✳️ sudo පරිශීලකයන්:</b></u>"
+sudo_7: "» sudo භාවිතා කරන්නන් හමු නොවිණි."
+sudo_8: "අසාර්ථක විය."
+
+block_1: "» {0} දැනටමත් බොට් එකෙන් අවහිර කර ඇත."
+block_2: "» අවහිර කළ පරිශීලක ලැයිස්තුවට {0} එක් කරන ලදී."
+block_3: "» {0} අවහිර කළ පරිශීලක ලැයිස්තුවේ නැත."
+block_4: "» අවහිර කළ පරිශීලක ලැයිස්තුවෙන් {0} ඉවත් කරන ලදී."
+block_5: "» අවහිර කළ පරිශීලකයන් හමු නොවීය."
+block_6: "»අවහිර කළ පරිශීලක ලැයිස්තුව ලබා ගැනීම..."
+block_7: "<b>😫 අවහිර කළ පරිශීලකයින් :</b>"
+
+black_1: "<b>උදාහරණය :</b>\n\n/blacklistchat [chat id]"
+black_2: "» මෙම කතාබස් දැනටමත් අසාදු ලේඛනගත කර ඇත."
+black_3: "» අසාදු ලේඛනගත කතාබස් වෙත සාර්ථකව එක් කරන ලදී."
+black_4: "<b>උදාහරණය :</b>\n\n/ whitelistchat [chat id]"
+black_5: "»මෙම කතාබහ අසාදු ලේඛනගත කර නොමැත."
+black_6: "» අසාදු ලේඛනගත කතාබස් වලින් සාර්ථකව ඉවත් කරන ලදී."
+black_7: "» අසාදු ලේඛනගත කතාබස් ලැයිස්තුව:"
+black_8: "» {0} හි අසාදු ලේඛනගත කතාබස් නැත."
+black_9: "»යම් දෙයක් වැරදී ඇත."
+
+maint_1: "<b>උදාහරණය :</b>\n/ නඩත්තු කිරීම [සක්රිය | අබල කරන්න]"
+maint_2: "» {0} නඩත්තු මාදිලිය සබල කර ඇත."
+maint_3: "» {0} නඩත්තු මාදිලිය අබල කර ඇත."
+maint_4: "» නඩත්තු මාදිලිය දැනටමත් සබල කර ඇත."
+maint_5: "» නඩත්තු මාදිලිය දැනටමත් අබල කර ඇත."
+
+log_1: "<b>උදාහරණය :</b>\n/logger [සක්රීය | අබල කරන්න]"
+log_2: "සක්‍රීය ලොග් වීම."
+log_3: "අබල කළ ලොග් කිරීම."
+
+broad_1: "» විකාශනය ආරම්භ..."
+broad_2: "<b>උදාහරණය :</b>\n\n/ විකාශනය [පණිවිඩය හෝ පණිවිඩයකට පිළිතුරු]"
+broad_3: "»බොට් එකෙන් පින් {1}ක් සමඟ කතාබස් {0}කට විකාශනය කළ පණිවිඩය."
+broad_4: "» {0} පරිශීලකයන් වෙත විකාශනය කළ පණිවිඩය."
+broad_5: "» සහකාර විකාශනය ආරම්භ කරමින්..."
+broad_6: "➻ සහකාර විකාශනය:"
+broad_7: "↬ සහායක {0} කතාබස් {1}කින් විකාශනය කරන ලදී."
+broad_8: "» කරුණාකර විකාශනය කිරීමට පෙළ කිහිපයක් ලබා දෙන්න."
+
+server_1: "» ලඝු-සටහන් ලබා ගැනීමට අපොහොසත් විය."
+server_2: "කරුණාකර ඔබගේ heroku api යතුර සහ යෙදුම් නාමය නිවැරදිව වින්‍යාස කර ඇති බවට
+  වග බලා ගන්න."
+server_3: "පවතින යාවත්කාලීන සඳහා පරීක්ෂා කරමින්..."
+server_4: "git විධාන දෝෂයකි."
+server_5: "වලංගු නොවන git repitory."
+server_6: "»බොට් යාවත්කාලීනයි."
+server_7: "»බොට් සාර්ථකව යාවත්කාලීන කරන ලදී! දැන් බොට් නැවත ආරම්භ වන තෙක් මිනිත්තු
+  කිහිපයක් රැඳී සිටින්න සහ වෙනස්කම් තල්ලු කරන්න!"
+server_8: "{0} නැවත ආරම්භ වේ...\n\nතත්පර 15-20 කට පසු ඔබට නැවත සෙල්ලම් කිරීමට පටන්
+  ගත හැකිය."
+server_9: "යමක් වැරදී ඇත, කරුණාකර ලඝු-සටහන් පරීක්ෂා කරන්න."
+server_10: "<code>{0}</code> හේතුවෙන් #updater හි ව්‍යතිරේකයක් සිදු විය"
+server_11: "» වේග පරීක්ෂණයක් ධාවනය කරමින්..."
+server_12: "<b>⇆ බාගැනීම් වේග පරීක්ෂණය ධාවනය වේ...</b>"
+server_13: "<b>⇆ උඩුගත කිරීමේ වේග පරීක්ෂණය ක්‍රියාත්මක වේ...</b>"
+server_14: "<b>↻ වේග පරීක්ෂණ ප්‍රතිඵල බෙදා ගනිමින්...</b>"
+server_15: "✯ <b>වේග පරීක්ෂණ ප්‍රතිඵල</b> ✯\n\n<u><b>සේවාදායකයා :</b></u>\n<b>» isp
+  :</b> {0}\n<b>» රට :</b> {1}\n\n<u><b>සේවාදායකය :</b></u>\n<b>» නම :</b> {2}\n<b>»
+  රට :</b> {3}, {4}\n<b>» අනුග්‍රාහකයා :</b> {5}\n<b>» ප්‍රමාදය :</b> {6}\n<b>» පිං
+  :</b> {7}"
+
+gban_1: "» ඇයි බබා ඔයාට ඔයාව gban කරගන්න ඕන වුනේ ?"
+gban_2: "» ඇයි මම මාවම gban කළ යුත්තේ ?"
+gban_3: "» ඔයාට බෑ මගේ sudoers gban කරන්න."
+gban_4: "» {0} දැනටමත් බොට් වෙතින් ගෝලීය වශයෙන් තහනම් කර ඇත."
+gban_5: "» {0} මත ගෝලීය තහනම ආරම්භ කිරීම.\n\n<b>අපේක්ෂිත කාලය :</b> {1}"
+gban_6: "<b><u>{0} මත නව ගෝලීය තහනම :</u></b>\n\n<b>ප්‍රභවය :</b> {1} [<code>{2}</code>]\n\
+  <b>පරිශීලක :</b> {3}\n<b>පරිශීලක හැඳුනුම්පත :</b> {4}\n\n<b>තහනම් කළේ :</b> {5}\n\
+  <b>කතාබස් :</b> <code>{6}</code>"
+gban_7: "» {0} බොට් එකෙන් gban කර නැත."
+gban_8: "» {0} සිට ගෝලීය තහනම ඉවත් කිරීම.\n\n<b>අපේක්ෂිත කාලය :</b> {1}"
+gban_9: "» {0} වෙතින් ගෝලීය තහනම ඉවත් කරන ලදී.\n\n{1} කතාබස් වල තහනම් කර නැත."
+gban_10: "» කිසිවකුට ගෝලීය වශයෙන් බොට් තහනම් කර නොමැත."
+gban_11: "» gbanned පරිශීලක ලැයිස්තුව ලබා ගනිමින්..."
+gban_12: "🙂 <b>ගෝලීය තහනම් පරිශීලකයින් :</b>"
+
+HELP_1: |-
+  <b><u>සංගීත වාදන විධාන 🎵</u></b>
+  ────────────────────────
+
+  <b>/play [නම/සබැඳිය] -</b> හඬ කතාබස් මත ශ්‍රව්‍ය ප්‍රවාහය ආරම්භ කරන්න.
+  <b>/vplay [නම/සබැඳිය] -</b> හඬ කතාබස් මත වීඩියෝ ප්‍රවාහය ආරම්භ කරන්න
+  <b>/playforce -</b> බලහත්කාරයෙන් ක්‍රීඩා කරන්න (ධාරාව නතර කර නව ධාවන පථයක් ආරම්භ කරයි)
+  <b>/pause -</b> වත්මන් සංගීත ප්‍රවාහය විරාම කරන්න
+  <b>/resume -</b> විරාම කළ සංගීත ප්‍රවාහය නැවත ආරම්භ කරන්න
+  <b>/skip -</b> පෝලිමේ ඊළඟට වත්මන් ධාවන පථය මඟ හරින්න
+  <b>/stop හෝ /end -</b> සංගීතය නවතා සම්පූර්ණ පෝලිම ඉවත් කරන්න
+  <b>/පෝලිමේ -</b> සංගීත පෝලිමේ ඉදිරියට එන ගීත පෙන්වන්න
+  <b>/shuffle -</b> සංගීත පෝලිම අහඹු ලෙස කලවම් කරන්න
+  <b>/වෙළුම [1-200] -</b> බොට්ස් වෙළුම් මට්ටම සීරුමාරු කරන්න
+  <b>/loop [enable/disable] -</b> වත්මන් ධාවන පථය සඳහා ටොගල් ලූප්
+  <b>/stream [link] -</b> සෘජු සබැඳියකින් ශ්‍රව්‍ය/වීඩියෝ ප්‍රවාහ කරන්න
+  <i>- ප්‍රවාහය සඳහා සහය දක්වන ආකෘති : m3u8 සහ දර්ශක සබැඳි.</i>
+  <b>/seek [තත්පර] -</b> ප්‍රවාහය ඉදිරියට හෝ පසුපසට ගෙන යන්න
+  <b>/seekback [තත්පර] -</b> ප්‍රවාහය පසුපසට සොයයි
+  <b>/වේගය -</b> පසුධාවන වේගය වෙනස් කරන්න (උදා., 0.5x, 1.0x, 2.0x)
+
+  <b>💡Channel Play:</b> උපසර්ගය ලෙස c භාවිතා කරන්න (උදා. /cplay)
+  ────────────────────────
+
+HELP_2: |-
+  <b><u>පරිපාලක සහ බලයලත් පරිශීලක විධාන 🛠️</u></b>
+  ────────────────────────
+
+  <b>👤 <u>පරිපාලක විධාන</u></b>
+  <b>/සැකසීම් -</b> කණ්ඩායම් සැකසුම් පැනලය විවෘත කරයි
+  <b>/lang -</b> ඔබේ කණ්ඩායම සඳහා බොට්ගේ භාෂාව වෙනස් කරන්න
+  <b>/reload -</b> පරිපාලක ලැයිස්තුව සහ හැඹිලිය නැවුම් කරයි
+  <b>/adminlist -</b> කතාබස් වල වත්මන් පරිපාලක ලැයිස්තුව ලබා ගන්න
+  <b>/ban_ghosts -</b> මකා දැමූ ගිණුම් පිරිසිදු කරන්න
+
+  <b>👤 <u>බලය ලත් විධාන</u></b>
+  <b>/auth [User] -</b> සමූහයේ බලයලත් ලැයිස්තුවට පරිශීලකයෙකු එක් කරයි
+  <b>/unauth [User] -</b> පරිශීලකයෙකු බලයලත් ලැයිස්තුවෙන් ඉවත් කරයි.
+  <b>/authusers -</b> බලයලත් පරිශීලකයින්ගේ ලැයිස්තුව පෙන්වයි
+  <i>-Auth පරිශීලකයින්ට පරිපාලකයෙකු නොවී පරිපාලක විධාන භාවිතා කළ හැක.</i>
+
+  <b>🤖 <u>බොට් විධාන:</u></b>
+  <b>/sudolist -</b> සියලුම sudo භාවිතා කරන්නන් ලැයිස්තුගත කරන්න
+  <b>/addsudo [User] -</b> sudo ලැයිස්තුවට පරිශීලකයෙකු එක් කරන්න
+  <b>/rmsudo [User] -</b> sudo ලැයිස්තුවෙන් පරිශීලකයෙකු ඉවත් කරන්න
+
+  <b>🌏 <u>ගෝලීය තහනම් කිරීමේ කාර්යය:</u></b>
+  <b>/gban [පරිශීලක නාමය හෝ පරිශීලකයෙකුට පිළිතුරු දෙන්න] -</b> bot විසින් සපයන ලද කතාබස් වෙතින් පරිශීලකයෙකු Gban කර ඔබේ බොට් භාවිතා කිරීමෙන් ඔහුව නවත්වන්න
+  <b>/ungban [පරිශීලක නාමය හෝ පරිශීලකයෙකුට පිළිතුරු දෙන්න] -</b> Bot ගේ gbanned ලැයිස්තුවෙන් පරිශීලකයෙකු ඉවත් කර ඔහුට ඔබේ bot භාවිතා කිරීමට ඉඩ දෙන්න
+  <b>/gbannedusers -</b> Gbanned පරිශීලක ලැයිස්තු පරීක්ෂා කරන්න
+
+  <b>⚠️ <u>Blacklist Chat Function:</u></b>
+  <b>/blacklistchat [CHAT_ID] -</b> Music Bot භාවිතයෙන් ඕනෑම කතාබහක් අසාදු ලේඛනගත කරන්න
+  <b>/whitelistchat [CHAT_ID] -</b> Music Bot භාවිතයෙන් ඕනෑම අසාදු ලේඛනගත චැට් එකක් සුදු ලැයිස්තු කරන්න
+  <b>/blacklistedchats -</b> සියලුම අසාදු ලේඛනගත කතාබස් පරීක්ෂා කරන්න
+
+  <b>🚫 <u>අවහිර කළ කාර්යය:</u></b>
+  <b>/block [පරිශීලක නාමය හෝ පරිශීලකයෙකුට පිළිතුරු දීම] -</b> පරිශීලකයෙකු bot විධාන භාවිතා කිරීම වළක්වයි
+  <b>/unblock [පරිශීලක නාමය හෝ පරිශීලකයෙකුට පිළිතුරු දෙන්න] -</b> Bot හි අවහිර කළ ලැයිස්තුවෙන් පරිශීලකයෙකු ඉවත් කරන්න.
+  <b>/blockedusers -</b> අවහිර කළ පරිශීලක ලැයිස්තු පරීක්ෂා කරන්න
+
+  <b>🌐 <u>Broadcast Commands</u></b>
+  <b>/broadcast [පණිවිඩය හෝ පණිවිඩයකට පිළිතුරු දීම] -</b> Bot ගේ Served Chats වෙත ඕනෑම පණිවිඩයක් විකාශනය කරන්න
+
+  <u>විකාශනය සඳහා විකල්ප:</u>
+  <b>-pin -</b> මෙය ඔබගේ පණිවිඩය අමුණනු ඇත
+  <b>-pinloud -</b> මෙය ඔබගේ පණිවිඩය ඝෝෂාකාරී දැනුම්දීමකින් අමුණනු ඇත
+  <b>-user -</b> මෙය ඔබගේ පණිවිඩය ඔබගේ bot ආරම්භ කර ඇති පරිශීලකයින් වෙත විකාශනය කරනු ඇත
+  <b>-සහායක -</b> මෙය ඔබගේ පණිවිඩය ඔබගේ බොට් හි සහකාර ගිණුමෙන් විකාශනය කරයි
+  <b>-nobot -</b> මෙය ඔබගේ බොට් වෙත පණිවිඩය විකාශනය නොකිරීමට බල කරයි
+  <b>උදාහරණය:</b> <code>/broadcast -user -assistant -pin Hello Testing</code>
+  ────────────────────────
+
+HELP_3: |-
+  <b><u>BOT විධාන 🤖</u></b>
+  ────────────────────────
+
+  <b>🤖 <u>බොට් විධාන</u></b>
+  <b>/කර්ම -</b> කර්ම සංඛ්‍යාලේඛන
+  <b>/lyrics [ගීතයේ නම] -</b> ගීත පද ලබා ගන්න
+  <b>/ping -</b> බොට් ප්‍රමාදය සහ සංඛ්‍යාලේඛන පරීක්ෂා කරන්න
+  <b>/search [Query] -</b> YouTube හි සොයන්න
+  <b>/ගීතය හෝ /ytdl [නම/සබැඳිය] -</b> YouTube ශ්‍රව්‍ය/වීඩියෝ බාගන්න
+
+  <b>🕹️ <u>සූදු විධාන</u></b>
+  <b>/dice -</b> අහඹු කැටයක් රෝල් කරන්න
+  <b>/dart -</b> ඩාර්ට් එකක් විසි කරන්න
+  <b>/basketball -</b> hoops කිහිපයක් වෙඩි තියන්න
+  <b>/පන්දු යැවීම -</b> පන්දු යැවීම ක්‍රීඩා කරන්න
+  <b>/පාපන්දු -</b> පාපන්දු ක්‍රීඩා කරන්න
+  <b>/slots -</b> තව් වලදී ඔබේ වාසනාව උත්සාහ කරන්න
+  <b>/නැව හෝ / යුවල -</b> ඔබේ කණ්ඩායමේ දවසේ යුවල තෝරන්න
+
+  <b>✨ <u>අමතර විධාන</u></b>
+  <b>/commit -</b> Funny Commit Messages ජනනය කරන්න
+  <b>/carbon [text] -</b> කාබන් රූපයක් සාදන්න
+  <b>/q හෝ /quotly -</b> ස්ටිකර උද්ධෘතයක් සාදන්න
+  <b>/random [lengt] -</b> සසම්භාවී සංකීර්ණ මුරපද උත්පාදනය කරන්න
+  <b>/runs -</b> idk ඔබම පරීක්ෂා කරන්න
+  <b>/tr [lang] [පෙළ] -</b> පෙළ පරිවර්තනය කරන්න
+  <b>/id -</b> ඔබගේ පරිශීලක හැඳුනුම්පත හෝ කණ්ඩායම් හැඳුනුම්පත ලබා ගන්න
+  <b>/info [user] -</b> සවිස්තරාත්මක පරිශීලක තොරතුරු ලබා ගන්න
+  <b>/invite -</b> කණ්ඩායම් ආරාධනා සබැඳිය ලබා ගන්න.
+  <b>/sticker_id -</b> ස්ටිකර් ගොනු ID ලබා ගන්න
+  <b>/tts [text] -</b> පෙළ කථනයට පරිවර්තනය කරන්න
+  <b>/genstr -</b> String Session (Pyrogram/Telethon) උත්පාදනය කරන්න
+  <b>/reload -</b> පරිපාලක ලැයිස්තුව සහ හැඹිලිය නැවුම් කරන්න
+
+  <i>ලැයිස්තුව කාලය අනුව වර්ධනය වනු ඇත...</i>
+  ────────────────────────
+
+HELP_4: |-
+  <b><u>SUDO Commands 👮</u></b>
+  ────────────────────────
+
+  <b>/activevc -</b> සක්‍රිය හඬ සහ වීඩියෝ කතාබස් ලැයිස්තුගත කරන්න
+  <b>/speedtest -</b> සේවාදායක වේගය පරීක්ෂා කරන්න
+  <b>/stats -</b> bot භාවිත සංඛ්‍යාලේඛන පරීක්ෂා කරන්න
+  <b>/logs -</b> නිදොස්කරණය සඳහා බොට් ලොග ලබා ගන්න
+  <b>/autoend [enable|disable] -</b> කිසිවෙක් සවන් නොදෙන්නේ නම් මිනිත්තු 3කට පසු ස්වයංක්‍රීය ප්‍රවාහ අවසානය සබල කරන්න
+  <b>/logger [සක්‍රීය / අක්‍රිය] -</b> බොට් ලොගර් සමූහයේ සෙවූ විමසුම් ලොග් කරයි
+  <b>/නඩත්තු [සක්‍රීය/අබල කරන්න] -</b> නඩත්තු ප්‍රකාරය ටොගල් කරන්න
+  ────────────────────────

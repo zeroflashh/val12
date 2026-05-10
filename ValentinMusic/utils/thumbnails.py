@@ -8,7 +8,6 @@ import aiofiles
 import aiohttp
 from PIL import (Image, ImageDraw, ImageEnhance,
                  ImageFilter, ImageFont, ImageOps)
-from unidecode import unidecode
 from youtubesearchpython.__future__ import VideosSearch
 
 from ValentinMusic import app
@@ -82,7 +81,7 @@ async def get_thumb(videoid):
         draw = ImageDraw.Draw(background)
         arial = ImageFont.truetype("ValentinMusic/assets/font2.ttf", 30)
         font = ImageFont.truetype("ValentinMusic/assets/font.ttf", 30)
-        draw.text((1110, 8), unidecode(app.name), fill="white", font=arial)
+        draw.text((1110, 8), "valentin player", fill="white", font=arial)
         draw.text(
             (55, 560),
             f"{channel} | {views[:23]}",

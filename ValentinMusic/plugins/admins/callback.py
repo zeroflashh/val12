@@ -138,8 +138,8 @@ async def del_back_playlist(client, CallbackQuery, _):
         await CallbackQuery.answer()
         await music_off(chat_id)
         await Anony.pause_stream(chat_id)
-        
-        # New Feature: Update Player Thumbnail & Caption
+
+        # Update Player caption with pause indicator
         try:
             check = db.get(chat_id)
             if check:
@@ -147,13 +147,14 @@ async def del_back_playlist(client, CallbackQuery, _):
                 title = check[0].get("title")
                 duration = check[0].get("dur")
                 user = check[0].get("by")
-
-                # Use stored thumbnail if available, otherwise generate new one
+                streamtype = check[0].get("streamtype")
                 img = check[0].get("thumb")
-                if not img or img.startswith("http"):
-                    # Only generate new thumbnail if not stored or if it's a URL
-                    img = await get_thumb(vidid)
-
+                if vidid == "telegram":
+                    img = TELEGRAM_AUDIO_URL if str(streamtype) == "audio" else TELEGRAM_VIDEO_URL
+                elif vidid == "soundcloud":
+                    img = SOUNCLOUD_IMG_URL
+                if not img:
+                    img = TELEGRAM_AUDIO_URL
                 caption = _["stream_1"].format(
                     f"https://t.me/{app.username}?start=info_{vidid}",
                     title[:23],
@@ -161,7 +162,6 @@ async def del_back_playlist(client, CallbackQuery, _):
                     user,
                 )
                 caption += f"\n\n<blockquote>▶️ Stream paused by {CallbackQuery.from_user.mention}</blockquote>"
-
                 from pyrogram.types import InputMediaPhoto
                 await CallbackQuery.edit_message_media(
                     media=InputMediaPhoto(media=img, caption=caption),
@@ -180,8 +180,8 @@ async def del_back_playlist(client, CallbackQuery, _):
         await CallbackQuery.answer()
         await music_on(chat_id)
         await Anony.resume_stream(chat_id)
-        
-        # New Feature: Update Player Thumbnail & Caption
+
+        # Update Player caption with resume indicator
         try:
             check = db.get(chat_id)
             if check:
@@ -189,13 +189,14 @@ async def del_back_playlist(client, CallbackQuery, _):
                 title = check[0].get("title")
                 duration = check[0].get("dur")
                 user = check[0].get("by")
-
-                # Use stored thumbnail if available, otherwise generate new one
+                streamtype = check[0].get("streamtype")
                 img = check[0].get("thumb")
-                if not img or img.startswith("http"):
-                    # Only generate new thumbnail if not stored or if it's a URL
-                    img = await get_thumb(vidid)
-
+                if vidid == "telegram":
+                    img = TELEGRAM_AUDIO_URL if str(streamtype) == "audio" else TELEGRAM_VIDEO_URL
+                elif vidid == "soundcloud":
+                    img = SOUNCLOUD_IMG_URL
+                if not img:
+                    img = TELEGRAM_AUDIO_URL
                 caption = _["stream_1"].format(
                     f"https://t.me/{app.username}?start=info_{vidid}",
                     title[:23],
@@ -203,7 +204,6 @@ async def del_back_playlist(client, CallbackQuery, _):
                     user,
                 )
                 caption += f"\n\n<blockquote>▶️ Stream resumed by {CallbackQuery.from_user.mention}</blockquote>"
-
                 from pyrogram.types import InputMediaPhoto
                 await CallbackQuery.edit_message_media(
                     media=InputMediaPhoto(media=img, caption=caption),

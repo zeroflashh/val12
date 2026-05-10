@@ -1,3 +1,40 @@
+import sys
+import email.message
+
+if 'cgi' not in sys.modules:
+    class DummyCGI:
+        @staticmethod
+        def parse_header(line):
+            m = email.message.Message()
+            m['content-type'] = line
+            params = m.get_params() or []
+            pdict = {k: v for k, v in params[1:]} if len(params) > 1 else {}
+            return m.get_content_type(), pdict
+
+    sys.modules['cgi'] = DummyCGI
+
+import httpx
+orig_post = httpx.post
+def patched_post(*args, **kwargs):
+    kwargs.pop('proxy', None)
+    kwargs.pop('proxies', None)
+    return orig_post(*args, **kwargs)
+httpx.post = patched_post
+
+orig_get = httpx.get
+def patched_get(*args, **kwargs):
+    kwargs.pop('proxy', None)
+    kwargs.pop('proxies', None)
+    return orig_get(*args, **kwargs)
+httpx.get = patched_get
+
+orig_async_init = httpx.AsyncClient.__init__
+def patched_async_init(self, *args, **kwargs):
+    kwargs.pop('proxy', None)
+    kwargs.pop('proxies', None)
+    return orig_async_init(self, *args, **kwargs)
+httpx.AsyncClient.__init__ = patched_async_init
+
 # pyrofork is a Pyrogram fork with pyromod listener patches built-in.
 # No separate pyromod import needed.
 from ValentinMusic.core.bot import Anony

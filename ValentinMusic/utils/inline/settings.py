@@ -7,7 +7,7 @@ def setting_markup(_):
     buttons = [
         [
             InlineKeyboardButton(text="👥 " + _["ST_B_1"], callback_data="AU"),
-            InlineKeyboardButton(text="🌐 " + _["ST_B_3"], callback_data="LG"),
+            InlineKeyboardButton(text=_["ST_B_3"], callback_data="LG"),
         ],
         [
             InlineKeyboardButton(text="🎵 " + _["ST_B_2"], callback_data="PM"),

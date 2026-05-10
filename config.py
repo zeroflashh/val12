@@ -48,7 +48,7 @@ GIT_TOKEN = None  # Fill if upstream repo is private
 
 # Support links
 SUPPORT_CHANNEL = "https://t.me/Anaavaran"
-SUPPORT_CHAT = "https://t.t.me/AnaavaranOT"
+SUPPORT_CHAT = "https://t.me/AnaavaranOT"
 
 # Auto-leave inactive chats
 AUTO_LEAVING_ASSISTANT = False
