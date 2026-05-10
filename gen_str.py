@@ -44,13 +44,15 @@ for i in range(1, count + 1):
         phone_number=phone,
     )
 
+    print("Starting client...")
+    client.start()
     print("Sending OTP...")
     sent_code_info = client.send_code(phone)
     print(f"OTP code sent to {phone}")
     code = input("Enter OTP: ").strip()
     client.sign_in(phone, sent_code_info.phone_code_hash, code)
     session_str = client.session.save()
-    client.disconnect()
+    client.stop()
 
     env_var = f"STRING_SESSION{i}" if i == 1 else f"STRING_SESSION{i}"
     results.append((env_var, session_str))
