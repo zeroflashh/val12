@@ -45,51 +45,13 @@ async def _clear_(chat_id):
 
 class Call(PyTgCalls):
     def __init__(self):
-        self.userbot1 = Client(
-            name="ValentinMusicAss1",
-            api_id=config.API_ID,
-            api_hash=config.API_HASH,
-            session_string=str(config.STRING1),
-        )
-        self.one = PyTgCalls(
-            self.userbot1,
-        )
-        self.userbot2 = Client(
-            name="ValentinMusicAss2",
-            api_id=config.API_ID,
-            api_hash=config.API_HASH,
-            session_string=str(config.STRING2),
-        )
-        self.two = PyTgCalls(
-            self.userbot2,
-        )
-        self.userbot3 = Client(
-            name="ValentinMusicAss3",
-            api_id=config.API_ID,
-            api_hash=config.API_HASH,
-            session_string=str(config.STRING3),
-        )
-        self.three = PyTgCalls(
-            self.userbot3,
-        )
-        self.userbot4 = Client(
-            name="ValentinMusicAss4",
-            api_id=config.API_ID,
-            api_hash=config.API_HASH,
-            session_string=str(config.STRING4),
-        )
-        self.four = PyTgCalls(
-            self.userbot4,
-        )
-        self.userbot5 = Client(
-            name="ValentinMusicAss5",
-            api_id=config.API_ID,
-            api_hash=config.API_HASH,
-            session_string=str(config.STRING5),
-        )
-        self.five = PyTgCalls(
-            self.userbot5,
-        )
+        from ValentinMusic import userbot
+
+        self.one = PyTgCalls(userbot.one) if userbot.one else None
+        self.two = PyTgCalls(userbot.two) if userbot.two else None
+        self.three = PyTgCalls(userbot.three) if userbot.three else None
+        self.four = PyTgCalls(userbot.four) if userbot.four else None
+        self.five = PyTgCalls(userbot.five) if userbot.five else None
 
     async def pause_stream(self, chat_id: int):
         assistant = await group_assistant(self, chat_id)
@@ -565,34 +527,37 @@ class Call(PyTgCalls):
 
     async def start(self):
         LOGGER(__name__).info("Starting PyTgCalls Client...\n")
-        if config.STRING1:
+        if self.one:
             await self.one.start()
-        if config.STRING2:
+        if self.two:
             await self.two.start()
-        if config.STRING3:
+        if self.three:
             await self.three.start()
-        if config.STRING4:
+        if self.four:
             await self.four.start()
-        if config.STRING5:
+        if self.five:
             await self.five.start()
 
     async def decorators(self):
-        @self.one.on_update()
-        @self.two.on_update()
-        @self.three.on_update()
-        @self.four.on_update()
-        @self.five.on_update()
         async def stream_update_handler(client, update: Update):
             if not isinstance(update, StreamEnded):
                 return
             
-            # If the stream ended normally or was deleted
-            # we try to play the next song in the queue
             try:
                 await self.change_stream(client, update.chat_id)
             except Exception:
-                # If we can't change (e.g. no more songs), stop
                 await self.stop_stream(update.chat_id)
+
+        if self.one:
+            self.one.on_update()(stream_update_handler)
+        if self.two:
+            self.two.on_update()(stream_update_handler)
+        if self.three:
+            self.three.on_update()(stream_update_handler)
+        if self.four:
+            self.four.on_update()(stream_update_handler)
+        if self.five:
+            self.five.on_update()(stream_update_handler)
 
 
 Anony = Call()

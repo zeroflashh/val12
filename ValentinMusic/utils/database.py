@@ -69,6 +69,8 @@ async def set_assistant_new(chat_id, number):
 async def set_assistant(chat_id):
     from ValentinMusic.core.userbot import assistants
 
+    if not assistants:
+        return None
     ran_assistant = random.choice(assistants)
     assistantdict[chat_id] = ran_assistant
     await assdb.update_one(
@@ -83,6 +85,8 @@ async def set_assistant(chat_id):
 async def get_assistant(chat_id: int) -> str:
     from ValentinMusic.core.userbot import assistants
 
+    if not assistants:
+        return None
     assistant = assistantdict.get(chat_id)
     if not assistant:
         dbassistant = await assdb.find_one({"chat_id": chat_id})
@@ -110,6 +114,8 @@ async def get_assistant(chat_id: int) -> str:
 async def set_calls_assistant(chat_id):
     from ValentinMusic.core.userbot import assistants
 
+    if not assistants:
+        return None
     ran_assistant = random.choice(assistants)
     assistantdict[chat_id] = ran_assistant
     await assdb.update_one(
@@ -140,6 +146,8 @@ async def group_assistant(self, chat_id: int) -> int:
         else:
             assis = await set_calls_assistant(chat_id)
 
+    if not assis:
+        return self.one
     if int(assis) == 1:
         return self.one
     elif int(assis) == 2:

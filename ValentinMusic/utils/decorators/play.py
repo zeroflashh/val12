@@ -45,7 +45,7 @@ def PlayWrapper(command):
             return await message.reply_text(_["general_3"], reply_markup=upl)
 
         if await is_maintenance():
-            if message.from_user.id not in SUDOERS:
+            if message.from_user and message.from_user.id not in SUDOERS.user_ids:
                 return await message.reply_text(
                     text=f"{app.mention} ɪs ᴜɴᴅᴇʀ ᴍᴀɪɴᴛᴇɴᴀɴᴄᴇ, ᴠɪsɪᴛ <a href={SUPPORT_CHAT}>sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ</a> ғᴏʀ ᴋɴᴏᴡɪɴɢ ᴛʜᴇ ʀᴇᴀsᴏɴ.",
                     disable_web_page_preview=True,
@@ -92,7 +92,7 @@ def PlayWrapper(command):
         playmode = await get_playmode(message.chat.id)
         playty = await get_playtype(message.chat.id)
         if playty != "Everyone":
-            if message.from_user.id not in SUDOERS:
+            if message.from_user and message.from_user.id not in SUDOERS.user_ids:
                 admins = adminlist.get(message.chat.id)
                 if not admins:
                     return await message.reply_text(_["admin_13"])
@@ -115,6 +115,8 @@ def PlayWrapper(command):
 
         if not await is_active_chat(chat_id):
             userbot = await get_assistant(chat_id)
+            if not userbot:
+                return await message.reply_text("ɴᴏ ᴀssɪsᴛᴀɴᴛ ᴀᴠᴀɪʟᴀʙʟᴇ. ᴘʟᴇᴀsᴇ ᴄʜᴇᴄᴋ ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀᴅᴅᴇᴅ ᴀssɪsᴛᴀɴᴛ sᴇssɪᴏɴ sᴛʀɪɴɢ.")
             try:
                 try:
                     get = await app.get_chat_member(chat_id, userbot.id)
