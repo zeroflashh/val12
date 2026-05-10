@@ -4,7 +4,6 @@
 import sys
 import os
 
-# Check for pyrogram
 try:
     from pyrogram import Client
 except ImportError:
@@ -38,8 +37,6 @@ for i in range(1, count + 1):
     session_name = input(f"Session name for assistant {i} [leave blank for default]: ").strip() or f"valentin_ass{i}"
     phone = input("Phone number (+country code): ").strip()
 
-    print("Connecting... (this will send OTP code)")
-
     client = Client(
         name=session_name,
         api_id=API_ID,
@@ -47,10 +44,11 @@ for i in range(1, count + 1):
         phone_number=phone,
     )
 
-    sent_code = client.connect()
-    print(f"OTP sent to {phone}: {sent_code}")
+    print("Sending OTP...")
+    sent_code_info = client.send_code(phone)
+    print(f"OTP code sent to {phone}")
     code = input("Enter OTP: ").strip()
-    client.sign_in(phone, sent_code.phone_code_hash, code)
+    client.sign_in(phone, sent_code_info.phone_code_hash, code)
     session_str = client.session.save()
     client.disconnect()
 
