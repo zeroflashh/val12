@@ -120,7 +120,7 @@ set_cb_5 : "» getting back..."
 
 gstats_1 : "getting {0} stats and information...\n\nit may take a while, please hold on..."
 gstats_2 : "click on the buttons below to check the stats of {0}."
-gstats_3 : "<b><u>{0} stats and information:</u></b>\n\n<b>assistants:</b> <code>{1}</code>\n<b>blocked:</b> <code>{2}</code>\n<b>chats:</b> <code>{3}</code>\n<b>users:</b> <code>{4}</code>\n<b>modules:</b> <code>{5}</code>\n<b>sudoers:</b> <code>{6}</code>\n\n<b>auto leaving assistant:</b> {7}\n<b>play duration limit:</b> {8} minutes"
+gstats_3 : "<b><u>{0} stats and information:</u></b>\n\n<b>assistants:</b> <code>{1}</code>\n<b>blocked:</b> <code>{2}</code>\n<b>chats:</b> <code>{3}</code>\n<b>users:</b> <code>{4}</code>\n<b>modules:</b> <code>{5}</code>\n<b>sudoers:</b> <code>{6}</code>\n<b>telegram audio file limit:</b> <code>{8}</code>\n<b>telegram video file limit:</b> <code>{9}</code>\n<b>youtube play duration limit:</b> <code>{7}</code>\n<b>youtube playlist fetch limit:</b> <code>{10} videos</code>\n<b>auto leaving assistant:</b> {11}\n<b>Maintenance:</b> {13}\n<b>Logging:</b> {12}"
 gstats_4 : "this button is only for sudoers."
 gstats_5 : "<b><u>{0} stats and information:</u></b>\n\n<b>modules:</b> <code>{1}</code>\n<b>platform:</b> <code>{2}</code>\n<b>ram:</b> <code>{3}</code>\n<b>physical cores:</b> <code>{4}</code>\n<b>total cores:</b> <code>{5}</code>\n<b>cpu frequency:</b> <code>{6}</code>\n\n<b>python:</b> <code>{7}</code>\n<b>pyrogram:</b> <code>{8}</code>\n<b>py-tgcalls:</b> <code>{9}</code>\n\n<b>storage available:</b> <code>{10} gib</code>\n<b>storage used:</b> <code>{11} gib</code>\n<b>storage left:</b> <code>{12} gib</code>\n\n<b>served chats:</b> <code>{13}</code>\n<b>served users:</b> <code>{14}</code>\n<b>blocked users:</b> <code>{15}</code>\n<b>sudo users:</b> <code>{16}</code>\n\n<b>total db size:</b> <code>{17} mb</code>\n<b>total db storage:</b> <code>{18} mb</code>\n<b>total db collections:</b> <code>{19}</code>\n<b>total db keys:</b> <code>{20}</code>"
 
@@ -420,7 +420,7 @@ HELP_3: |
   <b>/lyrics [Song Name] -</b> Get song lyrics
   <b>/ping -</b> Check bot latency and stats
   <b>/search [Query] -</b> Search on YouTube
-  <b>/song or ytdl [Name/Link] -</b> Download YouTube audio/video
+  <b>/song or /ytdl [Name/Link] -</b> Download YouTube audio/video
 
   <b>🕹️ <u>Gamming Commands</u></b>
   <b>/dice -</b> Roll a random dice

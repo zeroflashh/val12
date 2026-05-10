@@ -33,41 +33,152 @@ async def ytdl_command_handler(client, message: Message):
             _["ytdl_1"] if "ytdl_1" in _ else "<b>Usage:</b> /song [name or YouTube link]"
         )
 
-    url = message.text.split(None, 1)[1]
-    if "playlist" in url or "list=" in url:
+    query = message.text.split(None, 1)[1]
+
+    # Check if it's a YouTube URL
+    is_url = False
+    if "youtube.com" in query or "youtu.be" in query:
+        is_url = True
+
+    if "playlist" in query or "list=" in query:
         return await message.reply_text(
             _["ytdl_2"] if "ytdl_2" in _ else "<b>Playlists not supported.</b>"
         )
 
     m = await message.reply_text(
-        _["ytdl_3"] if "ytdl_3" in _ else "<b>Fetching formats...</b>"
+        "<b>🔍 Searching...</b>"
     )
 
     try:
-        results = await YouTube.search(url, limit=1)
+        results = await YouTube.search(query, limit=10)
         if not results:
             return await m.edit(_["ytdl_4"] if "ytdl_4" in _ else "<b>No results found.</b>")
 
-        title = results[0]["title"]
-        duration = format_duration(results[0]["duration"])
-        vidid = results[0]["id"]
+        # If it's a direct URL, process directly
+        if is_url:
+            vidid = results[0]["id"]
+            title = results[0]["title"]
+            duration = format_duration(results[0]["duration"])
+
+            buttons = [
+                [
+                    InlineKeyboardButton(text="Audio 🎵", callback_data=f"ytdl_audio|{vidid}"),
+                    InlineKeyboardButton(text="Video 📹", callback_data=f"ytdl_video_choice|{vidid}"),
+                ],
+                [
+                    InlineKeyboardButton(text="Close", callback_data="close"),
+                ],
+            ]
+            return await m.edit(
+                f"<b>🎬 Title:</b> {title}\n<b>⏱ Duration:</b> {duration}\n\nSelect format:",
+                reply_markup=InlineKeyboardMarkup(buttons)
+            )
+
+        # Show first 5 results (page 1)
+        text = f"<b>🔍 Search results for:</b> {query}\n\n"
+        buttons = []
+        row = []
+
+        for i, result in enumerate(results[:5], 1):
+            title = result["title"][:50] + "..." if len(result["title"]) > 50 else result["title"]
+            duration = result["duration"] or "Unknown"
+            vidid = result["id"]
+            text += f"<b>{i}.</b> {title} [{duration}]\n"
+            row.append(InlineKeyboardButton(text=str(i), callback_data=f"ytdl_select|{vidid}"))
+
+        buttons.append(row)
+        buttons.append([InlineKeyboardButton(text="Next ➡️", callback_data=f"ytdl_page|{query}|1")])
+        buttons.append([InlineKeyboardButton(text="Close", callback_data="close")])
+
+        await m.edit(text, reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+
+    except Exception as e:
+        await m.edit(_["ytdl_10"].format(query, str(e)) if "ytdl_10" in _ else f"<b>Error:</b> {str(e)}")
+
+
+@app.on_callback_query(filters.regex(r"^ytdl_page\|") & ~BANNED_USERS)
+async def ytdl_pagination(client, query: CallbackQuery):
+    try:
+        data = query.data.split("|")
+        query_text = data[1]
+        page = int(data[2])
+
+        m = await query.message.edit("<b>🔍 Loading next page...</b>")
+
+        results = await YouTube.search(query_text, limit=10)
+        if not results:
+            return await query.answer("No more results.", show_alert=True)
+
+        start = 5 if page == 1 else 0
+        end = 10 if page == 1 else 5
+        display_results = results[start:end]
+
+        text = f"<b>🔍 Search results for:</b> {query_text}\n<b>Page {page + 1}/2</b>\n\n"
+        buttons = []
+        row = []
+
+        for i, result in enumerate(display_results, start + 1):
+            title = result["title"][:50] + "..." if len(result["title"]) > 50 else result["title"]
+            duration = result["duration"] or "Unknown"
+            vidid = result["id"]
+            text += f"<b>{i}.</b> {title} [{duration}]\n"
+            row.append(InlineKeyboardButton(text=str(i), callback_data=f"ytdl_select|{vidid}"))
+
+        buttons.append(row)
+        prev_page = 0 if page == 1 else 1
+        buttons.append([InlineKeyboardButton(text="⬅️ Previous", callback_data=f"ytdl_page|{query_text}|{prev_page}")])
+        buttons.append([InlineKeyboardButton(text="Close", callback_data="close")])
+
+        await m.edit(text, reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+
+    except Exception as e:
+        await query.answer(f"Error: {e}", show_alert=True)
+
+
+@app.on_callback_query(filters.regex(r"^ytdl_select\|") & ~BANNED_USERS)
+async def ytdl_select(client, query: CallbackQuery):
+    chat_id = query.message.chat.id
+    language = await get_lang(chat_id)
+    _ = get_string(language)
+    vidid = query.data.split("|")[1]
+
+    try:
+        title, duration, duration_sec, thumb, vidid, channel = await YouTube.details(vidid, True)
+        duration_fmt = format_duration(duration)
 
         buttons = [
             [
-                InlineKeyboardButton(text="Audio", callback_data=f"ytdl_audio|{vidid}"),
-                InlineKeyboardButton(text="Video", callback_data=f"ytdl_video_choice|{vidid}"),
+                InlineKeyboardButton(text="Audio 🎵", callback_data=f"ytdl_audio|{vidid}"),
+                InlineKeyboardButton(text="Video 📹", callback_data=f"ytdl_video_choice|{vidid}"),
             ],
             [
+                InlineKeyboardButton(text="⬅️ Back to Results", callback_data="ytdl_back_search"),
                 InlineKeyboardButton(text="Close", callback_data="close"),
             ],
         ]
 
-        await m.edit(
-            _["ytdl_5"].format(title, duration) if "ytdl_5" in _ else f"<b>Title:</b> {title}\n<b>Duration:</b> {duration}\n\nSelect format:",
+        await query.message.edit(
+            f"<b>🎬 Selected:</b> {title}\n<b>⏱ Duration:</b> {duration_fmt}\n<b>📺 Channel:</b> {channel}\n\nSelect format:",
             reply_markup=InlineKeyboardMarkup(buttons)
         )
     except Exception as e:
-        await m.edit(_["ytdl_10"].format(url, str(e)) if "ytdl_10" in _ else f"<b>Error:</b> {str(e)}")
+        await query.answer(f"Error: {e}", show_alert=True)
+
+
+@app.on_callback_query(filters.regex("ytdl_back_search") & ~BANNED_USERS)
+async def ytdl_back_to_search(client, query: CallbackQuery):
+    # Get the last search query from the message text or use a default
+    # For simplicity, we just show the last 5 results again
+    try:
+        text = query.message.text
+        # Extract the query from the previous message if available
+        await query.message.edit("<b>🔍 Searching...</b>")
+        # Re-show search results - for now just acknowledge
+        await query.message.edit(
+            "<b>Select a song from the previous results.</b>\n\n<i>Use /song command again to search for a new song.</i>"
+        )
+    except:
+        pass
 
 
 @app.on_callback_query(filters.regex("ytdl_audio") & ~BANNED_USERS)
@@ -141,13 +252,13 @@ async def ytdl_video_choice_callback(client, query: CallbackQuery):
                 InlineKeyboardButton(text=f"480p ({av1_size})", callback_data=f"ytdl_download|{vidid}|video|{av1_id}|480p"),
             ],
             [
-                InlineKeyboardButton(text="Back", callback_data=f"ytdl_back|{vidid}"),
+                InlineKeyboardButton(text="⬅️ Back", callback_data=f"ytdl_audio|{vidid}"),
                 InlineKeyboardButton(text="Close", callback_data="close"),
             ],
         ]
 
         await query.message.edit(
-            _["ytdl_8"].format(title) if "ytdl_8" in _ else f"<b>Title:</b> {title}\n\nSelect quality:",
+            f"<b>🎬 Title:</b> {title}\n<b>⏱ Duration:</b> {duration}\n\nSelect quality:",
             reply_markup=InlineKeyboardMarkup(buttons)
         )
     except Exception as e:
@@ -214,30 +325,3 @@ async def ytdl_download_callback(client, query: CallbackQuery):
         import traceback
         traceback.print_exc()
         await query.message.edit(_["ytdl_10"].format(ftype, str(e)) if "ytdl_10" in _ else f"<b>Error:</b> {str(e)}")
-
-
-@app.on_callback_query(filters.regex("ytdl_back") & ~BANNED_USERS)
-async def ytdl_back_callback(client, query: CallbackQuery):
-    chat_id = query.message.chat.id
-    language = await get_lang(chat_id)
-    _ = get_string(language)
-    vidid = query.data.split("|")[1]
-
-    try:
-        title, duration, duration_sec, thumb, vidid, channel = await YouTube.details(vidid, True)
-        duration = format_duration(duration)
-        buttons = [
-            [
-                InlineKeyboardButton(text="Audio", callback_data=f"ytdl_audio|{vidid}"),
-                InlineKeyboardButton(text="Video", callback_data=f"ytdl_video_choice|{vidid}"),
-            ],
-            [
-                InlineKeyboardButton(text="Close", callback_data="close"),
-            ],
-        ]
-        await query.message.edit(
-            _["ytdl_5"].format(title, duration) if "ytdl_5" in _ else f"<b>Title:</b> {title}\n<b>Duration:</b> {duration}\n\nSelect format:",
-            reply_markup=InlineKeyboardMarkup(buttons)
-        )
-    except Exception as e:
-        await query.message.edit(_["ytdl_10"].format(vidid, str(e)) if "ytdl_10" in _ else f"<b>Error:</b> {str(e)}")

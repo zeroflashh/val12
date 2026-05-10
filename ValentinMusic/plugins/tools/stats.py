@@ -52,6 +52,27 @@ async def overall_stats(client, CallbackQuery, _):
     await CallbackQuery.edit_message_text(_["gstats_1"].format(app.mention))
     served_chats = len(await get_served_chats())
     served_users = len(await get_served_users())
+
+    # Get logger and maintenance status
+    from ValentinMusic.utils.database import is_on_off, is_maintenance
+    logger_enabled = "Enabled" if await is_on_off(2) else "Disabled"
+    maintenance_enabled = "Enabled" if await is_maintenance() else "Disabled"
+
+    # Format file size limits to human readable
+    def format_size(bytes):
+        mb = bytes / (1024 * 1024)
+        if mb >= 1024:
+            return f"{mb/1024:.1f} GB"
+        return f"{mb:.0f} MB"
+
+    # Format duration limit to human readable
+    def format_duration(minutes):
+        if minutes >= 1440:  # 24 hours
+            return f"{minutes // 1440}d {((minutes % 1440) // 60)}h"
+        elif minutes >= 60:
+            return f"{minutes // 60}h {minutes % 60}m"
+        return f"{minutes}m"
+
     text = _["gstats_3"].format(
         app.mention,
         len(assistants),
@@ -60,8 +81,13 @@ async def overall_stats(client, CallbackQuery, _):
         served_users,
         len(ALL_MODULES),
         len(SUDOERS),
+        format_duration(config.DURATION_LIMIT_MIN),
+        format_size(config.TG_AUDIO_FILESIZE_LIMIT),
+        format_size(config.TG_VIDEO_FILESIZE_LIMIT),
+        config.PLAYLIST_FETCH_LIMIT,
         config.AUTO_LEAVING_ASSISTANT,
-        config.DURATION_LIMIT_MIN,
+        logger_enabled,
+        maintenance_enabled,
     )
     med = InputMediaPhoto(media=config.STATS_IMG_URL, caption=text)
     try:
