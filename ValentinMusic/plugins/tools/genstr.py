@@ -87,11 +87,7 @@ async def gen_callback(client, callback_query):
             f"Length: <code>{len(session_str)}</code> chars\n\n"
             f"<code>{session_str}</code>\n\n"
             "⚠️ <b>Keep this session string safe!</b>\n"
-            "Anyone with this string can access your account.\n\n"
-            "<b>How to use:</b>\n"
-            "• Add to .env file as <code>STRING_SESSION</code> (Pyrogram)\n"
-            "• Or <code>STRING_SESSION2</code>, <code>STRING_SESSION3</code>, etc.\n"
-            "• Rebuild and restart the bot.\n\n"
+            "Anyone with this string can access your account.\n"
             "⚠️ <b>Never share this string with anyone.</b>",
         )
         await m.delete()
