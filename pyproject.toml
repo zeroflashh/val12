@@ -1,7 +1,7 @@
 [project]
 name = "ValentinMusic"
 version = "3.0.3"
-description = "Telegram Group Calls Streaming bot with some useful features."
+description = "Telegram Group Calls Streaming Bot with YouTube support."
 readme = ".github/README.md"
 requires-python = ">=3.10"
 
@@ -22,14 +22,12 @@ dependencies = [
     "py-yt-search",
     "pykeyboard",
     "pymongo",
-    "pyromod",
     "pysocks",
     "python-dotenv",
     "pytz",
     "pyyaml",
     "requests",
     "speedtest-cli",
-    "spotipy",
     "telethon",
     "unidecode",
     "youtube-search",
