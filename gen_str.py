@@ -58,7 +58,6 @@ def gen_pyrogram(phone, session_name, idx):
         phone_number=phone,
     )
 
-    # Connect and send code manually
     client.connect()
     print(f"[{idx}] Sending OTP to {phone}...")
     sent_code_info = client.send_code(phone)
@@ -78,7 +77,17 @@ def gen_pyrogram(phone, session_name, idx):
             client.sign_in(phone, sent_code_info.phone_code_hash, code)
         else:
             raise
-    session_str = client.session.save()
+
+    # pyrogram 2.0 uses export_session_string, not session.save()
+    try:
+        session_str = client.export_session_string()
+    except Exception:
+        try:
+            session_str = client.session.save()
+        except Exception:
+            # fallback: create a new temp client and get session
+            session_str = client.session.save()
+
     client.disconnect()
     return session_str
 
