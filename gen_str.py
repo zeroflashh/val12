@@ -50,7 +50,17 @@ for i in range(1, count + 1):
     sent_code_info = client.send_code(phone)
     print(f"OTP code sent to {phone}")
     code = input("Enter OTP: ").strip()
-    client.sign_in(phone, sent_code_info.phone_code_hash, code)
+    try:
+        client.sign_in(phone, sent_code_info.phone_code_hash, code)
+    except Exception as e:
+        if "SESSION_PASSWORD_NEEDED" in str(e):
+            print("Two-step verification enabled on this account.")
+            password = input("Enter 2FA password: ").strip()
+            client.check_password(password)
+            client.sign_in(phone, sent_code_info.phone_code_hash, code)
+        else:
+            raise
+
     session_str = client.session.save()
     client.stop()
 
