@@ -6,7 +6,7 @@ from pyrogram.types import InlineKeyboardMarkup, InputMediaPhoto, Message
 from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
-from ValentinMusic import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
+from ValentinMusic import Telegram, YouTube, app
 from ValentinMusic.core.call import Anony
 from ValentinMusic.utils import seconds_to_min, time_to_seconds
 from ValentinMusic.utils.channelplay import get_channeplayCB
@@ -184,108 +184,7 @@ async def play_commnd(
                     details["title"],
                     details["duration_min"],
                 )
-        elif await Spotify.valid(url):
-            spotify = True
-            if not config.SPOTIFY_CLIENT_ID and not config.SPOTIFY_CLIENT_SECRET:
-                return await mystic.edit_text(
-                    "» sᴘᴏᴛɪғʏ ɪs ɴᴏᴛ sᴜᴘᴘᴏʀᴛᴇᴅ ʏᴇᴛ.\n\nᴘʟᴇᴀsᴇ ᴛʀʏ ᴀɢᴀɪɴ ʟᴀᴛᴇʀ."
-                )
-            if "track" in url:
-                try:
-                    details, track_id = await Spotify.track(url)
-                except:
-                    return await mystic.edit_text(_["play_3"])
-                streamtype = "youtube"
-                img = details["thumb"]
-                cap = _["play_10"].format(details["title"], details["duration_min"])
-            elif "playlist" in url:
-                try:
-                    details, plist_id = await Spotify.playlist(url)
-                except Exception:
-                    return await mystic.edit_text(_["play_3"])
-                streamtype = "playlist"
-                plist_type = "spplay"
-                img = config.SPOTIFY_PLAYLIST_IMG_URL
-                cap = _["play_11"].format(app.mention, message.from_user.mention)
-            elif "album" in url:
-                try:
-                    details, plist_id = await Spotify.album(url)
-                except:
-                    return await mystic.edit_text(_["play_3"])
-                streamtype = "playlist"
-                plist_type = "spalbum"
-                img = config.SPOTIFY_ALBUM_IMG_URL
-                cap = _["play_11"].format(app.mention, message.from_user.mention)
-            elif "artist" in url:
-                try:
-                    details, plist_id = await Spotify.artist(url)
-                except:
-                    return await mystic.edit_text(_["play_3"])
-                streamtype = "playlist"
-                plist_type = "spartist"
-                img = config.SPOTIFY_ARTIST_IMG_URL
-                cap = _["play_11"].format(message.from_user.first_name)
-            else:
-                return await mystic.edit_text(_["play_15"])
-        elif await Apple.valid(url):
-            if "album" in url or "song" in url:
-                try:
-                    details, track_id = await Apple.track(url)
-                except:
-                    return await mystic.edit_text(_["play_3"])
-                streamtype = "youtube"
-                img = details["thumb"]
-                cap = _["play_10"].format(details["title"], details["duration_min"])
-            elif "playlist" in url:
-                spotify = True
-                try:
-                    details, plist_id = await Apple.playlist(url)
-                except:
-                    return await mystic.edit_text(_["play_3"])
-                streamtype = "playlist"
-                plist_type = "apple"
-                cap = _["play_12"].format(app.mention, message.from_user.mention)
-                img = url
-            else:
-                return await mystic.edit_text(_["play_3"])
-        elif await Resso.valid(url):
-            try:
-                details, track_id = await Resso.track(url)
-            except:
-                return await mystic.edit_text(_["play_3"])
-            streamtype = "youtube"
-            img = details["thumb"]
-            cap = _["play_10"].format(details["title"], details["duration_min"])
-        elif await SoundCloud.valid(url):
-            try:
-                details, track_path = await SoundCloud.download(url)
-            except:
-                return await mystic.edit_text(_["play_3"])
-            duration_sec = details["duration_sec"]
-            if duration_sec > config.DURATION_LIMIT:
-                return await mystic.edit_text(
-                    _["play_6"].format(
-                        config.DURATION_LIMIT_MIN,
-                        app.mention,
-                    )
-                )
-            try:
-                await stream(
-                    _,
-                    mystic,
-                    user_id,
-                    details,
-                    chat_id,
-                    user_name,
-                    message.chat.id,
-                    streamtype="soundcloud",
-                    forceplay=fplay,
-                )
-            except Exception as e:
-                ex_type = type(e).__name__
-                err = e if ex_type == "AssistantErr" else _["general_2"].format(ex_type)
-                return await mystic.edit_text(err)
-            return await mystic.delete()
+
         else:
             try:
                 await Anony.stream_call(url)
@@ -558,26 +457,7 @@ async def play_playlists_command(client, CallbackQuery, _):
             )
         except:
             return await mystic.edit_text(_["play_3"])
-    if ptype == "spplay":
-        try:
-            result, spotify_id = await Spotify.playlist(videoid)
-        except:
-            return await mystic.edit_text(_["play_3"])
-    if ptype == "spalbum":
-        try:
-            result, spotify_id = await Spotify.album(videoid)
-        except:
-            return await mystic.edit_text(_["play_3"])
-    if ptype == "spartist":
-        try:
-            result, spotify_id = await Spotify.artist(videoid)
-        except:
-            return await mystic.edit_text(_["play_3"])
-    if ptype == "apple":
-        try:
-            result, apple_id = await Apple.playlist(videoid, True)
-        except:
-            return await mystic.edit_text(_["play_3"])
+
     try:
         await stream(
             _,
