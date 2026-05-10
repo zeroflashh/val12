@@ -3,14 +3,15 @@
 
 import sys
 import os
-import asyncio
 
 try:
     from pyrogram import Client as PyroClient
+    from pyrogram.errors import SessionPasswordNeeded as Pyro2FA
 except ImportError:
     print("Installing pyrogram...")
     os.system(f"{sys.executable} -m pip install pyrogram tgcrypto")
     from pyrogram import Client as PyroClient
+    from pyrogram.errors import SessionPasswordNeeded as Pyro2FA
 
 try:
     from telethon import TelegramClient as TeleClient
@@ -56,21 +57,29 @@ def gen_pyrogram(phone, session_name, idx):
         api_hash=API_HASH,
         phone_number=phone,
     )
-    client.start()
-    print(f"[{idx}] OTP sent to {phone}")
+
+    # Connect and send code manually
+    client.connect()
+    print(f"[{idx}] Sending OTP to {phone}...")
+    sent_code_info = client.send_code(phone)
     code = input(f"[{idx}] Enter OTP: ").strip()
     try:
-        client.sign_in(phone, client.send_code(phone).phone_code_hash, code)
+        client.sign_in(phone, sent_code_info.phone_code_hash, code)
+    except Pyro2FA:
+        print(f"[{idx}] 2FA enabled. Enter password: ", end="")
+        password = input().strip()
+        client.check_password(password)
+        client.sign_in(phone, sent_code_info.phone_code_hash, code)
     except Exception as e:
         if "SESSION_PASSWORD_NEEDED" in str(e):
             print(f"[{idx}] 2FA enabled. Enter password: ", end="")
             password = input().strip()
             client.check_password(password)
-            client.sign_in(phone, client.send_code(phone).phone_code_hash, code)
+            client.sign_in(phone, sent_code_info.phone_code_hash, code)
         else:
             raise
     session_str = client.session.save()
-    client.stop()
+    client.disconnect()
     return session_str
 
 
@@ -80,7 +89,7 @@ def gen_telethon(phone, session_name, idx):
         api_id=API_ID,
         api_hash=API_HASH,
     )
-    client.start(phone)
+    client.start(phone=phone)
     print(f"[{idx}] OTP sent to {phone}")
     code = input(f"[{idx}] Enter OTP: ").strip()
     try:
