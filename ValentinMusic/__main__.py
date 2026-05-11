@@ -55,6 +55,14 @@ async def init():
     for all_module in ALL_MODULES:
         importlib.import_module("ValentinMusic.plugins" + all_module)
     LOGGER("ValentinMusic.plugins").info("Successfully Imported Modules...")
+
+    if hasattr(config, "COOKIES_URL") and config.COOKIES_URL:
+        try:
+            from ValentinMusic.platforms import YouTube
+            await YouTube.save_cookies(config.COOKIES_URL)
+        except Exception as e:
+            LOGGER("ValentinMusic").error(f"Failed to fetch cookies: {e}")
+
     await userbot.start()
     await Anony.start()
     try:

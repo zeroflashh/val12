@@ -1,4 +1,5 @@
 import asyncio
+import aiohttp
 import os
 import random
 import re
@@ -55,6 +56,21 @@ class YouTubeAPI:
         if not self.cookies:
             return None
         return random.choice(self.cookies)
+
+    async def save_cookies(self, urls: list) -> None:
+        import aiohttp
+        from ValentinMusic.utils.logger import LOGGER
+        LOGGER(__name__).info('Saving cookies from urls...')
+        async with aiohttp.ClientSession() as session:
+            for url in urls:
+                name = url.split('/')[-1]
+                link = 'https://batbin.me/raw/' + name
+                async with session.get(link) as resp:
+                    resp.raise_for_status()
+                    os.makedirs(self.cookie_dir, exist_ok=True)
+                    with open(f'{self.cookie_dir}/{name}.txt', 'wb') as fw:
+                        fw.write(await resp.read())
+        LOGGER(__name__).info(f'Cookies saved in {self.cookie_dir}.')
 
     async def search(self, query: str, limit: int = 1):
         results = VideosSearch(query, limit=limit)
