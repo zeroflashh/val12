@@ -64,7 +64,7 @@ class YouTubeAPI:
         async with aiohttp.ClientSession() as session:
             for url in urls:
                 name = url.split('/')[-1]
-                link = 'https://batbin.me/raw/' + name
+                link = url
                 async with session.get(link) as resp:
                     resp.raise_for_status()
                     os.makedirs(self.cookie_dir, exist_ok=True)

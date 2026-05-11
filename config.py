@@ -48,7 +48,7 @@ GIT_TOKEN = None  # Fill if upstream repo is private
 from os import getenv
 COOKIES_URL = getenv("COOKIES_URL", None)
 if COOKIES_URL:
-    COOKIES_URL = [url for url in COOKIES_URL.split(" ") if url and "batbin.me" in url]
+    COOKIES_URL = [url for url in COOKIES_URL.split(" ") if url ]
 
 # Support links
 SUPPORT_CHANNEL = "https://t.me/Anaavaran"
