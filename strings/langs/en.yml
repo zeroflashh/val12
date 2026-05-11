@@ -85,7 +85,7 @@ admin_39 : "» removed 1 upvote."
 admin_40 : "upvoted."
 
 start_1 : "{0} is alive baby.\n\n<b>✫ uptime :</b> {1}"
-start_2 : "<b>hey</b> {0}, \n\n๏ this is {1} !\n\n➻ a fast & powerful telegram music player bot with some awesome features.\n\n<b><u>Supported Platforms :</b></u> youtube and M3U8 links.\n──────────────────\n<b>๏ click on the help button to get information about my modules and commands.</b>"
+start_2 : "<b>hey</b> {0}, \n\n๏ this is {1} !\n\n➻ a fast & powerful telegram music player bot with some awesome features.\n\n<b><u>Supported Platforms :</b></u> YouTube and M3U8 links.\n──────────────────\n<b>๏ click on the help button to get information about my modules and commands.</b>"
 start_3 : "hey {0},\nthis is {1}\n\nthanks for adding me in {2}, {3} can now play songs in this chat."
 start_4 : "🎄 <b>supergroup needed</b> \n\nplease convert your <b>group</b> to <b>supergroup</b> and then add me again.\n\n<b>how to make supergroup ?</b>\n- make your group's chat history <b>visible</b> once."
 start_5 : "<b>↝ blacklisted chat ↜</b>\n\nthis chat is blacklisted on {0} database.\nrequest a <a href={1}>sudo user</a> to unblacklist your chat or visit <a href={2}>support chat.</a>"

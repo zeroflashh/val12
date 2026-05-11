@@ -342,7 +342,7 @@ class YouTubeAPI:
                 "no_warnings": True,
                 "noplaylist": True,
                 "cookiefile": self.get_cookies(),
-                "extractor_args": {"youtube": ["player_client=ios,web_creator"]},
+                "extractor_args": {"youtube": ["player_client=android"]},
             }
             x = yt_dlp.YoutubeDL(ydl_optssx)
             info = x.extract_info(link, False)
@@ -362,7 +362,7 @@ class YouTubeAPI:
                 "no_warnings": True,
                 "noplaylist": True,
                 "cookiefile": self.get_cookies(),
-                "extractor_args": {"youtube": ["player_client=ios,web_creator"]},
+                "extractor_args": {"youtube": ["player_client=android"]},
             }
             x = yt_dlp.YoutubeDL(ydl_optssx)
             info = x.extract_info(link, False)
@@ -396,7 +396,7 @@ class YouTubeAPI:
                 "prefer_ffmpeg": True,
                 "merge_output_format": "mp4",
                 "cookiefile": self.get_cookies(),
-                "extractor_args": {"youtube": ["player_client=ios,web_creator"]},
+                "extractor_args": {"youtube": ["player_client=android"]},
             }
             x = yt_dlp.YoutubeDL(ydl_optssx)
             info = x.extract_info(link, download=True)
@@ -425,7 +425,7 @@ class YouTubeAPI:
                 "no_warnings": True,
                 "prefer_ffmpeg": True,
                 "cookiefile": self.get_cookies(),
-                "extractor_args": {"youtube": ["player_client=ios,web_creator"]},
+                "extractor_args": {"youtube": ["player_client=android"]},
             }
             # Only apply mp3 postprocessing if it's not a direct opus/other request
             if actual_format == "bestaudio/best" or not format_id:
@@ -458,7 +458,7 @@ class YouTubeAPI:
                 "geo_bypass": True,
                 "nocheckcertificate": True,
                 "cookiefile": self.get_cookies(),
-                "extractor_args": {"youtube": ["player_client=ios,web_creator"]},
+                "extractor_args": {"youtube": ["player_client=android"]},
             }
             try:
                 with yt_dlp.YoutubeDL(ydl_opts) as ydl:
