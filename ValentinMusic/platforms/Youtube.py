@@ -334,24 +334,14 @@ class YouTubeAPI:
 
         def audio_dl():
             ydl_optssx = {
-                "format": "bestaudio/best",
+                "format": "bestaudio[ext=webm][acodec=opus]/bestaudio/best",
                 "outtmpl": "downloads/%(id)s.%(ext)s",
                 "geo_bypass": True,
                 "nocheckcertificate": True,
                 "quiet": True,
                 "no_warnings": True,
+                "noplaylist": True,
                 "cookiefile": self.get_cookies(),
-                "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
-                "http_headers": {
-                    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
-                    "Accept-Language": "en-US,en;q=0.9",
-                    "Sec-Fetch-Mode": "navigate",
-                },
-                "extractor_args": {
-                    "youtube": {
-                        "client": ["web_creator", "web", "android", "ios", "mweb"],
-                    }
-                },
             }
             x = yt_dlp.YoutubeDL(ydl_optssx)
             info = x.extract_info(link, False)
@@ -363,24 +353,14 @@ class YouTubeAPI:
 
         def video_dl():
             ydl_optssx = {
-                "format": "(bestvideo[height<=?720][width<=?1280][ext=mp4])+(bestaudio[ext=m4a])",
+                "format": "best[height<=?720][width<=?1280][ext=mp4]/best",
                 "outtmpl": "downloads/%(id)s.%(ext)s",
                 "geo_bypass": True,
                 "nocheckcertificate": True,
                 "quiet": True,
                 "no_warnings": True,
+                "noplaylist": True,
                 "cookiefile": self.get_cookies(),
-                "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
-                "http_headers": {
-                    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
-                    "Accept-Language": "en-US,en;q=0.9",
-                    "Sec-Fetch-Mode": "navigate",
-                },
-                "extractor_args": {
-                    "youtube": {
-                        "client": ["web_creator", "web", "android", "ios", "mweb"],
-                    }
-                },
             }
             x = yt_dlp.YoutubeDL(ydl_optssx)
             info = x.extract_info(link, False)
@@ -414,17 +394,6 @@ class YouTubeAPI:
                 "prefer_ffmpeg": True,
                 "merge_output_format": "mp4",
                 "cookiefile": self.get_cookies(),
-                "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
-                "http_headers": {
-                    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
-                    "Accept-Language": "en-US,en;q=0.9",
-                    "Sec-Fetch-Mode": "navigate",
-                },
-                "extractor_args": {
-                    "youtube": {
-                        "client": ["web_creator", "web", "android", "ios", "mweb"],
-                    }
-                },
             }
             x = yt_dlp.YoutubeDL(ydl_optssx)
             info = x.extract_info(link, download=True)
@@ -453,17 +422,6 @@ class YouTubeAPI:
                 "no_warnings": True,
                 "prefer_ffmpeg": True,
                 "cookiefile": self.get_cookies(),
-                "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
-                "http_headers": {
-                    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
-                    "Accept-Language": "en-US,en;q=0.9",
-                    "Sec-Fetch-Mode": "navigate",
-                },
-                "extractor_args": {
-                    "youtube": {
-                        "client": ["web_creator", "web", "android", "ios", "mweb"],
-                    }
-                },
             }
             # Only apply mp3 postprocessing if it's not a direct opus/other request
             if actual_format == "bestaudio/best" or not format_id:
@@ -487,6 +445,27 @@ class YouTubeAPI:
             # Fallback
             return f"downloads/{final_title}.{ext}"
 
+        def direct_stream_url(is_video):
+            ydl_opts = {
+                "format": "best[height<=?720][width<=?1280][ext=mp4]/best" if is_video else "bestaudio[ext=webm][acodec=opus]/bestaudio/best",
+                "quiet": True,
+                "no_warnings": True,
+                "noplaylist": True,
+                "geo_bypass": True,
+                "nocheckcertificate": True,
+                "cookiefile": self.get_cookies(),
+            }
+            try:
+                with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+                    info = ydl.extract_info(link, download=False)
+                    if info and "url" in info:
+                        return info["url"]
+                    elif info and "requested_formats" in info:
+                        return info["requested_formats"][0]["url"]
+            except Exception as e:
+                print(f"[DEBUG] direct_stream_url yt-dlp exception: {e}")
+            return None
+
         if songvideo:
             quality = format_id if format_id else "720"
             downloaded_file = await loop.run_in_executor(None, song_video_dl, quality)
@@ -499,25 +478,18 @@ class YouTubeAPI:
                 direct = True
                 downloaded_file = await loop.run_in_executor(None, video_dl)
             else:
-                proc = await asyncio.create_subprocess_exec(
-                    sys.executable,
-                    "-m",
-                    "yt_dlp",
-                    "-g",
-                    "-f",
-                    "best[height<=?720][width<=?1280][ext=mp4]/best",
-                    f"{link}",
-                    stdout=asyncio.subprocess.PIPE,
-                    stderr=asyncio.subprocess.PIPE,
-                )
-                stdout, stderr = await proc.communicate()
-                if stdout:
-                    downloaded_file = stdout.decode().split("\n")[0]
-                    direct = None
-                else:
-                    raise Exception(stderr.decode() if stderr else "Failed to fetch stream URL")
+                downloaded_file = await loop.run_in_executor(None, direct_stream_url, True)
+                direct = None
+                if not downloaded_file:
+                    raise Exception("Failed to fetch stream URL")
         else:
-            direct = True
-            downloaded_file = await loop.run_in_executor(None, audio_dl)
+            if await is_on_off(1):
+                direct = True
+                downloaded_file = await loop.run_in_executor(None, audio_dl)
+            else:
+                downloaded_file = await loop.run_in_executor(None, direct_stream_url, False)
+                direct = None
+                if not downloaded_file:
+                    raise Exception("Failed to fetch stream URL")
         print(f"[DEBUG] YouTube.download returning: {downloaded_file}, direct={direct}")
         return downloaded_file, direct

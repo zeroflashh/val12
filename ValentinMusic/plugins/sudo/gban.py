@@ -8,12 +8,11 @@ from ValentinMusic import app
 from ValentinMusic.misc import SUDOERS
 from ValentinMusic.utils import get_readable_time
 from ValentinMusic.utils.database import (
-    add_banned_user,
-    get_banned_count,
-    get_banned_users,
+    add_gban_user,
+    get_gbanned,
     get_served_chats,
-    is_banned_user,
-    remove_banned_user,
+    is_gbanned_user,
+    remove_gban_user,
 )
 from ValentinMusic.utils.decorators.language import language
 from ValentinMusic.utils.extraction import extract_user
@@ -33,7 +32,7 @@ async def global_ban(client, message: Message, _):
         return await message.reply_text(_["gban_2"])
     elif user.id in SUDOERS:
         return await message.reply_text(_["gban_3"])
-    is_gbanned = await is_banned_user(user.id)
+    is_gbanned = await is_gbanned_user(user.id)
     if is_gbanned:
         return await message.reply_text(_["gban_4"].format(user.mention))
     if user.id not in BANNED_USERS:
@@ -53,7 +52,7 @@ async def global_ban(client, message: Message, _):
             await asyncio.sleep(int(fw.value))
         except:
             continue
-    await add_banned_user(user.id)
+    await add_gban_user(user.id)
     await message.reply_text(
         _["gban_6"].format(
             app.mention,
@@ -75,7 +74,7 @@ async def global_un(client, message: Message, _):
         if len(message.command) != 2:
             return await message.reply_text(_["general_1"])
     user = await extract_user(message)
-    is_gbanned = await is_banned_user(user.id)
+    is_gbanned = await is_gbanned_user(user.id)
     if not is_gbanned:
         return await message.reply_text(_["gban_7"].format(user.mention))
     if user.id in BANNED_USERS:
@@ -95,7 +94,7 @@ async def global_un(client, message: Message, _):
             await asyncio.sleep(int(fw.value))
         except:
             continue
-    await remove_banned_user(user.id)
+    await remove_gban_user(user.id)
     await message.reply_text(_["gban_9"].format(user.mention, number_of_chats))
     await mystic.delete()
 
@@ -103,13 +102,14 @@ async def global_un(client, message: Message, _):
 @app.on_message(filters.command(["gbannedusers", "gbanlist"]) & SUDOERS)
 @language
 async def gbanned_list(client, message: Message, _):
-    counts = await get_banned_count()
+    users = await get_gbanned()
+    counts = len(users)
     if counts == 0:
         return await message.reply_text(_["gban_10"])
     mystic = await message.reply_text(_["gban_11"])
     msg = _["gban_12"]
     count = 0
-    users = await get_banned_users()
+    # users already fetched above
     for user_id in users:
         count += 1
         try:

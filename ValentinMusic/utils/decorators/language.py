@@ -11,7 +11,7 @@ def language(mystic):
         if await is_maintenance() is True:
             if message.from_user and message.from_user.id not in SUDOERS.user_ids:
                 return await message.reply_text(
-                    text=f"{app.mention} ɪs ᴜɴᴅᴇʀ ᴍᴀɪɴᴛᴇɴᴀɴᴄᴇ, ᴠɪsɪᴛ <a href={SUPPORT_CHAT}>sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ</a> ғᴏʀ ᴋɴᴏᴡɪɴɢ ᴛʜᴇ ʀᴇᴀsᴏɴ.",
+                    text=f"{app.mention} is Under Maintenance, visit <a href={SUPPORT_CHAT}>Support Chat</a> for knowing the reason.",
                     disable_web_page_preview=True,
                 )
         try:
@@ -34,7 +34,7 @@ def languageCB(mystic):
         if await is_maintenance() is True:
             if CallbackQuery.from_user and CallbackQuery.from_user.id not in SUDOERS.user_ids:
                  return await CallbackQuery.answer(
-                    f"{app.mention} ɪs ᴜɴᴅᴇʀ ᴍᴀɪɴᴛᴇɴᴀɴᴄᴇ, ᴠɪsɪᴛ sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ ғᴏʀ ᴋɴᴏᴡɪɴɢ ᴛʜᴇ ʀᴇᴀsᴏɴ.",
+                    f"{app.mention} is Under Maintenance, visit <a href={SUPPORT_CHAT}>Support Chat</a> for knowing the reason.",
                     show_alert=True,
                 )
         try:

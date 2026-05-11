@@ -19,7 +19,7 @@ async def activevc(_, message: Message):
     Shows total counts and lists all active chats with names.
     Public chats shown as hyperlinks, private chats shown by category.
     """
-    mystic = await message.reply_text("» ɢᴇᴛᴛɪɴɢ ᴀᴄᴛɪᴠᴇ ᴠᴏɪᴄᴇ ᴄʜᴀᴛs ʟɪsᴛ...")
+    mystic = await message.reply_text("» Getting active voice chats list...")
 
     # Get both voice and video chats
     served_chats = await get_active_chats()
@@ -70,19 +70,19 @@ async def activevc(_, message: Message):
     # Build final response with counts and lists
     total_count = voice_count + video_count
 
-    response = f"✨ <b><u>ᴀᴄᴛɪᴠᴇ ᴄᴀʟʟs sᴛᴀᴛs</u></b>\n\n"
-    response += f"<b>🎙️ ᴠᴏɪᴄᴇ:</b> {voice_count}\n"
-    response += f"<b>📹 ᴠɪᴅᴇᴏ:</b> {video_count}\n"
-    response += f"<b>📈 ᴛᴏᴛᴀʟ:</b> {total_count}\n\n"
+    response = f"✨ <b><u>Active Calls Stats</u></b>\n\n"
+    response += f"<b>🎙️ Voice:</b> {voice_count}\n"
+    response += f"<b>📹 Video:</b> {video_count}\n"
+    response += f"<b>📈 Total:</b> {total_count}\n\n"
 
     if voice_text:
-        response += f"<b>» ʟɪsᴛ ᴏғ ᴄᴜʀʀᴇɴᴛʟʏ ᴀᴄᴛɪᴠᴇ ᴠᴏɪᴄᴇ ᴄʜᴀᴛs :</b>\n\n{voice_text}\n"
+        response += f"<b>» List of currently active voice chats :</b>\n\n{voice_text}\n"
 
     if video_text:
-        response += f"<b>» ʟɪsᴛ ᴏғ ᴄᴜʀʀᴇɴᴛʟʏ ᴀᴄᴛɪᴠᴇ ᴠɪᴅᴇᴏ ᴄʜᴀᴛs :</b>\n\n{video_text}"
+        response += f"<b>» List of currently active video chats :</b>\n\n{video_text}"
 
     if not voice_text and not video_text:
-        response += f"» ɴᴏ ᴀᴄᴛɪᴠᴇ ᴄʜᴀᴛs ᴏɴ {app.mention}."
+        response += f"» No active chats on {app.mention}."
 
     await mystic.edit_text(
         response,

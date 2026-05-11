@@ -3,7 +3,7 @@ from pyrogram.types import Message
 
 from ValentinMusic import app
 from ValentinMusic.misc import SUDOERS
-from ValentinMusic.utils.database import add_gban_user, remove_gban_user
+from ValentinMusic.utils.database import add_banned_user, remove_banned_user
 from ValentinMusic.utils.decorators.language import language
 from ValentinMusic.utils.extraction import extract_user
 from config import BANNED_USERS
@@ -18,7 +18,7 @@ async def useradd(client, message: Message, _):
     user = await extract_user(message)
     if user.id in BANNED_USERS:
         return await message.reply_text(_["block_1"].format(user.mention))
-    await add_gban_user(user.id)
+    await add_banned_user(user.id)
     BANNED_USERS.add(user.id)
     await message.reply_text(_["block_2"].format(user.mention))
 
@@ -32,7 +32,7 @@ async def userdel(client, message: Message, _):
     user = await extract_user(message)
     if user.id not in BANNED_USERS:
         return await message.reply_text(_["block_3"].format(user.mention))
-    await remove_gban_user(user.id)
+    await remove_banned_user(user.id)
     BANNED_USERS.remove(user.id)
     await message.reply_text(_["block_4"].format(user.mention))
 

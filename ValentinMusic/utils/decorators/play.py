@@ -36,7 +36,7 @@ def PlayWrapper(command):
                 [
                     [
                         InlineKeyboardButton(
-                            text="ʜᴏᴡ ᴛᴏ ғɪx ?",
+                            text="How to fix ?",
                             callback_data="AnonymousAdmin",
                         ),
                     ]
@@ -47,7 +47,7 @@ def PlayWrapper(command):
         if await is_maintenance():
             if message.from_user and message.from_user.id not in SUDOERS.user_ids:
                 return await message.reply_text(
-                    text=f"{app.mention} ɪs ᴜɴᴅᴇʀ ᴍᴀɪɴᴛᴇɴᴀɴᴄᴇ, ᴠɪsɪᴛ <a href={SUPPORT_CHAT}>sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ</a> ғᴏʀ ᴋɴᴏᴡɪɴɢ ᴛʜᴇ ʀᴇᴀsᴏɴ.",
+                    text=f"{app.mention} is Under Maintenance, visit <a href={SUPPORT_CHAT}>Support Chat</a> for knowing the reason.",
                     disable_web_page_preview=True,
                 )
 
@@ -116,7 +116,7 @@ def PlayWrapper(command):
         if not await is_active_chat(chat_id):
             userbot = await get_assistant(chat_id)
             if not userbot:
-                return await message.reply_text("ɴᴏ ᴀssɪsᴛᴀɴᴛ ᴀᴠᴀɪʟᴀʙʟᴇ. ᴘʟᴇᴀsᴇ ᴄʜᴇᴄᴋ ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀᴅᴅᴇᴅ ᴀssɪsᴛᴀɴᴛ sᴇssɪᴏɴ sᴛʀɪɴɢ.")
+                return await message.reply_text("No Assistant Available. Please check if you have added assistant session string.")
             try:
                 try:
                     get = await app.get_chat_member(chat_id, userbot.id)

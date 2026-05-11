@@ -356,7 +356,7 @@ class Call(PyTgCalls):
             await assistant.play(
                 chat_id=chat_id,
                 stream=stream,
-                config=GroupCallConfig(auto_start=True),
+                config=GroupCallConfig(auto_start=False),
             )
             print(f"[DEBUG] assistant.play successful for chat {chat_id}")
         except NoActiveGroupCall:

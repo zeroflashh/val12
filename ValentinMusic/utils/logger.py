@@ -10,17 +10,17 @@ async def play_logs(message, streamtype):
         logger_text = f"""
 <b>༺ <u>valentiɴ ᴘʟᴀʏ ʟᴏɢ</u> ༻</b>
 - - - - - - - - - - - - - - - - - - - - - - - - - - -
-<b>ᴄʜᴀᴛ:</b> {message.chat.title}
-<b>ɪᴅ :</b> <code>{message.chat.id}</code>
-<b>⎋ ʟɪɴᴋ:</b> @{message.chat.username}
+<b>Chat:</b> {message.chat.title}
+<b>Id :</b> <code>{message.chat.id}</code>
+<b>⎋ Link:</b> @{message.chat.username}
 
-<b>ᴜsᴇʀ:</b> {message.from_user.mention}
-<b>ɪᴅ :</b> <code>{message.from_user.id}</code>
-<b>⎋ ʟɪɴᴋ:</b> @{message.from_user.username}
+<b>User:</b> {message.from_user.mention}
+<b>Id :</b> <code>{message.from_user.id}</code>
+<b>⎋ Link:</b> @{message.from_user.username}
 
-<b>➥ ǫᴜᴇʀʏ:</b> <code>{message.text.split(None, 1)[1]}</code>
+<b>➥ Query:</b> <code>{message.text.split(None, 1)[1]}</code>
 ────────────── ·﻿ ﻿ ﻿· ﻿ ·﻿ ﻿ ﻿· ﻿✦
-<b>‣ sᴛʀᴇᴀᴍᴛʏᴘᴇ:</b> <i>{streamtype}</i>"""
+<b>‣ Streamtype:</b> <i>{streamtype}</i>"""
         if message.chat.id != LOGGER_ID:
             try:
                 await app.send_message(
