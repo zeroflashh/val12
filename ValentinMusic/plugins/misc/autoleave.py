@@ -57,6 +57,15 @@ async def auto_end():
                 if not await is_active_chat(chat_id):
                     autoend[chat_id] = {}
                     continue
+                try:
+                    from ValentinMusic.utils.database import group_assistant
+                    assistant = await group_assistant(Anony, chat_id)
+                    users = len(await assistant.get_participants(chat_id))
+                    if users > 1:
+                        autoend[chat_id] = {}
+                        continue
+                except:
+                    pass
                 autoend[chat_id] = {}
                 try:
                     await Anony.stop_stream(chat_id)
