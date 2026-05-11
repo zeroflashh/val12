@@ -17,3 +17,5 @@ playback/
 WBB_ref/
 rebrand.py
 sync_langs.py
+
+ValentinMusic/cookies/*.txt
