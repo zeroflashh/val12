@@ -270,17 +270,19 @@ class YouTubeAPI:
             opus_size = "Unknown"
             for f in formats:
                 if f.get("acodec") == "opus" and f.get("vcodec") == "none":
-                    if f.get("filesize"):
-                        opus_size = self.humanbytes(f["filesize"])
+                    size = f.get("filesize") or f.get("filesize_approx")
+                    if size:
+                        opus_size = self.humanbytes(size)
                         break
             
             # Find best vp9 video (prefer 720p or 1080p)
             vp9_size = "Unknown"
             vp9_id = None
             for f in reversed(formats):
-                if f.get("vcodec") and "vp9" in f["vcodec"].lower():
-                    if f.get("filesize"):
-                        vp9_size = self.humanbytes(f["filesize"])
+                if f.get("vcodec") and "vp9" in f.get("vcodec", "").lower():
+                    size = f.get("filesize") or f.get("filesize_approx")
+                    if size:
+                        vp9_size = self.humanbytes(size)
                         vp9_id = f["format_id"]
                         break
             
@@ -288,9 +290,10 @@ class YouTubeAPI:
             av1_size = "Unknown"
             av1_id = None
             for f in reversed(formats):
-                if f.get("vcodec") and "av01" in f["vcodec"].lower():
-                    if f.get("filesize"):
-                        av1_size = self.humanbytes(f["filesize"])
+                if f.get("vcodec") and "av01" in f.get("vcodec", "").lower():
+                    size = f.get("filesize") or f.get("filesize_approx")
+                    if size:
+                        av1_size = self.humanbytes(size)
                         av1_id = f["format_id"]
                         break
                         

@@ -146,7 +146,7 @@ class Call(PyTgCalls):
                 audio_parameters=AudioQuality.HIGH,
                 video_parameters=VideoQuality.HD_720p,
                 audio_flags=MediaStream.Flags.REQUIRED,
-                video_flags=MediaStream.Flags.AUTO_DETECT,
+                video_flags=MediaStream.Flags.IGNORE,
                 ffmpeg_parameters=f"-ss {played} -to {duration}",
             )
             if playing[0]["streamtype"] == "video"
@@ -227,7 +227,7 @@ class Call(PyTgCalls):
                 audio_parameters=AudioQuality.HIGH,
                 video_parameters=VideoQuality.HD_720p,
                 audio_flags=MediaStream.Flags.REQUIRED,
-                video_flags=MediaStream.Flags.AUTO_DETECT,
+                video_flags=MediaStream.Flags.IGNORE,
             )
         else:
             stream = MediaStream(
@@ -256,7 +256,7 @@ class Call(PyTgCalls):
                 audio_parameters=AudioQuality.HIGH,
                 video_parameters=VideoQuality.HD_720p,
                 audio_flags=MediaStream.Flags.REQUIRED,
-                video_flags=MediaStream.Flags.AUTO_DETECT,
+                video_flags=MediaStream.Flags.IGNORE,
                 ffmpeg_parameters=f"-ss {to_seek} -to {duration}",
             )
             if mode == "video"
@@ -333,7 +333,7 @@ class Call(PyTgCalls):
                 audio_parameters=AudioQuality.HIGH,
                 video_parameters=VideoQuality.HD_720p,
                 audio_flags=MediaStream.Flags.REQUIRED,
-                video_flags=MediaStream.Flags.AUTO_DETECT,
+                video_flags=MediaStream.Flags.IGNORE,
             )
         else:
             stream = MediaStream(
@@ -422,7 +422,7 @@ class Call(PyTgCalls):
                         text=_["call_6"],
                     )
                 if video:
-                    stream = MediaStream(media_path=link, audio_parameters=AudioQuality.HIGH, video_parameters=VideoQuality.HD_720p, audio_flags=MediaStream.Flags.REQUIRED, video_flags=MediaStream.Flags.AUTO_DETECT)
+                    stream = MediaStream(media_path=link, audio_parameters=AudioQuality.HIGH, video_parameters=VideoQuality.HD_720p, audio_flags=MediaStream.Flags.REQUIRED, video_flags=MediaStream.Flags.IGNORE)
                 else:
                     stream = MediaStream(media_path=link, audio_parameters=AudioQuality.HIGH, video_parameters=VideoQuality.HD_720p, audio_flags=MediaStream.Flags.REQUIRED, video_flags=MediaStream.Flags.IGNORE)
                 try:
@@ -465,7 +465,7 @@ class Call(PyTgCalls):
                         _["call_6"], disable_web_page_preview=True
                     )
                 if video:
-                    stream = MediaStream(media_path=file_path, audio_parameters=AudioQuality.HIGH, video_parameters=VideoQuality.HD_720p, audio_flags=MediaStream.Flags.REQUIRED, video_flags=MediaStream.Flags.AUTO_DETECT)
+                    stream = MediaStream(media_path=file_path, audio_parameters=AudioQuality.HIGH, video_parameters=VideoQuality.HD_720p, audio_flags=MediaStream.Flags.REQUIRED, video_flags=MediaStream.Flags.IGNORE)
                 else:
                     stream = MediaStream(media_path=file_path, audio_parameters=AudioQuality.HIGH, video_parameters=VideoQuality.HD_720p, audio_flags=MediaStream.Flags.REQUIRED, video_flags=MediaStream.Flags.IGNORE)
                 try:
@@ -497,7 +497,7 @@ class Call(PyTgCalls):
                 db[chat_id][0]["markup"] = "stream"
             elif "index_" in queued:
                 stream = (
-                    MediaStream(media_path=videoid, audio_parameters=AudioQuality.HIGH, video_parameters=VideoQuality.HD_720p, audio_flags=MediaStream.Flags.REQUIRED, video_flags=MediaStream.Flags.AUTO_DETECT)
+                    MediaStream(media_path=videoid, audio_parameters=AudioQuality.HIGH, video_parameters=VideoQuality.HD_720p, audio_flags=MediaStream.Flags.REQUIRED, video_flags=MediaStream.Flags.IGNORE)
                     if str(streamtype) == "video"
                     else MediaStream(media_path=videoid, audio_parameters=AudioQuality.HIGH, video_parameters=VideoQuality.HD_720p, audio_flags=MediaStream.Flags.REQUIRED, video_flags=MediaStream.Flags.IGNORE)
                 )
@@ -523,7 +523,7 @@ class Call(PyTgCalls):
                 db[chat_id][0]["markup"] = "tg"
             else:
                 if video:
-                    stream = MediaStream(media_path=queued, audio_parameters=AudioQuality.HIGH, video_parameters=VideoQuality.HD_720p, audio_flags=MediaStream.Flags.REQUIRED, video_flags=MediaStream.Flags.AUTO_DETECT)
+                    stream = MediaStream(media_path=queued, audio_parameters=AudioQuality.HIGH, video_parameters=VideoQuality.HD_720p, audio_flags=MediaStream.Flags.REQUIRED, video_flags=MediaStream.Flags.IGNORE)
                 else:
                     stream = MediaStream(media_path=queued, audio_parameters=AudioQuality.HIGH, video_parameters=VideoQuality.HD_720p, audio_flags=MediaStream.Flags.REQUIRED, video_flags=MediaStream.Flags.IGNORE)
                 try:
