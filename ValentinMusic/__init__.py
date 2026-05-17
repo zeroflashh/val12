@@ -35,8 +35,6 @@ def patched_async_init(self, *args, **kwargs):
     return orig_async_init(self, *args, **kwargs)
 httpx.AsyncClient.__init__ = patched_async_init
 
-import pyromod
-# No separate pyromod import needed.
 from ValentinMusic.core.bot import Anony
 from ValentinMusic.core.dir import dirr
 from ValentinMusic.core.git import git

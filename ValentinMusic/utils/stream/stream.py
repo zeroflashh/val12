@@ -8,7 +8,13 @@ import config
 from ValentinMusic import Carbon, YouTube, app
 from ValentinMusic.core.call import Anony
 from ValentinMusic.misc import db
-from ValentinMusic.utils.database import add_active_video_chat, is_active_chat
+from ValentinMusic.utils.database import (
+    add_active_chat,
+    add_active_video_chat,
+    is_active_chat,
+    remove_active_chat,
+    remove_active_video_chat,
+)
 from ValentinMusic.utils.exceptions import AssistantErr
 from ValentinMusic.utils.inline import aq_markup, close_markup, stream_markup
 from ValentinMusic.utils.pastebin import AnonyBin
@@ -74,20 +80,32 @@ async def stream(
             else:
                 if not forceplay:
                     db[chat_id] = []
+                await add_active_chat(chat_id)
+                if video:
+                    await add_active_video_chat(chat_id)
                 status = True if video else None
                 try:
                     file_path, direct = await YouTube.download(
                         vidid, mystic, video=status, videoid=True, title=title
                     )
                 except:
+                    await remove_active_chat(chat_id)
+                    if video:
+                        await remove_active_video_chat(chat_id)
                     raise AssistantErr(_["play_14"])
-                await Anony.join_call(
-                    chat_id,
-                    original_chat_id,
-                    file_path,
-                    video=status,
-                    image=thumbnail,
-                )
+                try:
+                    await Anony.join_call(
+                        chat_id,
+                        original_chat_id,
+                        file_path,
+                        video=status,
+                        image=thumbnail,
+                    )
+                except:
+                    await remove_active_chat(chat_id)
+                    if video:
+                        await remove_active_video_chat(chat_id)
+                    raise
                 await put_queue(
                     chat_id,
                     original_chat_id,
@@ -140,21 +158,11 @@ async def stream(
         duration_min = result["duration_min"]
         thumbnail = result["thumb"]
         status = True if video else None
-        try:
-            file_path, direct = await YouTube.download(
-                vidid, mystic, videoid=True, video=status, title=title
-            )
-            print(f"[DEBUG] YouTube.download returned: {file_path}, direct={direct}")
-        except Exception as e:
-            import traceback
-            print(f"[DEBUG] YouTube.download failed: {e}")
-            traceback.print_exc()
-            raise AssistantErr(_["play_14"])
         if await is_active_chat(chat_id):
             await put_queue(
                 chat_id,
                 original_chat_id,
-                file_path if direct else f"vid_{vidid}",
+                f"vid_{vidid}",
                 title,
                 duration_min,
                 user_name,
@@ -173,14 +181,31 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            print(f"[DEBUG] Joining call for chat {chat_id} with file {file_path}")
-            await Anony.join_call(
-                chat_id,
-                original_chat_id,
-                file_path,
-                video=status,
-                image=thumbnail,
-            )
+            await add_active_chat(chat_id)
+            if video:
+                await add_active_video_chat(chat_id)
+            try:
+                file_path, direct = await YouTube.download(
+                    vidid, mystic, videoid=True, video=status, title=title
+                )
+            except:
+                await remove_active_chat(chat_id)
+                if video:
+                    await remove_active_video_chat(chat_id)
+                raise AssistantErr(_["play_14"])
+            try:
+                await Anony.join_call(
+                    chat_id,
+                    original_chat_id,
+                    file_path,
+                    video=status,
+                    image=thumbnail,
+                )
+            except:
+                await remove_active_chat(chat_id)
+                if video:
+                    await remove_active_video_chat(chat_id)
+                raise
             await put_queue(
                 chat_id,
                 original_chat_id,
@@ -236,7 +261,12 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Anony.join_call(chat_id, original_chat_id, file_path, video=None)
+            await add_active_chat(chat_id)
+            try:
+                await Anony.join_call(chat_id, original_chat_id, file_path, video=None)
+            except:
+                await remove_active_chat(chat_id)
+                raise
             await put_queue(
                 chat_id,
                 original_chat_id,
@@ -290,7 +320,16 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Anony.join_call(chat_id, original_chat_id, file_path, video=status)
+            await add_active_chat(chat_id)
+            if video:
+                await add_active_video_chat(chat_id)
+            try:
+                await Anony.join_call(chat_id, original_chat_id, file_path, video=status)
+            except:
+                await remove_active_chat(chat_id)
+                if video:
+                    await remove_active_video_chat(chat_id)
+                raise
             await put_queue(
                 chat_id,
                 original_chat_id,
@@ -304,8 +343,6 @@ async def stream(
                 thumb=config.TELEGRAM_VIDEO_URL if video else config.TELEGRAM_AUDIO_URL,
                 forceplay=forceplay,
             )
-            if video:
-                await add_active_video_chat(chat_id)
             button = stream_markup(_, chat_id)
             run = await app.send_photo(
                 original_chat_id,
@@ -345,16 +382,28 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
+            await add_active_chat(chat_id)
+            if video:
+                await add_active_video_chat(chat_id)
             n, file_path = await YouTube.video(link)
             if n == 0:
+                await remove_active_chat(chat_id)
+                if video:
+                    await remove_active_video_chat(chat_id)
                 raise AssistantErr(_["str_3"])
-            await Anony.join_call(
-                chat_id,
-                original_chat_id,
-                file_path,
-                video=status,
-                image=thumbnail if thumbnail else None,
-            )
+            try:
+                await Anony.join_call(
+                    chat_id,
+                    original_chat_id,
+                    file_path,
+                    video=status,
+                    image=thumbnail if thumbnail else None,
+                )
+            except:
+                await remove_active_chat(chat_id)
+                if video:
+                    await remove_active_video_chat(chat_id)
+                raise
             await put_queue(
                 chat_id,
                 original_chat_id,
@@ -407,12 +456,21 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Anony.join_call(
-                chat_id,
-                original_chat_id,
-                link,
-                video=True if video else None,
-            )
+            await add_active_chat(chat_id)
+            if video:
+                await add_active_video_chat(chat_id)
+            try:
+                await Anony.join_call(
+                    chat_id,
+                    original_chat_id,
+                    link,
+                    video=True if video else None,
+                )
+            except:
+                await remove_active_chat(chat_id)
+                if video:
+                    await remove_active_video_chat(chat_id)
+                raise
             await put_queue_index(
                 chat_id,
                 original_chat_id,
