@@ -126,7 +126,7 @@ async def set_calls_assistant(chat_id):
     return ran_assistant
 
 
-async def group_assistant(self, chat_id: int) -> int:
+async def group_assistant(self, chat_id: int):
     from ValentinMusic.core.userbot import assistants
 
     assistant = assistantdict.get(chat_id)
@@ -146,21 +146,15 @@ async def group_assistant(self, chat_id: int) -> int:
         else:
             assis = await set_calls_assistant(chat_id)
 
-    if not assis:
-        return self.one
-    if int(assis) == 1:
-        return self.one
-    elif int(assis) == 2:
-        return self.two
-    elif int(assis) == 3:
-        return self.three
-    elif int(assis) == 4:
-        return self.four
-    elif int(assis) == 5:
-        return self.five
-    else:
-        # Fallback to first available assistant
-        return self.one
+    if assis:
+        idx = int(assis) - 1
+        if 0 <= idx < len(self.clients) and self.clients[idx]:
+            return self.clients[idx]
+
+    for c in self.clients:
+        if c:
+            return c
+    return None
 
 
 async def is_skipmode(chat_id: int) -> bool:

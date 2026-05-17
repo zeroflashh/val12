@@ -30,13 +30,13 @@ def AdminRightsCheck(mystic):
 
         try:
             await message.delete()
-        except:
+        except Exception:
             pass
 
         try:
             language = await get_lang(message.chat.id)
             _ = get_string(language)
-        except:
+        except Exception:
             _ = get_string("en")
         if message.sender_chat:
             upl = InlineKeyboardMarkup(
@@ -56,7 +56,7 @@ def AdminRightsCheck(mystic):
                 return await message.reply_text(_["setting_7"])
             try:
                 await app.get_chat(chat_id)
-            except:
+            except Exception:
                 return await message.reply_text(_["cplay_4"])
         else:
             chat_id = message.chat.id
@@ -99,7 +99,7 @@ Refresh Admin Cache Via : /refresh
                             try:
                                 vidid = db[chat_id][0]["vidid"]
                                 file = db[chat_id][0]["file"]
-                            except:
+                            except Exception:
                                 return await message.reply_text(_["admin_14"])
                             senn = await message.reply_text(text, reply_markup=upl)
                             confirmer[chat_id][senn.id] = {
@@ -126,13 +126,13 @@ def AdminActual(mystic):
 
         try:
             await message.delete()
-        except:
+        except Exception:
             pass
 
         try:
             language = await get_lang(message.chat.id)
             _ = get_string(language)
-        except:
+        except Exception:
             _ = get_string("en")
         if message.sender_chat:
             upl = InlineKeyboardMarkup(
@@ -149,7 +149,7 @@ def AdminActual(mystic):
         if message.from_user.id not in SUDOERS:
             try:
                 member = await app.get_chat_member(message.chat.id, message.from_user.id)
-            except:
+            except Exception:
                 return
             if not member.privileges or not member.privileges.can_manage_video_chats:
                 return await message.reply(_["general_4"])
@@ -169,7 +169,7 @@ def ActualAdminCB(mystic):
         try:
             language = await get_lang(CallbackQuery.message.chat.id)
             _ = get_string(language)
-        except:
+        except Exception:
             _ = get_string("en")
         if CallbackQuery.message.chat.type == ChatType.PRIVATE:
             return await mystic(client, CallbackQuery, _)
@@ -182,7 +182,7 @@ def ActualAdminCB(mystic):
                         CallbackQuery.from_user.id,
                     )
                 ).privileges
-            except:
+            except Exception:
                 return await CallbackQuery.answer(_["general_4"], show_alert=True)
             if not a.can_manage_video_chats:
                 if CallbackQuery.from_user.id not in SUDOERS:
@@ -194,7 +194,7 @@ def ActualAdminCB(mystic):
                                 _["general_4"],
                                 show_alert=True,
                             )
-                        except:
+                        except Exception:
                             return
         return await mystic(client, CallbackQuery, _)
 

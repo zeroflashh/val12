@@ -192,7 +192,7 @@ class YouTubeAPI:
             for key in result:
                 if key == "":
                     result.remove(key)
-        except:
+        except Exception:
             result = []
         return result
 
@@ -232,7 +232,7 @@ class YouTubeAPI:
             for format in r["formats"]:
                 try:
                     str(format["format"])
-                except:
+                except Exception:
                     continue
                 if not "dash" in str(format["format"]).lower():
                     try:
@@ -241,7 +241,7 @@ class YouTubeAPI:
                         format["format_id"]
                         format["ext"]
                         format["format_note"]
-                    except:
+                    except Exception:
                         continue
                     formats_available.append(
                         {
@@ -339,6 +339,8 @@ class YouTubeAPI:
         songvideo: Union[bool, str] = None,
         format_id: Union[bool, str] = None,
         title: Union[bool, str] = None,
+        cancel_event=None,
+        user_id=None,
     ) -> str:
         if not title:
             title = "Video"
@@ -351,6 +353,42 @@ class YouTubeAPI:
 
         loop = asyncio.get_running_loop()
 
+        # Build cancel button markup once
+        cancel_markup = None
+        if user_id:
+            from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+            cancel_btn = [[InlineKeyboardButton("Cancel", callback_data=f"ytdl_cancel|{user_id}")]]
+            cancel_markup = InlineKeyboardMarkup(cancel_btn)
+
+        # Build a progress hook that edits the mystic message during download
+        def _progress_hook():
+            last_milestone = [0]
+            def hook(d):
+                if cancel_event and cancel_event.is_set():
+                    raise Exception("Download cancelled by user")
+                try:
+                    if d['status'] == 'downloading':
+                        total = d.get('total_bytes') or d.get('total_bytes_estimate') or 0
+                        downloaded = d.get('downloaded_bytes', 0)
+                        if total > 0:
+                            pct = min(int(downloaded / total * 100), 100)
+                            milestone = pct - (pct % 25)
+                            if milestone > last_milestone[0] or pct == 100:
+                                last_milestone[0] = milestone
+                                text = f"<b>Downloading...</b> {milestone if pct < 100 else 100}%"
+                                asyncio.run_coroutine_threadsafe(
+                                    mystic.edit_text(text, reply_markup=cancel_markup), loop
+                                )
+                    elif d['status'] == 'finished':
+                        asyncio.run_coroutine_threadsafe(
+                            mystic.edit_text("<b>Processing...</b>", reply_markup=cancel_markup), loop
+                        )
+                except Exception:
+                    pass
+            return hook
+
+        progress_hook = _progress_hook()
+
         def audio_dl():
             ydl_optssx = {
                 "format": "bestaudio[ext=webm][acodec=opus]/bestaudio/best",
@@ -362,6 +400,7 @@ class YouTubeAPI:
                 "noplaylist": True,
                 "cookiefile": self.get_cookies(),
                 "extractor_args": {"youtube": ["player_client=android"]},
+                "progress_hooks": [progress_hook],
             }
             x = yt_dlp.YoutubeDL(ydl_optssx)
             info = x.extract_info(link, False)
@@ -373,7 +412,7 @@ class YouTubeAPI:
 
         def video_dl():
             ydl_optssx = {
-                "format": "best[height<=?720][width<=?1280][ext=mp4]/best",
+                "format": "best[height<=?480][width<=?854][ext=mp4]/best[height<=?480][ext=mp4]/best",
                 "outtmpl": "downloads/%(id)s.%(ext)s",
                 "geo_bypass": True,
                 "nocheckcertificate": True,
@@ -382,6 +421,7 @@ class YouTubeAPI:
                 "noplaylist": True,
                 "cookiefile": self.get_cookies(),
                 "extractor_args": {"youtube": ["player_client=android"]},
+                "progress_hooks": [progress_hook],
             }
             x = yt_dlp.YoutubeDL(ydl_optssx)
             info = x.extract_info(link, False)
@@ -395,11 +435,10 @@ class YouTubeAPI:
             title_clean = self.sanitize_filename(title if title else "valentin_download")
             final_title = title_clean.replace(" ", "_")
             fpath = f"downloads/{final_title}"
+            mp4_path = fpath + ".mp4"
             print(f"[DEBUG] Starting video download to: {fpath}")
             
-            # If format_id is provided, use it. Otherwise use the quality-based format.
             if format_id and format_id not in ["720", "480", "360"]:
-                # For specific codecs, we might need to merge with audio
                 actual_format = f"{format_id}+bestaudio/best"
             else:
                 q = format_id if format_id else quality
@@ -416,16 +455,22 @@ class YouTubeAPI:
                 "merge_output_format": "mp4",
                 "cookiefile": self.get_cookies(),
                 "extractor_args": {"youtube": ["player_client=android"]},
+                "progress_hooks": [progress_hook],
             }
             x = yt_dlp.YoutubeDL(ydl_optssx)
-            info = x.extract_info(link, download=True)
-            ext = info.get('ext', 'mp4')
-            # Find the actual file on disk
+            x.download([link])
+            # After merge, the file should be .mp4
+            if os.path.exists(mp4_path):
+                print(f"[DEBUG] song_video_dl found: {mp4_path}")
+                return mp4_path
+            # Fallback: scan for any matching file
             for file in os.listdir("downloads"):
-                if file.startswith(final_title) and file.endswith(ext):
-                    return os.path.join("downloads", file)
-            # Fallback
-            return f"downloads/{final_title}.{ext}"
+                if file.startswith(final_title) and not file.endswith(".part"):
+                    found = os.path.join("downloads", file)
+                    print(f"[DEBUG] song_video_dl fallback found: {found}")
+                    return found
+            print(f"[DEBUG] song_video_dl NOT FOUND, returning fallback: {mp4_path}")
+            return mp4_path
 
         def song_audio_dl():
             title_clean = self.sanitize_filename(title if title else "valentin_download")
@@ -445,6 +490,7 @@ class YouTubeAPI:
                 "prefer_ffmpeg": True,
                 "cookiefile": self.get_cookies(),
                 "extractor_args": {"youtube": ["player_client=android"]},
+                "progress_hooks": [progress_hook],
             }
             # Only apply mp3 postprocessing if it's not a direct opus/other request
             if actual_format == "bestaudio/best" or not format_id:
@@ -461,16 +507,16 @@ class YouTubeAPI:
 
             x = yt_dlp.YoutubeDL(ydl_optssx)
             info = x.extract_info(link, download=True)
-            # Find the actual file on disk
+            # Find the actual file on disk (match any extension, postprocessors may change it)
             for file in os.listdir("downloads"):
-                if file.startswith(final_title) and file.endswith(ext):
+                if file.startswith(final_title):
                     return os.path.join("downloads", file)
             # Fallback
             return f"downloads/{final_title}.{ext}"
 
         def direct_stream_url(is_video):
             ydl_opts = {
-                "format": "best[height<=?720][width<=?1280][ext=mp4]/best" if is_video else "bestaudio[ext=webm][acodec=opus]/bestaudio/best",
+                "format": "best[height<=?480][width<=?854][ext=mp4]/best[height<=?480][ext=mp4]/best" if is_video else "bestaudio[ext=webm][acodec=opus]/bestaudio/best",
                 "quiet": True,
                 "no_warnings": True,
                 "noplaylist": True,

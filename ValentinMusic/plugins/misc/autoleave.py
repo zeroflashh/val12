@@ -35,9 +35,9 @@ async def auto_leave():
                                     try:
                                         await client.leave_chat(i.chat.id)
                                         left += 1
-                                    except:
+                                    except Exception:
                                         continue
-                except:
+                except Exception:
                     pass
 
 
@@ -64,19 +64,19 @@ async def auto_end():
                     if users > 1:
                         autoend[chat_id] = {}
                         continue
-                except:
+                except Exception:
                     pass
                 autoend[chat_id] = {}
                 try:
                     await Anony.stop_stream(chat_id)
-                except:
+                except Exception:
                     continue
                 try:
                     await app.send_message(
                         chat_id,
                         "» Bot left the voice chat because no one was listening.",
                     )
-                except:
+                except Exception:
                     continue
 
 

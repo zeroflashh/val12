@@ -14,6 +14,8 @@ from config import BANNED_USERS
 from ValentinMusic.utils.functions import delete_after_10
 import asyncio
 
+from ValentinMusic.utils.stream.resolve import skip_resolved_item, send_now_playing
+
 
 @app.on_message(
     filters.command(["skip", "cskip", "next", "cnext"]) & filters.group & ~BANNED_USERS
@@ -37,7 +39,7 @@ async def skip(cli, message: Message, _, chat_id):
                             popped = None
                             try:
                                 popped = check.pop(0)
-                            except:
+                            except (IndexError, KeyError):
                                 return await message.reply_text(_["admin_12"])
                             if popped:
                                 await auto_clean(popped)
@@ -52,7 +54,7 @@ async def skip(cli, message: Message, _, chat_id):
                                     )
                                     asyncio.create_task(delete_after_10(m))
                                     await Anony.stop_stream(chat_id)
-                                except:
+                                except Exception:
                                     return
                                 break
                     else:
@@ -80,9 +82,9 @@ async def skip(cli, message: Message, _, chat_id):
                 asyncio.create_task(delete_after_10(m))
                 try:
                     return await Anony.stop_stream(chat_id)
-                except:
+                except Exception:
                     return
-        except:
+        except (IndexError, KeyError):
             try:
                 m = await message.reply_text(
                     text=_["admin_6"].format(
@@ -92,7 +94,7 @@ async def skip(cli, message: Message, _, chat_id):
                 )
                 asyncio.create_task(delete_after_10(m))
                 return await Anony.stop_stream(chat_id)
-            except:
+            except Exception:
                 return
     m = await message.reply_text(f"➻ Stream Skipped by: {message.from_user.first_name}")
     asyncio.create_task(delete_after_10(m))
@@ -109,131 +111,27 @@ async def skip(cli, message: Message, _, chat_id):
         db[chat_id][0]["seconds"] = check[0]["old_second"]
         db[chat_id][0]["speed_path"] = None
         db[chat_id][0]["speed"] = 1.0
-    if "live_" in queued:
-        n, link = await YouTube.video(videoid, True)
-        if n == 0:
-            return await message.reply_text(_["admin_7"].format(title))
-        try:
-            image = await YouTube.thumbnail(videoid, True)
-        except:
-            image = None
-        try:
-            await Anony.skip_stream(chat_id, link, video=status, image=image)
-        except:
-            return await message.reply_text(_["call_6"])
-        button = stream_markup(_, chat_id)
-        img = await get_thumb(videoid)
-        run = await message.reply_photo(
-            photo=img,
-            caption=_["stream_1"].format(
-                f"https://t.me/{app.username}?start=info_{videoid}",
-                title[:23],
-                check[0]["dur"],
-                user,
-            ),
-            reply_markup=InlineKeyboardMarkup(button),
-        )
-        db[chat_id][0]["mystic"] = run
-        db[chat_id][0]["markup"] = "tg"
-    elif "vid_" in queued:
-        mystic = await message.reply_text(_["call_7"], disable_web_page_preview=True)
-        try:
-            file_path, direct = await YouTube.download(
-                videoid,
-                mystic,
-                videoid=True,
-                video=status,
+
+    mystic = None
+    try:
+        if "vid_" in queued:
+            async def _mk():
+                return await message.reply_text(_["call_7"], disable_web_page_preview=True)
+            file_or_link, image, mystic = await skip_resolved_item(
+                chat_id, queued, videoid, status, make_mystic=_mk,
             )
-        except:
-            return await mystic.edit_text(_["call_6"])
-        try:
-            image = await YouTube.thumbnail(videoid, True)
-        except:
-            image = None
-        try:
-            await Anony.skip_stream(chat_id, file_path, video=status, image=image)
-        except:
-            return await mystic.edit_text(_["call_6"])
-        button = stream_markup(_, chat_id)
-        img = await get_thumb(videoid)
-        run = await message.reply_photo(
-            photo=img,
-            caption=_["stream_1"].format(
-                f"https://t.me/{app.username}?start=info_{videoid}",
-                title[:23],
-                check[0]["dur"],
-                user,
-            ),
-            reply_markup=InlineKeyboardMarkup(button),
-        )
-        db[chat_id][0]["mystic"] = run
-        db[chat_id][0]["markup"] = "stream"
+        else:
+            file_or_link, image, _ = await skip_resolved_item(
+                chat_id, queued, videoid, status,
+            )
+    except Exception:
+        err_key = "admin_7" if "live_" in queued else "call_6"
+        err_msg = _[err_key].format(title) if err_key == "admin_7" else _[err_key]
+        return await message.reply_text(err_msg)
+
+    await send_now_playing(
+        message, chat_id, _, videoid, title, check[0]["dur"], user, streamtype,
+        thumb=image, queued=queued,
+    )
+    if mystic:
         await mystic.delete()
-    elif "index_" in queued:
-        try:
-            await Anony.skip_stream(chat_id, videoid, video=status)
-        except:
-            return await message.reply_text(_["call_6"])
-        button = stream_markup(_, chat_id)
-        run = await message.reply_photo(
-            photo=config.STREAM_IMG_URL,
-            caption=_["stream_2"].format(user),
-            reply_markup=InlineKeyboardMarkup(button),
-        )
-        db[chat_id][0]["mystic"] = run
-        db[chat_id][0]["markup"] = "tg"
-    else:
-        if videoid == "telegram":
-            image = None
-        elif videoid == "soundcloud":
-            image = None
-        else:
-            try:
-                image = await YouTube.thumbnail(videoid, True)
-            except:
-                image = None
-        try:
-            await Anony.skip_stream(chat_id, queued, video=status, image=image)
-        except:
-            return await message.reply_text(_["call_6"])
-        if videoid == "telegram":
-            button = stream_markup(_, chat_id)
-            run = await message.reply_photo(
-                photo=config.TELEGRAM_AUDIO_URL
-                if str(streamtype) == "audio"
-                else config.TELEGRAM_VIDEO_URL,
-                caption=_["stream_1"].format(
-                    config.SUPPORT_CHAT, title[:23], check[0]["dur"], user
-                ),
-                reply_markup=InlineKeyboardMarkup(button),
-            )
-            db[chat_id][0]["mystic"] = run
-            db[chat_id][0]["markup"] = "tg"
-        elif videoid == "soundcloud":
-            button = stream_markup(_, chat_id)
-            run = await message.reply_photo(
-                photo=config.SOUNCLOUD_IMG_URL
-                if str(streamtype) == "audio"
-                else config.TELEGRAM_VIDEO_URL,
-                caption=_["stream_1"].format(
-                    config.SUPPORT_CHAT, title[:23], check[0]["dur"], user
-                ),
-                reply_markup=InlineKeyboardMarkup(button),
-            )
-            db[chat_id][0]["mystic"] = run
-            db[chat_id][0]["markup"] = "tg"
-        else:
-            button = stream_markup(_, chat_id)
-            img = await get_thumb(videoid)
-            run = await message.reply_photo(
-                photo=img,
-                caption=_["stream_1"].format(
-                    f"https://t.me/{app.username}?start=info_{videoid}",
-                    title[:23],
-                    check[0]["dur"],
-                    user,
-                ),
-                reply_markup=InlineKeyboardMarkup(button),
-            )
-            db[chat_id][0]["mystic"] = run
-            db[chat_id][0]["markup"] = "stream"

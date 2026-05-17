@@ -1,5 +1,6 @@
 import time
 
+import pyrogram
 from pyrogram import filters
 from pyrogram.enums import ChatType
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
@@ -101,11 +102,17 @@ async def start_pm(client, message: Message, _):
 async def start_gp(client, message: Message, _):
     out = start_panel(_)
     uptime = int(time.time() - _boot_)
-    await message.reply_photo(
-        photo=config.START_IMG_URL,
-        caption=_["start_1"].format(app.mention, get_readable_time(uptime)),
-        reply_markup=InlineKeyboardMarkup(out),
-    )
+    try:
+        await message.reply_photo(
+            photo=config.START_IMG_URL,
+            caption=_["start_1"].format(app.mention, get_readable_time(uptime)),
+            reply_markup=InlineKeyboardMarkup(out),
+        )
+    except pyrogram.errors.ChatSendPhotosForbidden:
+        await message.reply_text(
+            _["start_1"].format(app.mention, get_readable_time(uptime)),
+            reply_markup=InlineKeyboardMarkup(out),
+        )
     return await add_served_chat(message.chat.id)
 
 
@@ -118,7 +125,7 @@ async def welcome(client, message: Message):
             if await is_banned_user(member.id):
                 try:
                     await message.chat.ban_member(member.id)
-                except:
+                except Exception:
                     pass
             if member.id == app.id:
                 if message.chat.type != ChatType.SUPERGROUP:
@@ -136,16 +143,27 @@ async def welcome(client, message: Message):
                     return await app.leave_chat(message.chat.id)
 
                 out = start_panel(_)
-                await message.reply_photo(
-                    photo=config.START_IMG_URL,
-                    caption=_["start_3"].format(
-                        message.from_user.first_name,
-                        app.mention,
-                        message.chat.title,
-                        app.mention,
-                    ),
-                    reply_markup=InlineKeyboardMarkup(out),
-                )
+                try:
+                    await message.reply_photo(
+                        photo=config.START_IMG_URL,
+                        caption=_["start_3"].format(
+                            message.from_user.first_name,
+                            app.mention,
+                            message.chat.title,
+                            app.mention,
+                        ),
+                        reply_markup=InlineKeyboardMarkup(out),
+                    )
+                except pyrogram.errors.ChatSendPhotosForbidden:
+                    await message.reply_text(
+                        _["start_3"].format(
+                            message.from_user.first_name,
+                            app.mention,
+                            message.chat.title,
+                            app.mention,
+                        ),
+                        reply_markup=InlineKeyboardMarkup(out),
+                    )
                 await add_served_chat(message.chat.id)
                 await message.stop_propagation()
         except Exception as ex:

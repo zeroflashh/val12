@@ -51,7 +51,7 @@ async def sudoers_list(client, message: Message, _):
     try:
         user = await app.get_users(OWNER_ID)
         user = user.first_name if not user.mention else user.mention
-    except:
+    except Exception:
         user = "Owner"
     text += "1➤ " + user + " (Owner)\n"
     count = 0
@@ -66,7 +66,7 @@ async def sudoers_list(client, message: Message, _):
                     text += _["sudo_6"]
                 count += 1
                 text += str(count) + "➤ " + user + "\n"
-            except:
+            except Exception:
                 continue
     if count == 0 and smex == 0:
         await message.reply_text(_["sudo_7"])

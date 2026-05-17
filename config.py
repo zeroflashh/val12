@@ -11,7 +11,7 @@ API_ID = 7949855
 API_HASH = "ea4403a7f9496b9b39fdb6401f32c46b"
 
 # Get from @BotFather
-BOT_TOKEN = "6173918825:AAEyS1Wc9d_v17cOJn0rWdXWLL47cChgvKo"
+BOT_TOKEN = "6173918825:AAGIULMkuz7LpwjmHp2EnmVwNPVpMZjNZEQ"
 
 # Get from cloud.mongodb.com
 MONGO_DB_URI = "mongodb+srv://zero:zero@zero.y5pa4sd.mongodb.net/?appName=zero"

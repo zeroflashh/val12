@@ -40,7 +40,7 @@ async def reload_admin_cache(client, message: Message, _):
         now = int(time.time()) + 180
         rel[message.chat.id] = now
         await message.reply_text(_["reload_2"])
-    except:
+    except Exception:
         await message.reply_text(_["reload_3"])
 
 
@@ -50,11 +50,11 @@ async def close_menu(_, query: CallbackQuery):
         await query.answer()
         await query.message.delete()
         umm = await query.message.reply_text(
-            f"Cʟᴏsᴇᴅ ʙʏ : {query.from_user.mention}"
+            f"Closed by : {query.from_user.mention}"
         )
         await asyncio.sleep(7)
         await umm.delete()
-    except:
+    except Exception:
         pass
 
 
@@ -72,12 +72,12 @@ async def stop_download(client, CallbackQuery: CallbackQuery, _):
             task.cancel()
             try:
                 lyrical.pop(message_id)
-            except:
+            except Exception:
                 pass
             await CallbackQuery.answer(_["tg_6"], show_alert=True)
             return await CallbackQuery.edit_message_text(
                 _["tg_7"].format(CallbackQuery.from_user.mention)
             )
-        except:
+        except Exception:
             return await CallbackQuery.answer(_["tg_8"], show_alert=True)
     await CallbackQuery.answer(_["tg_9"], show_alert=True)

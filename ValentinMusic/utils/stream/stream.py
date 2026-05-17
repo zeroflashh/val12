@@ -54,7 +54,7 @@ async def stream(
                     vidid,
                     channel,
                 ) = await YouTube.details(search, False if spotify else True)
-            except:
+            except Exception:
                 continue
             if str(duration_min) == "None":
                 continue
@@ -88,7 +88,7 @@ async def stream(
                     file_path, direct = await YouTube.download(
                         vidid, mystic, video=status, videoid=True, title=title
                     )
-                except:
+                except Exception:
                     await remove_active_chat(chat_id)
                     if video:
                         await remove_active_video_chat(chat_id)
@@ -101,7 +101,7 @@ async def stream(
                         video=status,
                         image=thumbnail,
                     )
-                except:
+                except Exception:
                     await remove_active_chat(chat_id)
                     if video:
                         await remove_active_video_chat(chat_id)
@@ -188,7 +188,7 @@ async def stream(
                 file_path, direct = await YouTube.download(
                     vidid, mystic, videoid=True, video=status, title=title
                 )
-            except:
+            except Exception:
                 await remove_active_chat(chat_id)
                 if video:
                     await remove_active_video_chat(chat_id)
@@ -201,7 +201,7 @@ async def stream(
                     video=status,
                     image=thumbnail,
                 )
-            except:
+            except Exception:
                 await remove_active_chat(chat_id)
                 if video:
                     await remove_active_video_chat(chat_id)
@@ -264,7 +264,7 @@ async def stream(
             await add_active_chat(chat_id)
             try:
                 await Anony.join_call(chat_id, original_chat_id, file_path, video=None)
-            except:
+            except Exception:
                 await remove_active_chat(chat_id)
                 raise
             await put_queue(
@@ -325,7 +325,7 @@ async def stream(
                 await add_active_video_chat(chat_id)
             try:
                 await Anony.join_call(chat_id, original_chat_id, file_path, video=status)
-            except:
+            except Exception:
                 await remove_active_chat(chat_id)
                 if video:
                     await remove_active_video_chat(chat_id)
@@ -399,7 +399,7 @@ async def stream(
                     video=status,
                     image=thumbnail if thumbnail else None,
                 )
-            except:
+            except Exception:
                 await remove_active_chat(chat_id)
                 if video:
                     await remove_active_video_chat(chat_id)
@@ -466,7 +466,7 @@ async def stream(
                     link,
                     video=True if video else None,
                 )
-            except:
+            except Exception:
                 await remove_active_chat(chat_id)
                 if video:
                     await remove_active_video_chat(chat_id)

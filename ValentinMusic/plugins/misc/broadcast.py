@@ -73,23 +73,23 @@ async def braodcast_message(client, message, _):
                     try:
                         await m.pin(disable_notification=True)
                         pin += 1
-                    except:
+                    except Exception:
                         pass
                 elif pin_loud:
                     try:
                         await m.pin(disable_notification=False)
                         pin += 1
-                    except:
+                    except Exception:
                         pass
                 sent += 1
                 await asyncio.sleep(0.2)
             except FloodWait as fw:
                 await asyncio.sleep(int(fw.value))
-            except:
+            except Exception:
                 continue
         try:
             await message.reply_text(_["broad_3"].format(sent, pin))
-        except:
+        except Exception:
             pass
 
     # Broadcast to users
@@ -110,11 +110,11 @@ async def braodcast_message(client, message, _):
                 await asyncio.sleep(0.2)
             except FloodWait as fw:
                 await asyncio.sleep(int(fw.value))
-            except:
+            except Exception:
                 pass
         try:
             await message.reply_text(_["broad_4"].format(susr))
-        except:
+        except Exception:
             pass
 
     # Broadcast via assistants
@@ -136,12 +136,12 @@ async def braodcast_message(client, message, _):
                     await asyncio.sleep(0.2)
                 except FloodWait as fw:
                     await asyncio.sleep(int(fw.value))
-                except:
+                except Exception:
                     continue
             text += _["broad_7"].format(num, sent)
         try:
             await aw.edit_text(text)
-        except:
+        except Exception:
             pass
     IS_BROADCASTING = False
 
@@ -162,7 +162,7 @@ async def auto_clean():
                     for user in authusers:
                         user_id = await alpha_to_int(user)
                         adminlist[chat_id].append(user_id)
-        except:
+        except Exception:
             continue
 
 

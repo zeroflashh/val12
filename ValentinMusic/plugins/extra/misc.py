@@ -149,7 +149,7 @@ async def translate(_, message: Message):
         if message.from_user:
             try:
                 await message.delete()
-            except:
+            except Exception:
                 pass
     except Exception as e:
         await message.reply_text(f"❌ Translation failed: {str(e)}")

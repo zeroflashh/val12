@@ -14,7 +14,7 @@ async def fetch_lyrics(session, url):
         async with session.get(url, timeout=aiohttp.ClientTimeout(total=15)) as resp:
             if resp.status == 200:
                 return await resp.json()
-    except:
+    except Exception:
         return None
 
 

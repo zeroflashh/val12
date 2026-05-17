@@ -44,10 +44,10 @@ async def tts_cmd(client, message: Message):
             os.remove(tts_file)
         try:
             await m.delete()
-        except:
+        except Exception:
             pass
     except Exception as e:
         try:
             await m.edit(f"❌ <b>TTS conversion failed:</b> {str(e)}")
-        except:
+        except Exception:
             pass

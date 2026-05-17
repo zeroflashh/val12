@@ -16,13 +16,13 @@ def language(mystic):
                 )
         try:
             await message.delete()
-        except:
+        except Exception:
             pass
 
         try:
             language = await get_lang(message.chat.id)
             strings = get_string(language)
-        except:
+        except Exception:
             strings = get_string("en")
         return await mystic(client, message, strings)
 
@@ -40,7 +40,7 @@ def languageCB(mystic):
         try:
             language = await get_lang(CallbackQuery.message.chat.id)
             strings = get_string(language)
-        except:
+        except Exception:
             strings = get_string("en")
         return await mystic(client, CallbackQuery, strings)
 
@@ -52,7 +52,7 @@ def LanguageStart(mystic):
         try:
             language = await get_lang(message.chat.id)
             strings = get_string(language)
-        except:
+        except Exception:
             strings = get_string("en")
         return await mystic(client, message, strings)
 

@@ -32,7 +32,7 @@ async def init():
         users = await get_banned_users()
         for user_id in users:
             BANNED_USERS.add(user_id)
-    except:
+    except Exception:
         pass
 
     # Handle FloodWait from Telegram bot auth
@@ -72,7 +72,7 @@ async def init():
             "Please turn on the videochat of your log group\\channel.\n\nStopping Bot..."
         )
         exit()
-    except:
+    except Exception:
         pass
     await Anony.decorators()
     LOGGER("ValentinMusic").info(

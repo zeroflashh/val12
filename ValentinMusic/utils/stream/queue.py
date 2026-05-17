@@ -1,8 +1,11 @@
+from __future__ import annotations
+
 import asyncio
 from typing import Union
 
 from ValentinMusic.misc import db
 from ValentinMusic.utils.formatters import check_duration, seconds_to_min
+from ValentinMusic.utils.stream.models import QueueItem
 from config import autoclean, time_to_seconds
 
 
@@ -22,30 +25,29 @@ async def put_queue(
     title = title.title()
     try:
         duration_in_seconds = time_to_seconds(duration) - 3
-    except:
+    except Exception:
         duration_in_seconds = 0
-    put = {
-        "title": title,
-        "dur": duration,
-        "streamtype": stream,
-        "by": user,
-        "user_id": user_id,
-        "chat_id": original_chat_id,
-        "file": file,
-        "vidid": vidid,
-        "thumb": thumb,
-        "seconds": duration_in_seconds,
-        "played": 0,
-    }
+    item = QueueItem(
+        title=title,
+        dur=duration,
+        streamtype=stream,
+        by=user,
+        user_id=user_id,
+        chat_id=original_chat_id,
+        file=file,
+        vidid=vidid,
+        thumb=thumb,
+        seconds=duration_in_seconds,
+        played=0,
+    )
     if forceplay:
         check = db.get(chat_id)
         if check:
-            check.insert(0, put)
+            check.insert(0, item)
         else:
-            db[chat_id] = []
-            db[chat_id].append(put)
+            db[chat_id] = [item]
     else:
-        db[chat_id].append(put)
+        db[chat_id].append(item)
     autoclean.append(file)
 
 
@@ -66,28 +68,28 @@ async def put_queue_index(
                 None, check_duration, vidid
             )
             duration = seconds_to_min(dur)
-        except:
-            duration = "ᴜʀʟ sᴛʀᴇᴀᴍ"
+        except Exception:
+            duration = "URL Stream"
             dur = 0
     else:
         dur = 0
-    put = {
-        "title": title,
-        "dur": duration,
-        "streamtype": stream,
-        "by": user,
-        "chat_id": original_chat_id,
-        "file": file,
-        "vidid": vidid,
-        "seconds": dur,
-        "played": 0,
-    }
+    item = QueueItem(
+        title=title,
+        dur=duration,
+        streamtype=stream,
+        by=user,
+        user_id=0,
+        chat_id=original_chat_id,
+        file=file,
+        vidid=vidid,
+        seconds=dur,
+        played=0,
+    )
     if forceplay:
         check = db.get(chat_id)
         if check:
-            check.insert(0, put)
+            check.insert(0, item)
         else:
-            db[chat_id] = []
-            db[chat_id].append(put)
+            db[chat_id] = [item]
     else:
-        db[chat_id].append(put)
+        db[chat_id].append(item)

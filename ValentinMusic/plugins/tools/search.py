@@ -118,5 +118,5 @@ async def search_play_callback(client, CallbackQuery):
     except Exception as e:
         try:
             await CallbackQuery.answer(f"Error: {e}", show_alert=True)
-        except:
+        except Exception:
             pass

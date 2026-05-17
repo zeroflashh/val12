@@ -23,7 +23,7 @@ from ValentinMusic.core.call import Anony
 async def log_(client, message, _):
     try:
         await message.reply_document(document="log.txt")
-    except:
+    except Exception:
         await message.reply_text(_["server_1"])
 
 
@@ -39,13 +39,13 @@ async def restart_(_, message):
             )
             await remove_active_chat(x)
             await remove_active_video_chat(x)
-        except:
+        except Exception:
             pass
     try:
         shutil.rmtree("downloads", ignore_errors=True)
         shutil.rmtree("raw_files", ignore_errors=True)
         shutil.rmtree("cache", ignore_errors=True)
-    except:
+    except Exception:
         pass
     await response.edit_text(
         ">> Restart process started, please wait for few seconds until the bot starts..."
@@ -72,13 +72,13 @@ async def reboot_logic(message, _, chat_id):
     try:
         # Stop stream and leave VC
         await Anony.stop_stream(chat_id)
-    except:
+    except Exception:
         pass
     
     try:
         # Reset loop
         await set_loop(chat_id, 0)
-    except:
+    except Exception:
         pass
         
     # Clear group cache in db

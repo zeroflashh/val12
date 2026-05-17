@@ -31,7 +31,7 @@ async def activevc(_, message: Message):
     for x in served_chats:
         try:
             title = (await app.get_chat(x)).title
-        except:
+        except Exception:
             await remove_active_chat(x)
             continue
         try:
@@ -43,7 +43,7 @@ async def activevc(_, message: Message):
                     f"<b>{voice_count + 1}.</b> {unidecode(title).upper()} [<code>{x}</code>]\n"
                 )
             voice_count += 1
-        except:
+        except Exception:
             continue
 
     # Build video chat list
@@ -52,7 +52,7 @@ async def activevc(_, message: Message):
     for x in served_video_chats:
         try:
             title = (await app.get_chat(x)).title
-        except:
+        except Exception:
             await remove_active_video_chat(x)
             continue
         try:
@@ -64,7 +64,7 @@ async def activevc(_, message: Message):
                     f"<b>{video_count + 1}.</b> {unidecode(title).upper()} [<code>{x}</code>]\n"
                 )
             video_count += 1
-        except:
+        except Exception:
             continue
 
     # Build final response with counts and lists

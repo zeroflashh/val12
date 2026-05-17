@@ -11,6 +11,10 @@ from ..log import LOGGER
 assistants = []
 assistantids = []
 
+STRING_ATTRS = ["STRING1", "STRING2", "STRING3", "STRING4", "STRING5"]
+ASSISTANT_ATTRS = ["one", "two", "three", "four", "five"]
+CHANNELS = ["Anaavaran", "Anaavaran_Support"]
+
 
 def _valid_session(session_str):
     if not session_str:
@@ -25,238 +29,69 @@ def _valid_session(session_str):
 
 class Userbot(Client):
     def __init__(self):
-        if _valid_session(config.STRING1):
-            self.one = Client(
-                name="ValentinMusicAss1",
-                api_id=config.API_ID,
-                api_hash=config.API_HASH,
-                session_string=str(config.STRING1),
-                no_updates=True,
-            )
-        else:
-            self.one = None
-
-        if _valid_session(config.STRING2):
-            self.two = Client(
-                name="ValentinMusicAss2",
-                api_id=config.API_ID,
-                api_hash=config.API_HASH,
-                session_string=str(config.STRING2),
-                no_updates=True,
-            )
-        else:
-            self.two = None
-
-        if _valid_session(config.STRING3):
-            self.three = Client(
-                name="ValentinMusicAss3",
-                api_id=config.API_ID,
-                api_hash=config.API_HASH,
-                session_string=str(config.STRING3),
-                no_updates=True,
-            )
-        else:
-            self.three = None
-
-        if _valid_session(config.STRING4):
-            self.four = Client(
-                name="ValentinMusicAss4",
-                api_id=config.API_ID,
-                api_hash=config.API_HASH,
-                session_string=str(config.STRING4),
-                no_updates=True,
-            )
-        else:
-            self.four = None
-
-        if _valid_session(config.STRING5):
-            self.five = Client(
-                name="ValentinMusicAss5",
-                api_id=config.API_ID,
-                api_hash=config.API_HASH,
-                session_string=str(config.STRING5),
-                no_updates=True,
-            )
-        else:
-            self.five = None
+        self.clients: list[Client | None] = []
+        for idx, attr in enumerate(STRING_ATTRS, start=1):
+            session = getattr(config, attr, None)
+            if _valid_session(session):
+                client = Client(
+                    name=f"ValentinMusicAss{idx}",
+                    api_id=config.API_ID,
+                    api_hash=config.API_HASH,
+                    session_string=str(session),
+                    no_updates=True,
+                )
+            else:
+                client = None
+            self.clients.append(client)
+            setattr(self, ASSISTANT_ATTRS[idx - 1], client)
 
     async def start(self):
-        LOGGER(__name__).info(f"Starting Assistants...")
-        from pyrogram.errors import FloodWait
-        import asyncio
-
-        if config.STRING1 and self.one:
+        LOGGER(__name__).info("Starting Assistants...")
+        for idx, client in enumerate(self.clients, start=1):
+            if not client:
+                continue
             try:
                 for attempt in range(3):
                     try:
-                        await self.one.start()
+                        await client.start()
                         break
                     except FloodWait as e:
-                        if attempt == 2: raise
-                        LOGGER(__name__).warning(f"Assistant 1: FloodWait {e.seconds}s. Waiting...")
+                        if attempt == 2:
+                            raise
+                        LOGGER(__name__).warning(
+                            f"Assistant {idx}: FloodWait {e.seconds}s. Waiting..."
+                        )
                         await asyncio.sleep(e.seconds + 5)
             except binascii.Error:
-                LOGGER(__name__).error("Assistant 1: Invalid session string.")
-                self.one = None
+                LOGGER(__name__).error(f"Assistant {idx}: Invalid session string.")
+                self.clients[idx - 1] = None
+                continue
             except Exception as e:
-                LOGGER(__name__).error(f"Assistant 1 failed: {e}")
-                self.one = None
-            else:
-                try:
-                    await self.one.join_chat("Anaavaran")
-                    await self.one.join_chat("Anaavaran_Support")
-                except: pass
-                assistants.append(1)
-                try:
-                    await self.one.send_message(config.LOGGER_ID, "Assistant Started")
-                except:
-                    LOGGER(__name__).error("Assistant 1 failed to access log group.")
-                self.one.id = self.one.me.id
-                self.one.name = self.one.me.mention
-                self.one.username = self.one.me.username
-                assistantids.append(self.one.id)
-                LOGGER(__name__).info(f"Assistant 1 Started as {self.one.name}")
+                LOGGER(__name__).error(f"Assistant {idx} failed: {e}")
+                self.clients[idx - 1] = None
+                continue
 
-        if config.STRING2 and self.two:
+            for channel in CHANNELS:
+                try:
+                    await client.join_chat(channel)
+                except Exception:
+                    pass
+            assistants.append(idx)
             try:
-                for attempt in range(3):
-                    try:
-                        await self.two.start()
-                        break
-                    except FloodWait as e:
-                        if attempt == 2: raise
-                        LOGGER(__name__).warning(f"Assistant 2: FloodWait {e.seconds}s. Waiting...")
-                        await asyncio.sleep(e.seconds + 5)
-            except binascii.Error:
-                LOGGER(__name__).error("Assistant 2: Invalid session string.")
-                self.two = None
-            except Exception as e:
-                LOGGER(__name__).error(f"Assistant 2 failed: {e}")
-                self.two = None
-            else:
-                try:
-                    await self.two.join_chat("Anaavaran")
-                    await self.two.join_chat("Anaavaran_Support")
-                except: pass
-                assistants.append(2)
-                try:
-                    await self.two.send_message(config.LOGGER_ID, "Assistant Started")
-                except:
-                    LOGGER(__name__).error("Assistant 2 failed to access log group.")
-                self.two.id = self.two.me.id
-                self.two.name = self.two.me.mention
-                self.two.username = self.two.me.username
-                assistantids.append(self.two.id)
-                LOGGER(__name__).info(f"Assistant 2 Started as {self.two.name}")
-
-        if config.STRING3 and self.three:
-            try:
-                for attempt in range(3):
-                    try:
-                        await self.three.start()
-                        break
-                    except FloodWait as e:
-                        if attempt == 2: raise
-                        LOGGER(__name__).warning(f"Assistant 3: FloodWait {e.seconds}s. Waiting...")
-                        await asyncio.sleep(e.seconds + 5)
-            except binascii.Error:
-                LOGGER(__name__).error("Assistant 3: Invalid session string.")
-                self.three = None
-            except Exception as e:
-                LOGGER(__name__).error(f"Assistant 3 failed: {e}")
-                self.three = None
-            else:
-                try:
-                    await self.three.join_chat("Anaavaran")
-                    await self.three.join_chat("Anaavaran_Support")
-                except: pass
-                assistants.append(3)
-                try:
-                    await self.three.send_message(config.LOGGER_ID, "Assistant Started")
-                except:
-                    LOGGER(__name__).error("Assistant 3 failed to access log group.")
-                self.three.id = self.three.me.id
-                self.three.name = self.three.me.mention
-                self.three.username = self.three.me.username
-                assistantids.append(self.three.id)
-                LOGGER(__name__).info(f"Assistant 3 Started as {self.three.name}")
-
-        if config.STRING4 and self.four:
-            try:
-                for attempt in range(3):
-                    try:
-                        await self.four.start()
-                        break
-                    except FloodWait as e:
-                        if attempt == 2: raise
-                        LOGGER(__name__).warning(f"Assistant 4: FloodWait {e.seconds}s. Waiting...")
-                        await asyncio.sleep(e.seconds + 5)
-            except binascii.Error:
-                LOGGER(__name__).error("Assistant 4: Invalid session string.")
-                self.four = None
-            except Exception as e:
-                LOGGER(__name__).error(f"Assistant 4 failed: {e}")
-                self.four = None
-            else:
-                try:
-                    await self.four.join_chat("Anaavaran")
-                    await self.four.join_chat("Anaavaran_Support")
-                except: pass
-                assistants.append(4)
-                try:
-                    await self.four.send_message(config.LOGGER_ID, "Assistant Started")
-                except:
-                    LOGGER(__name__).error("Assistant 4 failed to access log group.")
-                self.four.id = self.four.me.id
-                self.four.name = self.four.me.mention
-                self.four.username = self.four.me.username
-                assistantids.append(self.four.id)
-                LOGGER(__name__).info(f"Assistant 4 Started as {self.four.name}")
-
-        if config.STRING5 and self.five:
-            try:
-                for attempt in range(3):
-                    try:
-                        await self.five.start()
-                        break
-                    except FloodWait as e:
-                        if attempt == 2: raise
-                        LOGGER(__name__).warning(f"Assistant 5: FloodWait {e.seconds}s. Waiting...")
-                        await asyncio.sleep(e.seconds + 5)
-            except binascii.Error:
-                LOGGER(__name__).error("Assistant 5: Invalid session string.")
-                self.five = None
-            except Exception as e:
-                LOGGER(__name__).error(f"Assistant 5 failed: {e}")
-                self.five = None
-            else:
-                try:
-                    await self.five.join_chat("Anaavaran")
-                    await self.five.join_chat("Anaavaran_Support")
-                except: pass
-                assistants.append(5)
-                try:
-                    await self.five.send_message(config.LOGGER_ID, "Assistant Started")
-                except:
-                    LOGGER(__name__).error("Assistant 5 failed to access log group.")
-                self.five.id = self.five.me.id
-                self.five.name = self.five.me.mention
-                self.five.username = self.five.me.username
-                assistantids.append(self.five.id)
-                LOGGER(__name__).info(f"Assistant 5 Started as {self.five.name}")
+                await client.send_message(config.LOGGER_ID, "Assistant Started")
+            except Exception:
+                LOGGER(__name__).error(f"Assistant {idx} failed to access log group.")
+            client.id = client.me.id
+            client.name = client.me.mention
+            client.username = client.me.username
+            assistantids.append(client.id)
+            LOGGER(__name__).info(f"Assistant {idx} Started as {client.name}")
 
     async def stop(self):
-        LOGGER(__name__).info(f"Stopping Assistants...")
-        try:
-            if self.one:
-                await self.one.stop()
-            if self.two:
-                await self.two.stop()
-            if self.three:
-                await self.three.stop()
-            if self.four:
-                await self.four.stop()
-            if self.five:
-                await self.five.stop()
-        except:
-            pass
+        LOGGER(__name__).info("Stopping Assistants...")
+        for client in self.clients:
+            if client:
+                try:
+                    await client.stop()
+                except Exception:
+                    pass
