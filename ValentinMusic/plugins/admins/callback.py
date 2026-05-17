@@ -268,6 +268,8 @@ async def del_back_playlist(client, CallbackQuery, _):
                     return
         else:
             txt = f"➻ Stream re-played by: {mention}"
+        if not check:
+            return await CallbackQuery.answer(_["admin_21"], show_alert=True)
         await CallbackQuery.answer()
         m = await CallbackQuery.message.reply_text(txt)
         asyncio.create_task(delete_after_10(m))
@@ -301,8 +303,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             except:
                 return await CallbackQuery.message.reply_text(_["call_6"])
             button = stream_markup(_, chat_id)
-            # Use stored thumbnail if available
-            img = check[0].get("thumb")
+            img = check[0].get("thumb") if check else None
             if not img or img.startswith("http"):
                 img = await get_thumb(videoid)
             run = await CallbackQuery.message.reply_photo(
@@ -341,8 +342,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             except:
                 return await mystic.edit_text(_["call_6"])
             button = stream_markup(_, chat_id)
-            # Use stored thumbnail if available
-            img = check[0].get("thumb")
+            img = check[0].get("thumb") if check else None
             if not img or img.startswith("http"):
                 img = await get_thumb(videoid)
             run = await CallbackQuery.message.reply_photo(
